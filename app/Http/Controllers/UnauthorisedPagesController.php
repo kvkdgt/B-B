@@ -13,4 +13,12 @@ class UnauthorisedPagesController extends Controller
     public function about(){
         return view('about');
     }
+
+    public function blogs(){
+        return view('blogs');
+    }
+
+    public function blogDetails(){
+        return view('blog-detail');
+    }
 }

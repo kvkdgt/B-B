@@ -11,79 +11,79 @@
             <i class='bx bx-left-arrow-alt' ></i>
           </div>
         <div class="icon-box">
-            <img src="assets/img/icons/renewable-home.png" alt="Renewable Home">
+            <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
             <h3><a href="">Renewable Home</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/smart-city.png" alt="Smart City">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
             <h3><a href="">Smart City</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/green-home.png" alt="Green Home">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
             <h3><a href="">Green Home</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/home-office.png" alt="Home Office">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
             <h3><a href="">Home Office</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/hostel.png" alt="Hostel">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/hostel.png" alt="Hostel">
             <h3><a href="">Hostel</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/lakefront.png" alt="Lakefront">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/lakefront.png" alt="Lakefront">
             <h3><a href="">Lakefront</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/vegan.png" alt="Vegan">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/vegan.png" alt="Vegan">
             <h3><a href="">Vegan</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/sushi.png" alt="Sushi">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/sushi.png" alt="Sushi">
             <h3><a href="">Sushi</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/home-tutor.png" alt="Home Tutor">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/home-tutor.png" alt="Home Tutor">
             <h3><a href="">Home Tutor</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/farm-house.png" alt="Farm House">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/farm-house.png" alt="Farm House">
             <h3><a href="">Farm House</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/hotel.png" alt="Hotel">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/hotel.png" alt="Hotel">
             <h3><a href="">Hotel</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/country-home.png" alt="Country Home">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/country-home.png" alt="Country Home">
             <h3><a href="">Country Home</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/cabin-house.png" alt="Cabin House">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/cabin-house.png" alt="Cabin House">
             <h3><a href="">Cabin House</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/camper.png" alt="Camper">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/camper.png" alt="Camper">
             <h3><a href="">Camper</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/private-home.png" alt="Private Home">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/private-home.png" alt="Private Home">
             <h3><a href="">Private Home</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/student.png" alt="Student">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/student.png" alt="Student">
             <h3><a href="">Student</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/team.png" alt="Team">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/team.png" alt="Team">
             <h3><a href="">Team</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/cowork.png" alt="Cowork">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/cowork.png" alt="Cowork">
             <h3><a href="">Cowork</a></h3>
           </div>
           <div class="icon-box">
-              <img src="assets/img/icons/private.png" alt="Private">
+              <img src="{{env('BASE_URL')}}/assets/img/icons/private.png" alt="Private">
             <h3><a href="">Private</a></h3>
           </div>
           <div class="slideRight d-flex align-items-center justify-content-center">
@@ -114,7 +114,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -133,7 +133,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -150,7 +150,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -169,7 +169,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -186,7 +186,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -205,7 +205,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -222,7 +222,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -241,7 +241,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -258,7 +258,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -277,7 +277,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -294,7 +294,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -313,7 +313,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -330,7 +330,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -349,7 +349,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -366,7 +366,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -385,7 +385,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -402,7 +402,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -421,7 +421,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -438,7 +438,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -457,7 +457,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -474,7 +474,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -493,7 +493,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -510,7 +510,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -529,7 +529,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -546,7 +546,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -565,7 +565,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -582,7 +582,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -601,7 +601,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -618,7 +618,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -637,7 +637,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>
@@ -654,7 +654,7 @@
                     <div class="listing-item">
                             <div class="sub-main">
                                 <div class="img-sec p-rel">
-                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                 </div>
                                 <div class="slider-content">
@@ -673,7 +673,7 @@
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex">
-                                                <img src="assets/img/avatar.png">
+                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                                 <div class="m-2">
                                                     <h6 class="m-0">Abdul S</h6>
                                                     <p class="m-0">Yoga Trainer</p>

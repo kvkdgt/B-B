@@ -10,25 +10,25 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{env('BASE_URL')}}/assets/img/favicon.png" rel="icon">
+  <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{env('BASE_URL')}}/assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="{{env('BASE_URL')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -38,7 +38,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" class="img-fluid"></a>
         
         <div class="search-area">
             
@@ -77,7 +77,7 @@
           </li>
             <li class="dropdown">
                 <a href="#">
-                    <span><img src="assets/img/avatar.png" style="border-radius: 50%;" alt="Profile"></span>
+                    <span><img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="border-radius: 50%;" alt="Profile"></span>
                 </a>
             <ul>
               <li><a data-target="#loginModal" data-toggle="modal" href="#loginModal">Login</a></li>
@@ -136,7 +136,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="footer-info">
-              <h3><a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></h3>
+              <h3><a href="index.html" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" class="img-fluid"></a></h3>
               <div class="footer-newsletter">
                 <h4 class="text-black">Contact Us</h4>
                 <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal" href="#contactFormModal">Click here to contact us</button>
@@ -151,7 +151,7 @@
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">About Us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="safety.html">Safety Tips</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="blogs.html">Blogs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Blogs</a></li>
             </ul>
           </div>
 
@@ -902,21 +902,21 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
+    <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
 
     
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/aos/aos.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
     
     <script>
         
