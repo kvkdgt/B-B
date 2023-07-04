@@ -176,7 +176,7 @@
                                                   <div class="d-flex">
                                                       <img src="assets/img/avatar.png">
                                                       <div class="m-2">
-                                                          <h6 class="m-0">Abdul S</h6>
+                                                          <h6 class="m-0">Kartik Trivedi</h6>
                                                           <p class="m-0">Yoga Trainer</p>
                                                       </div>
                                                   </div>
@@ -217,7 +217,7 @@
                                                   <div class="d-flex">
                                                       <img src="assets/img/avatar.png">
                                                       <div class="m-2">
-                                                          <h6 class="m-0">Abdul S</h6>
+                                                          <h6 class="m-0">Kartik Trivedi</h6>
                                                           <p class="m-0">Yoga Trainer</p>
                                                       </div>
                                                   </div>
@@ -258,7 +258,7 @@
                                                   <div class="d-flex">
                                                       <img src="assets/img/avatar.png">
                                                       <div class="m-2">
-                                                          <h6 class="m-0">Abdul S</h6>
+                                                          <h6 class="m-0">Kartik Trivedi</h6>
                                                           <p class="m-0">Yoga Trainer</p>
                                                       </div>
                                                   </div>

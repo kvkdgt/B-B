@@ -20,7 +20,7 @@
                       <div class="profile">
                           <img src="assets/img/avatar.png">
                           <div class="m-2">
-                              <h4 class="m-0">Abdul S</h4>
+                              <h4 class="m-0">Kartik Trivedi</h4>
                               <p class="m-0">Yoga Trainer</p>
                           </div>
                       </div>
@@ -284,7 +284,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -295,7 +295,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -306,7 +306,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -317,7 +317,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -328,7 +328,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -339,7 +339,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -350,7 +350,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -361,7 +361,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -372,7 +372,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
@@ -383,7 +383,7 @@
                                               <td>25/03/2023</td>
                                               <td>Stay &amp; Learn</td>
                                               <td>Germany</td>
-                                              <td>Abdul S</td>
+                                              <td>Kartik Trivedi</td>
                                               <td>03/04/2023</td>
                                               <td>09/04/2023</td>
                                               <td><a href="#"><i class="fa fa-eye"></i></a></td>
