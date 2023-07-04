@@ -37,4 +37,16 @@ class UnauthorisedPagesController extends Controller
     public function privacy(){
         return view('privacy');
     }
+
+    public function map(){
+        return view('map');
+    }
+
+    public function detail(){
+        return view('detail');
+    }
+
+    public function chat(){
+        return view('chat');
+    }
 }
