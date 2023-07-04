@@ -45,4 +45,8 @@ class UnauthorisedPagesController extends Controller
     public function detail(){
         return view('detail');
     }
+
+    public function chat(){
+        return view('chat');
+    }
 }

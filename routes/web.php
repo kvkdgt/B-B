@@ -27,3 +27,4 @@ Route::get('/terms-and-conditions', [App\Http\Controllers\UnauthorisedPagesContr
 Route::get('/privacy-policy', [App\Http\Controllers\UnauthorisedPagesController::class, 'privacy'])->name('privacy');
 Route::get('/map', [App\Http\Controllers\UnauthorisedPagesController::class, 'map'])->name('map');
 Route::get('/detail', [App\Http\Controllers\UnauthorisedPagesController::class, 'detail'])->name('detail');
+Route::get('/chat', [App\Http\Controllers\UnauthorisedPagesController::class, 'chat'])->name('chat');
