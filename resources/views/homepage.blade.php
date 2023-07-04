@@ -132,7 +132,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -168,7 +168,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -204,7 +204,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -240,7 +240,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Foodie Guest</a>
+                                        <a href="{{route('detail')}}">Foodie Guest</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Chines Cuisine</p>
                                             <p>
@@ -276,7 +276,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -312,7 +312,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -348,7 +348,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Foodie Guest</a>
+                                        <a href="{{route('detail')}}">Foodie Guest</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Chines Cuisine</p>
                                             <p>
@@ -384,7 +384,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay and Learn Yoga </a>
+                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
                                             <p>Ashtanga Yoga</p>
                                             <p>
@@ -442,7 +442,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -477,7 +477,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -512,7 +512,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -547,7 +547,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -582,7 +582,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -617,7 +617,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -652,7 +652,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
@@ -687,7 +687,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
                                     </div>
                                     <div class="slider-content">
-                                        <a href="detail.html">Stay for Event</a>
+                                        <a href="{{route('detail')}}">Stay for Event</a>
                                         <div class="d-flex justify-content-between">
                                             <p>Wedding reception</p>
                                             <p>
