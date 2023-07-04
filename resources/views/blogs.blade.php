@@ -33,7 +33,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -52,7 +52,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -71,7 +71,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -90,7 +90,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -109,7 +109,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -128,7 +128,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -147,7 +147,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>
@@ -166,7 +166,7 @@
                                 <p>Coffee, Uncategorized</p>
                                 <img src="assets/img/avatar.png" alt="author">
                             </div>
-                            <a href="blog-detail.html">Chemex coffee for two people </a>
+                            <a href="{{route('blog-detail')}}">Chemex coffee for two people </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi</p>
                             <div class="footer d-flex justify-content-between">
                                 <p>John Doe</p>

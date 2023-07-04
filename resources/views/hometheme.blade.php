@@ -38,7 +38,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-       <a href="index.html" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" class="img-fluid"></a>
+       <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" class="img-fluid"><span>Status BNB</span></a>
         
         <div class="search-area">
             
@@ -136,7 +136,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-6">
             <div class="footer-info">
-              <h3><a href="index.html" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" class="img-fluid"></a></h3>
+              <h3><a href="index.html" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" style="max-width: 25% ; height: auto"></a></h3>
               <div class="footer-newsletter">
                 <h4 class="text-black">Contact Us</h4>
                 <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal" href="#contactFormModal">Click here to contact us</button>
