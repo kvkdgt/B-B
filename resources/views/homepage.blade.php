@@ -118,7 +118,7 @@
                             </div>
 
                             <div class="icons">
-                                <a href="map.html" class="btn btn-black-outline"><i class="bx bx-map"></i>
+                                <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
                                     <span>Listing/Map</span></a>
                                 <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal"
                                     data-toggle="modal"><i class="bx bx-filter"></i> <span>Filters</span></a>
