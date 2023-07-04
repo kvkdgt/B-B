@@ -150,7 +150,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="safety.html">Safety Tips</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route ('safety')}}">Safety Tips</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Blogs</a></li>
             </ul>
           </div>
@@ -158,9 +158,9 @@
           <div class="col-lg-3 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="careers.html">Careers</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="terms.html">Terms &amp; Conditions</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Policy Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route ('career')}}">Careers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{{route ('terms')}}">Terms &amp; Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy Policy</a></li>
             </ul>
           </div>
             

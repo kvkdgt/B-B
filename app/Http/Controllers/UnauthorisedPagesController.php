@@ -21,4 +21,20 @@ class UnauthorisedPagesController extends Controller
     public function blogDetails(){
         return view('blog-detail');
     }
+
+    public function safety(){
+        return view('safety');
+    }
+
+    public function careers(){
+        return view('careers');
+    }
+
+    public function terms(){
+        return view('terms');
+    }
+
+    public function privacy(){
+        return view('privacy');
+    }
 }
