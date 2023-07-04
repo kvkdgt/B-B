@@ -28,3 +28,4 @@ Route::get('/privacy-policy', [App\Http\Controllers\UnauthorisedPagesController:
 Route::get('/map', [App\Http\Controllers\UnauthorisedPagesController::class, 'map'])->name('map');
 Route::get('/detail', [App\Http\Controllers\UnauthorisedPagesController::class, 'detail'])->name('detail');
 Route::get('/chat', [App\Http\Controllers\UnauthorisedPagesController::class, 'chat'])->name('chat');
+Route::get('/host-dashboard', [App\Http\Controllers\HostController::class, 'dashboard'])->name('dashboard');
