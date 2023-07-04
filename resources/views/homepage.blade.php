@@ -96,17 +96,18 @@
 
     <!-- popular listings start -->
 
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#tab1">Tab 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#tab2">Tab 2</a>
-        </li>
-    </ul>
+    <ul  class="nav nav-pills">
+			<li class="active">
+        <a  href="#tab1" data-toggle="tab">Stay & Learn</a>
+			</li>
+			
+			<li><a href="#tab2" data-toggle="tab">Stay for event</a>
+			</li>
+  		
+		</ul>
 
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="tab1">
+    <div class="tab-content clearfix">
+        <div class="tab-pane active" id="tab1">
             <section id="listings" class="listings">
                 <div class="container" data-aos="fade-up">
                     <div class="row">
@@ -704,7 +705,7 @@
                 </div>
             </section>
         </div>
-        <div class="tab-pane fade" id="tab2">
+        <div class="tab-pane" id="tab2">
             <h2>Tab 2 Content</h2>
             <p>This is the content of Tab 2.</p>
         </div>
