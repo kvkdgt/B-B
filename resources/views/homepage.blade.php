@@ -96,18 +96,18 @@
 
     <!-- popular listings start -->
     <div class="container" data-aos="fade-up">
-     
-           
-            <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
-                                <span>What You Want to Learn?</span></a> 
-                        <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
-                                <span>Country/State</span></a>      
-                            <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
-                                <span>Month/Year</span></a>    
-                            <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal"
-                                data-toggle="modal"><i class="bx bx-filter"></i> <span>Filters</span></a>
-                                 
-        
+
+
+        <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
+            <span>What You Want to Learn?</span></a>
+        <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
+            <span>Country/State</span></a>
+        <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
+            <span>Month/Year</span></a>
+        <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal" data-toggle="modal"><i
+                class="bx bx-filter"></i> <span>Filters</span></a>
+
+
     </div>
 
     <div class="tab-content clearfix">
@@ -116,14 +116,9 @@
                 <div class="container" data-aos="fade-up">
                     <div class="mb-4 d-flex align-items-center justify-content-between">
                         <div class="icons">
-                       
-                <a href="#tab1" class="btn btn-black-outline" data-toggle="tab">Stay & Learn</a>
-            
-            <a href="#tab2" class="btn btn-black-outline" data-toggle="tab">Stay for event</a>
-            
-                                
+                            <a href="#tab1" class="btn btn-black-outline" data-toggle="tab">Stay & Learn</a>
+                            <a href="#tab2" class="btn btn-black-outline" data-toggle="tab">Stay for event</a>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
@@ -148,7 +143,7 @@
                                         <div class="d-flex justify-content-between">
                                             <p>akeja, logos</p>
                                             <p> <i class="fa fa-map-marker"></i>10 km away</p>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
@@ -167,7 +162,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div class="listing-item">
+                            <div class="listing-item">
                                 <div class="sub-main">
                                     <div class="img-sec p-rel">
                                         <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
@@ -188,7 +183,7 @@
                                         <div class="d-flex justify-content-between">
                                             <p>akeja, logos</p>
                                             <p> <i class="fa fa-map-marker"></i>10 km away</p>
-                                        </div> 
+                                        </div>
                                     </div>
                                     <div class="footer">
                                         <div class="d-flex justify-content-between">
@@ -207,7 +202,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                        <div class="listing-item">
+                            <div class="listing-item">
                                 <div class="sub-main">
                                     <div class="img-sec p-rel">
                                         <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
@@ -215,7 +210,7 @@
                                         <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
 
                                     </div>
-                                    
+
                                     <div class="slider-content">
                                         <a href="{{route('detail')}}">Stay and Learn Yoga </a>
                                         <div class="d-flex justify-content-between">
@@ -231,42 +226,6 @@
                                         <div class="d-flex justify-content-between">
                                             <p>akeja, logos</p>
                                             <p> <i class="fa fa-map-marker"></i>10 km away</p>
-                                        </div> 
-                                    </div>
-                                    <div class="footer">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                                <div class="m-2">
-                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                    <p class="m-0">Yoga Trainer</p>
-                                                </div>
-                                            </div>
-
-                                            <a href="chat.html">Chat Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="listing-item">
-                                <div class="sub-main">
-                                    <div class="img-sec p-rel">
-                                        <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
-                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                                    </div>
-                                    <div class="slider-content">
-                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
-                                        <div class="d-flex justify-content-between">
-                                            <p>Ashtanga Yoga</p>
-                                            <p>
-                                                <span>4.3</span> 7 Ratings
-                                            </p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <p>$200 Per Night</p>
-                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
                                         </div>
                                     </div>
                                     <div class="footer">
@@ -285,114 +244,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="listing-item">
-                                <div class="sub-main">
-                                    <div class="img-sec p-rel">
-                                        <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
-                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                                    </div>
-                                    <div class="slider-content">
-                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
-                                        <div class="d-flex justify-content-between">
-                                            <p>Ashtanga Yoga</p>
-                                            <p>
-                                                <span>4.3</span> 7 Ratings
-                                            </p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <p>$200 Per Night</p>
-                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                                <div class="m-2">
-                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                    <p class="m-0">Yoga Trainer</p>
-                                                </div>
-                                            </div>
-
-                                            <a href="chat.html">Chat Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="listing-item">
-                                <div class="sub-main">
-                                    <div class="img-sec p-rel">
-                                        <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
-                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                                    </div>
-                                    <div class="slider-content">
-                                        <a href="{{route('detail')}}">Foodie Guest</a>
-                                        <div class="d-flex justify-content-between">
-                                            <p>Chines Cuisine</p>
-                                            <p>
-                                                <span>4.3</span> 7 Ratings
-                                            </p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <p>$100 Per Night</p>
-                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                                <div class="m-2">
-                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                    <p class="m-0">Yoga Trainer</p>
-                                                </div>
-                                            </div>
-
-                                            <a href="chat.html">Chat Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                            <div class="listing-item">
-                                <div class="sub-main">
-                                    <div class="img-sec p-rel">
-                                        <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
-                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                                    </div>
-                                    <div class="slider-content">
-                                        <a href="{{route('detail')}}">Stay and Learn Yoga </a>
-                                        <div class="d-flex justify-content-between">
-                                            <p>Ashtanga Yoga</p>
-                                            <p>
-                                                <span>4.3</span> 7 Ratings
-                                            </p>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <p>$200 Per Night</p>
-                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                                <div class="m-2">
-                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                    <p class="m-0">Yoga Trainer</p>
-                                                </div>
-                                            </div>
-
-                                            <a href="chat.html">Chat Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -401,6 +252,12 @@
             <section id="listings" class="listings">
                 <div class="container" data-aos="fade-up">
                     <div class="mb-4 d-flex align-items-center justify-content-between">
+                        <div class="icons">
+                            <a href="#tab1" class="btn btn-black-outline" data-toggle="tab">Stay & Learn</a>
+                            <a href="#tab2" class="btn btn-black-outline" data-toggle="tab">Stay for event</a>
+                        </div>
+                    </div>
+                    <!-- <div class="mb-4 d-flex align-items-center justify-content-between">
                         <div class="heading">
                             <h4>Most Popular Hosts Tutors</h4>
                             <p>book your next stay with amazing host tutors.</p>
@@ -413,7 +270,7 @@
                                 data-toggle="modal"><i class="bx bx-filter"></i> <span>Filters</span></a>
                         </div>
 
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                             <div class="listing-item">
