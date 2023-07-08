@@ -96,7 +96,7 @@ height:100
                                 </div>
                             </div>
 
-                            <a href="host-profile.html">View Profile</a>
+                            <a href="{{route('hostProfile')}}">View Profile</a>
 
                         </div>
                     </div>
