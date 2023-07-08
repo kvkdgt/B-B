@@ -15,7 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
   <!-- Vendor CSS Files -->
   <link href="{{env('BASE_URL')}}/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="{{env('BASE_URL')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -969,6 +969,7 @@
             });
         
     </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
 </body>
 
