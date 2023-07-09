@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{env('BASE_URL')}}/assets/img/logo.png" rel="icon">
+    <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon">
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -43,7 +43,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
+            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt=""
                     class="img-fluid"><span>Status B&B</span></a>
 
             <div class="search-area">
