@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Status BNB</title>
+    <title>Status B&B</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,7 +44,7 @@
         <div class="container d-flex align-items-center justify-content-lg-between">
 
             <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
-                    class="img-fluid"><span>Status BNB</span></a>
+                    class="img-fluid"><span>Status B&B</span></a>
 
             <div class="search-area">
 
