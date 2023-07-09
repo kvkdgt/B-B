@@ -54,16 +54,12 @@
             top: 7px;
             right: 8px;
             background: #bee500;
-            width: 30px;
+            width: 80px;
             height: 30px;
-            border-radius: 50%;
-        }
-
-        .search-block span i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 20px;
+            text-align: center;
             line-height: 30px;
+            cursor: pointer;
         }
 
         .search-block {
@@ -76,7 +72,7 @@
             border-radius: 20px;
             margin-left: 20px;
             padding: 5px 25px;
-            color: #bfe506;
+            color: #000;
             transition: all 0.5s ease;
             font-size: 16px;
             font-weight: 500;
@@ -87,6 +83,40 @@
             color: #000;
             transition: all 0.5s ease;
         }
+
+        #footer {
+            padding: 0;
+        }
+
+        #footer .footer-top {
+            background: #000;
+        }
+
+        #footer .footer-top .footer-links ul a,
+        #footer .footer-top h4,
+        #footer .footer-top .footer-links ul i {
+            color: #fff;
+        }
+
+        .footer-info a {
+            display: block;
+            margin: -20px 0;
+        }
+
+        .footer-newsletter, .footer-newsletter h4 {
+            text-align: center;
+        }
+        
+        .footer-newsletter button {
+            width: 100%;
+            max-width: 70%;
+            margin: auto;
+        }
+
+        #footer .copyright {
+            padding: 15px 0;
+        }
+
 
         @media screen and (max-width: 1400px) {
             .container {
@@ -139,7 +169,7 @@
                 <div id="search-block" class="search-block">
                     <form action="">
                         <input type="search" placeholder="Start your search" class="form-control" />
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Search</span>
                     </form>
                 </div>
 
@@ -226,20 +256,21 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-2 col-md-2">
                         <div class="footer-info">
-                            <h3><a href="index.html" class="logo me-auto me-lg-0"><img
+                            <h3><a href="index.html" class="logo"><img
                                         src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
-                                        style="max-width: 25% ; height: auto"></a></h3>
+                                        style="width: 100% ; height: auto"></a></h3>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-4">
                             <div class="footer-newsletter">
-                                <h4 class="text-black">Contact Us</h4>
+                                <h4>Contact Us</h4>
                                 <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
                                     href="#contactFormModal">Click here to contact us</button>
 
                             </div>
-
                         </div>
-                    </div>
 
                     <div class="col-lg-3 col-md-3 footer-links">
                         <h4>Useful Links</h4>
@@ -262,8 +293,8 @@
 
                     <div class="col-lg-12 col-md-12">
                         <div class="footer-info">
-                            <h4 class="text-black">Lorem ipsum heading</h4>
-                            <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a
+                            <h4>Lorem ipsum heading</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a
                                 tincidunt odio. Mauris a quam sagittis metus euismod mollis vel ac mauris. Donec ac
                                 tellus tincidunt, pellentesque leo quis, tempus mi. Phasellus lobortis mauris tempor
                                 nulla accumsan, eu tincidunt odio suscipit.</p>
