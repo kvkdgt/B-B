@@ -7,6 +7,7 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
           <h1>About Us</h1>
+          
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h2>
         </div>
       </div>
