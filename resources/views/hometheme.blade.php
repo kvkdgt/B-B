@@ -35,6 +35,94 @@
     <!-- Template Main CSS File -->
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
+    <style>
+        .search-block input {
+            font-size: 16px;
+            color: #353535;
+            border: 1px solid #D9D9D9;
+            border-radius: 25px;
+            padding: 10px;
+            height: auto;
+        }
+
+        .search-block .form-control:focus {
+            box-shadow: none;
+            border-color: #bee500;
+        }
+        .search-block span {
+            position: absolute;
+            top: 7px;
+            right: 8px;
+            background: #bee500;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .search-block span i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 30px;
+        }
+
+        .search-block {
+            position: relative;
+            flex: 0 0 70%;
+        }
+
+        .navbar button.btn.btn-outline {
+            border: 1px solid #bfe506;
+            border-radius: 20px;
+            margin-left: 20px;
+            padding: 5px 25px;
+            color: #bfe506;
+            transition: all 0.5s ease;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar button.btn.btn-outline:hover {
+            background: #bfe506;
+            color: #000;
+            transition: all 0.5s ease;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .container {
+                max-width: 1320px !important;
+                width: 1320px !important;
+            } 
+        }
+
+        @media screen and (max-width: 1200px) {
+            .container {
+                max-width: 1140px !important;
+                width: 1140px !important;
+            } 
+        }
+
+        @media screen and (max-width: 992px) {
+            .container {
+                max-width: 970px !important;
+                width: 970px !important;
+            } 
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 750px !important;
+                width: 750px !important;
+            } 
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                max-width: 100% !important;
+                width: 100% !important;
+            } 
+        }
+    </style>
+
 </head>
 
 <body>
@@ -43,24 +131,16 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
+            <a href="/" class="logo me-auto"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
                     class="img-fluid"><span>Status BNB</span></a>
 
             <div class="search-area">
 
-                <!-- <div id="search-options" class="search-options">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <p class="text-black">Anywhere</p>
-                        <p class="text-black">Select Passion</p>
-                        <p class="text-gray">No of guests</p>
-                        <button class="btn btn-primary btn-serach-header"><i class="ri-search-line"></i></button>
-                    </div>
-
-                </div> -->
-
-                <div id="search-close" class="search-close" style="display: none;">
-                    <p class="text-black w-100">Search Here</p>
-                    <i class="fa fa-close"></i>
+                <div id="search-block" class="search-block">
+                    <form action="">
+                        <input type="search" placeholder="Start your search" class="form-control" />
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </form>
                 </div>
 
             </div>
@@ -82,8 +162,9 @@
                         </ul>
                     </li>
 
-                    <button class="btn btn-gray-outline" data-target="#loginModal" data-toggle="modal"
-                        href="#loginModal">Login/Signup</button>
+                    <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
+                        href="#loginModal">Login</button>
+                    <button class="btn btn-outline" href="#">Signup</button>
                     <!-- <li class="dropdown">
                         <a href="#">
                             <span><img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="border-radius: 50%;"

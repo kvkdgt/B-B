@@ -163,7 +163,6 @@
             <span>Country/State</span></a>
         <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
             <span>Month/Year</span></a>
-        <a href="#" class="btn btn-black-outline"><i class="ri-search-line"></i></a>
         <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal" data-toggle="modal"><i
                 class="bx bx-filter"></i> <span>Filters</span></a>
 
