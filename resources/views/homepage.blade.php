@@ -29,9 +29,10 @@
     }
 
     .user-img-top img {
-        width: 38px;
-        height: 38px;
+        width: 50px;
+        height: 50px;
         border: 2px solid #bee500;
+        border-radius: 50%;
     }
 
     .slider-content svg {
