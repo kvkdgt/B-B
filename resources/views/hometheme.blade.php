@@ -72,11 +72,11 @@
         }
 
         .navbar button.btn.btn-outline {
-            border: 1px solid #bfe506;
+            border: 1px solid black;
             border-radius: 20px;
             margin-left: 20px;
             padding: 5px 25px;
-            color: #bfe506;
+            color: black;
             transition: all 0.5s ease;
             font-size: 16px;
             font-weight: 500;
