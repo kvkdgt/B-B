@@ -72,79 +72,115 @@
                 </div>
                 <div class="icon-box">
                     <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
-                    <h3><a href="">Renewable Home</a></h3>
+                    <h3><a href="">C++</a></h3>
                 </div>
                 <div class="icon-box">
                     <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
-                    <h3><a href="">Smart City</a></h3>
+                    <h3><a href="">Python</a></h3>
                 </div>
                 <div class="icon-box">
                     <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
-                    <h3><a href="">Green Home</a></h3>
+                    <h3><a href="">PHP</a></h3>
                 </div>
                 <div class="icon-box">
                     <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
-                    <h3><a href="">Home Office</a></h3>
+                    <h3><a href="">UI/UX Design</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/hostel.png" alt="Hostel">
-                    <h3><a href="">Hostel</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/lakefront.png" alt="Lakefront">
-                    <h3><a href="">Lakefront</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/vegan.png" alt="Vegan">
-                    <h3><a href="">Vegan</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/sushi.png" alt="Sushi">
-                    <h3><a href="">Sushi</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-tutor.png" alt="Home Tutor">
-                    <h3><a href="">Home Tutor</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/farm-house.png" alt="Farm House">
-                    <h3><a href="">Farm House</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/hotel.png" alt="Hotel">
-                    <h3><a href="">Hotel</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/country-home.png" alt="Country Home">
-                    <h3><a href="">Country Home</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/cabin-house.png" alt="Cabin House">
-                    <h3><a href="">Cabin House</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/camper.png" alt="Camper">
-                    <h3><a href="">Camper</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/private-home.png" alt="Private Home">
-                    <h3><a href="">Private Home</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/student.png" alt="Student">
-                    <h3><a href="">Student</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/team.png" alt="Team">
-                    <h3><a href="">Team</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/cowork.png" alt="Cowork">
-                    <h3><a href="">Cowork</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
                 </div>
                 <div class="icon-box">
-                    <img src="{{env('BASE_URL')}}/assets/img/icons/private.png" alt="Private">
-                    <h3><a href="">Private</a></h3>
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/renewable-home.png" alt="Renewable Home">
+                    <h3><a href="">C++</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/smart-city.png" alt="Smart City">
+                    <h3><a href="">Python</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/green-home.png" alt="Green Home">
+                    <h3><a href="">PHP</a></h3>
+                </div>
+                <div class="icon-box">
+                    <img src="{{env('BASE_URL')}}/assets/img/icons/home-office.png" alt="Home Office">
+                    <h3><a href="">UI/UX Design</a></h3>
                 </div>
                 <div class="slideRight d-flex align-items-center justify-content-center">
                     <i class='bx bx-right-arrow-alt'></i>
