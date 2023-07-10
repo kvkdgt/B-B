@@ -289,7 +289,7 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-4">
                         <div class="footer-info">
                             <h3><a href="index.html" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png"
                                         alt="" style="width: 100% ; height: auto"></a></h3>

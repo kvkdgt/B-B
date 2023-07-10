@@ -54,11 +54,17 @@
     transition: all 0.5s ease;
 }
 
-.load-more-block button.load-btn:hover {
-    background: #1da1f2;
-    color: #fff;
-    transition: all 0.5s ease;
-}
+    .load-more-block button.load-btn:hover {
+        background: #1da1f2;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 768px) {
+        .search-area {
+            width: 70%;
+        }
+    }
 </style>
 <main id="main">
 
@@ -222,7 +228,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                             <div class="listing-item">
                                 <div class="sub-main">
                                     <div class="img-sec p-rel">
@@ -261,7 +267,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                             <div class="listing-item">
                                 <div class="sub-main">
                                     <div class="img-sec p-rel">
@@ -300,7 +306,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                             <div class="listing-item">
                                 <div class="sub-main">
                                     <div class="img-sec p-rel">

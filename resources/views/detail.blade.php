@@ -22,6 +22,71 @@
         .image-dash{
             height:100
         }
+
+        .details-block {
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+
+        .details-block .rating i {
+            color: #F2E145;
+        }
+
+        .details-block .rating span {
+            background: #54BA1D;
+            border-radius: 4px;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            color: #fff;
+        }
+
+        .details-block h4{
+            font-weight: 700;
+            font-size: 20px;
+            color: #323232;
+            margin: 0 0 20px;
+        }
+
+        .about-us .details-block h4 {
+            margin: 0;
+        }
+
+        .about-us .details-content {
+            padding: 25px 0;
+        }
+
+        .about-us .details-content a {
+            font-size: 14px;
+            background: #1DA1F2;
+            border-radius: 25px;
+            float: right;
+            color: #fff;
+            padding: 10px 15px;
+        }
+
+        .about-us .details-content img {
+            border: 3px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 75px;
+        }
+
+        .gray-bg {
+           background: #EEEEEE;
+        }
+
+        .guest-block .text-center img {
+            margin-bottom: 10px;
+        }
+
+        .about-inner h5 {
+            text-decoration: underline;
+        }
+
+        .details-block .reviews .item img {
+            height: 50px;
+            border-radius: 50%;
+        }
     </style>
   <div class="swiffy-slider slider-item-show3 slider-item-ratio-21x9 slider-nav-round">
     <div class="slider-container" style="height:40%">
@@ -69,13 +134,13 @@
 
             </div>
 
-            <div class="row mt-5">
+            <div class="row">
                 <div class="col-md-8 col-sm-12">
                     <!--  Stay & Learn Salsa  -->
 
                     <!--  About the Host  -->
-                    <div class="card card-gray about-us">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block about-us">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>About the Host</h4>
                             <div class="rating">
                                 <i class='bx bxs-star'></i>
@@ -86,7 +151,7 @@
                                 <span>(3.5) / (14 Reviews)</span>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <div class="d-flex">
                                 <img src="assets/img/avatar.png">
                                 <div class="m-2">
@@ -102,56 +167,60 @@
                     </div>
 
                     <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Language of Instruction</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <i class="fa fa-circle"></i> English &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> French &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> German &nbsp; &nbsp; <br>
 
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>What Guest will learn</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <i class="fa fa-circle"></i> Data structure &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> Variables &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> Class &nbsp; &nbsp; <br>
+                            <i class="fa fa-circle"></i> Class &nbsp; &nbsp; <br><br>
                             <i class="fa fa-circle"></i> Exception handling &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> Regular expression &nbsp; &nbsp;
 
                         </div>
                     </div>
+                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
                     <!--  What you'll have as:  -->
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Instructional materials</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <i class="fa fa-circle"></i> 3D Models &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> Slides &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> Textbooks &nbsp; &nbsp; <br>
+                            <i class="fa fa-circle"></i> Textbooks &nbsp; &nbsp; <br><br>
                             <i class="fa fa-circle"></i> BYOD &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> Desktop &nbsp; &nbsp;
                             <i class="fa fa-circle"></i> Video &nbsp; &nbsp;
 
                         </div>
                     </div>
-                    <div class="card card-time">
+
+                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                    <div class="details-block card-time">
                         Duration per day :
                         45 minutes
                     </div>
                     <!--  Where Guest will sleep  -->
-                    <div class="card card-gray">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Where Guest will sleep </h4>
                         </div>
-                        <div class="card-body">
-                            <div class="d-flex">
+                        <div class="details-content">
+                            <div class="guest-block d-flex justify-content-between">
                                 <div class="text-center">
                                     <img src="assets/img/hotels/hotel-2.png">
                                     <p>1 Bedroom</p>
@@ -167,30 +236,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>About this B&B</h4>
-
                         </div>
-                        <div class="card-body">
+                        <div class="details-content about-inner">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h6>Koh Samui, Suratthani, Thailand</h6>
+                                    <h5>Koh Samui, Suratthani, Thailand</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget nisi bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus. Massa eu sit laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a pellentesque auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec quam sed massa, pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
                                 </div>
-
                                 <button class="show-more">Show More</button>
-
                             </div>
-
                         </div>
                     </div>
                     <!--  Amenities  -->
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>What's included</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <div class="row">
                                 <div class="col">
                                     <div class="col-md-6 col-sm-12">
@@ -278,7 +343,7 @@
 
 
                     <!--  Choose Dates  -->
-                    <div class="card card-time">
+                    <div class="details-block card-time">
                         TIME :
                         Time In : 10:00 AM /
                         Time Out : 09:00 AM
@@ -289,11 +354,11 @@
 
 
 
-                    <div class="card card-gray">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block gray-bg">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>How it works </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <ul>
                                 <li><span>1</span> Select an available day in calendar, the number of guests and complete the booking </li>
                                 <li><span>2</span> Receive booking confirmation with details and instructions </li>
@@ -304,11 +369,11 @@
                     </div>
 
                     <!--  Cancellation Policy  -->
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Cancellation Policy </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <ul>
                                 <li><span>1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
                                 <li><span>2</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
@@ -323,14 +388,14 @@
                 <!--  Right Side Cart  -->
 
                 <div class="col-md-4 col-sm-12" id="fixed">
-                    <div class="card card-gray">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block gray-bg">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Stay &amp; Learn Salsa</h4>
                             <div class="rate">
                                 <p><span>€85</span> /night</p>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <div class="">
                                 <div class="form-field">
                                     <label>Check In</label>
@@ -412,22 +477,22 @@
                 <!--  Location  -->
                 <div class="col-md-12">
 
-                    <div class="card">
-                        <div class="card-header d-flex align-items-center justify-content-between">
+                    <div class="details-block">
+                        <div class="d-flex align-items-center justify-content-between">
                             <h4>Location </h4>
                         </div>
-                        <div class="card-body">
+                        <div class="details-content">
                             <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Elabd%20technologies+(Elabd%20technologies)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="400" frameborder="0"></iframe></div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="card">
-                    <div class="card-header d-flex">
+                <div class="details-block">
+                    <div class="d-flex">
                         <h4>Reviews </h4>
                     </div>
-                    <div class="card-body">
+                    <div class="details-content">
                         <div class="row reviews">
                             <div class="col-md-6 col-sm-12 mb-5">
                                 <div class="d-flex align-items-center justify-content-around average">
