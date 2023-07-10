@@ -54,7 +54,7 @@
         position: relative;
         flex: 0 0 70%;
     }
-    
+
     #footer {
         padding: 0;
     }
@@ -74,10 +74,11 @@
         margin: -20px 0;
     }
 
-    .footer-newsletter, .footer-newsletter h4 {
+    .footer-newsletter,
+    .footer-newsletter h4 {
         text-align: center;
     }
-    
+
     .footer-newsletter button {
         width: 100%;
         max-width: 70%;
@@ -98,7 +99,7 @@
         border-radius: 50px;
         text-align: center;
         line-height: 26px;
-        }
+    }
 
     .search-block span i {
         display: flex;
@@ -131,7 +132,7 @@
 
     .container {
         max-width: 1600px;
-        /* width: 100% */
+        width: 100%
     }
 
     @media (min-width: 1799px) {
@@ -139,7 +140,7 @@
             width: 1440px;
         }
     }
-        
+
 
     @media (min-width: 1470px) {
         .container {
@@ -224,8 +225,9 @@
 
                     <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
                         href="#loginModal">Login</button>
-                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Signup</button>
-                    
+                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal"
+                        href="#signUpModal">Signup</button>
+
                     <!-- <li class="dropdown">
                         <a href="#">
                             <span><img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="border-radius: 50%;"
@@ -289,36 +291,52 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="footer-info">
-                            <h3><a href="index.html" class="logo"><img
-                                        src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
-                                        style="width: 100% ; height: auto"></a></h3>
+                            <h3><a href="index.html" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png"
+                                        alt="" style="width: 100% ; height: auto"></a></h3>
                         </div>
                     </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="footer-newsletter">
-                                <h4>Contact Us</h4>
-                                <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
-                                    href="#contactFormModal">Click here to contact us</button>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer-newsletter">
+                            <h4>Contact Us</h4>
+                            <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
+                                href="#contactFormModal">Click here to contact us</button>
 
-                            </div>
                         </div>
+                    </div>
 
-                    <div class="col-lg-3 col-md-3 footer-links">
-                        <h4>Useful Links</h4>
+                    <div class="col-lg-2 col-md-2 footer-links">
+                        <!-- <h4></h4> -->
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">About Us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('safety')}}">Safety Tips</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Blogs</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">Terms</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('safety')}}">Privacy Policy</a>
+                            </li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
+
+                        <button class="btn btn-gray-outline"
+                            style="width:120px;background: #1414c1;outline: black;color: white;">Stripe</button>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 footer-links">
-                        <h4>Our Services</h4>
+                    <div class="col-lg-2 col-md-2 footer-links">
+                        <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('career')}}">Careers</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('terms')}}">Terms &amp;
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('career')}}">About Us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('terms')}}">FAQ &amp;
                                     Conditions</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy Policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Safety Tips</a></li>
+                        </ul>
+
+                        <button class="btn btn-gray-outline"
+                            style="width:120px;background: #1414c1;outline: black;color: white;">Paypal</button>
+
+                    </div>
+                    <div class="col-lg-2 col-md-2 footer-links">
+                        <!-- <h4>Our Services</h4> -->
+                        <ul>
+                            <li><i class="fa-brands fa-facebook"></i>&nbsp;<a href="{{route ('career')}}">Facebook</a>
+                            </li>
+                            <li><i class="fa-brands fa-twitter"></i> &nbsp;<a href="{{route ('terms')}}">Twitter</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -339,7 +357,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; All Rights Reserved - Booking Website by Elabd Technologies
+                All Rights Reserved &copy; - Status B&B by Hotelbuuk
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -389,7 +407,8 @@
                             </div>
                         </div>
 
-                        <a data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Dont have an account? <span>Sign Up</span></a>
+                        <a data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Dont have an account?
+                            <span>Sign Up</span></a>
                     </div>
 
                 </div>
