@@ -221,7 +221,8 @@
 
                     <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
                         href="#loginModal">Login</button>
-                    <button class="btn btn-outline" href="#">Signup</button>
+                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Signup</button>
+                    
                     <!-- <li class="dropdown">
                         <a href="#">
                             <span><img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="border-radius: 50%;"
@@ -367,7 +368,6 @@
                                 </label>
                             </div>
                             <a href="host-dashboard.html" class="btn btn-primary w-100 p-3">Login</a>
-
                         </form>
                     </div>
 
@@ -386,7 +386,7 @@
                             </div>
                         </div>
 
-                        <a href="#">Dont have an account? <span>Sign Up</span></a>
+                        <a data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Dont have an account? <span>Sign Up</span></a>
                     </div>
 
                 </div>
