@@ -49,41 +49,12 @@
             box-shadow: none;
             border-color: #bee500;
         }
-        .search-block span {
-            position: absolute;
-            top: 7px;
-            right: 8px;
-            background: #bee500;
-            width: 80px;
-            height: 30px;
-            border-radius: 20px;
-            text-align: center;
-            line-height: 30px;
-            cursor: pointer;
-        }
 
         .search-block {
             position: relative;
             flex: 0 0 70%;
         }
-
-        .navbar button.btn.btn-outline {
-            border: 1px solid #bfe506;
-            border-radius: 20px;
-            margin-left: 20px;
-            padding: 5px 25px;
-            color: #000;
-            transition: all 0.5s ease;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .navbar button.btn.btn-outline:hover {
-            background: #bfe506;
-            color: #000;
-            transition: all 0.5s ease;
-        }
-
+        
         #footer {
             padding: 0;
         }

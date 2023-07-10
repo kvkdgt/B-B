@@ -20,7 +20,7 @@
             border: 0;
         }
         .image-dash{
-height:100
+            height:100
         }
     </style>
   <div class="swiffy-slider slider-item-show3 slider-item-ratio-21x9 slider-nav-round">
@@ -100,6 +100,8 @@ height:100
 
                         </div>
                     </div>
+
+                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
                     <div class="card">
                         <div class="card-header d-flex align-items-center justify-content-between">
                             <h4>Language of Instruction</h4>
