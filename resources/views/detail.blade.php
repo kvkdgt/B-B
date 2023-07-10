@@ -80,13 +80,13 @@
         }
 
         .about-inner h5 {
-    text-decoration: underline;
-}
+            text-decoration: underline;
+        }
 
-.details-block .reviews .item img {
-    height: 50px;
-    border-radius: 50%;
-}
+        .details-block .reviews .item img {
+            height: 50px;
+            border-radius: 50%;
+        }
     </style>
   <div class="swiffy-slider slider-item-show3 slider-item-ratio-21x9 slider-nav-round">
     <div class="slider-container" style="height:40%">
