@@ -36,91 +36,95 @@
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
     <style>
-        .search-block input {
-            font-size: 16px;
-            color: #353535;
-            border: 1px solid #D9D9D9;
-            border-radius: 25px;
-            padding: 10px;
-            height: auto;
-        }
+    .search-block input {
+        font-size: 16px;
+        color: #353535;
+        border: 1px solid #D9D9D9;
+        border-radius: 25px;
+        padding: 10px;
+        height: auto;
+    }
 
-        .search-block .form-control:focus {
-            box-shadow: none;
-            border-color: #bee500;
-        }
-        .search-block span {
-            position: absolute;
-            top: 7px;
-            right: 8px;
-            background: #bee500;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-        }
+    .search-block .form-control:focus {
+        box-shadow: none;
+        border-color: #bee500;
+    }
 
-        .search-block span i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 30px;
-        }
+    .search-block span {
+        position: absolute;
+    top: 7px;
+    right: 9px;
+    background: #bee500;
+    width: 68px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 26px;
+    }
 
-        .search-block {
-            position: relative;
-            flex: 0 0 70%;
-        }
+    .search-block span i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
+    }
 
-        .navbar button.btn.btn-outline {
-            border: 1px solid black;
-            border-radius: 20px;
-            margin-left: 20px;
-            padding: 5px 25px;
-            color: black;
-            transition: all 0.5s ease;
-            font-size: 16px;
-            font-weight: 500;
-        }
+    .search-block {
+        position: relative;
+        flex: 0 0 70%;
+    }
 
-        .navbar button.btn.btn-outline:hover {
-            background: #bfe506;
-            color: #000;
-            transition: all 0.5s ease;
-        }
+    .navbar button.btn.btn-outline {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: 20px;
+        padding: 5px 25px;
+        color: black;
+        transition: all 0.5s ease;
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-        @media screen and (max-width: 1400px) {
-            .container {
-                max-width: 1320px !important;
-                width: 1320px !important;
-            } 
-        }
+    .navbar button.btn.btn-outline:hover {
+        background: #bfe506;
+        color: #000;
+        transition: all 0.5s ease;
+    }
 
-        @media screen and (max-width: 1200px) {
-            .container {
-                max-width: 1140px !important;
-                width: 1140px !important;
-            } 
+    @media screen and (max-width: 1400px) {
+        .container {
+            max-width: 1320px !important;
+            width: 1320px !important;
         }
+    }
 
-        @media screen and (max-width: 992px) {
-            .container {
-                max-width: 970px !important;
-                width: 970px !important;
-            } 
+    @media screen and (max-width: 1200px) {
+        .container {
+            max-width: 1140px !important;
+            width: 1140px !important;
         }
-        @media screen and (max-width: 768px) {
-            .container {
-                max-width: 750px !important;
-                width: 750px !important;
-            } 
-        }
+    }
 
-        @media screen and (max-width: 576px) {
-            .container {
-                max-width: 100% !important;
-                width: 100% !important;
-            } 
+    @media screen and (max-width: 992px) {
+        .container {
+            max-width: 970px !important;
+            width: 970px !important;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            max-width: 750px !important;
+            width: 750px !important;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .container {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    }
     </style>
 
 </head>
@@ -139,7 +143,7 @@
                 <div id="search-block" class="search-block">
                     <form action="">
                         <input type="search" placeholder="Start your search" class="form-control" />
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span>Search</span>
                     </form>
                 </div>
 
