@@ -131,7 +131,7 @@
 
     .container {
         max-width: 1600px;
-        /* width: 100% */
+        width: 100%;
     }
 
     @media (min-width: 1799px) {
@@ -286,14 +286,14 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-4">
                         <div class="footer-info">
                             <h3><a href="index.html" class="logo"><img
                                         src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
                                         style="width: 100% ; height: auto"></a></h3>
                         </div>
                     </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-8">
                             <div class="footer-newsletter">
                                 <h4>Contact Us</h4>
                                 <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
@@ -302,7 +302,7 @@
                             </div>
                         </div>
 
-                    <div class="col-lg-3 col-md-3 footer-links">
+                    <div class="col-lg-3 col-md-3 col-sm-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">About Us</a></li>
@@ -311,7 +311,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 footer-links">
+                    <div class="col-lg-3 col-md-3 col-sm-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="{{route ('career')}}">Careers</a></li>
