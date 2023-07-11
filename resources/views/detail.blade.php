@@ -88,7 +88,35 @@
             border-radius: 50%;
         }
     </style>
-  <div class="swiffy-slider slider-item-show3 slider-item-ratio-21x9 slider-nav-round">
+     <div class="row">
+                <div class="mb-4 d-flex align-items-center justify-content-between">
+                    <div class="heading">
+                        <h2>Stay &amp; Learn Salsa</h2>
+                        <p>2 reviews . <span>Koh Samui, Suratthani, Thailand</span></p>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <a href="#"><i class="bx bx-share"></i> Share</a>
+                        <a href="#"><i class="bx bx-heart"></i> Save</a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-8 col-sm-12" style="height: 300px;">
+                    <img class="w-100" style="height: 300px;" src="assets/img/slide/slide-1.jpg" alt="Image">
+                </div>
+                <div class="col-md-4 col-sm-12 d-grid">
+                    <div class="image-slide mb-3">
+                        <img class="w-100"  style="height: 140px;" src="assets/img/slide/slide-2.jpg" alt="Image">
+                    </div>
+                    <div class="image-slide mt-3">
+                        <img class="w-100" style="height: 140px;" src="assets/img/slide/slide-3.jpg" alt="Image">
+                        <div class="text-block">
+                            <p>See all photos</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+  <!-- <div class="swiffy-slider slider-item-show3 slider-item-ratio-21x9 slider-nav-round">
     <div class="slider-container" style="height:40%">
            <img class="image-dash" src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png">
         <img class="image-dash" src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png">
@@ -114,7 +142,7 @@
         <button aria-label="Go to slide"></button>
         <button aria-label="Go to slide" class="active"></button>
     </div>
-</div>
+</div> -->
     <!-- popular listings start -->
     <section class="listing_detail">
         <div class="container" data-aos="fade-up">

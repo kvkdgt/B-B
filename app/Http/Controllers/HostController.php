@@ -17,4 +17,8 @@ class HostController extends Controller
     public function createListing(){
         return view('host/create-listing');
     }
+
+    public function editHostProfile(){
+        return view('host/edit-host-profile');
+    }
 }

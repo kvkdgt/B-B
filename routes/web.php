@@ -31,3 +31,4 @@ Route::get('/chat', [App\Http\Controllers\UnauthorisedPagesController::class, 'c
 Route::get('/host-dashboard', [App\Http\Controllers\HostController::class, 'dashboard'])->name('dashboard');
 Route::get('/host-profile', [App\Http\Controllers\HostController::class, 'hostProfile'])->name('hostProfile');
 Route::get('/create-listing', [App\Http\Controllers\HostController::class, 'createListing'])->name('createListing');
+Route::get('/edit-host-profile', [App\Http\Controllers\HostController::class, 'editHostProfile'])->name('editHostProfile');
