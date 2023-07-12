@@ -97,7 +97,7 @@ ul.menu li.dropdown i {
 
 ul.sub-menu {
     color: white;
-    list-style: disc;
+    list-style: none;
     margin: 0 20px;
     padding: 10px;
     display: none;
@@ -241,7 +241,7 @@ function toggleSubMenu(icon) {
     <section class="edit-profile">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4 col-12">
+            <div class="col-md-3 col-sm-4 col-12">
                     <div class="side-edit-bar">
                         <div class="user-block">
                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -250,23 +250,54 @@ function toggleSubMenu(icon) {
                         </div>
                         <ul class="menu">
                             <li class="dropdown">
-                                <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu dropdown">
+                                    <li><span>Notification</span></span></li>
+                                    <li><span>Messages</span></li>
+                                    <li><span>Chat</span></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>Accepted </span></li>
+                                    <li><span>Rejected </span></li>
+                                    <li><span>Refunded </span></li>
+                                </ul>
 
                             </li>
                             <li class="dropdown">
-                                <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
-
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>View All</li>
+                                    <li><span>View Liked Listing</span></li>
+                                    <li><span>View Saved Listing</span></li>
+                                    <li><span>Create New Listing</span></li>
+                                </ul>
                             </li>
-                            <li class="dropdown"><span>My Listings</span> <i class="fa-solid fa-caret-right"></i></li>
-                            <li class="dropdown"><span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>Revenue</span></li>
+                                    <li><span>Net Income</span></li>
+                                    <li><span>Update pay Details</span></li>
+                                </ul></i>
                             </li>
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
                                     <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
-                                    <li>Profile Setting</li>
-                                    <li>Change Password</li>
+                                    <li><span>Profile Setting</span></li>
+                                    <li><span>Change Password</span></li>
                                 </ul>
                             </li>
                         </ul>
