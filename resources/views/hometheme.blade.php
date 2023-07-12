@@ -313,8 +313,8 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
 
-                        <button class="btn btn-gray-outline"
-                            style="width:120px;background: #1414c1;outline: black;color: white;">Stripe</button>
+                        <i style="width:120px;background: #1414c1;outline: black;color: white;"
+                            class="fa-brands fa-stripe  btn btn-gray-outline"></i>
                     </div>
 
                     <div class="col-lg-2 col-md-2 footer-links">
@@ -326,8 +326,8 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Safety Tips</a></li>
                         </ul>
 
-                        <button class="btn btn-gray-outline"
-                            style="width:120px;background: #1414c1;outline: black;color: white;">Paypal</button>
+                        <i class="fa-brands fa-cc-paypal btn btn-gray-outline"
+                            style="width:120px;background: #1414c1;outline: black;color: white;"></i>
 
                     </div>
                     <div class="col-lg-2 col-md-2 footer-links">

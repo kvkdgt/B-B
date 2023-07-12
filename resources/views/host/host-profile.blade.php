@@ -2,198 +2,199 @@
 @section('content')
 
 <style>
+.profile {
+    padding: 25px 0 10px;
+}
 
-    .profile {
-        padding: 25px 0 10px;
-    }
+.listings h4 {
+    margin: 0 0 10px;
+}
 
-    .listings h4 {
-        margin: 0 0 10px;
-    }
-
-    .host-block{
-        /* border: 1px solid rgba(0, 0, 0, 0.5);
+.host-block {
+    /* border: 1px solid rgba(0, 0, 0, 0.5);
         box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
-        border-radius: 25px;
-    }
+    border-radius: 25px;
+}
 
-    .host-gray {
-        background: #EEEEEE;
-    }
+.host-gray {
+    background: #EEEEEE;
+}
 
-    .host-body {
-        padding: 25px;
-    }
+.host-body {
+    padding: 25px;
+}
 
-    .album {
-        margin: 40px 0 0;
-    }
+.album {
+    margin: 40px 0 0;
+}
 
-    .co-host-block {
-        padding: 50px 0;
-    }
+.co-host-block {
+}
 
 /* ========= */
-    .side-edit-bar {
-        background: #070760;
-        border-radius: 20px;
-        padding: 20px 10px;
-    }
+.side-edit-bar {
+    background: #070760;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
 
-    button.edit-btn {
-        border-radius: 20px;
-        border: none;
-        padding: 4px 10px;
-        font-size: 14px;
-        margin: 0px 10px 10px;
-    }
+button.edit-btn {
+    border-radius: 20px;
+    border: none;
+    padding: 4px 10px;
+    font-size: 14px;
+    margin: 0px 10px 10px;
+}
 
-    .user-block {
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-    }
+.user-block {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
 
-    .user-block h4 {
-        margin: 5px 0 0;
-    }
+.user-block h4 {
+    margin: 5px 0 0;
+}
 
-    .user-block a, .user-block a:hover {
-        color: #fff;
-    }
+.user-block a,
+.user-block a:hover {
+    color: #fff;
+}
 
-    ul.menu {
-        list-style: none;
-        margin: 20px 0 0;
-        padding: 0;
-    }
+ul.menu {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+}
 
-    ul.menu li {
-        padding: 0 0 10px;
-    }
+ul.menu li {
+    padding: 0 0 10px;
+}
 
-    ul.menu li a {
-        color: #fff;
-        display: block;
-        padding: 5px 20px;
-        transition: all 0.5s ease;
-        border-radius: 20px;
-    }
+ul.menu li a {
+    color: #fff;
+    display: block;
+    padding: 5px 20px;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
 
-    ul.menu li a:hover {
-        background: #fff;
-        color: green;
-        transition: all 0.5s ease;
-    }
+ul.menu li a:hover {
+    background: #fff;
+    color: green;
+    transition: all 0.5s ease;
+}
 
-    ul.menu li.dropdown {
-        position: relative;
-    }
+ul.menu li.dropdown {
+    position: relative;
+}
 
-    ul.menu li.dropdown i {
-        position: absolute;
-        right: 20px;
-        top: 7px;
-    }
+ul.menu li.dropdown i {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
 
-    ul.sub-menu {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: none;
-    }
+ul.sub-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
 
-    ul.menu li.dropdown.active i {
-        transform: rotate(180deg);
-    }
+ul.menu li.dropdown.active i {
+    transform: rotate(180deg);
+}
 
-    .active ul.sub-menu {
-        display: block;
-        position: absolute;
-        right: -210px;
-        top: 0;
-        z-index: 1;
-        background: #070760;
-        width: 100%;
-        padding: 20px 10px;
-    }
+.active ul.sub-menu {
+    display: block;
+    position: absolute;
+    right: -210px;
+    top: 0;
+    z-index: 1;
+    background: #070760;
+    width: 100%;
+    padding: 20px 10px;
+}
 
-    .edit-profile {
-        margin: 0 0 30px;
-    }
+.edit-profile {
+    margin: 0 0 30px;
+}
 
-    .edit-profile label {
-        display: block;
-    }
+.edit-profile label {
+    display: block;
+}
 
-    .edit-profile select {
-        line-height: 35px;
-        width: 100%;
-        height: 39px;
-        display: block;
-    }
+.edit-profile select {
+    line-height: 35px;
+    width: 100%;
+    height: 39px;
+    display: block;
+}
 
-    .edit-profile input {
-        border-radius: 25px;
-        height: 39px;
-    }
+.edit-profile input {
+    border-radius: 25px;
+    height: 39px;
+}
 
-    .edit-profile .form-control:focus, .edit-profile select:focus {
-        box-shadow: none;
-        border: 1px solid #000;
-    } 
+.edit-profile .form-control:focus,
+.edit-profile select:focus {
+    box-shadow: none;
+    border: 1px solid #000;
+}
 
-    .edit-profile select:focus-visible {
-        outline: none;
-    }
+.edit-profile select:focus-visible {
+    outline: none;
+}
 
-    .edit-profile .radio-group input {
-        margin: 0 10px 0 0;
-    }
+.edit-profile .radio-group input {
+    margin: 0 10px 0 0;
+}
 
-    .edit-profile .update-btn {
-        line-height: 10px;
-    }
+.edit-profile .update-btn {
+    line-height: 10px;
+}
 
-    .edit-profile input#profile, .edit-profile input#id {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        height: 100px;
-    }
+.edit-profile input#profile,
+.edit-profile input#id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100px;
+}
 
-    .file-wrapper button {
-        border: 1px solid #D9D9D9;
-        border-radius: 25px;
-        box-shadow: none;
-        line-height: 35px;
-        width: 100%;
-        height: 100px;
-        display: block;
-        background: transparent;
-        font-size: 24px;
-    }
+.file-wrapper button {
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    box-shadow: none;
+    line-height: 35px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    background: transparent;
+    font-size: 24px;
+}
 
-    .file-wrapper {
-        overflow: hidden;
-        position: relative;
-    }
+.file-wrapper {
+    overflow: hidden;
+    position: relative;
+}
 
-    .error-block {
-        background: rgb(255, 0, 0, 10%);
-        color: red;
-        padding: 12px;
-        border-radius: 5px;
-        margin: 0 0 30px;
-    }
+.error-block {
+    background: rgb(255, 0, 0, 10%);
+    color: red;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
 
-    /* .container {
+/* .container {
         width: 1320px !important;
         max-width: 1320px !important;
     } */
 
-    /* @media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
         .container {
             max-width: 1320px !important;
             width: 1320px !important;
@@ -235,264 +236,265 @@
         <div class="container" data-aos="fade-up">
             <div class="row mt-5">
                 <div class="col-md-12 col-sm-12">
-                    <div class="host-block host-gray">
 
-                        <div class="host-header">
-                            <div class="profile d-flex align-items-center" style="justify-content: space-around; flex-wrap: wrap;">
+                    <div class="host-header">
+                        <div class="profile d-flex align-items-center"
+                            style="justify-content: space-around; flex-wrap: wrap;">
                             <div>
                                 <img src="assets/img/avatar.png" style="width:105px">
                             </div>
                             <div class="d-flex" style="gap:20px">
                                 <div>
-                                    <h3 class="m-0">Kartik Trivedi Kartik Trivedi</h3>
+                                    <h3 class="m-0">Kartik Trivedi</h3>
                                     <h4 style="margin-bottom: 10px;">Yoga Trainer</h4>
                                     <a class="btn btn-primary" href="{{ route('editHostProfile') }}">Edit Profile</a>
                                     <p style="margin:10px 0">Joined December 2020</p>
                                 </div>
                             </div>
+                            <div>
                                 <div>
-                                    <div>
-                                        <h3 class="m-0">Profile ID</h3>
-                                        <p style="margin: 7px 0">8875AF</p>
-                                    </div>
-                                    <div>
-                                        <a class="btn btn-primary">Verify Now</a>
-                                        <p style="margin: 7px 0 0">20 Days Left</p>
-                                    </div>
+                                    <h3 class="m-0">Profile ID</h3>
+                                    <p style="margin: 7px 0">8875AF</p>
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary">Verify Now</a>
+                                    <p style="margin: 7px 0 0">20 Days Left</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                    </div>
 
-                        <div class="host-body">
-                            <div class="row">
-                                <!--  Right Side Cart  -->
-                                <div class="col-lg-3">
-                                    <div class="host-block">
-                                        <div class="">
-                                            <div class="item">
-                                                <p><b>Verified User</b></p>
-                                            </div>
-                                            <div class="item">
-                                                <p><b>1403 Reviews</b></p>
-                                            </div>
-                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
-                                            <div class="sidebar">
-                                                <h4>Details Provided</h4>
-                                                <div class="side-cart-item" style="display:flex;">
-                                                    <p>Email Address</p>
-                                                    <i class='bx bx-check'></i>
-                                                </div>
-                                                <div class="side-cart-item" style="display:flex;">
-                                                    <p>Phone Number</p>
-                                                    <i class='bx bx-check'></i>
-                                                </div>
-                                                <div class="side-cart-item" style="display:flex;">
-                                                    <p>Government ID Card</p>
-                                                    <i class='bx bx-check'></i>
-                                                </div>
+                    <div class="host-body">
+                        <div class="row">
+                            <!--  Right Side Cart  -->
+                            <div class="col-lg-3">
+                                <div class="host-block">
+                                    <div class="">
+                                        <div class="item">
+                                            <p><b>Verified User</b></p>
+                                        </div>
+                                        <div class="item">
+                                            <p><b>1403 Reviews</b></p>
+                                        </div>
+                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                        <div class="sidebar">
+                                            <h4>Details Provided</h4>
+                                            <div class="side-cart-item" style="display:flex;">
+                                                <p>Email Address</p>
+                                                <i class='bx bx-check'></i>
                                             </div>
+                                            <div class="side-cart-item" style="display:flex;">
+                                                <p>Phone Number</p>
+                                                <i class='bx bx-check'></i>
+                                            </div>
+                                            <div class="side-cart-item" style="display:flex;">
+                                                <p>Government ID Card</p>
+                                                <i class='bx bx-check'></i>
+                                            </div>
+                                        </div>
 
 
-                                            <!-- Other Info -->
-                                            <div class="sidebar">
-                                                <a href="chat.html" class="btn btn-primary w-100">Chat with
-                                                    Me</a>
-                                            </div>
+                                        <!-- Other Info -->
+                                        <div class="sidebar">
+                                            <a href="chat.html" class="btn btn-primary w-100">Chat with
+                                                Me</a>
+                                        </div>
 
-                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                            <!-- Timing -->
-                                            <div class="sidebar">
-                                                <h4>Payment Type</h4>
-                                                <div class="side-cart-item">
-                                                    <p>Stripe</p>
-                                                </div>
-                                                <div class="side-cart-item">
-                                                    <p>PayPal</p>
-                                                </div>
+                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                        <!-- Timing -->
+                                        <div class="sidebar">
+                                            <h4>Payment Type</h4>
+                                            <div class="side-cart-item">
+                                                <p>Stripe</p>
                                             </div>
-                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                            <!-- Cancellation Policy -->
-                                            <div class="sidebar" style="margin-bottom: 0;">
-                                                <h4 style="margin-bottom: 15px;">House Rules</h4>
-                                                <div class="side-cart-item">
-                                                    <ul style="list-style-type: disc; margin: 0;">
-                                                        <li>No pets</li>
-                                                        <li>No shoes</li>
-                                                        <li>No smoking</li>
-                                                        <li>No outside food</li>
-                                                        <li>No loud music</li>
-                                                        <li>No parties</li>
-                                                        <li style="padding: 0;">No unauthorized guests</li>
-                                                    </ul>
-                                                </div>
+                                            <div class="side-cart-item">
+                                                <p>PayPal</p>
+                                            </div>
+                                        </div>
+                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                        <!-- Cancellation Policy -->
+                                        <div class="sidebar" style="margin-bottom: 0;">
+                                            <h4 style="margin-bottom: 15px;">House Rules</h4>
+                                            <div class="side-cart-item">
+                                                <ul style="list-style-type: disc; margin: 0;">
+                                                    <li>No pets</li>
+                                                    <li>No shoes</li>
+                                                    <li>No smoking</li>
+                                                    <li>No outside food</li>
+                                                    <li>No loud music</li>
+                                                    <li>No parties</li>
+                                                    <li style="padding: 0;">No unauthorized guests</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div class="col-lg-5">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <h3 style="margin: 0 0 10px;">About Me</h3>
-                                    </div>
-                                    <h6>Joined in 2018</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
-                                        eget nisi
-                                        bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
-                                        Massa eu
-                                        sit
-                                        laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
-                                        pellentesque
-                                        auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
-                                        quam sed
-                                        massa,
-                                        pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
-                                    <!-- </div> -->
 
-                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                    <div style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
-                                        <h3 class="m-0">Location</h3>
-                                        <p class="m-0">Paris , Frence</p>
-                                    </div>
-                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                    <div style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
-                                        <h3 class="m-0">Languages</h3>
-                                        <p class="m-0">English , French</p>
-                                    </div>
-                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                    <!-- <div class="card"> -->
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <h3>Academic Qualification</h3>
-                                    </div>
-                                    <ul style="list-style: disc">
-                                        <li><b>B.SC Fitness: </b>University of Poland, Poland </li>
-                                        <li style="padding: 0"><b>Diploma Graphics: </b>University of Poland, Poland </li>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 style="margin: 0 0 10px;">About Me</h3>
+                                </div>
+                                <h6>Joined in 2018</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                    eget nisi
+                                    bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                    Massa eu
+                                    sit
+                                    laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
+                                    pellentesque
+                                    auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
+                                    quam sed
+                                    massa,
+                                    pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+                                <!-- </div> -->
+
+                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
+                                    <h3 class="m-0">Location</h3>
+                                    <p class="m-0">Paris , Frence</p>
+                                </div>
+                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
+                                    <h3 class="m-0">Languages</h3>
+                                    <p class="m-0">English , French</p>
+                                </div>
+                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                <!-- <div class="card"> -->
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3>Academic Qualification</h3>
+                                </div>
+                                <ul style="list-style: disc">
+                                    <li><b>B.SC Fitness: </b>University of Poland, Poland </li>
+                                    <li style="padding: 0"><b>Diploma Graphics: </b>University of Poland, Poland </li>
+                                </ul>
+                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                <!-- </div> -->
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3>About My Listing</h3>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                    eget nisi
+                                    bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                    Massa eu
+                                    sit
+                                    laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
+                                    pellentesque
+                                    auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
+                                    quam sed
+                                    massa,
+                                    pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                <h3>What's Included</h3>
+                                <div class="item" style="display: flex;">
+                                    <ul style="list-style-type: disc; flex: 1;">
+                                        <li>Wi-Fi</li>
+                                        <li>Breakfast</li>
+                                        <li>Room cleaning</li>
                                     </ul>
-                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                    <!-- </div> -->
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <h3>About My Listing</h3>
-                                    </div>
-
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
-                                        eget nisi
-                                        bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
-                                        Massa eu
-                                        sit
-                                        laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
-                                        pellentesque
-                                        auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
-                                        quam sed
-                                        massa,
-                                        pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
-
-                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                    <h3>What's Included</h3>
-                                    <div class="item" style="display: flex;">
-                                        <ul style="list-style-type: disc; flex: 1;">
-                                            <li>Wi-Fi</li>
-                                            <li>Breakfast</li>
-                                            <li>Room cleaning</li>
-                                        </ul>
-                                        <ul style="list-style-type: disc; flex: 1;">
-                                            <li>Hot shower</li>
-                                            <li>Air conditioning</li>
-                                            <li>Gym access</li>
-                                        </ul>
-                                    </div>
-
+                                    <ul style="list-style-type: disc; flex: 1;">
+                                        <li>Hot shower</li>
+                                        <li>Air conditioning</li>
+                                        <li>Gym access</li>
+                                    </ul>
                                 </div>
 
-                                <!--  My Listing  -->
-                                <div class="col-lg-4">
-                                    <div class="host-block">
-                                        <div class="listings">
-                                            <h4>My Listings </h4>
-                                            <div class="listing-item sm" style="margin-bottom: 20px;">
-                                                <div class="sub-main">
-                                                    <div class="img-sec p-rel">
-                                                        <img src="assets/img/hotels/hotel-1.png" alt="">
-                                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                                                    </div>
-                                                    <div class="slider-content">
-                                                        <a href="detail.html">Stay and Learn Yoga </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <p>Ashtanga Yoga</p>
-                                                            <p>
-                                                                <span>4.3</span> 7 Ratings
-                                                            </p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <p>$200 Per Night</p>
-                                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="footer">
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="d-flex">
-                                                                <img src="assets/img/avatar.png">
+                            </div>
 
-                                                                <div class="m-2">
-                                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                                    <p class="m-0">Yoga Trainer</p>
-                                                                </div>
-                                                            </div>
-                                                            <a href="chat.html">Chat Now</a>
-                                                        </div>
+                            <!--  My Listing  -->
+                            <div class="col-lg-4">
+                                <div class="host-block">
+                                    <div class="listings">
+                                        <h4>My Listings </h4>
+                                        <div class="listing-item sm" style="margin-bottom: 20px;">
+                                            <div class="sub-main">
+                                                <div class="img-sec p-rel">
+                                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                                    <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+                                                </div>
+                                                <div class="slider-content">
+                                                    <a href="detail.html">Stay and Learn Yoga </a>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>Ashtanga Yoga</p>
+                                                        <p>
+                                                            <span>4.3</span> 7 Ratings
+                                                        </p>
                                                     </div>
-                                                    <div class="share">
-                                                        <div class="d-flex justify-content-center">
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>$200 Per Night</p>
+                                                        <p> <i class="fa fa-map-marker"></i> Paris , France</p>
+                                                    </div>
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex">
+                                                            <img src="assets/img/avatar.png">
+
                                                             <div class="m-2">
-                                                                <a class="m-0" href="#"><i class="bx bxl-twitter"></i>Share
-                                                                    on
-                                                                    Twitter</a>
+                                                                <h6 class="m-0">Kartik Trivedi</h6>
+                                                                <p class="m-0">Yoga Trainer</p>
                                                             </div>
+                                                        </div>
+                                                        <a href="chat.html">Chat Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="share">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="m-2">
+                                                            <a class="m-0" href="#"><i class="bx bxl-twitter"></i>Share
+                                                                on
+                                                                Twitter</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="listing-item sm">
-                                                <div class="sub-main">
-                                                    <div class="img-sec p-rel">
-                                                        <img src="assets/img/hotels/hotel-1.png" alt="">
-                                                        <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+                                        </div>
+                                        <div class="listing-item sm">
+                                            <div class="sub-main">
+                                                <div class="img-sec p-rel">
+                                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                                    <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+                                                </div>
+                                                <div class="slider-content">
+                                                    <a href="detail.html">Stay and Learn Yoga </a>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>Ashtanga Yoga</p>
+                                                        <p>
+                                                            <span>4.3</span> 7 Ratings
+                                                        </p>
                                                     </div>
-                                                    <div class="slider-content">
-                                                        <a href="detail.html">Stay and Learn Yoga </a>
-                                                        <div class="d-flex justify-content-between">
-                                                            <p>Ashtanga Yoga</p>
-                                                            <p>
-                                                                <span>4.3</span> 7 Ratings
-                                                            </p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <p>$200 Per Night</p>
-                                                            <p> <i class="fa fa-map-marker"></i> Paris , France</p>
-                                                        </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>$200 Per Night</p>
+                                                        <p> <i class="fa fa-map-marker"></i> Paris , France</p>
                                                     </div>
-                                                    <div class="footer">
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="d-flex">
-                                                                <img src="assets/img/avatar.png">
-                                                                <div class="m-2">
-                                                                    <h6 class="m-0">Kartik Trivedi</h6>
-                                                                    <p class="m-0">Yoga Trainer</p>
-                                                                </div>
-                                                            </div>
-
-                                                            <a href="chat.html">Chat Now</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="share">
-                                                        <div class="d-flex justify-content-center">
+                                                </div>
+                                                <div class="footer">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex">
+                                                            <img src="assets/img/avatar.png">
                                                             <div class="m-2">
-                                                                <a class="m-0" href="#"><i class="bx bxl-twitter"></i>Share
-                                                                    on
-                                                                    Twitter</a>
+                                                                <h6 class="m-0">Kartik Trivedi</h6>
+                                                                <p class="m-0">Yoga Trainer</p>
                                                             </div>
+                                                        </div>
+
+                                                        <a href="chat.html">Chat Now</a>
+                                                    </div>
+                                                </div>
+                                                <div class="share">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="m-2">
+                                                            <a class="m-0" href="#"><i class="bx bxl-twitter"></i>Share
+                                                                on
+                                                                Twitter</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -503,14 +505,18 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+
+            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
             <!-- My co-host-->
             <div class="row mt-5">
                 <div class="col-md-12">
                     <div class="co-host-block">
                         <div class="co-host-header d-flex align-items-center justify-content-center">
-                            <h3>My Co-host</h3>
+                            <h2>My Co-host</h2>
                         </div>
                         <div class="album">
                             <div class="text-center">
@@ -538,7 +544,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6 col-12">
-                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                        <div style="border: 1px solid; border-radius: 10px; width: 70%;
                                             margin: auto; padding: 20px; background: #ededed;">
                                             <img src="assets/img/avatar.png" style="margin-right: 10px;">
                                             <h4 class="m-0">Jane Smith</h4>
@@ -559,32 +565,45 @@
                                             <p>10 years of experience</p>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
             <!--  My Album  -->
             <div class="col-md-12">
                 <div class="host-block">
                     <div class="host-header d-flex align-items-center justify-content-center">
-                        <h3>Media</h3>
+                        <h2>Media</h2>
                     </div>
                     <div class="host-body">
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
                                 <img src="assets/img/hotels/hotel-3.png" width="100%">
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <img src="assets/img/hotels/hotel-2.png" width="100%">
+                                <div style="text-align:center">
+                                    <h5>How we Work</h5>
+                                </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                <div style="text-align:center">
+                                    <h5>About Facility</h5>
+                                </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <img src="assets/img/hotels/hotel-4.png" width="100%">
+                                <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                <div style="text-align:center">
+                                    <h5>Rooms</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                <div style="text-align:center">
+                                    <h5>Water Park</h5>
+                                </div>
                             </div>
                         </div>
                     </div>

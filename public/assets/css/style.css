@@ -235,6 +235,21 @@ img{
     border-radius: 25px;
 }
 
+.btn-blue-outline{
+  color: black;
+  background: white;
+  border: 1px solid #353535;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+
+.btn-blue-outline:hover{
+  color: #0f0f0f;
+  background: #77777745;
+  border: 1px solid #353535;
+  border-radius: 25px;
+}
+
 .btn-gray-outline{
     color: #353535;
     background: #D9D9D9;
