@@ -259,7 +259,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -298,7 +298,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -340,7 +340,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -382,7 +382,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -454,7 +454,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -490,7 +490,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -525,7 +525,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -560,7 +560,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -595,7 +595,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -630,7 +630,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -665,7 +665,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -700,7 +700,7 @@
                                         </div>
                                     </div>
                                     <div class="footer chat-button">
-                                        <a href="chat.html">Chat Now</a>
+                                        <a href="{{route('chat')}}">Chat Now</a>
                                     </div>
                                     <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">

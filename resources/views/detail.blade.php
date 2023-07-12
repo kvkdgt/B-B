@@ -474,7 +474,7 @@
                                 </div>
                             </div>
 
-                            <div class="promo">
+                            <!-- <div class="promo">
                                 <div class="field">
                                     <input type="text" name="promo" placeholder="Enter Promo Code">
                                     <button class="btn btn-primary">Apply</button>
@@ -482,7 +482,7 @@
                                 <div class="message">
                                     <p>Unable to apply promo code</p>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="cost-details">
                                 <div class="item">
