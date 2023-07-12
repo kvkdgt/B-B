@@ -141,17 +141,26 @@
         }
 
         .included-block h3 {
-    margin: 0 0 20px;
-}
+            margin: 0 0 20px;
+        }
 
-.included-block p {
-    font-size: 18px;
-    margin: 0 0 20px;
-}
+        .included-block p {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
 
-.included-block p svg {
-    margin-right: 10px;
-}
+        .included-block p svg {
+            margin-right: 10px;
+        }
+
+        .co-host-block h3 {
+            margin: 0 0 30px;
+        }
+
+        .album {
+            margin: 0 0 30px;
+        }
+
 
     </style>
      <div class="row">
@@ -563,7 +572,6 @@
                     </div>
 
                 </div>
-
                 <!--  Location  -->
                 <div class="col-md-12">
 
@@ -650,7 +658,61 @@
                     </div>
                 </div>
 
-
+                <div class="co-host-block">
+                    <div class="co-host-header d-flex align-items-center justify-content-center">
+                        <h3>My Co-host</h3>
+                    </div>
+                    <div class="album">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                        margin: auto; padding: 20px; background: #ededed;">
+                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <h4 class="m-0">Kartik Trivedi</h4>
+                                    </div>
+                                    <div>
+                                        <h5>Yoga Trainer</h5>
+                                        <p>5 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                        margin: auto; padding: 20px; background: #ededed;">
+                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <h4 class="m-0">John Doe</h4>
+                                    </div>
+                                    <div>
+                                        <h5>Pilates Instructor</h5>
+                                        <p>8 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                        margin: auto; padding: 20px; background: #ededed;">
+                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <h4 class="m-0">Jane Smith</h4>
+                                    </div>
+                                    <div>
+                                        <h5>Zumba Instructor</h5>
+                                        <p>3 years of experience</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 col-12">
+                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                        margin: auto; padding: 20px; background: #ededed;">
+                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <h4 class="m-0">Alex Johnson</h4>
+                                    </div>
+                                    <div>
+                                        <h5>Meditation Teacher</h5>
+                                        <p>10 years of experience</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
