@@ -244,7 +244,6 @@ ul.menu li.dropdown.active i {
             <div class="row mt-5">
                 <!--  Right Side Cart  -->
                 <h3 class="mb-5">Host Dashboard</h3>
-
                 <div class="col-md-3 col-sm-4 col-12">
                     <div class="side-edit-bar">
                         <div class="user-block">
@@ -258,7 +257,7 @@ ul.menu li.dropdown.active i {
                                     <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu dropdown">
-                                    <li><span>Notification</span></span></li>
+                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span></li>
                                     <li><span>Messages</span></li>
                                     <li><span>Chat</span></li>
                                 </ul>

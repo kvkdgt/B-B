@@ -32,3 +32,4 @@ Route::get('/host-dashboard', [App\Http\Controllers\HostController::class, 'dash
 Route::get('/host-profile', [App\Http\Controllers\HostController::class, 'hostProfile'])->name('hostProfile');
 Route::get('/create-listing', [App\Http\Controllers\HostController::class, 'createListing'])->name('createListing');
 Route::get('/edit-host-profile', [App\Http\Controllers\HostController::class, 'editHostProfile'])->name('editHostProfile');
+Route::get('/host-notifications', [App\Http\Controllers\HostController::class, 'hostNotification'])->name('hostNotification');

@@ -21,4 +21,7 @@ class HostController extends Controller
     public function editHostProfile(){
         return view('host/edit-host-profile');
     }
+    public function hostNotification(){
+        return view('host/host-notifications');
+    }
 }
