@@ -217,20 +217,20 @@ ul.menu li.dropdown.active i {
                                 <div onclick="toggleSubMenu(this)">
                                     <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
-                                <ul class="sub-menu dropdown" style="display:block;">
-                                    <li class="active"><span><a
-                                                href="{{route('hostNotification')}}">Notification</a></span></span></li>
-                                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                                <ul class="sub-menu dropdown">
+                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                    </li>
+                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
                                     <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
-                                 <ul class="sub-menu">
-                                    <span><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
-                                    <span><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
-                                    <span><span><a href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
+                                <ul class="sub-menu" style="display:block;">
+                                    <li><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
+                                    <li class="active"><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
+                                    <li><span><a href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
                                 </ul>
 
                             </li>
@@ -270,7 +270,7 @@ ul.menu li.dropdown.active i {
                 <div class="col-md-9 col-sm-12">
                     <div class="row">
                         <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>Notifications</h4>
+                            <h4>Rejected Bookings</h4>
                             <div class="search">
                                 <button class="btn btn-danger">Delete</button>
                                 <input type="text" name="search" placeholder="Search here">
@@ -278,84 +278,81 @@ ul.menu li.dropdown.active i {
                             </div>
                         </div>
                         <div class="card-body">
-                            <div class="notifications">
 
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="common-table">
+                                <table>
+                                    <thead>
+                                        <th></th>
+                                        <th>Date</th>
+                                        <th>Listing Name</th>
+                                        <th>Country</th>
+                                        <th>Guest Name</th>
+                                        <th>Guest Email</th>
+                                        <th>Check In</th>
+                                        <th>Check Out</th>
+                                        <th>Total Nights</th>
+                                        <th>Booking ID</th>
+                                        <th>Status</th>
+                                        <th>Service fee</th>
+                                        <th>Other fee</th>
+                                        <th>Security Deposit</th>
+                                        <th>Revenue</th>
+                                        <th>Total Payout</th>
+                                        <th>Action</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>25/03/2023</td>
+                                            <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                            <td>Germany</td>
+                                            <td>Abbas</td>
+                                            <td>test@gmail.com</td>
+                                            <td>25/03/2023</td>
+                                            <td>25/03/2023</td>
+                                            <td>08</td>
+                                            <td>123456789</td>
+                                            <td><span class="">Accepted</span></td>
+                                            <td>€49</td>
+                                            <td>€49</td>
+                                            <td>€49</td>
+                                            <td>€49</td>
+                                            <td>€495</td>
+                                            <td>
+                                                <a href="chat.html"><i class="fa fa-envelope"></i></a>
+                                                <a href="#"><i class="fa fa-print"></i></a>
+                                                <a href="#"><i class="fa fa-dollar"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot>
+                                        <th>S/No</th>
+                                        <th>Date</th>
+                                        <th>Listing Name</th>
+                                        <th>Host Profile</th>
+                                        <th>Country</th>
+                                        <th>Guest Name</th>
+                                        <th>Guest Email</th>
+                                        <th>Check In</th>
+                                        <th>Check Out</th>
+                                        <th>Total Nights</th>
+                                        <th>Status</th>
+                                        <th>Service fee</th>
+                                        <th>Other fee</th>
+                                        <th>Security Deposit</th>
+                                        <th>Revenue</th>
+                                        <th>Total Payout</th>
+                                        <th>Action</th>
+                                    </tfoot>
+                                </table>
+
                             </div>
                         </div>
                     </div>

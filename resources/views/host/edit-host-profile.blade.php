@@ -241,7 +241,7 @@ function toggleSubMenu(icon) {
     <section class="edit-profile">
         <div class="container">
             <div class="row">
-            <div class="col-md-3 col-sm-4 col-12">
+                <div class="col-md-3 col-sm-4 col-12">
                     <div class="side-edit-bar">
                         <div class="user-block">
                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -254,19 +254,19 @@ function toggleSubMenu(icon) {
                                     <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu dropdown">
-                                    <li><span>Notification</span></span></li>
-                                    <li><span>Messages</span></li>
-                                    <li><span>Chat</span></li>
+                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                    </li>
+                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
                                     <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
-                                <ul class="sub-menu">
-                                    <li><span>Accepted </span></li>
-                                    <li><span>Rejected </span></li>
-                                    <li><span>Refunded </span></li>
+                                 <ul class="sub-menu">
+                                    <li><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
+                                    <li><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
+                                    <li><span><a href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
                                 </ul>
 
                             </li>

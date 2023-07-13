@@ -33,3 +33,6 @@ Route::get('/host-profile', [App\Http\Controllers\HostController::class, 'hostPr
 Route::get('/create-listing', [App\Http\Controllers\HostController::class, 'createListing'])->name('createListing');
 Route::get('/edit-host-profile', [App\Http\Controllers\HostController::class, 'editHostProfile'])->name('editHostProfile');
 Route::get('/host-notifications', [App\Http\Controllers\HostController::class, 'hostNotification'])->name('hostNotification');
+Route::get('/host-accepted-booking', [App\Http\Controllers\HostController::class, 'hostacceptedbooking'])->name('hostacceptedbooking');
+Route::get('/host-rejected-booking', [App\Http\Controllers\HostController::class, 'hostrejectedbooking'])->name('hostrejectedbooking');
+Route::get('/host-refunded-booking', [App\Http\Controllers\HostController::class, 'hostrefundedbooking'])->name('hostrefundedbooking');
