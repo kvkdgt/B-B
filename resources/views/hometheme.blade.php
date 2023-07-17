@@ -14,11 +14,8 @@
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Vendor CSS Files -->
     <link href="{{env('BASE_URL')}}/assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,125 +25,165 @@
     <link href="{{env('BASE_URL')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Template Main CSS File -->
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
     <style>
-    .search-block input {
-        font-size: 16px;
-        color: #353535;
-        border: 1px solid #D9D9D9;
-        border-radius: 25px;
-        padding: 10px;
-        height: auto;
-    }
-
-    .search-block .form-control:focus {
-        box-shadow: none;
-        border-color: #bee500;
-    }
-
-    .search-block {
-        position: relative;
-        flex: 0 0 70%;
-    }
-
-    #footer {
-        padding: 0;
-    }
-
-    #footer .footer-top {
-        background: #000;
-    }
-
-    #footer .footer-top .footer-links ul a,
-    #footer .footer-top h4,
-    #footer .footer-top .footer-links ul i {
-        color: #fff;
-    }
-
-    .footer-info a {
-        display: block;
-        margin: -20px 0;
-    }
-
-    .footer-newsletter,
-    .footer-newsletter h4 {
-        text-align: center;
-    }
-
-    .footer-newsletter button {
-        width: 100%;
-        max-width: 70%;
-        margin: auto;
-    }
-
-    #footer .copyright {
-        padding: 15px 0;
-    }
-
-    .search-block span {
-        position: absolute;
-        top: 7px;
-        right: 9px;
-        background: #bee500;
-        width: 68px;
-        height: 30px;
-        border-radius: 50px;
-        text-align: center;
-        line-height: 26px;
-    }
-
-    .search-block span i {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 30px;
-    }
-
-    .search-block {
-        position: relative;
-        flex: 0 0 70%;
-    }
-
-    .navbar button.btn.btn-outline {
-        border: 1px solid black;
-        border-radius: 20px;
-        margin-left: 20px;
-        padding: 5px 25px;
-        color: black;
-        transition: all 0.5s ease;
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .navbar button.btn.btn-outline:hover {
-        background: #bfe506;
-        color: #000;
-        transition: all 0.5s ease;
-    }
-
-    .container {
-        max-width: 1600px;
-        width: 100%
-    }
-
-    @media (min-width: 1799px) {
-        .container {
-            width: 1440px;
+        .search-block input {
+            font-size: 16px;
+            color: #353535;
+            border: 1px solid #D9D9D9;
+            border-radius: 25px;
+            padding: 10px;
+            height: auto;
         }
-    }
 
-
-    @media (min-width: 1470px) {
-        .container {
-            width: 1140px;
+        .search-block .form-control:focus {
+            box-shadow: none;
+            border-color: #bee500;
         }
-    }
+
+        .search-block {
+            position: relative;
+            flex: 0 0 70%;
+        }
+
+        #footer {
+            padding: 0;
+        }
+
+        #footer .footer-top {
+            background: #000;
+        }
+
+        #footer .footer-top .footer-links ul a,
+        #footer .footer-top h4,
+        #footer .footer-top .footer-links ul i {
+            color: #fff;
+        }
+
+        .footer-info a {
+            display: block;
+            margin: -20px 0;
+        }
+
+        .footer-newsletter,
+        .footer-newsletter h4 {
+            text-align: center;
+        }
+
+        .footer-newsletter button {
+            width: 100%;
+            max-width: 70%;
+            margin: auto;
+        }
+
+        #footer .copyright {
+            padding: 15px 0;
+        }
+
+        .search-block span {
+            position: absolute;
+            top: 7px;
+            right: 9px;
+            background: #bee500;
+            width: 68px;
+            height: 30px;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 26px;
+        }
+
+        .search-block span i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 30px;
+        }
+
+        .search-block {
+            position: relative;
+            flex: 0 0 70%;
+        }
+
+        .navbar button.btn.btn-outline {
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-left: 20px;
+            padding: 5px 25px;
+            color: black;
+            transition: all 0.5s ease;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar button.btn.btn-outline:hover {
+            background: #bfe506;
+            color: #000;
+            transition: all 0.5s ease;
+        }
+
+        .container {
+            max-width: 1600px;
+            width: 100%
+        }
+
+        @media (min-width: 1799px) {
+            .container {
+                width: 1440px;
+            }
+        }
+
+
+        @media (min-width: 1470px) {
+            .container {
+                width: 1140px;
+            }
+        }
+
+        .rate {
+            float: left;
+            height: 46px;
+            padding: 0 10px;
+        }
+
+        .rate:not(:checked)>input {
+            position: absolute;
+            top: -9999px;
+        }
+
+        .rate:not(:checked)>label {
+            float: right;
+            width: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ccc;
+        }
+
+        .rate:not(:checked)>label:before {
+            content: '★ ';
+        }
+
+        .rate>input:checked~label {
+            color: #ffc700;
+        }
+
+        .rate:not(:checked)>label:hover,
+        .rate:not(:checked)>label:hover~label {
+            color: #deb217;
+        }
+
+        .rate>input:checked+label:hover,
+        .rate>input:checked+label:hover~label,
+        .rate>input:checked~label:hover,
+        .rate>input:checked~label:hover~label,
+        .rate>label:hover~input:checked~label {
+            color: #c59b08;
+        }
     </style>
 
 </head>
@@ -157,8 +194,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt=""
-                    class="img-fluid"><span>Status B&B</span></a>
+            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt="" class="img-fluid"><span>Status B&B</span></a>
 
             <div class="search-area">
 
@@ -188,10 +224,9 @@
                         </ul>
                     </li>
 
-                    <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
-                        href="#loginModal">Login</button>
-                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal"
-                        href="#signUpModal">Signup</button>
+                    <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal" href="#loginModal">Login</button>
+                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Signup</button>
+                    <button class="btn btn-outline" data-target="#ratingModal" data-toggle="modal" href="#ratingModal">Add Rating</button>
 
                     <!-- <li class="dropdown">
                         <a href="#">
@@ -256,15 +291,13 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-4">
                         <div class="footer-info">
-                            <h3><a href="index.html" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png"
-                                        alt="" style="width: 100% ; height: auto"></a></h3>
+                            <h3><a href="index.html" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" style="width: 100% ; height: auto"></a></h3>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="footer-newsletter">
                             <h4>Contact Us</h4>
-                            <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
-                                href="#contactFormModal">Click here to contact us</button>
+                            <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal" href="#contactFormModal">Click here to contact us</button>
 
                         </div>
                     </div>
@@ -278,8 +311,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
 
-                        <i style="width:120px;background: #1414c1;outline: black;color: white;"
-                            class="fa-brands fa-stripe  btn btn-gray-outline"></i>
+                        <i style="width:120px;background: #1414c1;outline: black;color: white;" class="fa-brands fa-stripe  btn btn-gray-outline"></i>
                     </div>
 
                     <div class="col-lg-2 col-md-2 footer-links">
@@ -291,8 +323,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Safety Tips</a></li>
                         </ul>
 
-                        <i class="fa-brands fa-cc-paypal btn btn-gray-outline"
-                            style="width:120px;background: #1414c1;outline: black;color: white;"></i>
+                        <i class="fa-brands fa-cc-paypal btn btn-gray-outline" style="width:120px;background: #1414c1;outline: black;color: white;"></i>
 
                     </div>
                     <div class="col-lg-2 col-md-2 footer-links">
@@ -345,7 +376,8 @@
                             <div class="d-grid">
                                 <label>Password</label>
                                 <input type="password" placeholder="*************">
-                                <span>Forgot Password?</span>
+                                <a class="btn btn-outline" data-target="#forgotPasswordModal" data-toggle="modal" href="#forgotPasswordModal" data-dismiss="modal">Forgot Password?</a>
+                                <!-- <span>Forgot Password?</span> -->
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" value="" id="remeberMeCheckBox">
@@ -381,10 +413,145 @@
         </div>
     </div>
 
+    <div class="modal fade bd-example-modal-xl" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body form-modal">
+                    <div class="header">
+                        <h3 class="text-center">Add Rating</h3>
+                    </div>
+                    <div class="content m-5">
+                        <form action="#" method="get">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="d-grid">
+
+                                        <label>Listing Title</label>
+                                        <input type="text" placeholder="Listing Title">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-grid">
+
+                                        <label>offer</label>
+                                        <input type="text" placeholder="offer">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-table-design">
+                                <table style="background-color:aliceblue">
+                                    <tr>
+                                        <td>No of Guests</td>
+                                        <td>Total Nights Cost</td>
+                                        <td>Cleaning Fee</td>
+                                        <td>Other Fee</td>
+                                        <td>Service Fee</td>
+                                        <td>Total Amount</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>9 Nights * $300 = $2700</td>
+                                        <td>$89</td>
+                                        <td>$0</td>
+                                        <td>$419</td>
+                                        <td>$3171</td>
+
+                                    </tr>
+                                </table>
+                                <hr>
+                                <h4>Rate your experience</h4>
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="text">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="text">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="text">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="text">1 star</label>
+                                </div>
+                             
+                            </div>
+<hr>
+<h3>Write a short Review about your experience</h3>
+<div class="d-grid">
+<textarea placeholder="Enter Your Review"></textarea></div>
+
+                            <a href="host-dashboard.html" class="btn btn-primary w-100 p-3">Add Rating</a>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forgot password -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body form-modal">
+                    <div class="header">
+                        <h3 class="text-center">Forgot Password</h3>
+                    </div>
+                    <div class="content m-5">
+                        <form action="#" method="get">
+                            <div class="d-grid">
+                                <label>Email</label>
+                                <input type="email" placeholder="johndoe@gmail.com">
+                            </div>
+
+
+                            <a href="host-dashboard.html" class="btn btn-primary w-100 p-3">Send Link</a>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- email confirmation -->
+    <div class="modal fade" id="verificationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body form-modal">
+                    <div class="header">
+                        <h3 class="text-center">Status B&B Verification</h3>
+                        <p>We have sent you a verificaiton link on your email. please check your email and follow the link on your email.</p>
+                    </div>
+                    <!-- <div class="content m-5">
+                        <form action="#" method="get">
+                            <div class="d-grid">
+                                <label>Email</label>
+                                <input type="email" placeholder="johndoe@gmail.com">
+                            </div>
+                            
+                           
+                            <a href="host-dashboard.html" class="btn btn-primary w-100 p-3">Send Link</a>
+                        </form>
+                    </div> -->
+                    <center>
+                        <a href="#" class="btn btn-primary">Resend Verification Link</a><br><br>
+                        <a href="#" class="btn btn-danger">Logout</a>
+                    </center>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Sign Up Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -416,7 +583,7 @@
                                     I agreed to Terms &amp; Conditions.
                                 </label>
                             </div>
-                            <button class="btn btn-primary w-100 p-3">Sign Up</button>
+                            <button data-target="#verificationModal" data-toggle="modal" data-dismiss="modal" class="btn btn-primary w-100 p-3">Sign Up</button>
 
                         </form>
                     </div>
@@ -445,8 +612,7 @@
 
 
     <!-- Contact Form Modal -->
-    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -750,8 +916,7 @@
 
 
     <!-- Filters Modal -->
-    <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="filtersModalTitle"
-        aria-hidden="true">
+    <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="filtersModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body filters m-5">
@@ -819,8 +984,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <h5>Property Type</h5>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
-                                        checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
                                     <label for="farm_houses">
                                         Farm House
                                     </label>
@@ -838,8 +1002,7 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="private_houses"
-                                        value="Private Houses">
+                                    <input type="radio" name="property_types" id="private_houses" value="Private Houses">
                                     <label for="private_houses">
                                         Private Houses
                                     </label>
@@ -989,8 +1152,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <h5>Roommate Facilities</h5>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="WashingMachines"
-                                        value="Washing Machines" checked>
+                                    <input type="radio" name="roommatefacilities" id="WashingMachines" value="Washing Machines" checked>
                                     <label for="WashingMachines">
                                         Washing Machines
                                     </label>
@@ -1008,15 +1170,13 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="EquippedKitchen"
-                                        value="Equipped Kitchen">
+                                    <input type="radio" name="roommatefacilities" id="EquippedKitchen" value="Equipped Kitchen">
                                     <label for="EquippedKitchen">
                                         Equipped Kitchen
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="ParkingSpace"
-                                        value="Parking Space">
+                                    <input type="radio" name="roommatefacilities" id="ParkingSpace" value="Parking Space">
                                     <label for="ParkingSpace">
                                         Parking Space
                                     </label>
@@ -1034,8 +1194,7 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="Separatewashroom"
-                                        value="Separate washroom">
+                                    <input type="radio" name="roommatefacilities" id="Separatewashroom" value="Separate washroom">
                                     <label for="Separatewashroom">
                                         Separate washroom
                                     </label>
@@ -1064,8 +1223,7 @@
 
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
@@ -1084,56 +1242,55 @@
     <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 
     <script>
-    //    Scroll of Icons Script STARTS HERE    
-    const rightButtons = Array.from(document.getElementsByClassName('slideRight'));
-    const leftButtons = Array.from(document.getElementsByClassName('slideLeft'));
-    const containers = Array.from(document.getElementsByClassName('categories'));
+        //    Scroll of Icons Script STARTS HERE    
+        const rightButtons = Array.from(document.getElementsByClassName('slideRight'));
+        const leftButtons = Array.from(document.getElementsByClassName('slideLeft'));
+        const containers = Array.from(document.getElementsByClassName('categories'));
 
 
 
-    let index = 0;
-    for (const rightButton of rightButtons) {
-        const container = containers[index];
-        rightButton.addEventListener("click", function() {
-            container.scrollLeft += 150;
+        let index = 0;
+        for (const rightButton of rightButtons) {
+            const container = containers[index];
+            rightButton.addEventListener("click", function() {
+                container.scrollLeft += 150;
+            });
+            index++;
+        }
+
+        index = 0;
+        for (const leftButton of leftButtons) {
+            const container = containers[index];
+            leftButton.addEventListener("click", function() {
+                container.scrollLeft -= 150;
+            });
+            index++;
+        }
+
+        //    Scroll of Icons Script STARTS ENDS
+
+
+        document.getElementById('search-options')
+            .addEventListener('click', function(event) {
+                $("#search-area-expanded").css("display", "block");
+                $("#search-options").css("display", "none");
+                $("#search-close").css("display", "flex");
+            });
+        document.getElementById('search-close')
+            .addEventListener('click', function(event) {
+                $("#search-close").css("display", "none");
+                $("#search-options").css("display", "block");
+                $("#search-area-expanded").css("display", "none");
+            });
+
+        $('#checkin').datepicker({
+            minDate: new Date()
         });
-        index++;
-    }
-
-    index = 0;
-    for (const leftButton of leftButtons) {
-        const container = containers[index];
-        leftButton.addEventListener("click", function() {
-            container.scrollLeft -= 150;
+        $('#checkout').datepicker({
+            minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
         });
-        index++;
-    }
-
-    //    Scroll of Icons Script STARTS ENDS
-
-
-    document.getElementById('search-options')
-        .addEventListener('click', function(event) {
-            $("#search-area-expanded").css("display", "block");
-            $("#search-options").css("display", "none");
-            $("#search-close").css("display", "flex");
-        });
-    document.getElementById('search-close')
-        .addEventListener('click', function(event) {
-            $("#search-close").css("display", "none");
-            $("#search-options").css("display", "block");
-            $("#search-area-expanded").css("display", "none");
-        });
-
-    $('#checkin').datepicker({
-        minDate: new Date()
-    });
-    $('#checkout').datepicker({
-        minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
-    });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
 </body>
 
