@@ -184,6 +184,10 @@
         .rate>label:hover~input:checked~label {
             color: #c59b08;
         }
+
+        .footer-links i {
+            font-size: 50px;
+        }
     </style>
 
 </head>
@@ -311,7 +315,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
 
-                        <i style="width:120px;background: #1414c1;outline: black;color: white;" class="fa-brands fa-stripe  btn btn-gray-outline"></i>
+                        <i class="fa-brands fa-stripe"></i>
                     </div>
 
                     <div class="col-lg-2 col-md-2 footer-links">
@@ -323,7 +327,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Safety Tips</a></li>
                         </ul>
 
-                        <i class="fa-brands fa-cc-paypal btn btn-gray-outline" style="width:120px;background: #1414c1;outline: black;color: white;"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
 
                     </div>
                     <div class="col-lg-2 col-md-2 footer-links">
