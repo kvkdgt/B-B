@@ -60,6 +60,38 @@
     transition: all 0.5s ease;
 }
 
+.categories {
+    width: 95%;
+    margin: auto;
+}
+.slideLeft {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.slideRight {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 10px; 
+    cursor: pointer;
+}
+
+.hero .icon-box {
+    padding: 0;
+}
+
 @media screen and (max-width: 768px) {
     .search-area {
         width: 70%;
@@ -69,13 +101,12 @@
 <main id="main">
 
     <!-- ======= Icon Section ======= -->
-    <section class="hero d-flex align-items-center justify-content-center">
+    <section class="hero">
         <div class="container" data-aos="fade-up">
-
+            <div class="slideLeft">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
             <div class="categories d-flex overflow-auto" data-aos="zoom-in" data-aos-delay="250">
-                <div class="slideLeft d-flex align-items-center justify-content-center">
-                    <i class='bx bx-left-arrow-alt'></i>
-                </div>
                 <div class="icon-box">
                     <button class="btn btn-blue-outline"><a href="">C++</a></button>
                 </div>
@@ -160,10 +191,11 @@
                 <div class="icon-box">
                     <button class="btn btn-blue-outline"><a href="">UI/UX Design</a></button>
                 </div>
-                <div class="slideRight d-flex align-items-center justify-content-center">
+                
+            </div>
+                <div class="slideRight">
                     <i class='bx bx-right-arrow-alt'></i>
                 </div>
-            </div>
 
         </div>
     </section><!-- End Hero -->
