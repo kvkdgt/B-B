@@ -36,3 +36,6 @@ Route::get('/host-notifications', [App\Http\Controllers\HostController::class, '
 Route::get('/host-accepted-booking', [App\Http\Controllers\HostController::class, 'hostacceptedbooking'])->name('hostacceptedbooking');
 Route::get('/host-rejected-booking', [App\Http\Controllers\HostController::class, 'hostrejectedbooking'])->name('hostrejectedbooking');
 Route::get('/host-refunded-booking', [App\Http\Controllers\HostController::class, 'hostrefundedbooking'])->name('hostrefundedbooking');
+Route::get('/host-all-listing', [App\Http\Controllers\HostController::class, 'alllisting'])->name('alllisting');
+Route::get('/host-saved-listing', [App\Http\Controllers\HostController::class, 'savedlisting'])->name('savedlisting');
+Route::get('/host-liked-listing', [App\Http\Controllers\HostController::class, 'likedlisting'])->name('likedlisting');

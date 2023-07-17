@@ -33,4 +33,11 @@ class HostController extends Controller
     public function hostrefundedbooking(){
         return view('host/host-refunded-booking');
     }
+    public function alllisting(){
+        return view('host/viewall');
+    } public function likedlisting(){
+        return view('host/viewliked');
+    } public function savedlisting(){
+        return view('host/viewsaved');
+    }
 }

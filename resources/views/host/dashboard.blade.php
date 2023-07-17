@@ -275,10 +275,10 @@ ul.sub-menu li:last-child {
                                     <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
-                                    <li><span>View All</li>
-                                    <li><span>View Liked Listing</span></li>
-                                    <li><span>View Saved Listing</span></li>
-                                    <li><span>Create New Listing</span></li>
+                                    <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                    <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                    <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
+                                    <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
