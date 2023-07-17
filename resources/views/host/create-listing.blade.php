@@ -86,6 +86,14 @@ ul.menu li span:hover {
     transition: all 0.5s ease;
 }
 
+ul.menu li span:hover a {
+    color: green;
+}
+
+ul.menu li.dropdown span:hover i {
+    color: green;
+}
+
 ul.menu li.dropdown {
     position: relative;
 }
@@ -94,14 +102,19 @@ ul.menu li.dropdown i {
     position: absolute;
     right: 20px;
     top: 7px;
+    color: #fff;
 }
 
 ul.sub-menu {
     color: white;
     list-style: none;
     margin: 0 5px;
-    padding: 10px;
+    padding: 10px 10px 0;
     display: none;
+}
+
+ul.sub-menu li:last-child {
+    padding-bottom: 0;
 }
 
 ul.menu li.dropdown.active i {
@@ -190,6 +203,75 @@ ul.menu li.dropdown.active i {
     border-radius: 5px;
     margin: 0 0 30px;
 }
+
+ul.sub-menu li a {
+    color: #fff;
+}
+
+.listing-name input[type="text"] {
+    margin: 0;
+}
+
+.row.listing-name {
+    margin-top: 30px;
+}
+
+.listing-header {
+    margin-bottom: 20px !important;
+}
+
+.lag-radio-block {
+    flex-wrap: wrap;
+}
+
+.lag-radio-block span {
+    flex: 0 0 20%;
+    margin-top: 10px;
+}
+
+.guest-location h3 {
+    padding: 0 0 20px;
+}
+
+.guest-location input {
+    width: 100%;
+}
+
+.location-block h3 {
+    padding: 0 0 10px;
+}
+
+.property-block select {
+    width: 100%;
+}
+
+.guest-block p {
+    margin: 10px 0 0;
+}
+
+.more-block {
+    margin: 20px 0;
+}
+
+.details-block h3 {
+    margin: 0 0 20px;
+}
+
+.guest-freebies span {
+    flex: 0 0 33.33%;
+    flex: 0 0 50%;
+    margin-top: 10px;
+}
+
+.ideal-block .col-12:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.location-block select {
+    width: 100%;
+}
+
+
 </style>
 <main id="main">
 
@@ -205,7 +287,7 @@ ul.menu li.dropdown.active i {
             <div class="row mt-5">
                 <!--  Right Side Cart  -->
                 <h3 class="mb-5">Host Dashboard</h3>
-                <div class="col-md-3 col-sm-4 col-12">
+                <div class="col-lg-3 col-md-4">
                     <div class="side-edit-bar">
                         <div class="user-block">
                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -268,75 +350,69 @@ ul.menu li.dropdown.active i {
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-12">
+                <div class="col-lg-9 col-md-8">
                     <div class="row">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>Create a New Listing</h4>
+                        <div class="listing-header d-flex align-items-center justify-content-between">
+                            <h4 class="m-0">Create a New Listing</h4>
                         </div>
                         <div class="card-body">
                             <!--  Title of Listing  -->
-                            <div class="row">
-                                <div class="col">
-                                    <h3>Title of Listing</h3>
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 col-md-12">
+                                    <h3 class="m-0">Title of Listing</h3>
                                 </div>
-                                <div class="col">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <input type="radio">
                                     <label>Stay & Learn</label>
                                 </div>
-                                <div class="col">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <input type="radio">
                                     <label>Stay For Event</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h3>Listing Name</h3>
+                            <div class="row align-items-center listing-name">
+                                <div class="col-lg-4 col-md-12">
+                                    <h3 class="m-0">Listing Name</h3>
                                 </div>
-                                <div class="col">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <input type="text">
                                 </div>
-                                <div class="col">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <input type="text">
                                 </div>
                             </div>
-                            <hr>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <!--  Maximum Guest Allowed  -->
                             <div class="item">
                                 <h3>Language of Instruction</h3>
-                                <div class="row">
-                                    <div class="col loi">
-                                        <span>
-                                            <input type="radio">
-                                            <label>English</label></span><span>
-                                            <input type="radio">
-                                            <label>French</label></span><span>
-                                            <input type="radio">
-                                            <label>German</label></span><span>
-                                            <input type="radio">
-                                            <label>Spanish</label></span><span>
-                                            <input type="radio">
-                                            <label>Turkish</label></span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col loi">
-                                        <span>
-                                            <input type="radio">
-                                            <label>Russian</label></span><span>
-                                            <input type="radio">
-                                            <label>Polish</label></span><span>
-                                            <input type="radio">
-                                            <label>Arabic</label></span><span>
-                                            <input type="radio">
-                                            <label>Dutch</label></span><span>
-                                            <input type="radio">
-                                            <label>Chinese</label></span>
-                                    </div>
+                                <div class="lag-radio-block d-flex">
+                                    <span>
+                                        <input type="radio">
+                                        <label>English</label></span><span>
+                                        <input type="radio">
+                                        <label>French</label></span><span>
+                                        <input type="radio">
+                                        <label>German</label></span><span>
+                                        <input type="radio">
+                                        <label>Spanish</label></span><span>
+                                        <input type="radio">
+                                        <label>Turkish</label></span>
+                                    <span>
+                                        <input type="radio">
+                                        <label>Russian</label></span><span>
+                                        <input type="radio">
+                                        <label>Polish</label></span><span>
+                                        <input type="radio">
+                                        <label>Arabic</label></span><span>
+                                        <input type="radio">
+                                        <label>Dutch</label></span><span>
+                                        <input type="radio">
+                                        <label>Chinese</label></span>
                                 </div>
                             </div>
-                            <br><br>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <!--  Listing Property Type  -->
-                            <div class="item">
+                            <div class="guest-location">
                                 <h3>What guest will learn (only for stay & learn)</h3>
                                 <div class="row">
                                     <div class="col">
@@ -356,51 +432,40 @@ ul.menu li.dropdown.active i {
                                 </div>
                             </div>
 
-                            <div class="item">
+                            <div class="item location-block">
                                 <h3>Learn Location (Where is the Learning Place? Select one)</h3>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-lg-4 col-md-6">
                                         <input type="radio">
                                         <label>B&B only</label>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-lg-4 col-md-6">
                                         <input type="radio">
                                         <label>B&B and office</label>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-lg-4 col-md-6">
                                         <input type="radio">
                                         <label>B&B and farm</label>
                                     </div>
-                                    <div class="col">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="row">
-                                        <div class="col">
+                                        <div class="col-lg-4 col-md-6">
                                             <input type="radio">
                                             <label>B&B and outdoor</label>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-lg-4 col-md-6">
                                             <input type="radio">
                                             <label>B&B and in the workshop</label>
                                         </div>
-                                        <div class="col">
-                                        </div>
-                                        <div class="col">
-                                        </div>
                                     </div>
                                 </div>
-                                <hr>
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-lg-3 col-md-12 textarea-block">
                                         <h3>About the B&B Listing </h3>
-                                        <textarea
+                                        <textarea rows="3"
                                             placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
-
-
                                     </div>
 
-                                    <div class="col">
+                                    <div class="col-lg-9 col-md-12">
                                         <h3>Listing photo & video</h3>
                                         <div class="details-block">
                                             <div class="d-flex align-items-center justify-content-between">
@@ -417,41 +482,39 @@ ul.menu li.dropdown.active i {
                                                         <img src="assets/img/hotels/hotel-3.png">
                                                     </div>
                                                     <div class="text-center">
-                                                        <!-- <img src="assets/img/hotels/hotel-3.png">
-                                 -->
+                                                        <!-- <img src="assets/img/hotels/hotel-3.png">-->
                                                     </div>
 
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-lg-6 col-md-12">
                                         <h3>Location </h3>
-                                        <div class="row">
-                                            <div class="col">
+                                        <div class="row location-block">
+                                            <div class="col-6">
                                                 <select>
-                                                    <option> Select Country </option>
+                                                    <option disabled selected hidden> Select Country </option>
                                                     <option> India </option>
                                                     <option> Australia </option>
                                                     <option> USA </option>
 
                                                 </select>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-6">
                                                 <select>
-                                                    <option> Select State </option>
+                                                    <option disabled selected hidden> Select State </option>
                                                     <option> Gujarat </option>
                                                     <option> Maharastra </option>
                                                     <option> Rajasthan </option>
 
                                                 </select>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-6">
                                                 <select>
-                                                    <option> Select City </option>
+                                                    <option disabled selected hidden> Select City </option>
                                                     <option> Mehsana </option>
                                                     <option> Ahmedabad </option>
                                                     <option> Surat </option>
@@ -463,7 +526,7 @@ ul.menu li.dropdown.active i {
 
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-lg-6 col-md-12 property-block">
                                         <h3>Property Type</h3>
                                         <select>
                                             <option>Apartment</option>
@@ -475,7 +538,7 @@ ul.menu li.dropdown.active i {
 
                                 </div>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-lg-9 col-md-12">
                                         <h3>Maximum Number of Guests(Adults)</h3>
                                         <select>
                                             <option>1</option>
@@ -506,51 +569,38 @@ ul.menu li.dropdown.active i {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-lg-3 col-md-12">
                                         <h3>Ideal Guest</h3>
-                                        <div class="row">
-                                            <div class="col">
+                                        <div class="row ideal-block">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Students
                                             </div>
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Tourists
                                             </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Founders
                                             </div>
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Employees
                                             </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Family
                                             </div>
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Gen Z
                                             </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Digital Workers
                                             </div>
-
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="col-lg-12 col-md-6">
                                                 <input type="radio">
                                                 Backpackers
                                             </div>
@@ -559,11 +609,10 @@ ul.menu li.dropdown.active i {
 
                                     </div>
                                 </div>
-                                <hr>
-                                <div class="item">
+                               <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                <div class="guest-freebies">
                                     <h3>What is included? (Select freebies you give guests)</h3>
                                     <div class="row">
-                                        <div class="col loi">
                                             <span>
                                                 <input type="radio">
                                                 <label>Breakfast</label></span><span>
@@ -574,13 +623,8 @@ ul.menu li.dropdown.active i {
                                                 <input type="radio">
                                                 <label>City Tour</label></span><span>
                                                 <input type="radio">
-                                                <label>Airport pick-up/drop off</label></span>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col loi">
+                                                <label>Airport pick-up/drop off</label>
+                                            </span>
                                             <span>
                                                 <input type="radio">
                                                 <label>Document Draft</label></span><span>
@@ -592,20 +636,15 @@ ul.menu li.dropdown.active i {
                                                 <label>Cycling</label></span><span>
                                                 <input type="radio">
                                                 <label>co-cook</label></span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col loi">
                                             <span>
                                                 <input type="radio">
                                                 <label>City Walk</label></span><span>
                                                 <input type="radio">
                                                 <label>Free toiletries</label></span><span>
 
-                                        </div>
                                     </div>
                                 </div>
-                                <hr>
+                               <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                                 <div class="details-block">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
@@ -629,24 +668,22 @@ ul.menu li.dropdown.active i {
                                             <div class="text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                                 <p>Title 1</p>
-
                                             </div>
-                                            <div class="text-center">
-                                                <button class="btn btn-primary">Add More</button>
-                                            </div>
+                                        </div>
+                                        <div class="text-center more-block">
+                                            <button class="btn btn-primary">Add More</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <hr>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col">
 
                                         <div class="col">
                                         </div>
                                     </div>
 
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
