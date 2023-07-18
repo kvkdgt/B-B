@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/css/style.css">
     <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/css/components.css">
     <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/bundles/datatables/datatables.min.css">
-  <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
     <!-- Custom style CSS -->
     <link rel="stylesheet" href="{{env('BASE_URL')}}/theme/assets/css/custom.css">
     <link rel='shortcut icon' type='{{env("BASE_URL")}}/theme/image/x-icon' href='assets/img/favicon.ico' />
@@ -38,7 +38,7 @@
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png" class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
                         <div class="dropdown-menu dropdown-menu-right pullDown">
 
-                          
+
                         </div>
                     </li>
                 </ul>
@@ -50,19 +50,60 @@
                         </a>
                     </div>
                     <ul class="sidebar-menu">
-                       
-                        <li class="dropdown ">
-                            <a class="nav-link "><i data-feather="monitor"></i><span>Dashboard</span></a>
-                        </li>
-                        
                         <li class="dropdown">
-                            <a class="nav-link "><i data-feather="users"></i><span>Enquiry</span></a>
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Dashboard</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="{{ route('hostNotification') }}">Notificaiton</a></li>
+                                <li><a class="nav-link" href="{{ route('chat') }}">Chat</a></li>
+                            </ul </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Bookings</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="{{ route('hostacceptedbooking') }}">Accepted</a></li>
+                                <li><a class="nav-link" href="{{ route('hostrejectedbooking') }}">Rejected</a></li>
+                                <li><a class="nav-link" href="{{ route('hostrefundedbooking') }}">Refunded</a></li>
+
+                            </ul>
                         </li>
-                        
-                       
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>My Listing</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="{{ route('alllisting') }}">View All</a></li>
+                                <li><a class="nav-link" href="{{ route('likedlisting') }}">View Liked Listing</a></li>
+                                <li><a class="nav-link" href="{{ route('savedlisting') }}">View Saved Listing</a></li>
+                                <li><a class="nav-link" href="{{ route('createListing') }}">Create New Listing</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Payments & Payouts</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="{{ route('alllisting') }}">Revenue</a></li>
+                                <li><a class="nav-link" href="{{ route('likedlisting') }}">Net Income</a></li>
+                                <li><a class="nav-link" href="{{ route('savedlisting') }}">Update pay Details</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Settings</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="{{ route('alllisting') }}">Profile Setting</a></li>
+                                <li><a class="nav-link" href="{{ route('likedlisting') }}">Change Password</a></li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <!-- 
                         <li class="dropdown active">
-                            <a  class="nav-link "><i data-feather="package"></i><span>Products</span></a>
-                        </li>
+                            <a class="nav-link "><i data-feather="package"></i><span>Products</span></a>
+                        </li> -->
 
 
 
