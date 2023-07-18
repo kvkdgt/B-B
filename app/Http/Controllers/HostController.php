@@ -39,5 +39,7 @@ class HostController extends Controller
         return view('host/viewliked');
     } public function savedlisting(){
         return view('host/viewsaved');
+    } public function sample(){
+        return view('host-dashboard/sample');
     }
 }

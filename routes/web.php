@@ -39,3 +39,4 @@ Route::get('/host-refunded-booking', [App\Http\Controllers\HostController::class
 Route::get('/host-all-listing', [App\Http\Controllers\HostController::class, 'alllisting'])->name('alllisting');
 Route::get('/host-saved-listing', [App\Http\Controllers\HostController::class, 'savedlisting'])->name('savedlisting');
 Route::get('/host-liked-listing', [App\Http\Controllers\HostController::class, 'likedlisting'])->name('likedlisting');
+Route::get('/sample', [App\Http\Controllers\HostController::class, 'sample'])->name('sample');
