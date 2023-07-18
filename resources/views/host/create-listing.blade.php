@@ -283,6 +283,19 @@ ul.sub-menu li a {
     margin-bottom: 16px;
 }
 
+.more-block {
+    margin: 0;
+} 
+
+.previous-wrapper {
+    margin: 0 -12px;
+}
+
+.previous-block {
+    flex: 0 0 22.5%;
+    padding: 0 12px;
+}
+
 @media (max-width: 667px) {
     .search-area {
         width: 70% !important;
@@ -506,19 +519,18 @@ ul.sub-menu li a {
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-12">
+                                    <div class="col-lg-8 col-md-12">
                                         <h3>Location </h3>
                                         <div class="row location-block">
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <select>
                                                     <option disabled selected hidden> Select Country </option>
                                                     <option> India </option>
                                                     <option> Australia </option>
                                                     <option> USA </option>
-
                                                 </select>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <select>
                                                     <option disabled selected hidden> Select State </option>
                                                     <option> Gujarat </option>
@@ -527,27 +539,27 @@ ul.sub-menu li a {
 
                                                 </select>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <select>
                                                     <option disabled selected hidden> Select City </option>
                                                     <option> Mehsana </option>
                                                     <option> Ahmedabad </option>
                                                     <option> Surat </option>
                                                 </select>
-                                                <button>map</button>
+                                            </div>
+                                            <div class="col-2">
+                                                <button class="btn btn-primary">map</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-12 property-block">
+                                    <div class="col-lg-4 col-md-12 property-block">
                                         <h3>Property Type</h3>
                                         <select>
                                             <option>Apartment</option>
                                             <option>Row House</option>
                                             <option>Bunglow</option>
-
                                         </select>
                                     </div>
-
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-9 col-md-12">
@@ -662,39 +674,251 @@ ul.sub-menu li a {
                                         <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
                                     </div>
                                     <div class="details-content">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                                        <div class="previous-wrapper d-flex">
+                                            <div class="previous-block text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                                 <p>Title 1</p>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                                            <div class="previous-block text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                                 <p>Title 1</p>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                                            <div class="previous-block text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                                 <p>Title 1</p>
 
                                             </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                                            <div class="previous-block text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                                 <p>Title 1</p>
                                             </div>
-                                        </div>
-                                        <div class="text-center more-block">
-                                            <button class="btn btn-primary">Add More</button>
+                                            <div class="more-block">
+                                                <button class="btn btn-primary">Add More</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- <div class="row">
-                                    <div class="col">
-
-                                        <div class="col">
+                                <!-- ========== Page 3 ========== -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Rules (Make your rules friendly for guests)</h3>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <input type="radio" id="pets" value="pets" name="no"> 
+                                                <label for="pets">No Pets</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="smoking" value="smoking" name="no"> 
+                                                <label for="smoking">No Smoking</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="visitors" value="visitors" name="no"> 
+                                                <label for="visitors">No Visitors</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="parcel" value="parcel" name="no"> 
+                                                <label for="parcel">No Parcel</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="parties" value="parties" name="no"> 
+                                                <label for="parties">No Parties</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="under" value="under" name="no"> 
+                                                <label for="under">No under 20 guest</label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input type="radio" id="unregister" value="unregister" name="no"> 
+                                                <label for="unregister">No unregistered guest</label>
+                                            </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                </div> -->
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Time</h3>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <label for="in-time">CheckIn Time</label>
+                                                <input type="time" id="in-time" />
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <label for="out-time">CheckOut Time</label>
+                                                <input type="time" id="out-time" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Amenities (Select all that are available)</h3>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <input type="radio" id="kitchen" name="amenities" />
+                                                <label for="kitchen">Functional Kitchen</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="parking" name="amenities" />
+                                                <label for="parking">Free Parking</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="charger" name="amenities" />
+                                                <label for="charger">EV Charger</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="pool" name="amenities" />
+                                                <label for="pool">Pool</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="wifi" name="amenities" />
+                                                <label for="wifi">WiFi</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="system" name="amenities" />
+                                                <label for="system">Heating & Cooling System</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="work" name="amenities" />
+                                                <label for="work">Workstation</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="maker" name="amenities" />
+                                                <label for="maker">Coffee maker</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="tv" name="amenities" />
+                                                <label for="tv">TV</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="games" name="amenities" />
+                                                <label for="games">Games consoles</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="board" name="amenities" />
+                                                <label for="board">Board Games</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="gym" name="amenities" />
+                                                <label for="gym">Gym ojaizzi</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="hair" name="amenities" />
+                                                <label for="hair">Hair Dryer</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="kit" name="amenities" />
+                                                <label for="kit">Firstaid Kit</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="mets" name="amenities" />
+                                                <label for="mets">Mosqui to mets</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="wash" name="amenities" />
+                                                <label for="wash">Wash Machine</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3>Safety</h3>
+                                        <ul>
+                                            <li>CCTV</li>
+                                            <li>Fire Extinguister</li>
+                                            <li>Smoke Detector</li>
+                                            <li>Carbon Monoxide Detector</li>
+                                            <li>Caution Signs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h3>How it Work</h3>
+                                        <ul>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <h3>Cancellation Policy</h3>
+                                        <ul>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4>Co-Hosts</h4>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                                     padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                </div>
+                                                <div>
+                                                    <h4 class="m-0">Rahul</h4>
+                                                    <h5>Yoga Trainer</h5>
+                                                    <p>5 years of experience</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                                     padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                </div>
+                                                <div>
+                                                    <h4 class="m-0">Rahul</h4>
+                                                    <h5>Yoga Trainer</h5>
+                                                    <p>5 years of experience</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 details-content">
+                                        <h3>Media</h3>
+                                        <div class="row">
+                                        <div class="col-md-4 col-sm-6 text-center">
+                                            <img src="assets/img/hotels/hotel-2.png">
+                                            <p>Bedroom</p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 text-center">
+                                            <img src="assets/img/hotels/hotel-3.png">
+                                            <p>Garden</p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 text-center">
+                                            <img src="assets/img/hotels/hotel-3.png">
+                                            <p>Kitchen</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                <div class="item-block d-flex justify-content-between">
+                                    <button class="btn btn-primary">Preview</button>
+                                    <button class="btn btn-primary">Publish</button>
+                                </div>
                             </div>
                         </div>
                     </div>
