@@ -271,7 +271,23 @@ ul.sub-menu li a {
     width: 100%;
 }
 
+.details-content p {
+    margin: 10px 0 0;
+}
 
+.details-content img {
+    max-width: 100%;
+}
+
+.details-content .col-sm-6 {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 667px) {
+    .search-area {
+        width: 70% !important;
+    }
+}
 </style>
 <main id="main">
 
@@ -355,19 +371,19 @@ ul.sub-menu li a {
                         <div class="listing-header d-flex align-items-center justify-content-between">
                             <h4 class="m-0">Create a New Listing</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="listing-content">
                             <!--  Title of Listing  -->
                             <div class="row align-items-center">
                                 <div class="col-lg-4 col-md-12">
                                     <h3 class="m-0">Title of Listing</h3>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <input type="radio">
-                                    <label>Stay & Learn</label>
+                                    <input type="radio" id="learn" name="stay" value="learn">
+                                    <label for="learn">Stay & Learn</label>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <input type="radio">
-                                    <label>Stay For Event</label>
+                                    <input type="radio" id="event" name="stay" value="event">
+                                    <label for="event">Stay For Event</label>
                                 </div>
                             </div>
                             <div class="row align-items-center listing-name">
@@ -375,10 +391,10 @@ ul.sub-menu li a {
                                     <h3 class="m-0">Listing Name</h3>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <input type="text">
+                                    <input type="text" />
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <input type="text">
+                                    <input type="text" />
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
@@ -387,27 +403,27 @@ ul.sub-menu li a {
                                 <h3>Language of Instruction</h3>
                                 <div class="lag-radio-block d-flex">
                                     <span>
-                                        <input type="radio">
-                                        <label>English</label></span><span>
-                                        <input type="radio">
-                                        <label>French</label></span><span>
-                                        <input type="radio">
-                                        <label>German</label></span><span>
-                                        <input type="radio">
-                                        <label>Spanish</label></span><span>
-                                        <input type="radio">
-                                        <label>Turkish</label></span>
+                                        <input type="radio" id="english" value="english" name="lan">
+                                        <label for="english">English</label></span><span>
+                                        <input type="radio" id="french" value="french" name="lan">
+                                        <label for="french">French</label></span><span>
+                                        <input type="radio" id="german" value="german" name="lan">
+                                        <label for="german">German</label></span><span>
+                                        <input type="radio" id="spanish" value="spanish" name="lan">
+                                        <label for="spanish">Spanish</label></span><span>
+                                        <input type="radio" id="turkish" value="turkish" name="lan"> 
+                                        <label for="turkish">Turkish</label></span>
                                     <span>
-                                        <input type="radio">
-                                        <label>Russian</label></span><span>
-                                        <input type="radio">
-                                        <label>Polish</label></span><span>
-                                        <input type="radio">
-                                        <label>Arabic</label></span><span>
-                                        <input type="radio">
-                                        <label>Dutch</label></span><span>
-                                        <input type="radio">
-                                        <label>Chinese</label></span>
+                                        <input type="radio" name="lan" id="russian" value="russian">
+                                        <label for="russian">Russian</label></span><span>
+                                        <input type="radio" name="lan" id="polish" value="polish">
+                                        <label for="polish">Polish</label></span><span>
+                                        <input type="radio" name="lan" id="arbic" value="arbic">
+                                        <label for="arbic">Arabic</label></span><span>
+                                        <input type="radio" name="lan" id="dutch" value="dutch">
+                                        <label for="dutch">Dutch</label></span><span>
+                                        <input type="radio" name="lan" id="chinese" value="chienese">
+                                        <label for="chienese">Chinese</label></span>
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
@@ -436,52 +452,51 @@ ul.sub-menu li a {
                                 <h3>Learn Location (Where is the Learning Place? Select one)</h3>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
-                                        <input type="radio">
-                                        <label>B&B only</label>
+                                        <input type="radio" name="b-b" value="only" id="only">
+                                        <label for="only">B&B only</label>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <input type="radio">
-                                        <label>B&B and office</label>
+                                        <input type="radio" name="b-b" value="office" id="office">
+                                        <label for="office">B&B and office</label>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <input type="radio">
-                                        <label>B&B and farm</label>
+                                        <input type="radio" name="b-b" value="farm" id="farm">
+                                        <label for="farm">B&B and farm</label>
                                     </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <input type="radio">
-                                            <label>B&B and outdoor</label>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <input type="radio">
-                                            <label>B&B and in the workshop</label>
-                                        </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="radio" name="b-b" id="outdoor" value="outdoor">
+                                        <label for="outdoor">B&B and outdoor</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="radio" name="b-b" id="workshop" value="workshop">
+                                        <label for="workshop">B&B and in the workshop</label>
                                     </div>
                                 </div>
-                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-12 textarea-block">
                                         <h3>About the B&B Listing </h3>
                                         <textarea rows="3"
                                             placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
                                     </div>
-
                                     <div class="col-lg-9 col-md-12">
                                         <h3>Listing photo & video</h3>
                                         <div class="details-block">
                                             <div class="d-flex align-items-center justify-content-between">
                                             </div>
                                             <div class="details-content">
-                                                <div class="guest-block d-flex justify-content-between">
-                                                    <div class="text-center">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 text-center">
                                                         <img src="assets/img/hotels/hotel-2.png">
                                                     </div>
-                                                    <div class="text-center">
+                                                    <div class="col-md-4 col-sm-6 text-center">
                                                         <img src="assets/img/hotels/hotel-3.png">
                                                     </div>
-                                                    <div class="text-center">
+                                                    <div class="col-md-4 col-sm-6 text-center">
                                                         <img src="assets/img/hotels/hotel-3.png">
                                                     </div>
-                                                    <div class="text-center">
+                                                    <div class="col-md-4 col-sm-6 text-center">
                                                         <!-- <img src="assets/img/hotels/hotel-3.png">-->
                                                     </div>
 
@@ -518,12 +533,9 @@ ul.sub-menu li a {
                                                     <option> Mehsana </option>
                                                     <option> Ahmedabad </option>
                                                     <option> Surat </option>
-
                                                 </select>
                                                 <button>map</button>
-
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 property-block">
@@ -552,16 +564,16 @@ ul.sub-menu li a {
                                                 <h3>Where Guest will sleep </h3>
                                             </div>
                                             <div class="details-content">
-                                                <div class="guest-block d-flex justify-content-between">
-                                                    <div class="text-center">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 image-block text-center">
                                                         <img src="assets/img/hotels/hotel-2.png">
                                                         <p>1 Bedroom</p>
                                                     </div>
-                                                    <div class="text-center">
+                                                    <div class="col-md-4 col-sm-6 image-block text-center">
                                                         <img src="assets/img/hotels/hotel-3.png">
                                                         <p>1 Drawing Room</p>
                                                     </div>
-                                                    <div class="text-center">
+                                                    <div class="col-md-4 col-sm-6 image-block text-center">
                                                         <img src="assets/img/hotels/hotel-3.png">
                                                         <p>2 Bathrooms</p>
                                                     </div>
@@ -650,22 +662,21 @@ ul.sub-menu li a {
                                         <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
                                     </div>
                                     <div class="details-content">
-                                        <div class="guest-block d-flex justify-content-between">
-                                            <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                                 <p>Title 1</p>
                                             </div>
-                                            <div class="text-center">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+                                                <img src="assets/img/hotels/hotel-3.png">
+                                                <p>Title 1</p>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                                 <p>Title 1</p>
 
                                             </div>
-                                            <div class="text-center">
-                                                <img src="assets/img/hotels/hotel-3.png">
-                                                <p>Title 1</p>
-
-                                            </div>
-                                            <div class="text-center">
+                                            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                                 <p>Title 1</p>
                                             </div>
