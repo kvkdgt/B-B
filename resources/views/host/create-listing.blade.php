@@ -86,6 +86,14 @@ ul.menu li span:hover {
     transition: all 0.5s ease;
 }
 
+ul.menu li span:hover a {
+    color: green;
+}
+
+ul.menu li.dropdown span:hover i {
+    color: green;
+}
+
 ul.menu li.dropdown {
     position: relative;
 }
@@ -94,14 +102,19 @@ ul.menu li.dropdown i {
     position: absolute;
     right: 20px;
     top: 7px;
+    color: #fff;
 }
 
 ul.sub-menu {
     color: white;
     list-style: none;
     margin: 0 5px;
-    padding: 10px;
+    padding: 10px 10px 0;
     display: none;
+}
+
+ul.sub-menu li:last-child {
+    padding-bottom: 0;
 }
 
 ul.menu li.dropdown.active i {
@@ -190,6 +203,104 @@ ul.menu li.dropdown.active i {
     border-radius: 5px;
     margin: 0 0 30px;
 }
+
+ul.sub-menu li a {
+    color: #fff;
+}
+
+.listing-name input[type="text"] {
+    margin: 0;
+}
+
+.row.listing-name {
+    margin-top: 30px;
+}
+
+.listing-header {
+    margin-bottom: 20px !important;
+}
+
+.lag-radio-block {
+    flex-wrap: wrap;
+}
+
+.lag-radio-block span {
+    flex: 0 0 20%;
+    margin-top: 10px;
+}
+
+.guest-location h3 {
+    padding: 0 0 20px;
+}
+
+.guest-location input {
+    width: 100%;
+}
+
+.location-block h3 {
+    padding: 0 0 10px;
+}
+
+.property-block select {
+    width: 100%;
+}
+
+.guest-block p {
+    margin: 10px 0 0;
+}
+
+.more-block {
+    margin: 20px 0;
+}
+
+.details-block h3 {
+    margin: 0 0 20px;
+}
+
+.guest-freebies span {
+    flex: 0 0 33.33%;
+    flex: 0 0 50%;
+    margin-top: 10px;
+}
+
+.ideal-block .col-12:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.location-block select {
+    width: 100%;
+}
+
+.details-content p {
+    margin: 10px 0 0;
+}
+
+.details-content img {
+    max-width: 100%;
+}
+
+.details-content .col-sm-6 {
+    margin-bottom: 16px;
+}
+
+.more-block {
+    margin: 0;
+} 
+
+.previous-wrapper {
+    margin: 0 -12px;
+}
+
+.previous-block {
+    flex: 0 0 22.5%;
+    padding: 0 12px;
+}
+
+@media (max-width: 667px) {
+    .search-area {
+        width: 70% !important;
+    }
+}
 </style>
 <main id="main">
 
@@ -205,447 +316,768 @@ ul.menu li.dropdown.active i {
             <div class="row mt-5">
                 <!--  Right Side Cart  -->
                 <h3 class="mb-5">Host Dashboard</h3>
-                <div class="col-md-3 col-sm-4 col-12">
-                    <div class="side-edit-bar">
-                        <div class="user-block">
-                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
-                        </div>
-                        <ul class="menu">
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu dropdown">
-                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
-                                    </li>
-                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
-                                    <li><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
-                                    <li class="active"><span><a
-                                                href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
-                                </ul>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="side-edit-bar">
+                            <div class="user-block">
+                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                                <h4>Kartik Trivedi</h4>
+                                <a href="#">kartik@mailinator.com</a>
+                            </div>
+                            <ul class="menu">
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu dropdown">
+                                        <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                        </li>
+                                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
+                                        <li><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
+                                        <li class="active"><span><a
+                                                    href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
+                                    </ul>
 
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu" style="display:block;">
-                                    <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                    <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                    <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                    <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Revenue</span></li>
-                                    <li><span>Net Income</span></li>
-                                    <li><span>Update pay Details</span></li>
-                                </ul></i>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Profile Setting</span></li>
-                                    <li><span>Change Password</span></li>
-                                </ul>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu" style="display:block;">
+                                        <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                        <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                        <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
+                                        <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>Revenue</span></li>
+                                        <li><span>Net Income</span></li>
+                                        <li><span>Update pay Details</span></li>
+                                    </ul></i>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>Profile Setting</span></li>
+                                        <li><span>Change Password</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-9 col-sm-12">
-                    <div class="row">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>Create a New Listing</h4>
-                        </div>
-                        <div class="card-body">
-                            <!--  Title of Listing  -->
-                            <div class="row">
-                                <div class="col">
-                                    <h3>Title of Listing</h3>
-                                </div>
-                                <div class="col">
-                                    <input type="radio">
-                                    <label>Stay & Learn</label>
-                                </div>
-                                <div class="col">
-                                    <input type="radio">
-                                    <label>Stay For Event</label>
-                                </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row">
+                            <div class="listing-header d-flex align-items-center justify-content-between">
+                                <h4 class="m-0">Create a New Listing</h4>
                             </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h3>Listing Name</h3>
-                                </div>
-                                <div class="col">
-                                    <input type="text">
-                                </div>
-                                <div class="col">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <hr>
-                            <!--  Maximum Guest Allowed  -->
-                            <div class="item">
-                                <h3>Language of Instruction</h3>
-                                <div class="row">
-                                    <div class="col loi">
-                                        <span>
-                                            <input type="radio">
-                                            <label>English</label></span><span>
-                                            <input type="radio">
-                                            <label>French</label></span><span>
-                                            <input type="radio">
-                                            <label>German</label></span><span>
-                                            <input type="radio">
-                                            <label>Spanish</label></span><span>
-                                            <input type="radio">
-                                            <label>Turkish</label></span>
+                            <div class="listing-content">
+                                <!--  Title of Listing  -->
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 col-md-12">
+                                        <h3 class="m-0">Title of Listing</h3>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                        <input type="checkbox" id="learn" name="stay" value="learn">
+                                        <label for="learn">Stay & Learn</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                        <input type="checkbox" id="event" name="stay" value="event">
+                                        <label for="event">Stay For Event</label>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col loi">
-                                        <span>
-                                            <input type="radio">
-                                            <label>Russian</label></span><span>
-                                            <input type="radio">
-                                            <label>Polish</label></span><span>
-                                            <input type="radio">
-                                            <label>Arabic</label></span><span>
-                                            <input type="radio">
-                                            <label>Dutch</label></span><span>
-                                            <input type="radio">
-                                            <label>Chinese</label></span>
+                                <div class="row align-items-center listing-name">
+                                    <div class="col-lg-4 col-md-12">
+                                        <h3 class="m-0">Listing Name</h3>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                        <input type="text" />
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6">
+                                        <input type="text" />
                                     </div>
                                 </div>
-                            </div>
-                            <br><br>
-                            <!--  Listing Property Type  -->
-                            <div class="item">
-                                <h3>What guest will learn (only for stay & learn)</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" disabled placeholder="Location 1">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" disabled placeholder="Location 2">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="text" disabled placeholder="Location 3">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" disabled placeholder="Location 4">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <h3>Learn Location (Where is the Learning Place? Select one)</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <input type="radio">
-                                        <label>B&B only</label>
-                                    </div>
-                                    <div class="col">
-                                        <input type="radio">
-                                        <label>B&B and office</label>
-                                    </div>
-                                    <div class="col">
-                                        <input type="radio">
-                                        <label>B&B and farm</label>
-                                    </div>
-                                    <div class="col">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="row">
-                                        <div class="col">
-                                            <input type="radio">
-                                            <label>B&B and outdoor</label>
-                                        </div>
-                                        <div class="col">
-                                            <input type="radio">
-                                            <label>B&B and in the workshop</label>
-                                        </div>
-                                        <div class="col">
-                                        </div>
-                                        <div class="col">
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>About the B&B Listing </h3>
-                                        <textarea
-                                            placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
-
-
-                                    </div>
-
-                                    <div class="col">
-                                        <h3>Listing photo & video</h3>
-                                        <div class="details-block">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                            </div>
-                                            <div class="details-content">
-                                                <div class="guest-block d-flex justify-content-between">
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-2.png">
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-3.png">
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-3.png">
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <!-- <img src="assets/img/hotels/hotel-3.png">
-                                 -->
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>Location </h3>
-                                        <div class="row">
-                                            <div class="col">
-                                                <select>
-                                                    <option> Select Country </option>
-                                                    <option> India </option>
-                                                    <option> Australia </option>
-                                                    <option> USA </option>
-
-                                                </select>
-                                            </div>
-                                            <div class="col">
-                                                <select>
-                                                    <option> Select State </option>
-                                                    <option> Gujarat </option>
-                                                    <option> Maharastra </option>
-                                                    <option> Rajasthan </option>
-
-                                                </select>
-                                            </div>
-                                            <div class="col">
-                                                <select>
-                                                    <option> Select City </option>
-                                                    <option> Mehsana </option>
-                                                    <option> Ahmedabad </option>
-                                                    <option> Surat </option>
-
-                                                </select>
-                                                <button>map</button>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <h3>Property Type</h3>
-                                        <select>
-                                            <option>Apartment</option>
-                                            <option>Row House</option>
-                                            <option>Bunglow</option>
-
-                                        </select>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>Maximum Number of Guests(Adults)</h3>
-                                        <select>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-
-                                        </select>
-                                        <div class="details-block">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <h3>Where Guest will sleep </h3>
-                                            </div>
-                                            <div class="details-content">
-                                                <div class="guest-block d-flex justify-content-between">
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-2.png">
-                                                        <p>1 Bedroom</p>
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-3.png">
-                                                        <p>1 Drawing Room</p>
-                                                    </div>
-                                                    <div class="text-center">
-                                                        <img src="assets/img/hotels/hotel-3.png">
-                                                        <p>2 Bathrooms</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <h3>Ideal Guest</h3>
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="radio">
-                                                Students
-                                            </div>
-                                            <div class="col">
-                                                <input type="radio">
-                                                Tourists
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="radio">
-                                                Founders
-                                            </div>
-                                            <div class="col">
-                                                <input type="radio">
-                                                Employees
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="radio">
-                                                Family
-                                            </div>
-                                            <div class="col">
-                                                <input type="radio">
-                                                Gen Z
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="radio">
-                                                Digital Workers
-                                            </div>
-
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col">
-                                                <input type="radio">
-                                                Backpackers
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <hr>
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                <!--  Maximum Guest Allowed  -->
                                 <div class="item">
-                                    <h3>What is included? (Select freebies you give guests)</h3>
-                                    <div class="row">
-                                        <div class="col loi">
-                                            <span>
-                                                <input type="radio">
-                                                <label>Breakfast</label></span><span>
-                                                <input type="radio">
-                                                <label>Dinner</label></span><span>
-                                                <input type="radio">
-                                                <label>Snacks</label></span><span>
-                                                <input type="radio">
-                                                <label>City Tour</label></span><span>
-                                                <input type="radio">
-                                                <label>Airport pick-up/drop off</label></span>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col loi">
-                                            <span>
-                                                <input type="radio">
-                                                <label>Document Draft</label></span><span>
-                                                <input type="radio">
-                                                <label>Fre event tickets</label></span><span>
-                                                <input type="radio">
-                                                <label>Free parking tickets</label></span><span>
-                                                <input type="radio">
-                                                <label>Cycling</label></span><span>
-                                                <input type="radio">
-                                                <label>co-cook</label></span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col loi">
-                                            <span>
-                                                <input type="radio">
-                                                <label>City Walk</label></span><span>
-                                                <input type="radio">
-                                                <label>Free toiletries</label></span><span>
-
-                                        </div>
+                                    <h3>Language of Instruction</h3>
+                                    <div class="lag-radio-block d-flex">
+                                        <span>
+                                            <input type="checkbox" id="english" name="english" value="lan">
+                                            <label for="english">English</label></span><span>
+                                            <input type="checkbox" id="french" name="french" value="lan">
+                                            <label for="french">French</label></span><span>
+                                            <input type="checkbox" id="german" name="german" value="lan">
+                                            <label for="german">German</label></span><span>
+                                            <input type="checkbox" id="spanish" name="spanish" value="lan">
+                                            <label for="spanish">Spanish</label></span><span>
+                                            <input type="checkbox" id="turkish" name="turkish" value="lan"> 
+                                            <label for="turkish">Turkish</label></span>
+                                        <span>
+                                            <input type="checkbox" name="lan" id="russian" value="russian">
+                                            <label for="russian">Russian</label></span><span>
+                                            <input type="checkbox" name="lan" id="polish" value="polish">
+                                            <label for="polish">Polish</label></span><span>
+                                            <input type="checkbox" name="lan" id="arbic" value="arbic">
+                                            <label for="arbic">Arabic</label></span><span>
+                                            <input type="checkbox" name="lan" id="dutch" value="dutch">
+                                            <label for="dutch">Dutch</label></span><span>
+                                            <input type="checkbox" name="lan" id="chinese" value="chienese">
+                                            <label for="chienese">Chinese</label></span>
                                     </div>
                                 </div>
-                                <hr>
-                                <div class="details-block">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
-                                    </div>
-                                    <div class="details-content">
-                                        <div class="guest-block d-flex justify-content-between">
-                                            <div class="text-center">
-                                                <img src="assets/img/hotels/hotel-2.png">
-                                                <p>Title 1</p>
-                                            </div>
-                                            <div class="text-center">
-                                                <img src="assets/img/hotels/hotel-3.png">
-                                                <p>Title 1</p>
-
-                                            </div>
-                                            <div class="text-center">
-                                                <img src="assets/img/hotels/hotel-3.png">
-                                                <p>Title 1</p>
-
-                                            </div>
-                                            <div class="text-center">
-                                                <img src="assets/img/hotels/hotel-2.png">
-                                                <p>Title 1</p>
-
-                                            </div>
-                                            <div class="text-center">
-                                                <button class="btn btn-primary">Add More</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <hr>
-                                <div class="row">
-                                    <div class="col">
-
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                <!--  Listing Property Type  -->
+                                <div class="guest-location">
+                                    <h3>What guest will learn (only for stay & learn)</h3>
+                                    <div class="row">
                                         <div class="col">
+                                            <input type="text" disabled placeholder="Location 1">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" disabled placeholder="Location 2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" disabled placeholder="Location 3">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" disabled placeholder="Location 4">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item location-block">
+                                    <h3>Learn Location (Where is the Learning Place? Select one)</h3>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="checkbox" name="b-b" value="only" id="only">
+                                            <label for="only">B&B only</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="checkbox" name="b-b" value="office" id="office">
+                                            <label for="office">B&B and office</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="checkbox" name="b-b" value="farm" id="farm">
+                                            <label for="farm">B&B and farm</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="checkbox" name="b-b" id="outdoor" value="outdoor">
+                                            <label for="outdoor">B&B and outdoor</label>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="checkbox" name="b-b" id="workshop" value="workshop">
+                                            <label for="workshop">B&B and in the workshop</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 textarea-block">
+                                            <h3>About the B&B Listing </h3>
+                                            <textarea rows="3"
+                                                placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
+                                        </div>
+                                        <div class="col-lg-9 col-md-12">
+                                            <h3>Listing photo & video</h3>
+                                            <div class="details-block">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                </div>
+                                                <div class="details-content">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6 text-center">
+                                                            <img src="assets/img/hotels/hotel-2.png">
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 text-center">
+                                                            <img src="assets/img/hotels/hotel-3.png">
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 text-center">
+                                                            <img src="assets/img/hotels/hotel-3.png">
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 text-center">
+                                                            <!-- <img src="assets/img/hotels/hotel-3.png">-->
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-12">
+                                            <h3>Location </h3>
+                                            <div class="row location-block">
+                                                <div class="col-4">
+                                                    <select>
+                                                        <option disabled selected hidden> Select Country </option>
+                                                        <option> India </option>
+                                                        <option> Australia </option>
+                                                        <option> USA </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select>
+                                                        <option disabled selected hidden> Select State </option>
+                                                        <option> Gujarat </option>
+                                                        <option> Maharastra </option>
+                                                        <option> Rajasthan </option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select>
+                                                        <option disabled selected hidden> Select City </option>
+                                                        <option> Mehsana </option>
+                                                        <option> Ahmedabad </option>
+                                                        <option> Surat </option>
+                                                    </select>
+                                                </div>
+                                                <!-- <div class="col-2">
+                                                    <button class="btn btn-primary">map</button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 property-block">
+                                            <h3>Property Type</h3>
+                                            <select>
+                                                <option>Apartment</option>
+                                                <option>Row House</option>
+                                                <option>Bunglow</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-9 col-md-12">
+                                            <h3>Maximum Number of Guests(Adults)</h3>
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+
+                                            </select>
+                                            <div class="details-block">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <h3>Where Guest will sleep </h3>
+                                                </div>
+                                                <div class="details-content">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                                            <img src="assets/img/hotels/hotel-2.png">
+                                                            <p>1 Bedroom</p>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                                            <img src="assets/img/hotels/hotel-3.png">
+                                                            <p>1 Drawing Room</p>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                                            <img src="assets/img/hotels/hotel-3.png">
+                                                            <p>2 Bathrooms</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-12">
+                                            <h3>Ideal Guest</h3>
+                                            <div class="row ideal-block">
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Students
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Tourists
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Founders
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Employees
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Family
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Gen Z
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Digital Workers
+                                                </div>
+                                                <div class="col-lg-12 col-md-6">
+                                                    <input type="checkbox">
+                                                    Backpackers
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    <div class="guest-freebies">
+                                        <h3>What is included? (Select freebies you give guests)</h3>
+                                        <div class="row">
+                                                <span>
+                                                    <input type="checkbox">
+                                                    <label>Breakfast</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Dinner</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Snacks</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>City Tour</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Airport pick-up/drop off</label>
+                                                </span>
+                                                <span>
+                                                    <input type="checkbox">
+                                                    <label>Document Draft</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Fre event tickets</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Free parking tickets</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Cycling</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>co-cook</label></span>
+                                                <span>
+                                                    <input type="checkbox">
+                                                    <label>City Walk</label></span><span>
+                                                    <input type="checkbox">
+                                                    <label>Free toiletries</label></span><span>
+
+                                        </div>
+                                    </div>
+                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    <div class="details-block">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
+                                        </div>
+                                        <div class="details-content">
+                                            <div class="previous-wrapper d-flex">
+                                                <div class="previous-block text-center">
+                                                    <img src="assets/img/hotels/hotel-2.png">
+                                                    <p>Title 1</p>
+                                                </div>
+                                                <div class="previous-block text-center">
+                                                    <img src="assets/img/hotels/hotel-3.png">
+                                                    <p>Title 1</p>
+                                                </div>
+                                                <div class="previous-block text-center">
+                                                    <img src="assets/img/hotels/hotel-3.png">
+                                                    <p>Title 1</p>
+
+                                                </div>
+                                                <div class="previous-block text-center">
+                                                    <img src="assets/img/hotels/hotel-2.png">
+                                                    <p>Title 1</p>
+                                                </div>
+                                                <div class="more-block">
+                                                    <button class="btn btn-primary">Add More</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <!-- ========== Page 2 ========== -->
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-block" style="overflow-x: scroll">
+                                                <table>
+                                                    <thead>
+                                                        <tr style="height: 40px;">
+                                                            <th></th>
+                                                            <th colspan="5">Date (Select your availability)</th>
+                                                            <th>Total Nights</th>
+                                                            <th>Total Nights Cost</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>1.</td>
+                                                        <td>Month</td>
+                                                        <td>Day</td>
+                                                        <td>Month
+                                                        <td>Day</td>
+                                                        <td>Year</td>
+                                                        <td>5 Nights</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>Feb</td>
+                                                        <td>10</td>
+                                                        <td>Feb</td>
+                                                        <td>15</td>
+                                                        <td>2023</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2.</td>
+                                                        <td>Month</td>
+                                                        <td>Day</td>
+                                                        <td>Month
+                                                        <td>Day</td>
+                                                        <td>Year</td>
+                                                        <td>5 Nights</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3.</td>
+                                                        <td>Month</td>
+                                                        <td>Day</td>
+                                                        <td>Month
+                                                        <td>Day</td>
+                                                        <td>Year</td>
+                                                        <td>5 Nights</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4.</td>
+                                                        <td>Month</td>
+                                                        <td>Day</td>
+                                                        <td>Month
+                                                        <td>Day</td>
+                                                        <td>Year</td>
+                                                        <td>5 Nights</td>
+                                                        <td>300</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Other Costs</h3>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-4">
+                                                    <p>Cleaning Fee</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p>$20</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>(We suggest 10% of Booking Cost)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-4">
+                                                    <p>Refundable Security</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p>$0</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>(To be retained bu Admin and refunded upon request)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Total</h3>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-4">
+                                                    <p>Service Fee</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p>$48</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total nightcost + cleaning fee)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-4">
+                                                    <p>Total</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p>$368</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>(What guest will pay)</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-4">
+                                                    <p>Host income</p>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p>$304</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>(After deduction of host fee 5% and guest fee 15%)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    <!-- ========== Page 3 ========== -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Rules (Make your rules friendly for guests)</h3>
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="pets" value="pets" name="no"> 
+                                                    <label for="pets">No Pets</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="smoking" value="smoking" name="no"> 
+                                                    <label for="smoking">No Smoking</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="visitors" value="visitors" name="no"> 
+                                                    <label for="visitors">No Visitors</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="parcel" value="parcel" name="no"> 
+                                                    <label for="parcel">No Parcel</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="parties" value="parties" name="no"> 
+                                                    <label for="parties">No Parties</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="under" value="under" name="no"> 
+                                                    <label for="under">No under 20 guest</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="unregister" value="unregister" name="no"> 
+                                                    <label for="unregister">No unregistered guest</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Time</h3>
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <label for="in-time">CheckIn Time</label>
+                                                    <input type="time" id="in-time" />
+                                                </div>
+                                                <div class="col-md-6 col-sm-12">
+                                                    <label for="out-time">CheckOut Time</label>
+                                                    <input type="time" id="out-time" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Amenities (Select all that are available)</h3>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="kitchen" name="amenities" />
+                                                    <label for="kitchen">Functional Kitchen</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="parking" name="amenities" />
+                                                    <label for="parking">Free Parking</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="charger" name="amenities" />
+                                                    <label for="charger">EV Charger</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="pool" name="amenities" />
+                                                    <label for="pool">Pool</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="wifi" name="amenities" />
+                                                    <label for="wifi">WiFi</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="system" name="amenities" />
+                                                    <label for="system">Heating & Cooling System</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="work" name="amenities" />
+                                                    <label for="work">Workstation</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="maker" name="amenities" />
+                                                    <label for="maker">Coffee maker</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="tv" name="amenities" />
+                                                    <label for="tv">TV</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="games" name="amenities" />
+                                                    <label for="games">Games consoles</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="board" name="amenities" />
+                                                    <label for="board">Board Games</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="gym" name="amenities" />
+                                                    <label for="gym">Gym ojaizzi</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="hair" name="amenities" />
+                                                    <label for="hair">Hair Dryer</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="kit" name="amenities" />
+                                                    <label for="kit">Firstaid Kit</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="mets" name="amenities" />
+                                                    <label for="mets">Mosqui to mets</label>
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="wash" name="amenities" />
+                                                    <label for="wash">Wash Machine</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>Safety</h3>
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="cctv" name="cctv" />
+                                                    <label for="cctv">CCTV</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="fire" name="fire" />
+                                                    <label for="fire">Fire Extinguisher</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="smoke" name="smoke" />
+                                                    <label for="smoke">Smoke Detector</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="carbon" name="carbon" />
+                                                    <label for="carbon">Carbon monoxide Detector</label>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                                    <input type="checkbox" id="sign" name="sign" />
+                                                    <label for="sign">Caution SIgns</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h3>How it Work</h3>
+                                            <ul>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <h3>Cancellation Policy</h3>
+                                            <ul>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <h4>Co-Hosts</h4>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                                        padding: 20px; background: #ededed;">
+                                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="m-0">Rahul</h4>
+                                                        <h5>Yoga Trainer</h5>
+                                                        <p>5 years of experience</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                                        padding: 20px; background: #ededed;">
+                                                        <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="m-0">Rahul</h4>
+                                                        <h5>Yoga Trainer</h5>
+                                                        <p>5 years of experience</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 details-content">
+                                            <h3>Media</h3>
+                                            <div class="row">
+                                            <div class="col-md-4 col-sm-6 text-center">
+                                                <img src="assets/img/hotels/hotel-2.png">
+                                                <p>Bedroom</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 text-center">
+                                                <img src="assets/img/hotels/hotel-3.png">
+                                                <p>Garden</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 text-center">
+                                                <img src="assets/img/hotels/hotel-3.png">
+                                                <p>Kitchen</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                                    <div class="item-block d-flex justify-content-between">
+                                        <button class="btn btn-primary">Preview</button>
+                                        <button class="btn btn-primary">Publish</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
