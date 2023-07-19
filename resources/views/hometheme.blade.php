@@ -230,7 +230,7 @@
 
                     <button class="btn btn-outline" data-target="#loginModal" data-toggle="modal" href="#loginModal">Login</button>
                     <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Signup</button>
-                    <button class="btn btn-outline" data-target="#ratingModal" data-toggle="modal" href="#ratingModal">Add Rating</button>
+                    <!-- <button class="btn btn-outline" data-target="#ratingModal" data-toggle="modal" href="#ratingModal">Add Rating</button> -->
 
                     <!-- <li class="dropdown">
                         <a href="#">

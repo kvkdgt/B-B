@@ -271,6 +271,9 @@
         cursor: pointer;
     }
     </style>
+
+
+
     <div class="modal fade" id="report-modal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -388,53 +391,52 @@
     <section class="listing_detail">
         <div class="container" data-aos="fade-up">
             <div class="row">
-                <div class="mb-4 d-flex align-items-center justify-content-between">
-                    <div class="listing-item">
-                        <div class="sub-main">
-                            <div class="img-sec p-rel">
-                                <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
-                                <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
-                            </div>
-                            <div class="slider-content">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    Stay and Learn
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Python (Intro)
-                                    <p>
-                                        <span>Feb 5 - 15</span> Duplex
-                                    </p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>$300</p>
-                                    <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
-
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>akeja, logos</p>
-                                    <p> <i class="fa fa-map-marker"></i>10 km away</p>
-                                </div>
-                            </div>
-
-                            <div class="user-img-top">
-                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex">
-                        <a href="#"><i class="bx bx-share"></i> Share</a>
-                        <a href="#"><i class="bx bx-heart"></i> Save</a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row">
                 <div class="col-md-8 col-sm-12">
                     <!--  Stay & Learn Salsa  -->
+                    <div class="mb-4 d-flex align-items-center justify-content-between">
+                        <div class="listing-item" style="display: flex;">
+                            <div class="sub-main" style="display: flex;">
+                                <div class="img-sec p-rel">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
+                                        style="max-width: 100px;">
+                                    <span class="icon-sec-right" style="position: absolute; top: 0; right: 0;">
+                                        <i class="fas fa-heart"></i>
+                                    </span>
+                                </div>
+                                <div class="slider-content" style="margin-left: 10px;">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        Stay and Learn
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Python (Intro)</p>
+                                        <p>
+                                            <span>Feb 5 - 15</span> Duplex
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>$300</p>
+                                        <p>
+                                            <span>&nbsp;18 </span>&nbsp;Reviews
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>akeja, logos</p>
+                                        <p>
+                                            <i class="fa fa-map-marker"></i>10 km away
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="user-img-top" style="margin-left: 10px;">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="max-width: 50px;">
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="d-flex">
+                            <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
+                            <a href="#"><i class="bx bx-heart"></i> Save</a>
+                        </div>
+                    </div>
                     <!--  About the Host  -->
                     <div class="details-block about-us">
                         <div class="d-flex align-items-center justify-content-between">
@@ -469,35 +471,70 @@
                     </div>
                     <hr>
                     <div class="details-block">
-                        <!-- <div class="d-flex align-items-center justify-content-between">
-                            <h4>Language of Instruction</h4>
-                        </div>
-                        <div class="details-content">
-                            <i class="fa fa-circle"></i> English &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> French &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> German &nbsp; &nbsp; <br>
-
-                        </div> -->
                         <div class="d-flex align-items-center justify-content-between">
                             <h3>Academic Qualification</h3>
                         </div>
-                        <ul style="list-style: disc">
-                            <li><b>B.SC Fitness: </b>University of Poland, Poland </li>
-                            <li style="padding: 0"><b>Diploma Graphics: </b>University of Poland, Poland </li>
+                        <ul style="list-style: none; padding-left: 1.2rem;">
+                            <li>
+
+                                <h4> <i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
+                                </h4> <br>
+                                <span style="margin-left: 35px;"> University of Poland,
+                                    Poland</span>
+                                <br>
+                                <span style="margin-left: 35px;">From: 20XX To: 20XX</span>
+                            </li>
+                            <li style="padding: 0;">
+
+                                <h4><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
+                                    Graphics:</h4><br>
+                                <span style="margin-left: 35px;"> University of Poland,
+                                    Poland</span>
+                                <br>
+                                <span style="margin-left: 35px;">From: 20XX To: 20XX</span>
+                            </li>
                         </ul>
                     </div>
+
                     <hr>
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
                             <h4>What Guest will learn</h4>
                         </div>
                         <div class="details-content">
-                            <i class="fa fa-circle"></i> Data structure &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> Variables &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> Class &nbsp; &nbsp; <br><br>
-                            <i class="fa fa-circle"></i> Exception handling &nbsp; &nbsp;
-                            <i class="fa fa-circle"></i> Regular expression &nbsp; &nbsp;
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-list"></i>
+                                        Data structure
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-list"></i>
+                                        Variables
+                                    </p>
+                                </div>
 
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-list"></i>
+                                        Class
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-list"></i>
+                                        Exception handling
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-list"></i>
+                                        Regular expression
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <hr>
@@ -661,21 +698,61 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4 style="margin-bottom: 15px;">House Rules</h4>
+                            <h4>House Rules</h4>
                         </div>
                         <div class="details-content">
-                            <div class="guest-block d-flex justify-content-between">
-                                <div class="side-cart-item">
-                                    <i class="fa fa-circle"></i> 3D Models &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> No pets &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> No shoes &nbsp; &nbsp; <br><br>
-                                    <i class="fa fa-circle"></i> No smoking &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> No outside food &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> No loud music &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> No parties &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i>No unauthorized guests&nbsp; &nbsp;
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-cube"></i>
+                                        3D Models
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-paw"></i>
+                                        No pets
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-shoe-prints"></i>
+                                        No shoes
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-smoking-ban"></i>
+                                        No smoking
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-utensils-slash"></i>
+                                        No outside food
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-volume-slash"></i>
+                                        No loud music
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-glass-toast"></i>
+                                        No parties
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa-solid fa-user-lock"></i>
+                                        No unauthorized guests
+                                    </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <hr>
@@ -694,33 +771,67 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4 style="margin-bottom: 15px;">Lesson Location</h4>
+                            <h4>Lession Location</h4>
                         </div>
                         <div class="details-content">
-                            <div class="guest-block d-flex justify-content-between">
-                                <div class="side-cart-item">
-                                    <i class="fa fa-circle"></i> B&B only &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> B&B and farm &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> B&B and office &nbsp; &nbsp; <br><br>
-                                    <i class="fa fa-circle"></i> B&B and workshop &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> B&B and outdoor &nbsp; &nbsp;
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> B&B only
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> B&B and farm
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> B&B and office
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> B&B and workshop
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> B&B and outdoor
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <hr>
+
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4 style="margin-bottom: 15px;">Ideal Guest</h4>
+                            <h4>Lession Location</h4>
                         </div>
                         <div class="details-content">
-                            <div class="guest-block d-flex justify-content-between">
-                                <div class="side-cart-item">
-                                    <i class="fa fa-circle"></i> Student &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> Tourist &nbsp; &nbsp;
-                                    <i class="fa fa-circle"></i> Founders &nbsp; &nbsp; <br><br>
-                                    <i class="fa fa-circle"></i> Employees &nbsp; &nbsp;
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> Student
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> Tourist
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> Founders
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p>
+                                        <i class="fa fa-circle"></i> Employees
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -836,25 +947,6 @@
 
                     </div>
                     <hr>
-
-                    <div class="details-block card-time">
-
-                        <h3>What's Included</h3>
-                        <div class="item" style="display: flex;">
-                            <ul style="list-style-type: disc; flex: 1;">
-                                <li>Wi-Fi</li>
-                                <li>Breakfast</li>
-                                <li>Room cleaning</li>
-                            </ul>
-                            <ul style="list-style-type: disc; flex: 1;">
-                                <li>Hot shower</li>
-                                <li>Air conditioning</li>
-                                <li>Gym access</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-
                     <div class="details-block">
                         <div class="d-flex">
                             <h4>Reviews </h4>
@@ -977,45 +1069,46 @@
                                 <h4>Stay &amp; Learn Salsa</h4>
                             </div>
                             <div class="details-content">
-                                <div class="form-field">
-                                    <label>Select dates</label>
-                                    <input type="date" name="checkin" placeholder="23/04/2023">
-                                </div>
                                 <div class="cost-details">
                                     <h4>Cost Details</h4>
                                     <ul>
-                                        <li>
-                                            <div class="item d-flex align-items-center justify-content-between">
-                                                <h5 class="m-0">Feb 5 - Feb 15</h5>
-                                                <p class="m-0">10 Days</p>
-                                                <p class="m-0">€50</p>
+                                        <div class="details-content">
+                                            <div class="form-field" style="margin: 0 -25px;">
+                                                <label>Select dates</label>
+                                                <!-- Single dropdown with date ranges -->
+                                                <select name="date_range"
+                                                    style="padding: 0;min-width: 10px;width: 255px;height: 30px;">
+                                                    <optgroup>
+                                                        <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
+                                                    </optgroup>
+                                                    <optgroup>
+                                                        <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
+                                                    </optgroup>
+                                                    <!-- Add more date range options here as needed -->
+                                                    <optgroup>
+                                                        <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
+                                                    </optgroup>
+                                                    <optgroup>
+                                                        <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
+                                                    </optgroup>
+                                                    <optgroup>
+                                                        <option value="5">May 5 - May 9 (5 Days) - €25</option>
+                                                    </optgroup>
+                                                    <optgroup>
+                                                        <option value="12">Jun 15 - Jun 26 (12 Days) - €60</option>
+                                                    </optgroup>
+                                                </select>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="item d-flex align-items-center justify-content-between">
-                                                <h5 class="m-0">Feb 5 - Feb 15</h5>
-                                                <p class="m-0">10 Days</p>
-                                                <p class="m-0">€50</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item d-flex align-items-center justify-content-between">
-                                                <h5 class="m-0">Feb 5 - Feb 15</h5>
-                                                <p class="m-0">10 Days</p>
-                                                <p class="m-0">€50</p>
-                                            </div>
-                                        </li>
-
+                                        </div>
                                     </ul>
                                     <hr>
-                                    <div class="item d-flex align-items-center justify-content-between">
+                                    <!-- <div class="item d-flex align-items-center justify-content-between">
                                         <h5 class="m-0">Bookings</h5>
                                         <p class="m-0">30 Days</p>
                                         <p class="m-0">€150</p>
-                                    </div>
+                                    </div> -->
                                     <div class="item d-flex align-items-center justify-content-between">
                                         <h4 class="m-0">2 adult guest</h4>
-
                                     </div>
                                 </div>
                                 <hr>
@@ -1036,20 +1129,7 @@
                                     <h3 class="m-0">Total</h3>
                                     <p class="m-0">€268</p>
                                 </div>
-                                <!-- <div class="promo">
-                                    <div class="field">
-                                        <input type="text" name="promo" placeholder="Enter Promo Code">
-                                        <button class="btn btn-primary">Apply</button>
-                                    </div>
-                                    <div class="message">
-                                        <p>Unable to apply promo code</p>
-                                    </div>
-                                </div> -->
-
-
-
                                 <a href="chat.html" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
-
                             </div>
                         </div>
                         <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
@@ -1062,8 +1142,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         </div>
     </section>
 
