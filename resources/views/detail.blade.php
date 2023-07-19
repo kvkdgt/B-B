@@ -803,13 +803,10 @@
                             </div>
                         </div>
                     </div>
-
                     <hr>
-
-
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Lession Location</h4>
+                            <h4>Ideal Guest</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
