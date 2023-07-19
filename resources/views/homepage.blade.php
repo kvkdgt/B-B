@@ -205,16 +205,16 @@
     <div class="container text-last" data-aos="fade-up">
 
 
-        <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
+        <!-- <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
             <span>What You Want to Learn?</span></a>
         <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
             <span>Country/State</span></a>
         <a href="{{route('map')}}" class="btn btn-black-outline"><i class="bx bx-map"></i>
-            <span>Month/Year</span></a>
+            <span>Month/Year</span></a> -->
         <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal" data-toggle="modal"><i
                 class="bx bx-filter"></i> <span>Filters</span></a>
 
-
+            <a href="#" class="btn btn-black-outline">Request</a>
     </div>
 
     <div class="tab-content clearfix">
@@ -228,9 +228,7 @@
                                 Learn</a>
                             <a href="#tab2" class="" data-toggle="tab" style="margin-right: 20px;">Stay for event</a>
                         </div>
-                        <div class="right-block">
-                            <a href="#" class="btn btn-black-outline">Request</a>
-                        </div>
+
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-12">
@@ -420,20 +418,6 @@
                             <a href="#" class="btn btn-black-outline">Request</a>
                         </div>
                     </div>
-                    <!-- <div class="mb-4 d-flex align-items-center justify-content-between">
-                        <div class="heading">
-                            <h4>Most Popular Hosts Tutors</h4>
-                            <p>book your next stay with amazing host tutors.</p>
-                        </div>
-
-                        <div class="icons">
-                            <a href="map.html" class="btn btn-black-outline"><i class="bx bx-map"></i>
-                                <span>Listing/Map</span></a>
-                            <a href="#filtersModal" class="btn btn-black-outline" data-target="#filtersModal"
-                                data-toggle="modal"><i class="bx bx-filter"></i> <span>Filters</span></a>
-                        </div>
-
-                    </div> -->
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="listing-item">
