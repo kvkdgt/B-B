@@ -48,7 +48,7 @@ button.edit-btn {
 }
 
 .user-block {
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 10px 0;
 }
@@ -59,7 +59,7 @@ button.edit-btn {
 
 .user-block a,
 .user-block a:hover {
-    color: #fff;
+    color: #000;
 }
 
 ul.menu {
@@ -73,7 +73,7 @@ ul.menu li {
 }
 
 ul.menu li span {
-    color: #fff;
+    color: #000;
     display: block;
     padding: 5px 20px;
     transition: all 0.5s ease;
@@ -94,11 +94,11 @@ ul.menu li.dropdown i {
     position: absolute;
     right: 20px;
     top: 7px;
-    color: #fff;
+    color: #000;
 }
 
 ul.sub-menu {
-    color: white;
+    color: #000;
     list-style: none;
     margin: 0 5px;
     padding: 10px 10px 0;
@@ -210,7 +210,7 @@ ul.sub-menu li:last-child {
     padding: 7px;
 }
 
-.container {
+/* .container {
     max-width: 1600px;
     width: 100%
 }
@@ -226,7 +226,107 @@ ul.sub-menu li:last-child {
     .container {
         width: 1140px;
     }
+} */
+
+body {
+    overflow: hidden;
 }
+
+.page-sidebar {
+    /* width: 100%;
+    max-width: 250px; */
+    background: #fff;
+    height: calc(100vh - 75px);
+    margin: -10px;
+    box-shadow: 0 0 15px #ededed;
+    overflow-y: scroll;
+}  
+
+.page-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.page-sidebar::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-sidebar::-webkit-scrollbar-thumb {
+    background: rgb(190 229 0 / 50%);
+    border-radius: 10px;
+}
+
+footer#footer {
+    display : none;
+}
+
+.page-content {
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+    padding: 30px;
+    margin: -10px;
+}
+
+.page-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.page-content::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-content::-webkit-scrollbar-thumb {
+    background: #bee500;
+    border-radius: 10px;
+}
+
+.mobile-menu span {
+    display: none;
+}
+
+table thead {
+    background: #bee500 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .page-sidebar {
+        display:none;
+    }
+
+    .mobile-menu > span {
+        font-size: 24px;
+        position: absolute;
+        top: -60px;
+        z-index: 999;
+        display: block;
+    }
+
+#header .logo {
+    margin-left: auto !important;
+}
+
+.search-area {
+    display: block !important;
+}
+
+.search-block form {
+    margin: 0;
+}
+
+.mobile-menu.open-menu .page-sidebar{
+    display: block;
+    margin: -15px;
+}
+
+.mobile-menu.open-menu span.hide-menu  {
+    display: block;
+}
+
+span.hide-menu, .mobile-menu.open-menu span.show-menu {
+    display: none;
+}
+
+}
+
 </style>
 <main id="main">
 
@@ -237,13 +337,16 @@ ul.sub-menu li:last-child {
     }
     </script>
     <!-- popular listings start -->
-    <section class="host-profile">
-        <div class="container" data-aos="fade-up">
-            <div class="row mt-5">
-                <!--  Right Side Cart  -->
-                <h3 class="mb-5">Host Dashboard</h3>
-                <div class="col-md-3 col-sm-4 col-12">
-                    <div class="side-edit-bar">
+    
+    <!-- <div class="dashboard-wrapper"></div> -->
+        <div class="row">
+            <div class="col-lg-2 col-md-3">
+                <div class="mobile-menu open-menu">
+                    <span class="show-menu"><i class="bi bi-list"></i>
+                    </span>
+                    <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="page-sidebar">
                         <div class="user-block">
                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                             <h4>Kartik Trivedi</h4>
@@ -303,7 +406,9 @@ ul.sub-menu li:last-child {
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-8 col-12">
+            </div>
+            <div class="col-lg-10 col-md-9">
+                <div class="page-content">
                     <!--  Statistics  -->
                     <div class="row">
                         <!--  Total Listing  -->
@@ -335,8 +440,6 @@ ul.sub-menu li:last-child {
                                 </div>
                             </div>
                         </div> -->
-
-
 
                         <!--  Graphs  -->
 
@@ -589,15 +692,9 @@ ul.sub-menu li:last-child {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </div>
-
         </div>
-    </section>
 
 </main><!-- End #main -->
