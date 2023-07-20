@@ -1,8 +1,11 @@
 @extends('hometheme')
 @section('content')
 <style>
+    .chat-person-profile{
+        background-color: #eeeeee !important;
+    }
     .messages-suggestions {
-        background: #f1eded;
+        background: #adfe00;
         padding: 9px;
         border-radius: 25px;
     }
@@ -11,6 +14,9 @@
         color: red;
         font-weight: 600;
         font-size: 16px !important;
+    }
+    .chat-in-button {
+        margin:5px;
     }
 
     .message-icon {
@@ -138,32 +144,38 @@
                                     </div>
                                     <div class="item right">
                                         <div class="text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tincidunt odio. Mauris a quam sagittis metus euismod mollis vel ac mauris. Donec ac tellus tincidunt, pellentesque leo quis, tempus mi.</p>
+                                            <p>Stay and Learn
+                                                <hr>
+                                                Check-in date: 08/20/2023<br>
+                                                Check-out este 06/30/2023<br>
+                                                Total Days. 10<br>
+                                                <br>
+                                                price per night: C00<br>
+                                                Total Nights: euro 3000<br>
+                                                Discount @ 5% €150<br>
+                                                Cleaning Fee: 39<br>
+                                                Service fee: cA6t<br>
+                                                Other Fee: 0<br>
+                                                No of Guess: 1<br>
+                                                <br>
+                                                Total Amount: 3501<br><br>
+                                                <div class="">
+                                                <a class="chat-in-button btn btn-pill btn-danger">Withdraw Booking</a><br>
+                                                <a class="chat-in-button btn btn-pill btn-primary">Edit Booking</a><br>
+                                                <a class="chat-in-button btn btn-pill btn-danger" style="    background-color: green !important;
+    border: 0px;">Confirmed & Proceed</a>
+
+                                                </div>
+                                               
+                                                <hr>
+
+                                            </p>
                                             <span>01:10 PM</span>
                                         </div>
                                         <img src="assets/img/team/team-3.jpg" alt="Receiver">
                                     </div>
-                                    <div class="item right">
-                                        <div class="text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tincidunt odio.</p>
-                                            <span>02:30 PM</span>
-                                        </div>
-                                        <img src="assets/img/team/team-3.jpg" alt="Receiver">
-                                    </div>
-                                    <div class="item right">
-                                        <div class="text-box">
-                                            <p>Lorum ipsum dolor</p>
-                                            <span>05:10 PM</span>
-                                        </div>
-                                        <img src="assets/img/team/team-3.jpg" alt="Receiver">
-                                    </div>
-                                    <div class="item left">
-                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
-                                        <div class="text-box">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tincidunt odio.</p>
-                                            <span>05:30 PM</span>
-                                        </div>
-                                    </div>
+
+
 
                                 </div>
                                 <div class="suggested-message">
@@ -200,13 +212,17 @@
 
                 <!--  My Listing  -->
                 <div class="col-md-3 col-sm-12">
-                    <div class="card">
+                    <div class="card chat-person-profile">
                         <div class="card-header d-flex align-items-center justify-content-between">
                             <h4>about John Doe </h4>
                         </div>
                         <div class="card-body listings">
-                            <h3>John Doe</h3>
-                            Joined since 2022
+                        <img style="height:40" src="assets/img/team/team-1.jpg" alt="Chat Profile">
+
+                            <span style="font-size:20;font-weight:600">John Doe</span><hr>
+                           Date of Join : Dec 20, 2022<br>
+                           <a href="" style="color:blue">View Profile</a>&nbsp;|
+                           <a href="" style="color:blue">Reviews</a>
 
                         </div>
                     </div>
