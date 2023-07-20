@@ -33,10 +33,13 @@ Route::get('/host-profile', [App\Http\Controllers\HostController::class, 'hostPr
 Route::get('/create-listing', [App\Http\Controllers\HostController::class, 'createListing'])->name('createListing');
 Route::get('/edit-host-profile', [App\Http\Controllers\HostController::class, 'editHostProfile'])->name('editHostProfile');
 Route::get('/host-notifications', [App\Http\Controllers\HostController::class, 'hostNotification'])->name('hostNotification');
-Route::get('/host-accepted-booking', [App\Http\Controllers\HostController::class, 'hostacceptedbooking'])->name('hostacceptedbooking');
-Route::get('/host-rejected-booking', [App\Http\Controllers\HostController::class, 'hostrejectedbooking'])->name('hostrejectedbooking');
-Route::get('/host-refunded-booking', [App\Http\Controllers\HostController::class, 'hostrefundedbooking'])->name('hostrefundedbooking');
+Route::get('/host-booking', [App\Http\Controllers\HostController::class, 'hostbooking'])->name('hostbooking');
 Route::get('/host-all-listing', [App\Http\Controllers\HostController::class, 'alllisting'])->name('alllisting');
 Route::get('/host-saved-listing', [App\Http\Controllers\HostController::class, 'savedlisting'])->name('savedlisting');
 Route::get('/host-liked-listing', [App\Http\Controllers\HostController::class, 'likedlisting'])->name('likedlisting');
 Route::get('/sample', [App\Http\Controllers\HostController::class, 'sample'])->name('sample');
+Route::get('/host-revenue', [App\Http\Controllers\HostController::class, 'revenue'])->name('revenue');
+Route::get('/host-net-income', [App\Http\Controllers\HostController::class, 'netincome'])->name('netincome');
+Route::get('/host-pay-details', [App\Http\Controllers\HostController::class, 'paydetail'])->name('paydetail');
+Route::get('/change-password', [App\Http\Controllers\HostController::class, 'changepassword'])->name('changepassword');
+

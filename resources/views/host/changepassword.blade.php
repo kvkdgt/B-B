@@ -338,8 +338,7 @@ table thead {
     </script>
 
     <div class="row">
-
-    <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -404,61 +403,31 @@ table thead {
         <div class="col-md-9 col-sm-12">
             <div class="row">
                 <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>All Listings</h4>
-                    <div class="search">
-                        <button class="btn btn-danger">Delete</button>
-                        <input type="text" name="search" placeholder="Search here">
-                        <i class="bx bx-search"></i>
-                    </div>
+                    <h4>Change Password</h4>
                 </div>
                 <div class="card-body">
-                    <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                    <div class="common-table">
-                        <table>
-                            <thead>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                        </div>
-                                    </td>
-                                    <td>01</td>
-                                    <td>25/03/2023</td>
-                                    <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-edit"></i></a>
-                                        <a href="#"><i class="fa fa-trash text-danger"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </tfoot>
-                        </table>
-
-                    </div>
+                    <form action="#" method="get">
+                        <div class="d-grid">
+                            <label>Email</label>
+                            <input type="email" name="email" value="test@gmail.com" readonly>
+                        </div>
+                        <div class="d-grid">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Enter Password">
+                        </div>
+                        <div class="d-grid">
+                            <label>Confirm Password</label>
+                            <input type="password" name="con_password" placeholder="Confirm Password">
+                        </div>
+                        <div class="" style="display: flow-root;">
+                            <button href="#" class="btn btn-primary m-3" style="float:right">Continue</button>
+                        </div>
+                        <div class="d-grid">
+                            <label>Enter 2FA Code from Email</label>
+                            <input type="text" name="code" placeholder="123456">
+                        </div>
+                        <a href="#" class="btn btn-primary m-3" style="float:right">Change Password</a>
+                    </form>
                 </div>
             </div>
         </div>

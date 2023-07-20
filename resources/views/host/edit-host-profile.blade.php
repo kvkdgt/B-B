@@ -251,7 +251,7 @@ function toggleSubMenu(icon) {
                         <ul class="menu">
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
-                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
+                                    <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu dropdown">
                                     <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -297,7 +297,7 @@ function toggleSubMenu(icon) {
                                 </div>
                                 <ul class="sub-menu">
                                     <li><span>Profile Setting</span></li>
-                                    <li><span>Change Password</span></li>
+                                    <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
                                 </ul>
                             </li>
                         </ul>

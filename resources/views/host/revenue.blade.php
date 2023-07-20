@@ -339,7 +339,7 @@ table thead {
 
     <div class="row">
 
-    <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -354,7 +354,8 @@ table thead {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -383,7 +384,7 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
                                 <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
@@ -404,7 +405,7 @@ table thead {
         <div class="col-md-9 col-sm-12">
             <div class="row">
                 <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>All Listings</h4>
+                    <h4>PAYMENTS &amp; PAYOUTS</h4>
                     <div class="search">
                         <button class="btn btn-danger">Delete</button>
                         <input type="text" name="search" placeholder="Search here">
@@ -412,17 +413,27 @@ table thead {
                     </div>
                 </div>
                 <div class="card-body">
-                    <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
                     <div class="common-table">
                         <table>
                             <thead>
                                 <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
+                                <th>Date</th>
                                 <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
+                                <th>Host Name</th>
+                                <th>Host Email</th>
+                                <th>Guest Name</th>
+                                <th>Guest Email</th>
+                                <th>Country</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Total Nights</th>
+                                <th>Booking ID</th>
+                                <th>Service fee</th>
+                                <th>Other fee</th>
+                                <th>Security Deposit</th>
+                                <th>Total Cost</th>
+                                <th>Net Income</th>
+                                <th>Total Payout</th>
                                 <th>Action</th>
                             </thead>
 
@@ -434,26 +445,50 @@ table thead {
                                                 id="flexCheckDefault">
                                         </div>
                                     </td>
-                                    <td>01</td>
                                     <td>25/03/2023</td>
                                     <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>25</td>
+                                    <td><a href="host-profile.html">Host Name</a></td>
+                                    <td>host@gmail.com</td>
+                                    <td><a href="host-profile.html">Guest Name</a></td>
+                                    <td>guest@gmail.com</td>
+                                    <td>Germany</td>
+                                    <td>03/04/2023</td>
+                                    <td>09/04/2023</td>
+                                    <td>08</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€495</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
                                     <td>
-                                        <a href="#"><i class="fa fa-edit"></i></a>
-                                        <a href="#"><i class="fa fa-trash text-danger"></i></a>
+                                        <a href="#"><i class="fa fa-eye"></i></a>
+                                        <a href="chat.html"><i class="fa fa-dollar"></i></a>
+                                        <a href="#"><i class="fa fa-print"></i></a>
                                     </td>
                                 </tr>
                             </tbody>
+
                             <tfoot>
                                 <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
+                                <th>Date</th>
                                 <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
+                                <th>Host Name</th>
+                                <th>Host Email</th>
+                                <th>Guest Name</th>
+                                <th>Guest Email</th>
+                                <th>Country</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Total Nights</th>
+                                <th>Booking ID</th>
+                                <th>Service fee</th>
+                                <th>Other fee</th>
+                                <th>Security Deposit</th>
+                                <th>Total Cost</th>
+                                <th>Net Income</th>
+                                <th>Total Payout</th>
                                 <th>Action</th>
                             </tfoot>
                         </table>
