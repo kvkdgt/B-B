@@ -40,3 +40,4 @@ Route::get('/host-all-listing', [App\Http\Controllers\HostController::class, 'al
 Route::get('/host-saved-listing', [App\Http\Controllers\HostController::class, 'savedlisting'])->name('savedlisting');
 Route::get('/host-liked-listing', [App\Http\Controllers\HostController::class, 'likedlisting'])->name('likedlisting');
 Route::get('/sample', [App\Http\Controllers\HostController::class, 'sample'])->name('sample');
+Route::get('/admin-dashboard', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard');
