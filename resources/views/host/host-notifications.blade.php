@@ -12,7 +12,7 @@
 
 .host-block {
     /* border: 1px solid rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
     border-radius: 25px;
 }
 
@@ -48,7 +48,7 @@ button.edit-btn {
 }
 
 .user-block {
-    color: #fff;
+    color: #000;
     text-align: center;
     padding: 10px 0;
 }
@@ -59,7 +59,7 @@ button.edit-btn {
 
 .user-block a,
 .user-block a:hover {
-    color: #fff;
+    color: #000;
 }
 
 ul.menu {
@@ -73,7 +73,7 @@ ul.menu li {
 }
 
 ul.menu li span {
-    color: #fff;
+    color: #000;
     display: block;
     padding: 5px 20px;
     transition: all 0.5s ease;
@@ -94,18 +94,19 @@ ul.menu li.dropdown i {
     position: absolute;
     right: 20px;
     top: 7px;
+    color: #000;
 }
 
 ul.sub-menu {
-    color: white;
+    color: #000;
     list-style: none;
     margin: 0 5px;
-    padding: 10px;
+    padding: 10px 10px 0;
     display: none;
 }
 
-ul.menu li.dropdown.active i {
-    transform: rotate(180deg);
+ul.sub-menu li:last-child {
+    padding: 0;
 }
 
 .active ul.sub-menu {
@@ -190,7 +191,144 @@ ul.menu li.dropdown.active i {
     border-radius: 5px;
     margin: 0 0 30px;
 }
+
+.total-block {
+    /* background: #FFFFFF; */
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
+    border-radius: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+.total-header {
+    margin: 0 0 20px;
+}
+
+.total-header select {
+    margin: 0;
+    padding: 7px;
+}
+
+/* .container {
+    max-width: 1600px;
+    width: 100%
+}
+
+@media (min-width: 1799px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+
+@media (min-width: 1470px) {
+    .container {
+        width: 1140px;
+    }
+} */
+
+body {
+    overflow: hidden;
+}
+
+.page-sidebar {
+    /* width: 100%;
+    max-width: 250px; */
+    background: #fff;
+    height: calc(100vh - 75px);
+    margin: -10px;
+    box-shadow: 0 0 15px #ededed;
+    overflow-y: scroll;
+}
+
+.page-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.page-sidebar::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-sidebar::-webkit-scrollbar-thumb {
+    background: rgb(190 229 0 / 50%);
+    border-radius: 10px;
+}
+
+footer#footer {
+    display: none;
+}
+
+.page-content {
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+    padding: 30px;
+    margin: -10px;
+}
+
+.page-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.page-content::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-content::-webkit-scrollbar-thumb {
+    background: #bee500;
+    border-radius: 10px;
+}
+
+.mobile-menu span {
+    display: none;
+}
+
+table thead {
+    background: #bee500 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .page-sidebar {
+        display: none;
+    }
+
+    .mobile-menu>span {
+        font-size: 24px;
+        position: absolute;
+        top: -60px;
+        z-index: 999;
+        display: block;
+    }
+
+    #header .logo {
+        margin-left: auto !important;
+    }
+
+    .search-area {
+        display: block !important;
+    }
+
+    .search-block form {
+        margin: 0;
+    }
+
+    .mobile-menu.open-menu .page-sidebar {
+        display: block;
+        margin: -15px;
+    }
+
+    .mobile-menu.open-menu span.hide-menu {
+        display: block;
+    }
+
+    span.hide-menu,
+    .mobile-menu.open-menu span.show-menu {
+        display: none;
+    }
+
+}
 </style>
+
 <main id="main">
 
     <script>
@@ -200,161 +338,151 @@ ul.menu li.dropdown.active i {
     }
     </script>
     <!-- popular listings start -->
-    <section class="host-profile">
-        <div class="container" data-aos="fade-up">
-            <div class="row mt-5">
-                <!--  Right Side Cart  -->
-                <h3 class="mb-5">Host Dashboard</h3>
-                <div class="col-md-3 col-sm-4 col-12">
-                    <div class="side-edit-bar">
-                        <div class="user-block">
-                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
-                        </div>
-                        <ul class="menu">
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu dropdown" style="display:block;">
-                                    <li class="active"><span><a
-                                                href="{{route('hostNotification')}}">Notification</a></span></span></li>
-                                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                 <ul class="sub-menu">
-                                    <span><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
-                                    <span><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
-                                    <span><span><a href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
-                                </ul>
-
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>View All</li>
-                                    <li><span>View Liked Listing</span></li>
-                                    <li><span>View Saved Listing</span></li>
-                                    <li><span>Create New Listing</span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Revenue</span></li>
-                                    <li><span>Net Income</span></li>
-                                    <li><span>Update pay Details</span></li>
-                                </ul></i>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Profile Setting</span></li>
-                                    <li><span>Change Password</span></li>
-                                </ul>
-                            </li>
-                        </ul>
+    <div class="row">
+        <div class="col-lg-2 col-md-3">
+            <div class="mobile-menu open-menu">
+                <span class="show-menu"><i class="bi bi-list"></i>
+                </span>
+                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="page-sidebar">
+                    <div class="user-block">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
+                    </div>
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu dropdown">
+                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                </li>
+                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                 <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                            </ul></i>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Profile Setting</span></li>
+                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+            <div class="row">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h4>Notifications</h4>
+                    <div class="search">
+                        <button class="btn btn-danger">Delete</button>
+                        <input type="text" name="search" placeholder="Search here">
+                        <i class="bx bx-search"></i>
                     </div>
                 </div>
-                <div class="col-md-9 col-sm-12">
-                    <div class="row">
-                        <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>Notifications</h4>
-                            <div class="search">
-                                <button class="btn btn-danger">Delete</button>
-                                <input type="text" name="search" placeholder="Search here">
-                                <i class="bx bx-search"></i>
+                <div class="card-body">
+                    <div class="notifications">
+
+                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <div class=" d-flex align-items-center justify-content-lg-between">
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <img src="assets/img/avatar.png" alt="profile">
+                                </div>
+                                <div class="">
+                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="notifications">
-
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
+                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <div class=" d-flex align-items-center justify-content-lg-between">
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     </div>
                                 </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
+                                <div class="">
+                                    <img src="assets/img/avatar.png" alt="profile">
+                                </div>
+                                <div class="">
+                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <div class=" d-flex align-items-center justify-content-lg-between">
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     </div>
                                 </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
+                                <div class="">
+                                    <img src="assets/img/avatar.png" alt="profile">
+                                </div>
+                                <div class="">
+                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                            <div class=" d-flex align-items-center justify-content-lg-between">
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     </div>
                                 </div>
-                                <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                                    <div class=" d-flex align-items-center justify-content-lg-between">
-                                        <div class="">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <img src="assets/img/avatar.png" alt="profile">
-                                        </div>
-                                        <div class="">
-                                            <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                                        </div>
-                                    </div>
+                                <div class="">
+                                    <img src="assets/img/avatar.png" alt="profile">
+                                </div>
+                                <div class="">
+                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                                 </div>
                             </div>
                         </div>
@@ -362,6 +490,5 @@ ul.menu li.dropdown.active i {
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
 </main><!-- End #main -->

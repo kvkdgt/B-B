@@ -51,7 +51,7 @@
                     </div>
                     <ul class="sidebar-menu">
                         <li class="dropdown">
-                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span>Dashboard</span></a>
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="briefcase"></i><span><a href="{{route('dashboard')}}">Dashboard</a></span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="nav-link" href="{{ route('hostNotification') }}">Notificaiton</a></li>
                                 <li><a class="nav-link" href="{{ route('chat') }}">Chat</a></li>
