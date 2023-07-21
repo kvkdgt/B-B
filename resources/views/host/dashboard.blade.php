@@ -287,6 +287,24 @@ table thead {
     background: #bee500 !important;
 }
 
+.button-green i {
+    font-size: 28px;
+}
+
+.button-green span.badge {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    top: -20px;
+    padding: 0;
+    right: -5px;
+}
+
+table, th, td {
+  border: 1px solid black !important;
+  border-collapse: collapse;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -346,12 +364,7 @@ table thead {
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar">
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>
+                <div class="page-sidebar">             
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -360,7 +373,6 @@ table thead {
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -379,6 +391,7 @@ table thead {
                                 <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
                             </ul>
                         </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
@@ -405,6 +418,30 @@ table thead {
         <div class="col-lg-10 col-md-9">
             <div class="page-content">
                 <!--  Statistics  -->
+                <div class="row align-items-center my-4">
+                    <div class="col-2">
+                        <button class="btn btn-primary"> + Create Listing</button>
+                    </div>
+                    <div class="col-6">
+                        <form class="m-0">
+                            <input type="search" class="form-control" placeholder="Search Deshboard" />
+                        </form>
+                    </div>
+                    <div class="col-2" style="text-align: center;">
+                    <button class="btn button-green" type="button">
+                    <i class="fa-regular fa-bell"></i><span class="badge">10</span>
+                    </button>
+                    </div>
+                    <div class="col-2">
+                    <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                        <div>
+                            <h4>Kartik Trivedi</h4>
+                            <a href="#">kartik@mailinator.com</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 <div class="row">
                     <!--  Total Listing  -->
                     <!-- <div class="col-md-4 col-sm-12">
@@ -660,28 +697,49 @@ table thead {
                                     </tbody>
                                 </table>
 
-                                <table>
+                                <table style="margin: 40px 0 20px;">
                                     <thead>
                                         <th>S/No</th>
                                         <th>Date</th>
-                                        <th>Host Name</th>
                                         <th>Accept Total</th>
                                         <th>Reject Total</th>
-                                        <th>Admin Action</th>
                                     </thead>
                                     <tbody>
                                         <td>1</td>
                                         <td>2/8/22</td>
-                                        <td>Paul</td>
                                         <td>18</td>
                                         <td>2</td>
-                                        <td>Admin Action</td>
                                     </tbody>
                                 </table>
-
+                                
+                                <div class="table-header d-flex align-items-center justify-content-between">
+                                    <h4 class="my-4">Recent Reviews</h4>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
                                 <div class="table-heading">
                                     <table>
-                                        <thead></thead>
+                                    <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                    <td>3Star</td>
+                                    <td>Reviews Good B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                    <td>2Star</td>
+                                    <td>Reviews Fair B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
                                     </table>
                                 </div>
                             </div>

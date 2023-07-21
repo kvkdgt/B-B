@@ -123,7 +123,6 @@
     }
 
     .details-block {
-        margin-bottom: 25px;
         padding: 20px;
     }
 
@@ -145,6 +144,9 @@
         font-size: 20px;
         color: #323232;
         margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .about-us.details-block h4 {
@@ -466,8 +468,8 @@
                             <div class="d-flex">
                                 <img src="assets/img/avatar.png">
                                 <div class="m-2">
-                                    <h4 class="m-0">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 512 512">
+                                    <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                            viewBox="0 0 512 512" fill="#1da1f2">
                                             <path
                                                 d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                         </svg></h4>
@@ -509,7 +511,18 @@
                         </ul>
                     </div>
 
-                    <hr>
+                    <hr class="m-0">
+
+                    <div class="details-block">
+                        <h4>Langauage of Instrection</h4>
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                        </ul>
+                    </div>
+
+                    <hr class="m-0">
+
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
                             <h4>What Guest will learn</h4>
@@ -784,7 +797,7 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Lession Location</h4>
+                            <h4><i class="fa-solid fa-location-dot"></i> Lession Location</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -819,7 +832,7 @@
                     <hr>
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Ideal Guest</h4>
+                            <h4><i class="fa-solid fa-users"></i> Ideal Guest</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -912,7 +925,7 @@
 
                     <!--  My Album  -->
                     <div class="col-md-12">
-                        <div class="host-block">
+                        <div class="host-block" style="padding-bottom: 20px;">
                             <div class="host-header d-flex align-items-center justify-content-center">
                                 <h2>Media</h2>
                             </div>
@@ -951,7 +964,7 @@
 
                     <!--  Choose Dates  -->
                     <div class="details-block card-time">
-                        TIME :
+                    <i class="fa-regular fa-clock" style="margin-right: 10px;"></i> TIME :
                         Time In : 10:00 AM /
                         Time Out : 09:00 AM
 
