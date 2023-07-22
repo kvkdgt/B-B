@@ -331,8 +331,6 @@
 
                         </form>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -375,13 +373,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="mb-4 d-flex align-items-center justify-content-between">
-
-
-
-
-        </div>
+    <div class="row py-4">
         <div class="col-md-8 col-sm-12" style="height: 300px;">
             <img class="w-100" style="height: 300px; object-fit:cover;" src="assets/img/slide/slide-1.jpg" alt="Image">
         </div>
@@ -444,7 +436,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="d-flex">
                             <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
                             <a href="#"><i class="bx bx-heart"></i> Save</a>
@@ -454,15 +445,15 @@
                     <div class="details-block about-us">
                         <div class="d-flex align-items-center justify-content-between">
                             <h4>About the Host</h4>
-
-                            <div class="rating">
+                            <a href="{{route('hostProfile')}}" style="text-decoration: underline;">View Profile</a>
+                            <!-- <div class="rating">
                                 <i class='bx bxs-star'></i>
                                 <i class='bx bxs-star'></i>
                                 <i class='bx bxs-star'></i>
                                 <i class='bx bxs-star-half'></i>
                                 <i class="bx bx-star"></i>
                                 <span>(3.5) / (14 Reviews)</span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="details-content">
                             <div class="d-flex">
@@ -477,9 +468,7 @@
                                     <p class="m-0">Lonsdale St, Melbourne</p>
                                 </div>
                             </div>
-
-                            <a href="{{route('hostProfile')}}">View Profile</a>
-
+                            <a href="{{route('hostProfile')}}">Read More</a>
                         </div>
                     </div>
                     <hr>
@@ -490,8 +479,7 @@
                         <br>
                         <ul style="list-style: none; padding-left: 1.2rem;">
                             <li>
-
-                                <h4> <i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
+                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
                                 </h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
@@ -500,8 +488,7 @@
                             </li>
                             <br>
                             <li style="padding: 0;">
-
-                                <h4><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
+                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
                                     Graphics:</h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
@@ -529,32 +516,31 @@
                         </div>
                         <div class="details-content">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-12">
                                     <p>
                                         <i class="fa-solid fa-list"></i>
                                         Data structure
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-12">
                                     <p>
                                         <i class="fa-solid fa-list"></i>
                                         Variables
                                     </p>
                                 </div>
-
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-12">
                                     <p>
                                         <i class="fa-solid fa-list"></i>
                                         Class
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-12">
                                     <p>
                                         <i class="fa-solid fa-list"></i>
                                         Exception handling
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-12">
                                     <p>
                                         <i class="fa-solid fa-list"></i>
                                         Regular expression
@@ -592,18 +578,18 @@
                         </div>
                         <div class="details-content">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
-                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M11.5 1.875C11.8978 1.875 12.2794 2.03304 12.5607 2.31434C12.842 2.59564 13 2.97718 13 3.375V9.5955L21.25 14.3107V15.1973L13 13.4295V18.777L15.25 20.2762V21.834L11.5 20.5845L7.75 21.834V20.2755L10 18.7755V13.4295L1.75 15.1965V14.31L10 9.5955V3.375C10 2.97718 10.158 2.59564 10.4393 2.31434C10.7206 2.03304 11.1022 1.875 11.5 1.875ZM11.35 0.37875C10.5813 0.417234 9.85676 0.749704 9.32629 1.30739C8.79583 1.86508 8.5 2.60532 8.5 3.375V8.724L0.7225 13.17L0.64 13.2247L0.60025 13.2548L0.52525 13.32C0.437976 13.4071 0.36874 13.5106 0.321509 13.6245C0.274277 13.7384 0.249977 13.8604 0.25 13.9838V15.8932L0.25525 15.9788L0.25975 16.0223L0.27475 16.107C0.322965 16.3129 0.439377 16.4965 0.605076 16.6278C0.770776 16.7592 0.97603 16.8307 1.1875 16.8307L1.2475 16.8285L1.345 16.8172L8.5 15.2843V17.973L6.667 19.1955L6.5935 19.2518L6.55825 19.2817L6.49225 19.3463C6.33626 19.5187 6.24992 19.743 6.25 19.9755V22.6155L6.25525 22.701L6.25975 22.7438L6.27475 22.8293C6.32311 23.035 6.43958 23.2184 6.60527 23.3496C6.77096 23.4809 6.97613 23.5523 7.1875 23.5522L7.288 23.547C7.35459 23.5398 7.42021 23.5255 7.48375 23.5042L11.5 22.1647L15.5162 23.5042L15.613 23.5297L15.6625 23.5387L15.763 23.5507C15.8901 23.5575 16.0172 23.5382 16.1366 23.4942C16.2561 23.4502 16.3653 23.3824 16.4576 23.2948C16.5499 23.2072 16.6235 23.1018 16.6738 22.9849C16.724 22.8679 16.75 22.742 16.75 22.6147V19.9748L16.744 19.8825L16.7388 19.8375L16.7215 19.746L16.6915 19.6515C16.623 19.4653 16.4972 19.3057 16.3323 19.1955L14.5 17.973V15.2843L21.616 16.8097L21.7008 16.8232L21.7443 16.827L21.8305 16.8307C22.0419 16.8266 22.2457 16.7512 22.4088 16.6167C22.5719 16.4822 22.6847 16.2965 22.729 16.0897L22.7448 15.9923C22.7477 15.9675 22.7485 15.9427 22.75 15.8932V13.9838L22.7432 13.8848L22.7372 13.8353L22.717 13.7377L22.684 13.638C22.6055 13.4404 22.4621 13.2754 22.2775 13.17L14.5 8.72475V3.375C14.5 2.57935 14.1839 1.81629 13.6213 1.25368C13.0587 0.691071 12.2956 0.375 11.5 0.375L11.35 0.37875Z"
+                                                d="M18.6562 0.75C19.1487 0.75 19.6363 0.846997 20.0913 1.03545C20.5463 1.22391 20.9597 1.50013 21.3079 1.84835C21.6561 2.19657 21.9323 2.60997 22.1208 3.06494C22.3093 3.51991 22.4062 4.00754 22.4062 4.5C22.4062 9.29175 21.2122 14.3903 19.4062 15.5198V23.25H17.9062V15.5205C16.1333 14.412 14.9498 9.474 14.9078 4.75875L14.9062 4.5L14.91 4.33725C14.9519 3.37181 15.365 2.45983 16.0629 1.79149C16.7609 1.12316 17.6899 0.750056 18.6562 0.75ZM11.9062 0.75V14.3385C13.644 14.7563 14.9062 16.596 14.9062 18.75C14.9062 21.2025 13.269 23.25 11.1562 23.25C9.0435 23.25 7.40625 21.2025 7.40625 18.75C7.40625 16.596 8.6685 14.7555 10.4062 14.3385V0.75H11.9062ZM0.65625 0.75H1.40625C4.75875 0.75 6.60675 5.52375 6.6555 14.6287L6.65625 15.75H2.1555L2.15625 23.25H0.65625V0.75ZM11.1562 15.75C9.95475 15.75 8.90625 17.061 8.90625 18.75C8.90625 20.439 9.95475 21.75 11.1562 21.75C12.3577 21.75 13.4062 20.439 13.4062 18.75C13.4062 17.061 12.3577 15.75 11.1562 15.75ZM2.15625 2.42925V14.25H5.1525L5.13975 13.527L5.1195 12.8153C4.911 6.86775 3.8325 3.46725 2.32425 2.523L2.23425 2.4705L2.15625 2.42925ZM16.41 4.368L16.4062 4.5L16.4078 4.7325C16.4415 7.97325 17.181 11.5823 17.907 13.275V2.3775C17.4893 2.5252 17.1245 2.79284 16.8582 3.14691C16.5919 3.50098 16.436 3.92574 16.41 4.368ZM19.407 2.37825V13.2728C20.1488 11.5403 20.9062 7.8 20.9062 4.5C20.9062 4.03466 20.762 3.58078 20.4934 3.2008C20.2247 2.82083 19.8457 2.53347 19.407 2.37825Z"
                                                 fill="#222222" />
                                         </svg>
-                                        Kitchen
+                                        Breakfast
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="21" height="24" viewBox="0 0 21 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -611,11 +597,16 @@
                                                 d="M15.1562 0V4.5L11.9296 4.50062C12.0276 5.5477 12.4304 6.53647 13.0747 7.33345L13.2183 7.50345L12.0942 8.49655C11.1666 7.44657 10.5846 6.11111 10.4411 4.69103C9.8244 4.96948 9.45448 5.54515 9.41064 6.33846L9.40625 6.5L9.406 9.6825L12.5168 12.699C13.1541 13.317 13.5485 14.1378 13.6372 15.0131L13.6515 15.2014L13.6562 15.3911V21.8625C13.6562 22.9991 12.8109 23.9473 11.6742 24.0946L11.5418 24.108L11.3821 24.1124L2.38212 24.0159C1.19301 24.0031 0.227465 23.0696 0.160014 21.8972L0.15625 21.766V15.5431C0.15625 14.5759 0.529854 13.6487 1.1946 12.9529L1.33141 12.8168L4.65625 9.6765V6.636L1.64767 4.09059L1.66083 3.56345C1.75601 1.62697 3.31453 0.0876378 5.24031 0.00361339L5.40625 0L15.1562 0ZM11.3819 19.2645C9.68534 19.2637 8.04908 18.6311 6.78806 17.4586L6.6105 17.2874C5.6128 16.2891 4.2841 15.75 2.90013 15.75C2.47799 15.7498 2.06085 15.7998 1.65662 15.8977L1.65625 21.766C1.65625 22.1477 1.94157 22.4634 2.31144 22.5101L2.39821 22.516L11.3666 22.6128L11.463 22.6104C11.8222 22.5839 12.109 22.3041 12.151 21.952L12.1562 21.8625L12.1565 19.2206C11.9004 19.2499 11.6418 19.2646 11.3819 19.2645ZM10.4058 1.5H5.40625C4.3408 1.5 3.44297 2.24264 3.21368 3.23125L3.1876 3.36155L3.17875 3.4215L5.9305 5.7495H7.97275L7.98683 5.67632C8.25042 4.37996 9.14314 3.44183 10.406 3.12092L10.4058 1.5ZM19.6562 3C20.0705 3 20.4062 3.33579 20.4062 3.75C20.4062 4.16421 20.0705 4.5 19.6562 4.5C19.242 4.5 18.9062 4.16421 18.9062 3.75C18.9062 3.33579 19.242 3 19.6562 3ZM17.4062 1.5C17.8205 1.5 18.1562 1.83579 18.1562 2.25C18.1562 2.66421 17.8205 3 17.4062 3C16.992 3 16.6562 2.66421 16.6562 2.25C16.6562 1.83579 16.992 1.5 17.4062 1.5ZM13.6562 1.5H11.9058V3H13.6562V1.5ZM19.6562 0C20.0705 0 20.4062 0.335786 20.4062 0.75C20.4062 1.16421 20.0705 1.5 19.6562 1.5C19.242 1.5 18.9062 1.16421 18.9062 0.75C18.9062 0.335786 19.242 0 19.6562 0ZM12.1562 15.3911C12.1562 14.8331 11.949 14.2969 11.5779 13.885L11.4726 13.7758L7.90625 10.3174L7.906 7.2495H6.15625V10.3233L2.36135 13.9074C2.2337 14.0279 2.12174 14.1619 2.02684 14.3061C2.31588 14.2686 2.60731 14.2499 2.9005 14.25C4.59735 14.25 6.23386 14.8827 7.49377 16.0555L7.67116 16.2268C8.66973 17.2247 9.99877 17.7638 11.3826 17.7645C11.6432 17.7646 11.9019 17.7456 12.1569 17.7079L12.1562 15.3911Z"
                                                 fill="#222222" />
                                         </svg>
-                                        Cleaning available during stay
+                                        Gaming
                                     </p>
                                 </div>
-
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M288 48c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V192h40V120c0-13.3 10.7-24 24-24s24 10.7 24 24v72h24c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H432 336c-26.5 0-48-21.5-48-48V48zm64 32v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm16 80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H368zM352 272v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm176-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H528zM512 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H528c-8.8 0-16 7.2-16 16zM166.6 153.4l80 80c12.5 12.5 12.5 32.8 0 45.3l-80 80c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H146.7l-25.4-25.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0z"/></svg>
+                                        City Tour
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -626,7 +617,7 @@
                                         Steam room
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -637,18 +628,7 @@
                                         Movie theater
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
-                                    <p>
-                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M18.6562 0.75C19.1487 0.75 19.6363 0.846997 20.0913 1.03545C20.5463 1.22391 20.9597 1.50013 21.3079 1.84835C21.6561 2.19657 21.9323 2.60997 22.1208 3.06494C22.3093 3.51991 22.4062 4.00754 22.4062 4.5C22.4062 9.29175 21.2122 14.3903 19.4062 15.5198V23.25H17.9062V15.5205C16.1333 14.412 14.9498 9.474 14.9078 4.75875L14.9062 4.5L14.91 4.33725C14.9519 3.37181 15.365 2.45983 16.0629 1.79149C16.7609 1.12316 17.6899 0.750056 18.6562 0.75ZM11.9062 0.75V14.3385C13.644 14.7563 14.9062 16.596 14.9062 18.75C14.9062 21.2025 13.269 23.25 11.1562 23.25C9.0435 23.25 7.40625 21.2025 7.40625 18.75C7.40625 16.596 8.6685 14.7555 10.4062 14.3385V0.75H11.9062ZM0.65625 0.75H1.40625C4.75875 0.75 6.60675 5.52375 6.6555 14.6287L6.65625 15.75H2.1555L2.15625 23.25H0.65625V0.75ZM11.1562 15.75C9.95475 15.75 8.90625 17.061 8.90625 18.75C8.90625 20.439 9.95475 21.75 11.1562 21.75C12.3577 21.75 13.4062 20.439 13.4062 18.75C13.4062 17.061 12.3577 15.75 11.1562 15.75ZM2.15625 2.42925V14.25H5.1525L5.13975 13.527L5.1195 12.8153C4.911 6.86775 3.8325 3.46725 2.32425 2.523L2.23425 2.4705L2.15625 2.42925ZM16.41 4.368L16.4062 4.5L16.4078 4.7325C16.4415 7.97325 17.181 11.5823 17.907 13.275V2.3775C17.4893 2.5252 17.1245 2.79284 16.8582 3.14691C16.5919 3.50098 16.436 3.92574 16.41 4.368ZM19.407 2.37825V13.2728C20.1488 11.5403 20.9062 7.8 20.9062 4.5C20.9062 4.03466 20.762 3.58078 20.4934 3.2008C20.2247 2.82083 19.8457 2.53347 19.407 2.37825Z"
-                                                fill="#222222" />
-                                        </svg>
-                                        Kitchen
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -659,7 +639,7 @@
                                         Wifi
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -670,7 +650,7 @@
                                         Dedicated workspace
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -681,7 +661,7 @@
                                         Free parking on premises
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
                                         <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -693,7 +673,6 @@
                                     </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <hr>
@@ -728,57 +707,43 @@
                         </div>
                         <div class="details-content">
                             <div class="row rules-block">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                         <i class="fa-solid fa-cube"></i>
                                         3D Models
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                         <i class="fa-solid fa-paw"></i>
                                         No pets
                                     </p>
                                 </div>
-
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                         <i class="fa-solid fa-shoe-prints"></i>
                                         No shoes
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                         <i class="fa-solid fa-smoking-ban"></i>
                                         No smoking
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
-                                    <p>
-                                        <i class="fa-solid fa-utensils-slash"></i>
-                                        No outside food
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                     <i class="fa-solid fa-volume-xmark"></i>
                                         No loud music
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
-                                    <p>
-                                        <i class="fa-solid fa-glass-toast"></i>
-                                        No parties
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
                                         <i class="fa-solid fa-user-lock"></i>
                                         No unauthorized guests
                                     </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <hr>
@@ -801,29 +766,29 @@
                         </div>
                         <div class="details-content">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> B&B only
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B only
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> B&B and farm
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and farm
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> B&B and office
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and office
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> B&B and workshop
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and workshop
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> B&B and outdoor
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and outdoor
                                     </p>
                                 </div>
                             </div>
@@ -836,24 +801,24 @@
                         </div>
                         <div class="details-content">
                             <div class="row">
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> Student
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Student
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> Tourist
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Tourist
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> Founders
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Founders
                                     </p>
                                 </div>
-                                <div class="col-lg-6 col-sm-12">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                        <i class="fa fa-circle"></i> Employees
+                                        <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Employees
                                     </p>
                                 </div>
                             </div>
@@ -964,10 +929,11 @@
 
                     <!--  Choose Dates  -->
                     <div class="details-block card-time">
-                    <i class="fa-regular fa-clock" style="margin-right: 10px;"></i> TIME :
+                        <i class="fa-regular fa-clock" style="margin-right: 10px;">
+                        </i>
+                         TIME :
                         Time In : 10:00 AM /
                         Time Out : 09:00 AM
-
                     </div>
                     <hr>
                     <div class="details-block">
@@ -1043,7 +1009,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-md-12 col-sm-12 text-center">
                                     <button class="btn btn-primary-outline">Load More</button>
                                 </div>
@@ -1159,7 +1124,8 @@
                                     <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                     <path
                                         d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V64 368 480c0 17.7 14.3 32 32 32s32-14.3 32-32V352l64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66.1c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48V32z" />
-                                </svg> Report Listing</div>
+                                </svg> Report Listing
+                            </div>
                         </div>
                     </div>
                 </div>

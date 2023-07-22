@@ -209,6 +209,21 @@ ul.sub-menu li:last-child {
     padding: 7px;
 }
 
+.search i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px 20px;
+}
+
+.search {
+    position: relative;
+}
+
 /* .container {
     max-width: 1600px;
     width: 100%
@@ -399,7 +414,7 @@ table thead {
             </div>
         </div>
     </div>
-    <div class="col-md-9 col-sm-12">
+    <div class="col-lg-10 col-md-9 col-sm-12">
         <div class="row">
             <div class="card-header d-flex align-items-center justify-content-between">
                 <h4>Accepted Bookings</h4>

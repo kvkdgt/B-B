@@ -414,9 +414,6 @@
                                 style="border-bottom: 2px solid #bfe506; margin-right: 20px; padding-bottom: 7px">Stay
                                 for event</a>
                         </div>
-                        <div class="right-block">
-                            <a href="#" class="btn btn-black-outline">Request</a>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
