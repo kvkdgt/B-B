@@ -44,3 +44,17 @@ Route::get('/host-net-income', [App\Http\Controllers\HostController::class, 'net
 Route::get('/host-pay-details', [App\Http\Controllers\HostController::class, 'paydetail'])->name('paydetail');
 Route::get('/change-password', [App\Http\Controllers\HostController::class, 'changepassword'])->name('changepassword');
 
+Route::get('/admin-profile', [App\Http\Controllers\AdminController::class, 'adminProfile'])->name('adminProfile');
+Route::get('/edit-host-profile', [App\Http\Controllers\AdminController::class, 'editadminProfile'])->name('editadminProfile');
+Route::get('/admin-notifications', [App\Http\Controllers\AdminController::class, 'adminNotification'])->name('adminNotification');
+Route::get('/admin-booking', [App\Http\Controllers\AdminController::class, 'adminbooking'])->name('adminbooking');
+Route::get('/admin-all-listing', [App\Http\Controllers\AdminController::class, 'alllisting'])->name('alllistingadmin');
+Route::get('/admin-saved-listing', [App\Http\Controllers\AdminController::class, 'savedlisting'])->name('savedlistingadmin');
+Route::get('/admin-liked-listing', [App\Http\Controllers\AdminController::class, 'likedlisting'])->name('likedlistingadmin');
+Route::get('/admin-revenue', [App\Http\Controllers\AdminController::class, 'revenue'])->name('revenueadmin');
+Route::get('/admin-net-income', [App\Http\Controllers\AdminController::class, 'netincome'])->name('netincomeadmin');
+Route::get('/admin-pay-details', [App\Http\Controllers\AdminController::class, 'paydetail'])->name('paydetailadmin');
+Route::get('/users', [App\Http\Controllers\AdminController::class, 'users'])->name('users');
+
+
+

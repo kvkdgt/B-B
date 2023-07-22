@@ -240,7 +240,7 @@ body {
     margin: -10px;
     box-shadow: 0 0 15px #ededed;
     overflow-y: scroll;
-}  
+}
 
 .page-sidebar::-webkit-scrollbar {
     width: 5px;
@@ -256,7 +256,7 @@ body {
 }
 
 footer#footer {
-    display : none;
+    display: none;
 }
 
 .page-content {
@@ -287,12 +287,30 @@ table thead {
     background: #bee500 !important;
 }
 
+.button-green i {
+    font-size: 28px;
+}
+
+.button-green span.badge {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    top: -20px;
+    padding: 0;
+    right: -5px;
+}
+
+table, th, td {
+  border: 1px solid black !important;
+  border-collapse: collapse;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
-        display:none;
+        display: none;
     }
 
-    .mobile-menu > span {
+    .mobile-menu>span {
         font-size: 24px;
         position: absolute;
         top: -60px;
@@ -300,33 +318,33 @@ table thead {
         display: block;
     }
 
-#header .logo {
-    margin-left: auto !important;
-}
+    #header .logo {
+        margin-left: auto !important;
+    }
 
-.search-area {
-    display: block !important;
-}
+    .search-area {
+        display: block !important;
+    }
 
-.search-block form {
-    margin: 0;
-}
+    .search-block form {
+        margin: 0;
+    }
 
-.mobile-menu.open-menu .page-sidebar{
-    display: block;
-    margin: -15px;
-}
+    .mobile-menu.open-menu .page-sidebar {
+        display: block;
+        margin: -15px;
+    }
 
-.mobile-menu.open-menu span.hide-menu  {
-    display: block;
-}
+    .mobile-menu.open-menu span.hide-menu {
+        display: block;
+    }
 
-span.hide-menu, .mobile-menu.open-menu span.show-menu {
-    display: none;
-}
+    span.hide-menu,
+    .mobile-menu.open-menu span.show-menu {
+        display: none;
+    }
 
 }
-
 </style>
 <main id="main">
 
@@ -337,89 +355,105 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
     }
     </script>
     <!-- popular listings start -->
-    
+
     <!-- <div class="dashboard-wrapper"></div> -->
-        <div class="row">
-            <div class="col-lg-2 col-md-3">
-                <div class="mobile-menu open-menu">
-                    <span class="show-menu"><i class="bi bi-list"></i>
-                    </span>
-                    <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                    </span>
-                    <div class="page-sidebar">
-                        <div class="user-block">
-                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
-                        </div>
-                        <ul class="menu">
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu dropdown">
-                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
-                                    </li>
-                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                    <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                    <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                    <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Revenue</span></li>
-                                    <li><span>Net Income</span></li>
-                                    <li><span>Update pay Details</span></li>
-                                </ul></i>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Profile Setting</span></li>
-                                    <li><span>Change Password</span></li>
+    <div class="row">
+        <div class="col-lg-2 col-md-3">
+            <div class="mobile-menu open-menu">
+                <span class="show-menu"><i class="bi bi-list"></i>
+                </span>
+                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="page-sidebar">             
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu dropdown">
+                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                            <a href="{{route('adminbooking')}}">  <span>Users</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
+                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                            </ul>
+                        </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
+                            </ul></i>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                            <li><span>Profile Setting</span></li>
+                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
                                     <li><span>Update Pages</span></li>
                                     <li><span>Block IP addresses</span></li>
                                     <li><span>General Settings</span></li>
-
-
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-9">
-                <div class="page-content">
-                    <!--  Statistics  -->
-    <span style="font-weight:600;font-size:24">Admin Dashboard</span>
-    <span style="float:right"><a href="#" class="btn btn-primary">+ Create Listing</a></span>
-<hr>
-                    <div class="row">
-                        <!--  Total Listing  -->
-                        <!-- <div class="col-md-4 col-sm-12">
+        </div>
+        <div class="col-lg-10 col-md-9">
+            <div class="page-content">
+                <!--  Statistics  -->
+                <div class="row align-items-center my-4">
+                    <div class="col-2">
+                        <button class="btn btn-primary"> + Create Listing</button>
+                    </div>
+                    <div class="col-6">
+                        <form class="m-0">
+                            <input type="search" class="form-control" placeholder="Search Deshboard" />
+                        </form>
+                    </div>
+                    <div class="col-2" style="text-align: center;">
+                    <button class="btn button-green" type="button">
+                    <i class="fa-regular fa-bell"></i><span class="badge">10</span>
+                    </button>
+                    </div>
+                    <div class="col-2">
+                    <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                        <div>
+                            <h4>Kartik Trivedi</h4>
+                            <a href="#">kartik@mailinator.com</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--  Total Listing  -->
+                    <!-- <div class="col-md-4 col-sm-12">
                             <div class="total-block">
                                 <div class="card-body d-flex align-items-center justify-content-between">
                                     <h4>Total Listing</h4>
@@ -428,8 +462,8 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                             </div>
                         </div> -->
 
-                        <!--  Total Net Income  -->
-                        <!-- <div class="col-md-4 col-sm-12">
+                    <!--  Total Net Income  -->
+                    <!-- <div class="col-md-4 col-sm-12">
                             <div class="total-block">
                                 <div class="card-body d-flex align-items-center justify-content-between">
                                     <h4>Total Net Income</h4>
@@ -438,8 +472,8 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                             </div>
                         </div> -->
 
-                        <!--  Total Revenue  -->
-                        <!-- <div class="col-md-4 col-sm-12">
+                    <!--  Total Revenue  -->
+                    <!-- <div class="col-md-4 col-sm-12">
                             <div class="total-block">
                                 <div class="card-body d-flex align-items-center justify-content-between">
                                     <h4>Total Revenue</h4>
@@ -448,96 +482,96 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                             </div>
                         </div> -->
 
-                        <!--  Graphs  -->
+                    <!--  Graphs  -->
 
-                        <!--  Total Listing  -->
-                        <div class="col-md-4 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Total Listing</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="total_listing_chart" style="width:100%;max-width:700px"></canvas>
+                    <!--  Total Listing  -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Total Listing</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="total-block">
+                            <canvas id="total_listing_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
 
-                        <!--  Total Net Income  -->
-                        <div class="col-md-4 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Total Net Income</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="total_income_chart" style="width:100%;max-width:700px"></canvas>
+                    <!--  Total Net Income  -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Total Net Income</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="total-block">
+                            <canvas id="total_income_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
 
-                        <!--  Total Revenue  -->
-                        <div class="col-md-4 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Total Revenue</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="total_revenue_chart" style="width:100%;max-width:700px"></canvas>
+                    <!--  Total Revenue  -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Total Revenue</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="total-block">
+                            <canvas id="total_revenue_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
 
 
 
-                        <!--  Bookings  -->
-                        <div class="col-md-8 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Bookings</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="bookings_chart" style="width:100%;max-width:700px"></canvas>
+                    <!--  Bookings  -->
+                    <div class="col-md-8 col-sm-12">
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Bookings</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="total-block">
+                            <canvas id="bookings_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
 
 
-                        <!--  Income/Charges  -->
-                        <div class="col-md-4 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Likes</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="income_pie_chart" style="width:100%;max-width:700px"></canvas>
+                    <!--  Income/Charges  -->
+                    <div class="col-md-4 col-sm-12">
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Likes</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12">
+                        <div class="total-block">
+                            <canvas id="income_pie_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
                             <div class="total-header d-flex align-items-center justify-content-between">
                                 <h4>Total Users</h4>
                                 <div class="">
@@ -607,51 +641,50 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                             </div>
                         </div>
                         </div>
-
-                        <!--  Recent Bookings  -->
-                        <div class="col-md-12 col-sm-12">
-                            <div class="booking-block">
-                                <div class="total-header d-flex align-items-center justify-content-between">
-                                    <h4>Recent Bookings</h4>
-                                    <div class="">
-                                        <select name="dropdown">
-                                            <option value="All">All</option>
-                                            <option value="Monthly">Monthly</option>
-                                            <option value="Weekly">Weekly</option>
-                                        </select>
-                                    </div>
+                    <!--  Recent Bookings  -->
+                    <div class="col-md-12 col-sm-12">
+                        <div class="booking-block">
+                            <div class="total-header d-flex align-items-center justify-content-between">
+                                <h4>Recent Bookings</h4>
+                                <div class="">
+                                    <select name="dropdown">
+                                        <option value="All">All</option>
+                                        <option value="Monthly">Monthly</option>
+                                        <option value="Weekly">Weekly</option>
+                                    </select>
                                 </div>
-                                <div class="common-table">
-                                    <table>
-                                        <thead>
-                                            <th>S/No</th>
-                                            <th>Date</th>
-                                            <th>Guest Name</th>
-                                            <th>Host Name</th>
-                                            <th>Check In</th>
-                                            <th>Check Out</th>
-                                            <th>Payment</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>01</td>
-                                                <td>02/08/2020</td>
-                                                <td>Rahul</td>
-                                                <td>Ketul</td>
-                                                <td>03/04/2023</td>
-                                                <td>09/04/2023</td>
-                                                <td>Received</td>
-                                            </tr>
-                                            <tr>
-                                                <td>02</td>
-                                                <td>04/09/2020</td>
-                                                <td>Ajal</td>
-                                                <td>Betup</td>
-                                                <td>03/04/2023</td>
-                                                <td>09/04/2023</td>
-                                                <td>Pending</td>
-                                            </tr>
-                                            <!-- <tr>
+                            </div>
+                            <div class="common-table">
+                                <table>
+                                    <thead>
+                                        <th>S/No</th>
+                                        <th>Date</th>
+                                        <th>Guest Name</th>
+                                        <th>Host Name</th>
+                                        <th>Check In</th>
+                                        <th>Check Out</th>
+                                        <th>Payment</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>02/08/2020</td>
+                                            <td>Rahul</td>
+                                            <td>Ketul</td>
+                                            <td>03/04/2023</td>
+                                            <td>09/04/2023</td>
+                                            <td>Received</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>04/09/2020</td>
+                                            <td>Ajal</td>
+                                            <td>Betup</td>
+                                            <td>03/04/2023</td>
+                                            <td>09/04/2023</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                        <!-- <tr>
                                                 <td>03</td>
                                                 <td><img src="assets/img/team/team-1.jpg" alt="Profile"></td>
                                                 <td>25/03/2023</td>
@@ -739,33 +772,53 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                                                 <td>09/04/2023</td>
                                                 <td><a href="#"><i class="fa fa-eye"></i></a></td>
                                             </tr> -->
-                                        </tbody>
-                                    </table>
+                                    </tbody>
+                                </table>
 
+                                <table style="margin: 40px 0 20px;">
+                                    <thead>
+                                        <th>S/No</th>
+                                        <th>Date</th>
+                                        <th>Accept Total</th>
+                                        <th>Reject Total</th>
+                                    </thead>
+                                    <tbody>
+                                        <td>1</td>
+                                        <td>2/8/22</td>
+                                        <td>18</td>
+                                        <td>2</td>
+                                    </tbody>
+                                </table>
+                                
+                                <div class="table-header d-flex align-items-center justify-content-between">
+                                    <h4 class="my-4">Recent Reviews</h4>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                                <div class="table-heading">
                                     <table>
-                                        <thead>
-                                            <th>S/No</th>
-                                            <th>Date</th>
-                                            <th>Host Name</th>
-                                            <th>Accept Total</th>
-                                            <th>Reject Total</th>
-                                            <th>Admin Action</th>
-                                        </thead>
-                                        <tbody>
-                                            <td>1</td>
-                                            <td>2/8/22</td>
-                                            <td>Paul</td>
-                                            <td>18</td>
-                                            <td>2</td>
-                                            <td>Admin Action</td>
-                                        </tbody>
+                                    <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                    <td>3Star</td>
+                                    <td>Reviews Good B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                    <td>2Star</td>
+                                    <td>Reviews Fair B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
                                     </table>
-
-                                    <div class="table-heading">
-                                        <table>
-                                            <thead></thead>
-                                        </table>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -773,5 +826,6 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                 </div>
             </div>
         </div>
+    </div>
 
 </main><!-- End #main -->
