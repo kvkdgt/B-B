@@ -210,6 +210,21 @@ ul.sub-menu li:last-child {
     padding: 7px;
 }
 
+.search i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px 20px;
+}
+
+.search {
+    position: relative;
+}
+
 /* .container {
     max-width: 1600px;
     width: 100%
@@ -401,94 +416,97 @@ table thead {
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-sm-12">
-            <div class="row">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>Notifications</h4>
-                    <div class="search">
-                        <button class="btn btn-danger">Delete</button>
-                        <input type="text" name="search" placeholder="Search here">
-                        <i class="bx bx-search"></i>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <div class="page-content">
+                <div class="row">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4>Notifications</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <div class="notifications">
+                    <div class="card-body">
+                        <div class="notifications">
 
-                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <div class=" d-flex align-items-center justify-content-lg-between">
-                                <div class="">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                                <div class=" d-flex align-items-center justify-content-lg-between">
+                                    <div class="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <img src="assets/img/avatar.png" alt="profile">
-                                </div>
-                                <div class="">
-                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    <div class="">
+                                        <img src="assets/img/avatar.png" alt="profile">
+                                    </div>
+                                    <div class="">
+                                        <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                            nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <div class=" d-flex align-items-center justify-content-lg-between">
-                                <div class="">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                                <div class=" d-flex align-items-center justify-content-lg-between">
+                                    <div class="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <img src="assets/img/avatar.png" alt="profile">
-                                </div>
-                                <div class="">
-                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    <div class="">
+                                        <img src="assets/img/avatar.png" alt="profile">
+                                    </div>
+                                    <div class="">
+                                        <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                            nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <div class=" d-flex align-items-center justify-content-lg-between">
-                                <div class="">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                                <div class=" d-flex align-items-center justify-content-lg-between">
+                                    <div class="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <img src="assets/img/avatar.png" alt="profile">
-                                </div>
-                                <div class="">
-                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    <div class="">
+                                        <img src="assets/img/avatar.png" alt="profile">
+                                    </div>
+                                    <div class="">
+                                        <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                            nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <div class=" d-flex align-items-center justify-content-lg-between">
-                                <div class="">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <div class="item mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                                <div class=" d-flex align-items-center justify-content-lg-between">
+                                    <div class="">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <img src="assets/img/avatar.png" alt="profile">
-                                </div>
-                                <div class="">
-                                    <h4>John Doe <span>Today 09:30 AM</span></h4>
-                                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    <div class="">
+                                        <img src="assets/img/avatar.png" alt="profile">
+                                    </div>
+                                    <div class="">
+                                        <h4>John Doe <span>Today 09:30 AM</span></h4>
+                                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                            nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </main><!-- End #main -->

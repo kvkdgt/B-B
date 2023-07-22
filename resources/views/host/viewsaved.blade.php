@@ -211,6 +211,21 @@
         padding: 7px;
     }
 
+    .search i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px 20px;
+}
+
+.search {
+    position: relative;
+}
+
     /* .container {
     max-width: 1600px;
     width: 100%
@@ -400,63 +415,65 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-sm-12">
-            <div class="row">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>Saved Listing</h4>
-                    <div class="search">
-                        <button class="btn btn-danger">Delete</button>
-                        <input type="text" name="search" placeholder="Search here">
-                        <i class="bx bx-search"></i>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <div class="page-content">
+                <div class="row">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4>Saved Listing</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                    <div class="common-table">
-                        <table>
-                            <thead>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </thead>
+                    <div class="card-body">
+                        <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
+                        <div class="common-table">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>S/No</th>
+                                    <th>Added Date</th>
+                                    <th>Listing Name</th>
+                                    <th>No of Likes</th>
+                                    <th>No of Saves</th>
+                                    <th>marked as Reported</th>
+                                    <th>Action</th>
+                                </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                        </div>
-                                    </td>
-                                    <td>01</td>
-                                    <td>25/03/2023</td>
-                                    <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-edit"></i></a>
-                                        <a href="#"><i class="fa fa-trash text-danger"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </tfoot>
-                        </table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>01</td>
+                                        <td>25/03/2023</td>
+                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-edit"></i></a>
+                                            <a href="#"><i class="fa fa-trash text-danger"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <th></th>
+                                    <th>S/No</th>
+                                    <th>Added Date</th>
+                                    <th>Listing Name</th>
+                                    <th>No of Likes</th>
+                                    <th>No of Saves</th>
+                                    <th>marked as Reported</th>
+                                    <th>Action</th>
+                                </tfoot>
+                            </table>
 
+                        </div>
                     </div>
                 </div>
             </div>

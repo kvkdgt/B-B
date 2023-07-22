@@ -400,34 +400,36 @@ table thead {
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-sm-12">
-            <div class="row">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>Change Password</h4>
-                </div>
-                <div class="card-body">
-                    <form action="#" method="get">
-                        <div class="d-grid">
-                            <label>Email</label>
-                            <input type="email" name="email" value="test@gmail.com" readonly>
-                        </div>
-                        <div class="d-grid">
-                            <label>Password</label>
-                            <input type="password" name="password" placeholder="Enter Password">
-                        </div>
-                        <div class="d-grid">
-                            <label>Confirm Password</label>
-                            <input type="password" name="con_password" placeholder="Confirm Password">
-                        </div>
-                        <div class="" style="display: flow-root;">
-                            <button href="#" class="btn btn-primary m-3" style="float:right">Continue</button>
-                        </div>
-                        <div class="d-grid">
-                            <label>Enter 2FA Code from Email</label>
-                            <input type="text" name="code" placeholder="123456">
-                        </div>
-                        <a href="#" class="btn btn-primary m-3" style="float:right">Change Password</a>
-                    </form>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+            <div class="page-content">
+                <div class="row">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4>Change Password</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="get">
+                            <div class="d-grid">
+                                <label>Email</label>
+                                <input type="email" name="email" value="test@gmail.com" readonly>
+                            </div>
+                            <div class="d-grid">
+                                <label>Password</label>
+                                <input type="password" name="password" placeholder="Enter Password">
+                            </div>
+                            <div class="d-grid">
+                                <label>Confirm Password</label>
+                                <input type="password" name="con_password" placeholder="Confirm Password">
+                            </div>
+                            <div class="" style="display: flow-root;">
+                                <button href="#" class="btn btn-primary m-3" style="float:right">Continue</button>
+                            </div>
+                            <div class="d-grid">
+                                <label>Enter 2FA Code from Email</label>
+                                <input type="text" name="code" placeholder="123456">
+                            </div>
+                            <a href="#" class="btn btn-primary m-3" style="float:right">Change Password</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

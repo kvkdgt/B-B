@@ -286,10 +286,59 @@
         display: none;
     }
 
+    .search i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px 20px;
+}
+
+.search {
+    position: relative;
+}
+/* 
     table thead {
         background: #bee500 !important;
+    } */
+
+    .listing-card .listing-item {
+        margin-bottom: 15px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        border-radius: 25px;
     }
 
+    .listing-card .slider-content {
+        padding: 10px;
+    }
+
+    .listing-card .listing-item .sub-main .slider-content a {
+    color: #353535;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.listing-card .user-img-top {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.listing-card .user-img-top img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #bee500;
+    border-radius: 50%;
+}
+
+.listing-card .listing-item .sub-main .img-sec img {
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+}
     @media screen and (max-width: 767px) {
         .page-sidebar {
             display: none;
@@ -339,7 +388,7 @@
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-2">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -401,63 +450,232 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-sm-12">
-            <div class="row">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>Liked Listing</h4>
-                    <div class="search">
-                        <button class="btn btn-danger">Delete</button>
-                        <input type="text" name="search" placeholder="Search here">
-                        <i class="bx bx-search"></i>
+        <div class="col-lg-10 col-md-10 col-sm-12">
+            <div class="page-content">
+                <div class="row">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4>Liked Listing</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                    <div class="common-table">
-                        <table>
-                            <thead>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </thead>
+                    <div class="card-body">
+                        <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
+                        <!-- <div class="common-table">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>S/No</th>
+                                    <th>Added Date</th>
+                                    <th>Listing Name</th>
+                                    <th>No of Likes</th>
+                                    <th>No of Saves</th>
+                                    <th>marked as Reported</th>
+                                    <th>Action</th>
+                                </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>01</td>
+                                        <td>25/03/2023</td>
+                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>25</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-edit"></i></a>
+                                            <a href="#"><i class="fa fa-trash text-danger"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <th></th>
+                                    <th>S/No</th>
+                                    <th>Added Date</th>
+                                    <th>Listing Name</th>
+                                    <th>No of Likes</th>
+                                    <th>No of Saves</th>
+                                    <th>marked as Reported</th>
+                                    <th>Action</th>
+                                </tfoot>
+                            </table>
+
+                        </div> -->
+
+                        <div class="row listing-card">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                         </div>
-                                    </td>
-                                    <td>01</td>
-                                    <td>25/03/2023</td>
-                                    <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>25</td>
-                                    <td>
-                                        <a href="#"><i class="fa fa-edit"></i></a>
-                                        <a href="#"><i class="fa fa-trash text-danger"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <th></th>
-                                <th>S/No</th>
-                                <th>Added Date</th>
-                                <th>Listing Name</th>
-                                <th>No of Likes</th>
-                                <th>No of Saves</th>
-                                <th>marked as Reported</th>
-                                <th>Action</th>
-                            </tfoot>
-                        </table>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Created : 
+                                                    Feb 2, 2000
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Email : good@gmail.com</p>
 
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Saved : 20times</p>
+                                            </div>
+                                            <div class="">
+                                                <p>Moved to Recommended</p>
+                                                <button>Yes No</button>
+                                            </div>
+                                            <div class="">
+                                                <h4>Read Reports</h4>
+                                                <ul style="list-style:none; padding: 0; margin: 0;">
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Created : 
+                                                    Feb 2, 2000
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Email : good@gmail.com</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Saved : 20times</p>
+                                            </div>
+                                            <div class="">
+                                                <p>Moved to Recommended</p>
+                                                <button>Yes No</button>
+                                            </div>
+                                            <div class="">
+                                                <h4>Read Reports</h4>
+                                                <ul style="list-style:none; padding: 0; margin: 0;">
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Created : 
+                                                    Feb 2, 2000
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Email : good@gmail.com</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Saved : 20times</p>
+                                            </div>
+                                            <div class="">
+                                                <p>Moved to Recommended</p>
+                                                <button>Yes No</button>
+                                            </div>
+                                            <div class="">
+                                                <h4>Read Reports</h4>
+                                                <ul style="list-style:none; padding: 0; margin: 0;">
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Created : 
+                                                    Feb 2, 2000
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Email : good@gmail.com</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Saved : 20times</p>
+                                            </div>
+                                            <div class="">
+                                                <p>Moved to Recommended</p>
+                                                <button>Yes No</button>
+                                            </div>
+                                            <div class="">
+                                                <h4>Read Reports</h4>
+                                                <ul style="list-style:none; padding: 0; margin: 0;">
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
+                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

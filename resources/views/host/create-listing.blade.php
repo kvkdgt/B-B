@@ -328,9 +328,9 @@ table thead {
 
 }
 
-ul.sub-menu li a {
+/* ul.sub-menu li a {
     color: #fff;
-}
+} */
 
 .listing-name input[type="text"] {
     margin: 0;

@@ -446,13 +446,13 @@
                                         <input type="text" placeholder="Listing Title">
                                     </div>
                                 </div>
-                                <div class="col">
+                                <!-- <div class="col">
                                     <div class="d-grid">
 
                                         <label>offer</label>
                                         <input type="text" placeholder="offer">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="rating-table-design">
                                 <table style="background-color:aliceblue">
