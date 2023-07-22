@@ -24,14 +24,8 @@ class HostController extends Controller
     public function hostNotification(){
         return view('host/host-notifications');
     }
-    public function hostacceptedbooking(){
-        return view('host/host-accepted-booking');
-    }
-    public function hostrejectedbooking(){
-        return view('host/host-rejected-booking');
-    }
-    public function hostrefundedbooking(){
-        return view('host/host-refunded-booking');
+    public function hostbooking(){
+        return view('host/host-booking');
     }
     public function alllisting(){
         return view('host/viewall');
@@ -42,4 +36,15 @@ class HostController extends Controller
     } public function sample(){
         return view('host-dashboard/sample');
     }
+    public function revenue(){
+        return view('host/revenue');
+    }  public function netincome(){
+        return view('host/netincom');
+    }  public function paydetail(){
+        return view('host/updatepaydetails');
+    }
+    public function changepassword(){
+        return view('host/changepassword');
+    }
+    
 }
