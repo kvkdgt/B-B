@@ -123,7 +123,6 @@
     }
 
     .details-block {
-        margin-bottom: 25px;
         padding: 20px;
     }
 
@@ -145,6 +144,9 @@
         font-size: 20px;
         color: #323232;
         margin: 0 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .about-us.details-block h4 {
@@ -269,6 +271,17 @@
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
+    }
+
+    .rules-block p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .rules-block p i {
+        width: 15px;
+        height: 15px;
     }
     </style>
 
@@ -395,17 +408,17 @@
                     <!--  Stay & Learn Salsa  -->
                     <div class="mb-4 d-flex align-items-center justify-content-between">
                         <div class="listing-item" style="display: flex;">
-                            <div class="sub-main" style="display: flex;">
+                            <div class="sub-main" style="display: flex; align-items: center;">
                                 <div class="img-sec p-rel">
                                     <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
-                                        style="max-width: 100px;">
-                                    <span class="icon-sec-right" style="position: absolute; top: 0; right: 0;">
-                                        <i class="fas fa-heart"></i>
+                                        style="max-width: 200px;">
+                                    <span class="icon-sec-right" style="position: absolute; top: 15px; right: 10px;">
+                                        <i class="fas fa-heart" style="font-size: 16px; color: #bee500;"></i>
                                     </span>
                                 </div>
-                                <div class="slider-content" style="margin-left: 10px;">
+                                <div class="slider-content" style="margin-left: 10px; flex: 0 0 70%;">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        Stay and Learn
+                                        <h4>Stay and Learn</h4>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <p>Python (Intro)</p>
@@ -426,7 +439,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="user-img-top" style="margin-left: 10px;">
+                                <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png" style="max-width: 50px;">
                                 </div>
                             </div>
@@ -455,8 +468,8 @@
                             <div class="d-flex">
                                 <img src="assets/img/avatar.png">
                                 <div class="m-2">
-                                    <h4 class="m-0">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 512 512">
+                                    <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                            viewBox="0 0 512 512" fill="#1da1f2">
                                             <path
                                                 d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                         </svg></h4>
@@ -474,20 +487,22 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <h3>Academic Qualification</h3>
                         </div>
+                        <br>
                         <ul style="list-style: none; padding-left: 1.2rem;">
                             <li>
 
                                 <h4> <i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
-                                </h4> <br>
+                                </h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
                                 <br>
                                 <span style="margin-left: 35px;">From: 20XX To: 20XX</span>
                             </li>
+                            <br>
                             <li style="padding: 0;">
 
                                 <h4><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
-                                    Graphics:</h4><br>
+                                    Graphics:</h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
                                 <br>
@@ -496,7 +511,18 @@
                         </ul>
                     </div>
 
-                    <hr>
+                    <hr class="m-0">
+
+                    <div class="details-block">
+                        <h4>Langauage of Instrection</h4>
+                        <ul>
+                            <li>English</li>
+                            <li>French</li>
+                        </ul>
+                    </div>
+
+                    <hr class="m-0">
+
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
                             <h4>What Guest will learn</h4>
@@ -701,7 +727,7 @@
                             <h4>House Rules</h4>
                         </div>
                         <div class="details-content">
-                            <div class="row">
+                            <div class="row rules-block">
                                 <div class="col-lg-6 col-sm-12">
                                     <p>
                                         <i class="fa-solid fa-cube"></i>
@@ -735,7 +761,7 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-12">
                                     <p>
-                                        <i class="fa-solid fa-volume-slash"></i>
+                                    <i class="fa-solid fa-volume-xmark"></i>
                                         No loud music
                                     </p>
                                 </div>
@@ -758,7 +784,7 @@
                     <hr>
 
                     <div class="details-content">
-                        <div class="d-flex">
+                        <div class="d-flex align-items-center">
                             <img src="assets/img/avatar.png">
                             <div class="m-2">
                                 <h1>
@@ -771,7 +797,7 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Lession Location</h4>
+                            <h4><i class="fa-solid fa-location-dot"></i> Lession Location</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -806,7 +832,7 @@
                     <hr>
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Ideal Guest</h4>
+                            <h4><i class="fa-solid fa-users"></i> Ideal Guest</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -899,7 +925,7 @@
 
                     <!--  My Album  -->
                     <div class="col-md-12">
-                        <div class="host-block">
+                        <div class="host-block" style="padding-bottom: 20px;">
                             <div class="host-header d-flex align-items-center justify-content-center">
                                 <h2>Media</h2>
                             </div>
@@ -938,7 +964,7 @@
 
                     <!--  Choose Dates  -->
                     <div class="details-block card-time">
-                        TIME :
+                    <i class="fa-regular fa-clock" style="margin-right: 10px;"></i> TIME :
                         Time In : 10:00 AM /
                         Time Out : 09:00 AM
 
@@ -1053,89 +1079,88 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
-
-                    <hr>
                 </div>
                 <!--  Right Side Cart  -->
                 <div class="col-md-4 col-sm-12" id="fixed">
-                    <div class="sticky-side-bar">
-                        <h2>Your Cart</h2>
-                        <div class="details-block fixed-block">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h4>Stay &amp; Learn Salsa</h4>
-                            </div>
-                            <div class="details-content">
-                                <div class="cost-details">
-                                    <h4>Cost Details</h4>
-                                    <ul>
-                                        <div class="details-content">
-                                            <div class="form-field" style="margin: 0 -25px;">
-                                                <label>Select dates</label>
-                                                <!-- Single dropdown with date ranges -->
-                                                <select name="date_range"
-                                                    style="padding: 0;min-width: 10px;width: 255px;height: 30px;">
-                                                    <optgroup>
-                                                        <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
-                                                    </optgroup>
-                                                    <optgroup>
-                                                        <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
-                                                    </optgroup>
-                                                    <!-- Add more date range options here as needed -->
-                                                    <optgroup>
-                                                        <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
-                                                    </optgroup>
-                                                    <optgroup>
-                                                        <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
-                                                    </optgroup>
-                                                    <optgroup>
-                                                        <option value="5">May 5 - May 9 (5 Days) - €25</option>
-                                                    </optgroup>
-                                                    <optgroup>
-                                                        <option value="12">Jun 15 - Jun 26 (12 Days) - €60</option>
-                                                    </optgroup>
-                                                </select>
+                    <div class="sticy-bar">
+                        <div class="sticky-side-bar">
+                            <h2>Your Cart</h2>
+                            <div class="details-block fixed-block">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4>Stay &amp; Learn Salsa</h4>
+                                </div>
+                                <div class="details-content">
+                                    <div class="cost-details">
+                                        <h4>Cost Details</h4>
+                                        <ul>
+                                            <div class="details-content">
+                                                <div class="form-field" style="margin: 0 -25px;">
+                                                    <label>Select dates</label>
+                                                    <!-- Single dropdown with date ranges -->
+                                                    <select name="date_range"
+                                                        style="padding: 0;min-width: 10px;width: 255px;height: 30px;">
+                                                        <optgroup>
+                                                            <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
+                                                        </optgroup>
+                                                        <optgroup>
+                                                            <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
+                                                        </optgroup>
+                                                        <!-- Add more date range options here as needed -->
+                                                        <optgroup>
+                                                            <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
+                                                        </optgroup>
+                                                        <optgroup>
+                                                            <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
+                                                        </optgroup>
+                                                        <optgroup>
+                                                            <option value="5">May 5 - May 9 (5 Days) - €25</option>
+                                                        </optgroup>
+                                                        <optgroup>
+                                                            <option value="12">Jun 15 - Jun 26 (12 Days) - €60</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
                                             </div>
+                                        </ul>
+                                        <hr>
+                                        <!-- <div class="item d-flex align-items-center justify-content-between">
+                                            <h5 class="m-0">Bookings</h5>
+                                            <p class="m-0">30 Days</p>
+                                            <p class="m-0">€150</p>
+                                        </div> -->
+                                        <div class="item d-flex align-items-center justify-content-between">
+                                            <h4 class="m-0">2 adult guest</h4>
                                         </div>
-                                    </ul>
-                                    <hr>
-                                    <!-- <div class="item d-flex align-items-center justify-content-between">
-                                        <h5 class="m-0">Bookings</h5>
-                                        <p class="m-0">30 Days</p>
-                                        <p class="m-0">€150</p>
-                                    </div> -->
-                                    <div class="item d-flex align-items-center justify-content-between">
-                                        <h4 class="m-0">2 adult guest</h4>
                                     </div>
+                                    <hr>
+                                    <div class="item d-flex align-items-center justify-content-between">
+                                        <h5 class="m-0">Cleaning Fee</h5>
+                                        <p class="m-0">€30</p>
+                                    </div>
+                                    <div class="item d-flex align-items-center justify-content-between">
+                                        <h5 class="m-0">Security Deposite</h5>
+                                        <p class="m-0">€15</p>
+                                    </div>
+                                    <div class="item d-flex align-items-center justify-content-between">
+                                        <h5 class="m-0">Service Fee</h5>
+                                        <p class="m-0">€33</p>
+                                    </div>
+                                    <hr>
+                                    <div class="item d-flex align-items-center justify-content-between">
+                                        <h3 class="m-0">Total</h3>
+                                        <p class="m-0">€268</p>
+                                    </div>
+                                    <a href="chat.html" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
                                 </div>
-                                <hr>
-                                <div class="item d-flex align-items-center justify-content-between">
-                                    <h5 class="m-0">Cleaning Fee</h5>
-                                    <p class="m-0">€30</p>
-                                </div>
-                                <div class="item d-flex align-items-center justify-content-between">
-                                    <h5 class="m-0">Security Deposite</h5>
-                                    <p class="m-0">€15</p>
-                                </div>
-                                <div class="item d-flex align-items-center justify-content-between">
-                                    <h5 class="m-0">Service Fee</h5>
-                                    <p class="m-0">€33</p>
-                                </div>
-                                <hr>
-                                <div class="item d-flex align-items-center justify-content-between">
-                                    <h3 class="m-0">Total</h3>
-                                    <p class="m-0">€268</p>
-                                </div>
-                                <a href="chat.html" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
                             </div>
+                            <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
+                                class="reporting-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V64 368 480c0 17.7 14.3 32 32 32s32-14.3 32-32V352l64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66.1c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48V32z" />
+                                </svg> Report Listing</div>
                         </div>
-                        <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
-                            class="reporting-link"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 448 512">
-                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32V64 368 480c0 17.7 14.3 32 32 32s32-14.3 32-32V352l64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66.1c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48V32z" />
-                            </svg> Report Listing</div>
                     </div>
                 </div>
             </div>
