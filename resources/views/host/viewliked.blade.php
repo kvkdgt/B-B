@@ -339,6 +339,60 @@
     border-radius: 25px 25px 0 0;
     margin: 0;
 }
+
+.TriSea-technologies-Switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.TriSea-technologies-Switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.TriSea-technologies-Switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.TriSea-technologies-Switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+.pull-right {
+    float: left!important;
+    margin: 0 0 20px;
+}
+
+.report-block {
+    clear: both;
+}
     @media screen and (max-width: 767px) {
         .page-sidebar {
             display: none;
@@ -388,7 +442,7 @@
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -450,7 +504,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-12">
+        <div class="col-lg-10 col-md-9">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
@@ -535,9 +589,12 @@
                                             </div>
                                             <div class="">
                                                 <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
+                                                <div class="TriSea-technologies-Switch pull-right">No
+                                                    <input id="TriSeaDefault" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaDefault" class="label-default"></label>Yes
+                                                </div>
                                             </div>
-                                            <div class="">
+                                            <div class="report-block">
                                                 <h4>Read Reports</h4>
                                                 <ul style="list-style:none; padding: 0; margin: 0;">
                                                     <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
@@ -576,9 +633,12 @@
                                             </div>
                                             <div class="">
                                                 <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
+                                                <div class="TriSea-technologies-Switch pull-right">No
+                                                    <input id="TriSeaDefault2" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaDefault2" class="label-default"></label>Yes
+                                                </div>
                                             </div>
-                                            <div class="">
+                                            <div class="report-block">
                                                 <h4>Read Reports</h4>
                                                 <ul style="list-style:none; padding: 0; margin: 0;">
                                                     <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
@@ -617,9 +677,12 @@
                                             </div>
                                             <div class="">
                                                 <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
+                                                <div class="TriSea-technologies-Switch pull-right">No
+                                                    <input id="TriSeaDefault1" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaDefault1" class="label-default"></label>Yes
+                                                </div>
                                             </div>
-                                            <div class="">
+                                            <div class="report-block">
                                                 <h4>Read Reports</h4>
                                                 <ul style="list-style:none; padding: 0; margin: 0;">
                                                     <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
@@ -658,9 +721,12 @@
                                             </div>
                                             <div class="">
                                                 <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
+                                                <div class="TriSea-technologies-Switch pull-right">No
+                                                    <input id="TriSeaDefault3" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaDefault3" class="label-default"></label>Yes
+                                                </div>
                                             </div>
-                                            <div class="">
+                                            <div class="report-block">
                                                 <h4>Read Reports</h4>
                                                 <ul style="list-style:none; padding: 0; margin: 0;">
                                                     <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
