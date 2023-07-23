@@ -149,6 +149,7 @@
     }
 
     .rate {
+        width: 36%;
         float: left;
         height: 46px;
         padding: 0 10px;
@@ -190,8 +191,21 @@
         color: #c59b08;
     }
 
+    .rating-value {
+        clear: both;
+        justify-content: space-between;
+        width: 50%;
+    }
+
     .footer-links i {
         font-size: 50px;
+    }
+
+    
+    @media screen and (max-width:575px) {
+        .rate {
+        width: 50%;
+        }
     }
     </style>
 
@@ -454,8 +468,8 @@
                                     </div>
                                 </div> -->
                             </div>
-                            <div class="rating-table-design">
-                                <table style="background-color:aliceblue">
+                            <div class="rating-content">
+                                <!-- <table style="background-color:aliceblue">
                                     <tr>
                                         <td>No of Guests</td>
                                         <td>Total Nights Cost</td>
@@ -474,7 +488,10 @@
                                         <td>$3171</td>
 
                                     </tr>
-                                </table>
+                                </table> -->
+                                <h4>Stay and Learn yoga</h4>
+                                <p>Stay and Learn yoga Stay and Learn yoga Stay and Learn yoga</p>
+                                <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
                                 <hr>
                                 <h4>Rate your experience</h4>
                                 <div class="rate">
@@ -489,7 +506,10 @@
                                     <input type="radio" id="star1" name="rate" value="1" />
                                     <label for="star1" title="text">1 star</label>
                                 </div>
-
+                                <div class="d-flex rating-value">
+                                    <p>Lowest</p>
+                                    <p>Highest</p>
+                                </div>
                             </div>
                             <hr>
                             <h3>Write a short Review about your experience</h3>

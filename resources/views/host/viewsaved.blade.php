@@ -52,6 +52,7 @@
         color: #000;
         text-align: center;
         padding: 10px 0;
+        margin-top: 20px;
     }
 
     .user-block h4 {
