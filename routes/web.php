@@ -44,6 +44,7 @@ Route::get('/host-revenue', [App\Http\Controllers\HostController::class, 'revenu
 Route::get('/host-net-income', [App\Http\Controllers\HostController::class, 'netincome'])->name('netincome');
 Route::get('/host-pay-details', [App\Http\Controllers\HostController::class, 'paydetail'])->name('paydetail');
 Route::get('/change-password', [App\Http\Controllers\HostController::class, 'changepassword'])->name('changepassword');
+Route::get('/host/edit-payment-setting', [App\Http\Controllers\HostController::class, 'editPaymentSetting'])->name('editPaymentSetting');
 
 Route::get('/admin-profile', [App\Http\Controllers\AdminController::class, 'adminProfile'])->name('adminProfile');
 Route::get('/edit-admin-profile', [App\Http\Controllers\AdminController::class, 'editadminProfile'])->name('editadminProfile');

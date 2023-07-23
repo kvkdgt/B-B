@@ -48,5 +48,9 @@ class HostController extends Controller
     public function changepassword(){
         return view('host/changepassword');
     }
+
+    public function editPaymentSetting(){
+        return view('host/editPaymentSetting');
+    }
     
 }

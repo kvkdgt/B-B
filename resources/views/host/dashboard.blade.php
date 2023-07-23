@@ -400,6 +400,8 @@ table, th, td {
                                  <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
                                 <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+
                             </ul></i>
                         </li>
                         <li class="dropdown">
