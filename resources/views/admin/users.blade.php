@@ -372,64 +372,100 @@ button.verfied {
             </span>
             <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
             </span>
-            <div class="page-sidebar">             
-                    <ul class="menu">
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('users')}}">  <span>Users</span> </a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
-                            </ul>
-                        </li>
-                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
-                                <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
-                            </ul></i>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
+            <div class="page-sidebar"> 
+                <div class="user-block">
+                    <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                    <h4>Kartik Trivedi</h4>
+                    <a href="#">kartik@mailinator.com</a>
+                </div>            
+                <ul class="menu">
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                            <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <ul class="sub-menu dropdown">
+                            <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                        <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                        <a href="{{route('users')}}">  <span>Users</span> </a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                            <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+                            <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
+                            <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
+                            <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                        </ul>
+                    </li>
+                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                            <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <ul class="sub-menu">
+                                <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                            <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                            <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
+                        </ul></i>
+                    </li>
+                    <li class="dropdown">
+                        <div onclick="toggleSubMenu(this)">
+                            <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <ul class="sub-menu">
                             <li><span>Profile Setting</span></li>
-                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                    <li><span>Update Pages</span></li>
-                                    <li><span>Block IP addresses</span></li>
-                                    <li><span>General Settings</span></li>
-                            </ul>
+                            <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>FAQ</span></li>
+                                    <li><span>Safety Tips</span></li>
+                                    <li><span>How it works</span></li>
+                                    <li><span>Privacy</span></li>
+                                    <li><span>Terms</span></li>
+                                    <li><span>About us</span></li>
+                                </ul>
+                            </li>
                         </li>
-                    </ul>
-                </div>
+                            <li><span>Block IP addresses</span></li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>0 ₹</span></li>
+                                    <li><span>0 $</span></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span>English</span></li>
+                                    <li><span>French</span></li>
+                                    <li><span>German</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
         </div>
     </div>
     <div class="col-lg-10 col-md-9 col-sm-9">

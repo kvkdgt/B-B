@@ -358,7 +358,7 @@ table, th, td {
 
     <!-- <div class="dashboard-wrapper"></div> -->
     <div class="row">
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -419,20 +419,20 @@ table, th, td {
             <div class="page-content">
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6">
                         <button class="btn btn-primary"> + Create Listing</button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">
                             <input type="search" class="form-control" placeholder="Search Deshboard" />
                         </form>
                     </div>
-                    <div class="col-2" style="text-align: center;">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6" style="text-align: center;">
                     <button class="btn button-green" type="button">
                     <i class="fa-regular fa-bell"></i><span class="badge">10</span>
                     </button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-2 col-sm-6">
                     <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <div>

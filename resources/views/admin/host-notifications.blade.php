@@ -79,6 +79,11 @@ ul.menu li span {
     padding: 5px 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+ul.menu li span a {
+    color: #000
 }
 
 ul.menu li span:hover {
@@ -355,14 +360,14 @@ table thead {
     </script>
     <!-- popular listings start -->
     <div class="row">
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="page-sidebar"> 
-                <div class="user-block">
+                    <div class="user-block">
                         <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
@@ -457,7 +462,7 @@ table thead {
                 </div>  
             </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-12">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
