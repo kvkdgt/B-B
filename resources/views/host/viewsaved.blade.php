@@ -407,7 +407,7 @@
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
                             </ul>
                         </li>

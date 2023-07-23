@@ -397,7 +397,7 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                                     <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
-                                    <li><span>Profile Setting</span></li>
+                                    <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
                                     <li><span>Change Password</span></li>
                                     <li><span>Update Pages</span></li>
                                     <li><span>Block IP addresses</span></li>

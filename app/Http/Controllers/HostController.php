@@ -9,7 +9,6 @@ class HostController extends Controller
     public function dashboard(){
         return view('host/dashboard');
     }
-
     public function hostProfile(){
         return view('host/host-profile');
     }
@@ -20,6 +19,9 @@ class HostController extends Controller
 
     public function editHostProfile(){
         return view('host/edit-host-profile');
+    }
+    public function profilesetting(){
+        return view('host/profilesetting');
     }
     public function hostNotification(){
         return view('host/host-notifications');
