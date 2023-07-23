@@ -242,66 +242,63 @@ function toggleSubMenu(icon) {
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-4 col-12">
-                    <div class="side-edit-bar">
-                        <div class="user-block">
-                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
-                        </div>
-                        <ul class="menu">
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu dropdown">
-                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
-                                    </li>
-                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Bookings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                 <ul class="sub-menu">
-                                    <li><span><a href="{{route('hostacceptedbooking')}}">Accepted</a></span></span>
-                                    <li><span><a href="{{route('hostrejectedbooking')}}">Rejected</a></span></span>
-                                    <li><span><a href="{{route('hostrefundedbooking')}}">Refunded</a></span></span>
-                                </ul>
-
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>View All</li>
-                                    <li><span>View Liked Listing</span></li>
-                                    <li><span>View Saved Listing</span></li>
-                                    <li><span>Create New Listing</span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Revenue</span></li>
-                                    <li><span>Net Income</span></li>
-                                    <li><span>Update pay Details</span></li>
-                                </ul></i>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Profile Setting</span></li>
-                                    <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
-                                </ul>
-                            </li>
-                        </ul>
+                <div class="mobile-menu open-menu">
+                
+                <div class="page-sidebar">
+                    <div class="user-block">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
                     </div>
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu dropdown">
+                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                </li>
+                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                 <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                            </ul></i>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Profile Setting</span></li>
+                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
                 </div>
                 <div class="col-md-9 col-sm-8 col-12">
                     <div class="error-block d-flex align-items-center justify-content-between">
