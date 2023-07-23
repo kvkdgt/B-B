@@ -288,6 +288,21 @@ table thead {
     background: #bee500 !important;
 }
 
+.search i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.search input[type="text"] {
+    padding: 5px 20px;
+}
+
+.search {
+    position: relative;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -340,13 +355,18 @@ table thead {
 
     <div class="row">
 
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar">             
+                <div class="page-sidebar"> 
+                    <div class="user-block">
+                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
+                    </div>            
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -395,18 +415,49 @@ table thead {
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                            <li><span>Profile Setting</span></li>
-                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                    <li><span>Update Pages</span></li>
-                                    <li><span>Block IP addresses</span></li>
-                                    <li><span>General Settings</span></li>
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>FAQ</span></li>
+                                        <li><span>Safety Tips</span></li>
+                                        <li><span>How it works</span></li>
+                                        <li><span>Privacy</span></li>
+                                        <li><span>Terms</span></li>
+                                        <li><span>About us</span></li>
+                                    </ul>
+                                </li>
+                            </li>
+                                <li><span>Block IP addresses</span></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>0 ₹</span></li>
+                                        <li><span>0 $</span></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>English</span></li>
+                                        <li><span>French</span></li>
+                                        <li><span>German</span></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </div>  
             </div>
         </div>
-        <div class="col-md-9 col-lg-10">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">

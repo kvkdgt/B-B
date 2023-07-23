@@ -340,7 +340,7 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
     
     <!-- <div class="dashboard-wrapper"></div> -->
         <div class="row">
-            <div class="col-lg-2 col-md-3">
+            <div class="col-lg-2 col-md-3 col-sm-3">
                 <div class="mobile-menu open-menu">
                     <span class="show-menu"><i class="bi bi-list"></i>
                     </span>
@@ -402,21 +402,18 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                                     <li><span>Update Pages</span></li>
                                     <li><span>Block IP addresses</span></li>
                                     <li><span>General Settings</span></li>
-
-
-
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-9">
+            <div class="col-lg-10 col-md-9 col-sm-9 col-12">
                 <div class="page-content">
                     <!--  Statistics  -->
-    <span style="font-weight:600;font-size:24">Admin Dashboard</span>
-    <span style="float:right"><a href="#" class="btn btn-primary">+ Create Listing</a></span>
-<hr>
+                    <span style="font-weight:600;font-size:24">Admin Dashboard</span>
+                    <span style="float:right"><a href="#" class="btn btn-primary">+ Create Listing</a></span>
+                <hr>
                     <div class="row">
                         <!--  Total Listing  -->
                         <!-- <div class="col-md-4 col-sm-12">

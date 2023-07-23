@@ -227,6 +227,62 @@
     position: relative;
 }
 
+.listing-card .listing-item {
+        margin-bottom: 15px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        border-radius: 25px;
+    }
+
+    .listing-card .slider-content {
+        padding: 10px;
+    }
+
+    .listing-card .listing-item .sub-main .slider-content a {
+    color: #353535;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.listing-card .user-img-top {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.listing-card .user-img-top img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #bee500;
+    border-radius: 50%;
+}
+
+.listing-card .listing-item .sub-main .img-sec img {
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+}
+
+.listing-card .listing-item .sub-main .slider-content p {
+    font-size: 14px;
+    color: #97959A;
+    margin: 5px 0px;
+}
+
+.listing-card .listing-item .sub-main .footer a {
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto 0;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.listing-card .listing-item .sub-main .footer {
+    border-top: 1px solid #DEDEDE;
+    padding: 10px;
+    text-align: center;
+}
+
     /* .container {
     max-width: 1600px;
     width: 100%
@@ -354,13 +410,18 @@
 
     <div class="row">
 
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar">             
+                <div class="page-sidebar"> 
+                    <div class="user-block">
+                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
+                    </div>            
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -379,7 +440,7 @@
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Users</span> </a>
+                            <a href="{{route('users')}}">  <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -409,18 +470,49 @@
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                            <li><span>Profile Setting</span></li>
-                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                    <li><span>Update Pages</span></li>
-                                    <li><span>Block IP addresses</span></li>
-                                    <li><span>General Settings</span></li>
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>FAQ</span></li>
+                                        <li><span>Safety Tips</span></li>
+                                        <li><span>How it works</span></li>
+                                        <li><span>Privacy</span></li>
+                                        <li><span>Terms</span></li>
+                                        <li><span>About us</span></li>
+                                    </ul>
+                                </li>
+                            </li>
+                                <li><span>Block IP addresses</span></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>0 ₹</span></li>
+                                        <li><span>0 $</span></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>English</span></li>
+                                        <li><span>French</span></li>
+                                        <li><span>German</span></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </div>  
             </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-12">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
@@ -433,7 +525,7 @@
                     </div>
                     <div class="card-body">
                         <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                        <div class="common-table">
+                        <!-- <div class="common-table">
                             <table>
                                 <thead>
                                     <th></th>
@@ -466,7 +558,7 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                                <!-- <tfoot>
+                                <tfoot>
                                     <th></th>
                                     <th>S/No</th>
                                     <th>Added Date</th>
@@ -475,9 +567,172 @@
                                     <th>No of Saves</th>
                                     <th>marked as Reported</th>
                                     <th>Action</th>
-                                </tfoot> -->
+                                </tfoot>
                             </table>
 
+                        </div> -->
+                        <div class="row listing-card">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                    <input type="checkbox">
+                                    <div class="listing-item">
+                                        <div class="sub-main">
+                                            <div class="img-sec p-rel">
+                                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                            </div>
+                                            <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                    <path
+                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Python (Intro)
+                                                <p>
+                                                    <span>Feb 5 - 15</span> Duplex
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$300</p>
+                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>akeja, logos</p>
+                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                            <div class="user-img-top">
+                                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                    <input type="checkbox">
+                                    <div class="listing-item">
+                                        <div class="sub-main">
+                                            <div class="img-sec p-rel">
+                                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                            </div>
+                                            <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                    <path
+                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Python (Intro)
+                                                <p>
+                                                    <span>Feb 5 - 15</span> Duplex
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$300</p>
+                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>akeja, logos</p>
+                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                            <div class="user-img-top">
+                                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                    <input type="checkbox">
+                                    <div class="listing-item">
+                                        <div class="sub-main">
+                                            <div class="img-sec p-rel">
+                                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                            </div>
+                                            <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                    <path
+                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Python (Intro)
+                                                <p>
+                                                    <span>Feb 5 - 15</span> Duplex
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$300</p>
+                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>akeja, logos</p>
+                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                            <div class="user-img-top">
+                                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                    <input type="checkbox">
+                                    <div class="listing-item">
+                                        <div class="sub-main">
+                                            <div class="img-sec p-rel">
+                                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                            </div>
+                                            <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                    <path
+                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Python (Intro)
+                                                <p>
+                                                    <span>Feb 5 - 15</span> Duplex
+                                                </p>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>$300</p>
+                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <p>akeja, logos</p>
+                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                            <div class="user-img-top">
+                                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
