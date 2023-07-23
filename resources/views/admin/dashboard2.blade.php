@@ -300,11 +300,6 @@ table thead {
     right: -5px;
 }
 
-table, th, td {
-  border: 1px solid black !important;
-  border-collapse: collapse;
-}
-
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -428,27 +423,27 @@ table, th, td {
             <div class="page-content">
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
                         <button class="btn btn-primary"> + Create Listing</button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">
                             <input type="search" class="form-control" placeholder="Search Deshboard" />
                         </form>
                     </div>
-                    <div class="col-2" style="text-align: center;">
-                    <button class="btn button-green" type="button">
-                    <i class="fa-regular fa-bell"></i><span class="badge">10</span>
-                    </button>
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <button class="btn button-green" type="button">
+                        <i class="fa-regular fa-bell"></i><span class="badge">10</span>
+                        </button>
                     </div>
-                    <div class="col-2">
-                    <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <div>
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
+                    <div class="col-lg-2 col-md-2 col-sm-6">
+                        <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
+                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                            <div>
+                                <h4>Kartik Trivedi</h4>
+                                <a href="#">kartik@mailinator.com</a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="row">
@@ -775,7 +770,7 @@ table, th, td {
                                     </tbody>
                                 </table>
 
-                                <table style="margin: 40px 0 20px;">
+                                <!-- <table style="margin: 40px 0 20px;">
                                     <thead>
                                         <th>S/No</th>
                                         <th>Date</th>
@@ -788,9 +783,9 @@ table, th, td {
                                         <td>18</td>
                                         <td>2</td>
                                     </tbody>
-                                </table>
+                                </table> -->
                                 
-                                <div class="table-header d-flex align-items-center justify-content-between">
+                                <div class="table-header d-flex align-items-center justify-content-between mt-5">
                                     <h4 class="my-4">Recent Reviews</h4>
                                     <button class="btn btn-danger">Delete</button>
                                 </div>

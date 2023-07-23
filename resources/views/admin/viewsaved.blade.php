@@ -465,7 +465,7 @@
                                         </td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <th></th>
                                     <th>S/No</th>
                                     <th>Added Date</th>
@@ -474,7 +474,7 @@
                                     <th>No of Saves</th>
                                     <th>marked as Reported</th>
                                     <th>Action</th>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
 
                         </div>

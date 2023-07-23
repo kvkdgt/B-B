@@ -436,10 +436,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex">
-                            <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
-                            <a href="#"><i class="bx bx-heart"></i> Save</a>
-                        </div>
                     </div>
                     <!--  About the Host  -->
                     <div class="details-block about-us">
@@ -468,13 +464,13 @@
                                     <p class="m-0">Lonsdale St, Melbourne</p>
                                 </div>
                             </div>
-                            <a href="{{route('hostProfile')}}">Read More</a>
+                            <a style="color: #fff; cursor: pointer;">Read More</a>
                         </div>
                     </div>
                     <hr>
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h3>Academic Qualification</h3>
+                            <h3><i class="fa-solid fa-building-columns"></i> Academic Qualification</h3>
                         </div>
                         <br>
                         <ul style="list-style: none; padding-left: 1.2rem;">
@@ -501,7 +497,7 @@
                     <hr class="m-0">
 
                     <div class="details-block">
-                        <h4>Langauage of Instrection</h4>
+                        <h4><i class="fa-solid fa-language"></i> Langauage of Instrection</h4>
                         <ul>
                             <li>English</li>
                             <li>French</li>
@@ -512,7 +508,7 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>What Guest will learn</h4>
+                            <h4><i class="fa-brands fa-leanpub"></i> What Guest will learn</h4>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -552,7 +548,7 @@
                     <hr>
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>About this B&B</h4>
+                            <h4><i class="fa-regular fa-address-card"></i> About this B&B</h4>
                         </div>
                         <div class="details-content about-inner">
                             <div class="row">
@@ -574,7 +570,7 @@
                     <!--  Amenities  -->
                     <div class="details-block included-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h3>What's included</h3>
+                            <h3><i class="fa-solid fa-retweet"></i> What's included</h3>
                         </div>
                         <div class="details-content">
                             <div class="row">
@@ -680,7 +676,7 @@
                     <!--  Where Guest will sleep  -->
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>Where Guest will sleep </h4>
+                            <h4><i class="fa-solid fa-bed"></i> Where Guest will sleep </h4>
                         </div>
                         <div class="details-content">
                             <div class="guest-block d-flex justify-content-between">
@@ -703,7 +699,7 @@
 
                     <div class="details-block">
                         <div class="d-flex align-items-center justify-content-between">
-                            <h4>House Rules</h4>
+                            <h4><i class="fa-solid fa-house-circle-check"></i> House Rules</h4>
                         </div>
                         <div class="details-content">
                             <div class="row rules-block">
@@ -1047,6 +1043,10 @@
                 </div>
                 <!--  Right Side Cart  -->
                 <div class="col-md-4 col-sm-12" id="fixed">
+                    <div class="d-flex justify-content-end">
+                            <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
+                            <a href="#"><i class="bx bx-heart"></i> Save</a>
+                        </div>
                     <div class="sticy-bar">
                         <div class="sticky-side-bar">
                             <h2>Your Cart</h2>

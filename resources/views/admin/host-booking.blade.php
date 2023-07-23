@@ -352,7 +352,7 @@ table thead {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
         <div class="mobile-menu open-menu">
             <span class="show-menu"><i class="bi bi-list"></i>
             </span>
@@ -418,91 +418,93 @@ table thead {
                 </div>
         </div>
     </div>
-    <div class="col-lg-10 col-md-9 col-sm-12">
-        <div class="row">
-            <div class="card-header d-flex align-items-center justify-content-between">
-                <h4>Accepted Bookings</h4>
-                <div class="search">
-                    <button class="btn btn-danger">Delete</button>
-                    <input type="text" name="search" placeholder="Search here">
-                    <i class="bx bx-search"></i>
+    <div class="col-lg-10 col-md-9 col-sm-9">
+        <div class="page-content">
+            <div class="row">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h4>Accepted Bookings</h4>
+                    <div class="search">
+                        <button class="btn btn-danger">Delete</button>
+                        <input type="text" name="search" placeholder="Search here">
+                        <i class="bx bx-search"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="card-body">
+                <div class="card-body">
 
-                <div class="common-table">
-                    <table>
-                        <thead>
-                            <th></th>
-                            <th>Date</th>
-                            <th>Listing Name</th>
-                            <th>Country</th>
-                            <th>Guest Name</th>
-                            <th>Guest Email</th>
-                            <th>Check In</th>
-                            <th>Check Out</th>
-                            <th>Total Nights</th>
-                            <th>Booking ID</th>
-                            <th>Status</th>
-                            <th>Service fee</th>
-                            <th>Other fee</th>
-                            <th>Security Deposit</th>
-                            <th>Revenue</th>
-                            <th>Total Payout</th>
-                            <th>Action</th>
-                        </thead>
+                    <div class="common-table">
+                        <table>
+                            <thead>
+                                <th></th>
+                                <th>Date</th>
+                                <th>Listing Name</th>
+                                <th>Country</th>
+                                <th>Guest Name</th>
+                                <th>Guest Email</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Total Nights</th>
+                                <th>Booking ID</th>
+                                <th>Status</th>
+                                <th>Service fee</th>
+                                <th>Other fee</th>
+                                <th>Security Deposit</th>
+                                <th>Revenue</th>
+                                <th>Total Payout</th>
+                                <th>Action</th>
+                            </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    </div>
-                                </td>
-                                <td>25/03/2023</td>
-                                <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                <td>Germany</td>
-                                <td>Abbas</td>
-                                <td>test@gmail.com</td>
-                                <td>25/03/2023</td>
-                                <td>25/03/2023</td>
-                                <td>08</td>
-                                <td>123456789</td>
-                                <td><span class="">Accepted</span></td>
-                                <td>€49</td>
-                                <td>€49</td>
-                                <td>€49</td>
-                                <td>€49</td>
-                                <td>€495</td>
-                                <td>
-                                    <a href="chat.html"><i class="fa fa-envelope"></i></a>
-                                    <a href="#"><i class="fa fa-print"></i></a>
-                                    <a href="#"><i class="fa fa-dollar"></i></a>
-                                </td>
-                            </tr>
-                        </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>25/03/2023</td>
+                                    <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                    <td>Germany</td>
+                                    <td>Abbas</td>
+                                    <td>test@gmail.com</td>
+                                    <td>25/03/2023</td>
+                                    <td>25/03/2023</td>
+                                    <td>08</td>
+                                    <td>123456789</td>
+                                    <td><span class="">Accepted</span></td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€49</td>
+                                    <td>€495</td>
+                                    <td>
+                                        <a href="chat.html"><i class="fa fa-envelope"></i></a>
+                                        <a href="#"><i class="fa fa-print"></i></a>
+                                        <a href="#"><i class="fa fa-dollar"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
 
-                        <tfoot>
-                            <th>S/No</th>
-                            <th>Date</th>
-                            <th>Listing Name</th>
-                            <th>Host Profile</th>
-                            <th>Country</th>
-                            <th>Guest Name</th>
-                            <th>Guest Email</th>
-                            <th>Check In</th>
-                            <th>Check Out</th>
-                            <th>Total Nights</th>
-                            <th>Status</th>
-                            <th>Service fee</th>
-                            <th>Other fee</th>
-                            <th>Security Deposit</th>
-                            <th>Revenue</th>
-                            <th>Total Payout</th>
-                            <th>Action</th>
-                        </tfoot>
-                    </table>
+                            <!-- <tfoot>
+                                <th>S/No</th>
+                                <th>Date</th>
+                                <th>Listing Name</th>
+                                <th>Host Profile</th>
+                                <th>Country</th>
+                                <th>Guest Name</th>
+                                <th>Guest Email</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Total Nights</th>
+                                <th>Status</th>
+                                <th>Service fee</th>
+                                <th>Other fee</th>
+                                <th>Security Deposit</th>
+                                <th>Revenue</th>
+                                <th>Total Payout</th>
+                                <th>Action</th>
+                            </tfoot> -->
+                        </table>
 
+                    </div>
                 </div>
             </div>
         </div>

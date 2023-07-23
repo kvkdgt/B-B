@@ -142,7 +142,7 @@
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
-                                    <div class="item right">
+                                    <div class="item right justify-content-end">
                                         <div class="text-box">
                                             <p>Stay and Learn
                                                 <hr>

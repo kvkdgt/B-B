@@ -325,7 +325,7 @@
 .listing-card .user-img-top {
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 40px;
 }
 
 .listing-card .user-img-top img {
@@ -339,6 +339,72 @@
     border-radius: 25px 25px 0 0;
     margin: 0;
 }
+
+.listing-card .listing-item .sub-main .slider-content p {
+    font-size: 14px;
+    color: #97959A;
+    margin: 5px 0px;
+}
+
+.listing-card .listing-item .sub-main .footer a {
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto 0;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.listing-card .listing-item .sub-main .footer {
+    border-top: 1px solid #DEDEDE;
+    padding: 10px;
+    text-align: center;
+}
+
+/* .TriSea-technologies-Switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.TriSea-technologies-Switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.TriSea-technologies-Switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.TriSea-technologies-Switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+} */
     @media screen and (max-width: 767px) {
         .page-sidebar {
             display: none;
@@ -388,7 +454,7 @@
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-2">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -454,7 +520,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-12">
+        <div class="col-lg-10 col-md-9 col-sm-9">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
@@ -515,164 +581,160 @@
                         </div> -->
 
                         <div class="row listing-card">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox">
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
                                             <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                         </div>
                                         <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Created : 
-                                                    Feb 2, 2000
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Email : good@gmail.com</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Saved : 20times</p>
-                                            </div>
-                                            <div class="">
-                                                <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
-                                            </div>
-                                            <div class="">
-                                                <h4>Read Reports</h4>
-                                                <ul style="list-style:none; padding: 0; margin: 0;">
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
-                                                </ul>
-                                            </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <a href="{{route('detail')}}">Stay and Learn </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                <path
+                                                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                            </svg>
                                         </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Python (Intro)
+                                            <p>
+                                                <span>Feb 5 - 15</span> Duplex
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>$300</p>
+                                            <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>akeja, logos</p>
+                                            <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer chat-button">
+                                        <a href="{{route('chat')}}">Chat Now</a>
+                                    </div>
                                         <div class="user-img-top">
                                             <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox">
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
                                             <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                         </div>
                                         <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Created : 
-                                                    Feb 2, 2000
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Email : good@gmail.com</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Saved : 20times</p>
-                                            </div>
-                                            <div class="">
-                                                <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
-                                            </div>
-                                            <div class="">
-                                                <h4>Read Reports</h4>
-                                                <ul style="list-style:none; padding: 0; margin: 0;">
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
-                                                </ul>
-                                            </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <a href="{{route('detail')}}">Stay and Learn </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                <path
+                                                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                            </svg>
                                         </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Python (Intro)
+                                            <p>
+                                                <span>Feb 5 - 15</span> Duplex
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>$300</p>
+                                            <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>akeja, logos</p>
+                                            <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer chat-button">
+                                        <a href="{{route('chat')}}">Chat Now</a>
+                                    </div>
                                         <div class="user-img-top">
                                             <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox">
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
                                             <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                         </div>
                                         <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Created : 
-                                                    Feb 2, 2000
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Email : good@gmail.com</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Saved : 20times</p>
-                                            </div>
-                                            <div class="">
-                                                <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
-                                            </div>
-                                            <div class="">
-                                                <h4>Read Reports</h4>
-                                                <ul style="list-style:none; padding: 0; margin: 0;">
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
-                                                </ul>
-                                            </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <a href="{{route('detail')}}">Stay and Learn </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                <path
+                                                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                            </svg>
                                         </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Python (Intro)
+                                            <p>
+                                                <span>Feb 5 - 15</span> Duplex
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>$300</p>
+                                            <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>akeja, logos</p>
+                                            <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer chat-button">
+                                        <a href="{{route('chat')}}">Chat Now</a>
+                                    </div>
                                         <div class="user-img-top">
                                             <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox">
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
                                             <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                         </div>
                                         <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
-                                                <a href="http://127.0.0.1:8000/detail">Stay and Learn </a>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Created : 
-                                                    Feb 2, 2000
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Email : good@gmail.com</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Saved : 20times</p>
-                                            </div>
-                                            <div class="">
-                                                <p>Moved to Recommended</p>
-                                                <button>Yes No</button>
-                                            </div>
-                                            <div class="">
-                                                <h4>Read Reports</h4>
-                                                <ul style="list-style:none; padding: 0; margin: 0;">
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Good Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Great Host</li>
-                                                    <li><img src="http://127.0.0.1:8000/assets/img/avatar.png"> Okay Host</li>
-                                                </ul>
-                                            </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <a href="{{route('detail')}}">Stay and Learn </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
+                                                <path
+                                                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                            </svg>
                                         </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Python (Intro)
+                                            <p>
+                                                <span>Feb 5 - 15</span> Duplex
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>$300</p>
+                                            <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>akeja, logos</p>
+                                            <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer chat-button">
+                                        <a href="{{route('chat')}}">Chat Now</a>
+                                    </div>
                                         <div class="user-img-top">
                                             <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                         </div>

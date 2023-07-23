@@ -353,7 +353,7 @@ table thead {
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
@@ -419,7 +419,7 @@ table thead {
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-12">
+        <div class="col-lg-10 col-md-9 col-sm-9">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
@@ -465,7 +465,7 @@ table thead {
                                         </td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <th></th>
                                     <th>S/No</th>
                                     <th>Added Date</th>
@@ -474,7 +474,7 @@ table thead {
                                     <th>No of Saves</th>
                                     <th>marked as Reported</th>
                                     <th>Action</th>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
 
                         </div>

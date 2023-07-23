@@ -301,6 +301,19 @@ table thead {
     background: #bee500 !important;
 }
 
+.user-card .slider-content {
+    padding: 10px;
+}
+
+.user-card .listing-item .sub-main .slider-content a {
+color: #353535;
+}
+
+button.verfied {
+    background: none;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -352,7 +365,7 @@ table thead {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
         <div class="mobile-menu open-menu">
             <span class="show-menu"><i class="bi bi-list"></i>
             </span>
@@ -418,17 +431,147 @@ table thead {
                 </div>
         </div>
     </div>
-    <div class="col-lg-10 col-md-9 col-sm-12">
-        <div class="row">
+    <div class="col-lg-10 col-md-9 col-sm-9">
+        <div class="page-content">
             <div class="card-header d-flex align-items-center justify-content-between">
-               Users
+                <h4>Liked Listing</h4>
+                <div class="search">
+                    <button class="btn btn-danger">Delete Profile</button>
+                    <button class="btn btn-primary">Block/Unblock</button>
+                </div>
             </div>
-            <div class="card-body">
-
+            <div class="row user-card mt-5">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                    <input type="checkbox">
+                    <div class="listing-item">
+                        <div class="sub-main">
+                            <div class="img-sec p-rel">
+                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4>Rahul</h4>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Joined 
+                                        Feb 2, 2000
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
+                                    <button class="verfied">Verified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Total Listing Created 80</p>
+                                </div>
+                                <div class="">
+                                    <p>Revenue $ 28,000</p>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Chat User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                    <input type="checkbox">
+                    <div class="listing-item">
+                        <div class="sub-main">
+                            <div class="img-sec p-rel">
+                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4>Rahul</h4>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Joined 
+                                        Feb 2, 2000
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
+                                    <button class="verfied">Verified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Total Listing Created 80</p>
+                                </div>
+                                <div class="">
+                                    <p>Revenue $ 28,000</p>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Chat User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                    <input type="checkbox">
+                    <div class="listing-item">
+                        <div class="sub-main">
+                            <div class="img-sec p-rel">
+                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4>Rahul</h4>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Joined 
+                                        Feb 2, 2000
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
+                                    <button class="verfied">Unverified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Total Listing Created 80</p>
+                                </div>
+                                <div class="">
+                                    <p>Revenue $ 28,000</p>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Chat User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                    <input type="checkbox">
+                    <div class="listing-item">
+                        <div class="sub-main">
+                            <div class="img-sec p-rel">
+                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="slider-content">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4>Rahul</h4>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Joined 
+                                        Feb 2, 2000
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
+                                    <button class="verfied">Unverified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>Total Listing Created 80</p>
+                                </div>
+                                <div class="">
+                                    <p>Revenue $ 28,000</p>
+                                </div>
+                                <div class="">
+                                    <button type="button" class="btn btn-primary">Chat User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 </main><!-- End #main -->
