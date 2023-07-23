@@ -73,11 +73,12 @@ ul.menu li {
 }
 
 ul.menu li span {
-    color: #fff;
+    /* color: #fff; */
     display: block;
     padding: 5px 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 ul.menu li span:hover {
@@ -100,12 +101,16 @@ ul.sub-menu {
     color: white;
     list-style: none;
     margin: 0 20px;
-    padding: 10px;
+    padding: 10px 10px 0;
     display: none;
 }
 
 ul.menu li.dropdown.active i {
     transform: rotate(180deg);
+}
+
+ul.sub-menu li:last-child {
+    padding: 0;
 }
 
 .active ul.sub-menu {
