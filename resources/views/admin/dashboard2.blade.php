@@ -791,6 +791,14 @@ table thead {
                                 </div>
                                 <div class="table-heading">
                                     <table>
+                                        <thead>
+                                            <tr><th></th>
+                                            <th>Name</th>
+                                            <th>Rating</th>
+                                            <th>Reviews</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
                                     <tr>
                                     <td style="width: 20px;">
                                         <div class="form-check">
