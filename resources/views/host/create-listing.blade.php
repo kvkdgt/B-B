@@ -454,7 +454,8 @@ table thead {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -701,16 +702,22 @@ table thead {
                                     <div class="details-content">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-6 image-block text-center">
-                                                <img src="assets/img/hotels/hotel-2.png">
-                                                <p>1 Bedroom</p>
-                                            </div>
-                                            <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                                 <p>1 Drawing Room</p>
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                                 <p>2 Bathrooms</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                                <input type="text" name="b-b" id="workshop" />
                                             </div>
                                         </div>
                                     </div>
@@ -812,12 +819,15 @@ table thead {
 
                                     </div>
                                     <div class="previous-block text-center">
-                                        <img src="assets/img/hotels/hotel-2.png">
-                                        <p>Title 1</p>
+                                        <div class="form-group">
+                                            <div class="file-wrapper">
+                                                <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                <input type="file" id="profile" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <input type="text" name="b-b" id="workshop" />
                                     </div>
-                                    <div class="more-block">
-                                        <button class="btn btn-primary">Add More</button>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -839,50 +849,40 @@ table thead {
                                             </tr>
                                         </thead>
                                         <tr>
-                                            <td>1.</td>
+                                            <td><input type="checkbox" name="check" value="1"></td>
                                             <td>Month</td>
                                             <td>Day</td>
-                                            <td>Month
+                                            <td>Month</td>
                                             <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
                                             <td>300</td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>Feb</td>
-                                            <td>10</td>
-                                            <td>Feb</td>
-                                            <td>15</td>
-                                            <td>2023</td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2.</td>
+                                            <td><input type="checkbox" name="check" value="2"></td>
                                             <td>Month</td>
                                             <td>Day</td>
-                                            <td>Month
+                                            <td>Month</td>
                                             <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
                                             <td>300</td>
                                         </tr>
                                         <tr>
-                                            <td>3.</td>
+                                            <td><input type="checkbox" name="check" value="3"></td>
                                             <td>Month</td>
                                             <td>Day</td>
-                                            <td>Month
+                                            <td>Month</td>
                                             <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
                                             <td>300</td>
                                         </tr>
                                         <tr>
-                                            <td>4.</td>
+                                            <td><input type="checkbox" name="check" value="4"></td>
                                             <td>Month</td>
                                             <td>Day</td>
-                                            <td>Month
+                                            <td>Month</td>
                                             <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
@@ -890,6 +890,7 @@ table thead {
                                         </tr>
                                     </table>
                                 </div>
+
                             </div>
                         </div>
 
@@ -936,7 +937,8 @@ table thead {
                                         <p>$48</p>
                                     </div>
                                     <div class="col-5">
-                                        <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total nightcost
+                                        <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total
+                                            nightcost
                                             + cleaning fee)</p>
                                     </div>
                                 </div>
@@ -1151,24 +1153,24 @@ table thead {
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
                                 <h4>Co-Hosts</h4>
-                                <div class="row">
+                                <div class="row" style="width:70%">
                                     <div class="col-6">
-                                        <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                                            padding: 20px; background: #ededed;">
-                                            <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <div
+                                            style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;"  >
+                                            <img src="assets/img/avatar.png">
                                         </div>
-                                        <div>
+                                        <div style="text-align: center;padding-top: 10px;">
                                             <h4 class="m-0">Rahul</h4>
                                             <h5>Yoga Trainer</h5>
                                             <p>5 years of experience</p>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                                            padding: 20px; background: #ededed;">
-                                            <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                        <div
+                                            style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;"  >
+                                            <img src="assets/img/avatar.png">
                                         </div>
-                                        <div>
+                                        <div style="text-align: center;padding-top: 10px;">
                                             <h4 class="m-0">Rahul</h4>
                                             <h5>Yoga Trainer</h5>
                                             <p>5 years of experience</p>

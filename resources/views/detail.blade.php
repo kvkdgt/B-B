@@ -327,6 +327,10 @@
                                 </select>
                             </div>
                             <div class="d-grid">
+                                <label>Subject</label>
+                                <textarea placeholder="Enter Subject"></textarea>
+                            </div>
+                            <div class="d-grid">
                                 <label>Message</label>
                                 <textarea placeholder="Enter Message"></textarea>
                             </div>
@@ -438,8 +442,9 @@
                                 </div>
                                 <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                    <h4 class="justify-content-center d-flex">Ketul <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 512 512" fill="#1da1f2" style="margin-left: 10px;">
+                                    <h4 class="justify-content-center d-flex">Ketul <svg
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
+                                            fill="#1da1f2" style="margin-left: 10px;">
                                             <path
                                                 d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                         </svg></h4>
@@ -465,8 +470,9 @@
                             <div class="d-flex">
                                 <img src="assets/img/avatar.png">
                                 <div class="m-2">
-                                    <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                            viewBox="0 0 512 512" fill="#1da1f2">
+                                    <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
+                                            fill="#1da1f2">
                                             <path
                                                 d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                         </svg></h4>
@@ -485,7 +491,8 @@
                         <br>
                         <ul style="list-style: none; padding-left: 1.2rem;">
                             <li>
-                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
+                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg"
+                                        style="margin-right: 8px;"></i>B.SC Fitness:
                                 </h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
@@ -494,7 +501,8 @@
                             </li>
                             <br>
                             <li style="padding: 0;">
-                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
+                                <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg"
+                                        style="margin-right: 8px;"></i>Diploma
                                     Graphics:</h4>
                                 <span style="margin-left: 35px;"> University of Poland,
                                     Poland</span>
@@ -502,6 +510,67 @@
                                 <span style="margin-left: 35px;">From: 20XX To: 20XX</span>
                             </li>
                         </ul>
+                    </div>
+
+                    <hr class="m-0">
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="co-host-block">
+                                <div class="co-host-header d-flex align-items-center justify-content-center">
+                                    <h2>My Co-host</h2>
+                                </div>
+                                <div class="album">
+                                    <div class="text-center">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6 col-12">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                            margin: auto; padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    <h4 class="m-0">Kartik Trivedi</h4>
+                                                </div>
+                                                <div>
+                                                    <h5>Yoga Trainer</h5>
+                                                    <p>5 years of experience</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-12">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                            margin: auto; padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    <h4 class="m-0">John Doe</h4>
+                                                </div>
+                                                <div>
+                                                    <h5>Pilates Instructor</h5>
+                                                    <p>8 years of experience</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-12">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                            margin: auto; padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    <h4 class="m-0">Jane Smith</h4>
+                                                </div>
+                                                <div>
+                                                    <h5>Zumba Instructor</h5>
+                                                    <p>3 years of experience</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 col-12">
+                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
+                                            margin: auto; padding: 20px; background: #ededed;">
+                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                                    <h4 class="m-0">Alex Johnson</h4>
+                                                </div>
+                                                <div>
+                                                    <h5>Meditation Teacher</h5>
+                                                    <p>10 years of experience</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <hr class="m-0">
@@ -586,7 +655,7 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
-                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M18.6562 0.75C19.1487 0.75 19.6363 0.846997 20.0913 1.03545C20.5463 1.22391 20.9597 1.50013 21.3079 1.84835C21.6561 2.19657 21.9323 2.60997 22.1208 3.06494C22.3093 3.51991 22.4062 4.00754 22.4062 4.5C22.4062 9.29175 21.2122 14.3903 19.4062 15.5198V23.25H17.9062V15.5205C16.1333 14.412 14.9498 9.474 14.9078 4.75875L14.9062 4.5L14.91 4.33725C14.9519 3.37181 15.365 2.45983 16.0629 1.79149C16.7609 1.12316 17.6899 0.750056 18.6562 0.75ZM11.9062 0.75V14.3385C13.644 14.7563 14.9062 16.596 14.9062 18.75C14.9062 21.2025 13.269 23.25 11.1562 23.25C9.0435 23.25 7.40625 21.2025 7.40625 18.75C7.40625 16.596 8.6685 14.7555 10.4062 14.3385V0.75H11.9062ZM0.65625 0.75H1.40625C4.75875 0.75 6.60675 5.52375 6.6555 14.6287L6.65625 15.75H2.1555L2.15625 23.25H0.65625V0.75ZM11.1562 15.75C9.95475 15.75 8.90625 17.061 8.90625 18.75C8.90625 20.439 9.95475 21.75 11.1562 21.75C12.3577 21.75 13.4062 20.439 13.4062 18.75C13.4062 17.061 12.3577 15.75 11.1562 15.75ZM2.15625 2.42925V14.25H5.1525L5.13975 13.527L5.1195 12.8153C4.911 6.86775 3.8325 3.46725 2.32425 2.523L2.23425 2.4705L2.15625 2.42925ZM16.41 4.368L16.4062 4.5L16.4078 4.7325C16.4415 7.97325 17.181 11.5823 17.907 13.275V2.3775C17.4893 2.5252 17.1245 2.79284 16.8582 3.14691C16.5919 3.50098 16.436 3.92574 16.41 4.368ZM19.407 2.37825V13.2728C20.1488 11.5403 20.9062 7.8 20.9062 4.5C20.9062 4.03466 20.762 3.58078 20.4934 3.2008C20.2247 2.82083 19.8457 2.53347 19.407 2.37825Z"
@@ -608,7 +677,10 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6">
                                     <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M288 48c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V192h40V120c0-13.3 10.7-24 24-24s24 10.7 24 24v72h24c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H432 336c-26.5 0-48-21.5-48-48V48zm64 32v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm16 80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H368zM352 272v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm176-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H528zM512 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H528c-8.8 0-16 7.2-16 16zM166.6 153.4l80 80c12.5 12.5 12.5 32.8 0 45.3l-80 80c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H146.7l-25.4-25.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0z"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+                                            <path
+                                                d="M288 48c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V192h40V120c0-13.3 10.7-24 24-24s24 10.7 24 24v72h24c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H432 336c-26.5 0-48-21.5-48-48V48zm64 32v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm16 80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H368zM352 272v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm176-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H528zM512 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H528c-8.8 0-16 7.2-16 16zM166.6 153.4l80 80c12.5 12.5 12.5 32.8 0 45.3l-80 80c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H146.7l-25.4-25.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0z" />
+                                        </svg>
                                         City Tour
                                     </p>
                                 </div>
@@ -739,7 +811,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <p>
-                                    <i class="fa-solid fa-volume-xmark"></i>
+                                        <i class="fa-solid fa-volume-xmark"></i>
                                         No loud music
                                     </p>
                                 </div>
@@ -832,67 +904,8 @@
                     </div>
                     <hr>
 
-                    <!-- My co-host-->
-                    <div class="row mt-5">
-                        <div class="col-md-12">
-                            <div class="co-host-block">
-                                <div class="co-host-header d-flex align-items-center justify-content-center">
-                                    <h2>My Co-host</h2>
-                                </div>
-                                <div class="album">
-                                    <div class="text-center">
-                                        <div class="row">
-                                            <div class="col-md-3 col-sm-6 col-12">
-                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                            margin: auto; padding: 20px; background: #ededed;">
-                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
-                                                    <h4 class="m-0">Kartik Trivedi</h4>
-                                                </div>
-                                                <div>
-                                                    <h5>Yoga Trainer</h5>
-                                                    <p>5 years of experience</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-12">
-                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                            margin: auto; padding: 20px; background: #ededed;">
-                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
-                                                    <h4 class="m-0">John Doe</h4>
-                                                </div>
-                                                <div>
-                                                    <h5>Pilates Instructor</h5>
-                                                    <p>8 years of experience</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-12">
-                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                            margin: auto; padding: 20px; background: #ededed;">
-                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
-                                                    <h4 class="m-0">Jane Smith</h4>
-                                                </div>
-                                                <div>
-                                                    <h5>Zumba Instructor</h5>
-                                                    <p>3 years of experience</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-sm-6 col-12">
-                                                <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                            margin: auto; padding: 20px; background: #ededed;">
-                                                    <img src="assets/img/avatar.png" style="margin-right: 10px;">
-                                                    <h4 class="m-0">Alex Johnson</h4>
-                                                </div>
-                                                <div>
-                                                    <h5>Meditation Teacher</h5>
-                                                    <p>10 years of experience</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                    <!-- <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div> -->
 
                     <!--  My Album  -->
                     <div class="col-md-12">
@@ -937,7 +950,7 @@
                     <div class="details-block card-time">
                         <i class="fa-regular fa-clock" style="margin-right: 10px;">
                         </i>
-                         TIME :
+                        TIME :
                         Time In : 10:00 AM /
                         Time Out : 09:00 AM
                     </div>
@@ -1054,9 +1067,9 @@
                 <!--  Right Side Cart  -->
                 <div class="col-md-4 col-sm-12" id="fixed">
                     <div class="d-flex justify-content-end">
-                            <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
-                            <a href="#"><i class="bx bx-heart"></i> Save</a>
-                        </div>
+                        <a href="#" style="margin-right: 10px;"><i class="bx bx-share"></i> Share</a>
+                        <a href="#"><i class="bx bx-heart"></i> Save</a>
+                    </div>
                     <div class="sticy-bar">
                         <div class="sticky-side-bar">
                             <h2>Your Cart</h2>
@@ -1104,8 +1117,13 @@
                                             <p class="m-0">€150</p>
                                         </div> -->
                                         <div class="item d-flex align-items-center justify-content-between">
-                                            <h4 class="m-0">2 adult guest</h4>
+                                            <h4 class="m-0">Bookings</h4>
+                                            <p class="m-0">2 adult guest</p>
+                                            <p class="m-0">10 Nights</p>
+                                            <p class="m-0">€180</p>&nbsp;
+
                                         </div>
+                                        
                                     </div>
                                     <hr>
                                     <div class="item d-flex align-items-center justify-content-between">
