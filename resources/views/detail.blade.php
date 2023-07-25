@@ -24,7 +24,7 @@
         position: relative;
     }
 
-    .user-img-top {
+    /* .user-img-top {
         width: 100px;
         height: 100px;
         margin-left: 40px;
@@ -34,9 +34,9 @@
     .user-img-top img {
         width: 100px;
         height: 100px;
-        /* border: 2px solid #bee500; */
+        border: 2px solid #bee500;
         border-radius: 0;
-    }
+    } */
 
     .slider-content svg {
         fill: #27a5f3;
@@ -306,6 +306,20 @@
         background: #fff;
         border-radius: 10px;
     }
+
+    .host-content p {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 20px 0 0;
+    }
+
+    .bold-block {
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        justify-content: center;
+        gap: 30px;
+    }
     </style>
 
 
@@ -352,10 +366,7 @@
                                 <label>Message</label>
                                 <textarea placeholder="Enter Message"></textarea>
                             </div>
-
-
                             <button class="btn btn-primary w-100 p-3">submit</button>
-
                         </form>
                     </div>
                 </div>
@@ -426,9 +437,9 @@
                 <div class="col-md-8 col-sm-12">
                     <div class="edit-profile-block">
                     <!--  Stay & Learn Salsa  -->
-                        <div class="mb-4" style="width:50%;">
-                            <div class="listing-item" style="display: flex;">
-                                <div class="sub-main" style="display: flex; align-items: center;">
+                        <div class="mb-4">
+                            <div class="listing-item row align-items-center">
+                                <div class="sub-main col-md-6 col-sm-12">
                                     <!-- <div class="img-sec p-rel">
                                         <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
                                             style="max-width: 200px;">
@@ -436,7 +447,7 @@
                                             <i class="fas fa-heart" style="font-size: 16px; color: #bee500;"></i>
                                         </span>
                                     </div> -->
-                                    <div class="slider-content" style="margin-left: 10px; flex: 0 0 70%;">
+                                    <div class="slider-content" style="margin-left: 10px;">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <h4>Stay and Learn</h4>
                                         </div>
@@ -459,19 +470,23 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="user-img-top">
+                                    <!-- <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         <h4 class="justify-content-center d-flex">Ketul <svg xmlns="http://www.w3.org/2000/svg" height="1em"
                                                 viewBox="0 0 512 512" fill="#1da1f2" style="margin-left: 10px;">
                                                 <path
                                                     d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                             </svg></h4>
-                                    </div>
+                                    </div> -->
+                                </div>
+                                <div class="bold-block d-flex align-items-center col-md-6 col-sm-12">
+                                <p class="m-0">120 Reviews</p>
+                                <p class="m-0">4.5 Stars</p>
                                 </div>
                             </div>
                         </div>
                         <!--  About the Host  -->
-                        <div class="details-block about-us">
+                        <div class="details-block about-us pb-0">
                             <div class="d-flex align-items-center justify-content-between">
                                 <h4>About the Host</h4>
                                 <a href="{{route('hostProfile')}}" style="text-decoration: underline;">Profile</a>
@@ -484,7 +499,7 @@
                                     <span>(3.5) / (14 Reviews)</span>
                                 </div> -->
                             </div>
-                            <div class="details-content">
+                            <div class="details-content pb-0">
                                 <div class="d-flex">
                                     <img src="assets/img/avatar.png">
                                     <div class="m-2">
@@ -497,13 +512,16 @@
                                         <p class="m-0">Lonsdale St, Melbourne</p>
                                     </div>
                                 </div>
-                                <a style="color: #fff; cursor: pointer;">Read More</a>
+                                <div class="d-flex align-items-center justify-content-between host-content">
+                                    <p>My name is Kartik. I've 50 years experience as a yoga trainer. I also worked with the president of India in 1930.</p>
+                                    <a style="color: #fff; cursor: pointer;">Read More</a>
+                                </div>
                             </div>
                         </div>
                         <hr>
-                        <div class="details-block">
+                        <div class="details-block pt-0">
                             <div class="d-flex align-items-center justify-content-between">
-                                <h3><i class="fa-solid fa-building-columns"></i> Academic Qualification</h3>
+                                <h3 class="m-0"><i class="fa-solid fa-building-columns"></i> Academic Qualification</h3>
                             </div>
                             <br>
                             <ul style="list-style: none; padding-left: 1.2rem;">
@@ -958,11 +976,14 @@
 
                         <!--  Choose Dates  -->
                         <div class="details-block card-time">
+                            <div class="d-flex align-items-center">
                             <i class="fa-regular fa-clock" style="margin-right: 10px;">
-                            </i>
-                            TIME :
-                            Time In : 10:00 AM /
-                            Time Out : 09:00 AM
+                            </i><h4 class="m-0">Time</h4>
+                            </div>
+                            <div class="mt-4">
+                            <p>Time In : 10:00 AM</p>
+                            <p>Time Out : 09:00 AM </p>
+                        </div>
                         </div>
                         <hr>
                         <div class="details-block">

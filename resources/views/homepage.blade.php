@@ -5,6 +5,10 @@
     color: #000;
 }
 
+.icons a {
+    font-weight: 700;
+}
+
 .text-last {
     text-align: right;
 }
@@ -105,7 +109,7 @@
     <section class="hero">
         <div class="container" data-aos="fade-up">
             <div class="slideLeft">
-                <i class='bx bx-left-arrow-alt'></i>
+                <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="categories d-flex overflow-auto" data-aos="zoom-in" data-aos-delay="250">
                 <div class="icon-box">
@@ -195,7 +199,7 @@
 
             </div>
             <div class="slideRight">
-                <i class='bx bx-right-arrow-alt'></i>
+            <i class="fa-solid fa-arrow-right"></i>
             </div>
 
         </div>

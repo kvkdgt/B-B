@@ -36,6 +36,28 @@
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
     <style>
+
+    #header {
+        padding: 0;
+    }
+
+    #header .logo img {
+    max-height: 70px;
+}
+
+.listings .listing-item .sub-main .slider-content p {
+    color: #000;
+}
+
+.listings .listing-item .sub-main .slider-content p i {
+    margin-right: 7px;
+    font-size: 16px;
+}
+
+#footer .copyright {
+    font-weight: 600;
+}
+
     .search-block input {
         font-size: 16px;
         color: #353535;
@@ -218,13 +240,13 @@
         <div class="container d-flex align-items-center justify-content-lg-between">
 
             <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt=""
-                    class="img-fluid"><span>Status B&B</span></a>
+                    class="img-fluid"><span style="font-size: 20px;">Status B&B</span></a>
 
             <div class="search-area">
 
                 <div id="search-block" class="search-block">
                     <form action="">
-                        <input type="search" placeholder="Start your search" class="form-control" />
+                        <input type="search" placeholder="Search Location or Skills" class="form-control" />
                         <span>Search</span>
                     </form>
                 </div>
@@ -234,14 +256,14 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <!-- <li><a href="reward-your-passion.html" class="nav-link">Reward your Passion </a></li> -->
-                    <li class="dropdown"><a href="#"><span>English</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>English</span> <i class="fa-solid fa-angle-down"></i></a>
                         <ul>
                             <li><a href="#">English</a></li>
                             <li><a href="#">German</a></li>
                             <li><a href="#">French</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#"><span>USD</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>USD</span> <i class="fa-solid fa-angle-down"></i></a>
                         <ul>
                             <li><a href="#">USD</a></li>
                             <li><a href="#">EUR</a></li>
@@ -333,10 +355,10 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4></h4> -->
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('about')}}">Terms</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('safety')}}">Privacy Policy</a>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('about')}}">Terms</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('safety')}}">Privacy Policy</a>
                             </li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('blogs')}}">Careers</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
 
                         <i class="fa-brands fa-stripe"></i>
@@ -345,10 +367,10 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('career')}}">About Us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{route ('terms')}}">FAQ &amp;
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('career')}}">About Us</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('terms')}}">FAQ &amp;
                                     Conditions</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Safety Tips</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="privacy.html">Safety Tips</a></li>
                         </ul>
 
                         <i class="fa-brands fa-cc-paypal"></i>
