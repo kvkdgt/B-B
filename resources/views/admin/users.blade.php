@@ -315,6 +315,16 @@ button.verfied {
     margin-right: 20px;
 }
 
+.user-img-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.user-img-top img {
+    border: 2px solid #bee500;
+    border-radius: 50%;
+}
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -381,7 +391,7 @@ button.verfied {
                 <ul class="menu">
                     <li class="dropdown">
                         <div onclick="toggleSubMenu(this)">
-                            <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                            <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                         </div>
                         <ul class="sub-menu dropdown">
                             <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
@@ -448,8 +458,8 @@ button.verfied {
                                     <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
-                                    <li><span>0 ₹</span></li>
-                                    <li><span>0 $</span></li>
+                                    <li><span>Euro &euro;</span></li>
+                                    <li><span>USD $</span></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -471,7 +481,7 @@ button.verfied {
     <div class="col-lg-10 col-md-9 col-sm-9">
         <div class="page-content">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h4>Liked Listing</h4>
+                <h4>Users</h4>
                 <div class="search">
                     <button class="btn btn-danger">Delete Profile</button>
                     <button class="btn btn-primary">Block/Unblock</button>
@@ -481,9 +491,12 @@ button.verfied {
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
                     <input type="checkbox">
                     <div class="listing-item">
-                        <div class="sub-main">
+                        <div class="sub-main p-rel">
                             <div class="img-sec p-rel">
                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="user-img-top">
+                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                             </div>
                             <div class="slider-content">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -494,8 +507,8 @@ button.verfied {
                                         Feb 2, 2000
                                     </p>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
-                                    <button class="verfied">Verified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                <div class="">
+                                    <button class="verfied">Verified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Listing Created 80</p>
@@ -513,9 +526,12 @@ button.verfied {
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
                     <input type="checkbox">
                     <div class="listing-item">
-                        <div class="sub-main">
+                        <div class="sub-main p-rel">
                             <div class="img-sec p-rel">
                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="user-img-top">
+                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                             </div>
                             <div class="slider-content">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -526,8 +542,8 @@ button.verfied {
                                         Feb 2, 2000
                                     </p>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
-                                    <button class="verfied">Verified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                <div class="">
+                                    <button class="verfied">Verified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Listing Created 80</p>
@@ -545,9 +561,12 @@ button.verfied {
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
                     <input type="checkbox">
                     <div class="listing-item">
-                        <div class="sub-main">
+                        <div class="sub-main p-rel">
                             <div class="img-sec p-rel">
                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="user-img-top">
+                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                             </div>
                             <div class="slider-content">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -558,8 +577,8 @@ button.verfied {
                                         Feb 2, 2000
                                     </p>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
-                                    <button class="verfied">Unverified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                <div class="">
+                                    <button class="verfied">Unverified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Listing Created 80</p>
@@ -577,9 +596,12 @@ button.verfied {
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
                     <input type="checkbox">
                     <div class="listing-item">
-                        <div class="sub-main">
+                        <div class="sub-main p-rel">
                             <div class="img-sec p-rel">
                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                            </div>
+                            <div class="user-img-top">
+                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                             </div>
                             <div class="slider-content">
                                 <div class="d-flex align-items-center justify-content-between">
@@ -590,8 +612,8 @@ button.verfied {
                                         Feb 2, 2000
                                     </p>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px;">
-                                    <button class="verfied">Unverified</button><p class="m-0">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                <div class="">
+                                    <button class="verfied">Unverified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>Total Listing Created 80</p>

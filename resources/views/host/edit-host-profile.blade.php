@@ -55,11 +55,12 @@ button.edit-btn {
 
 .user-block h4 {
     margin: 5px 0 0;
+    color: #000;
 }
 
 .user-block a,
 .user-block a:hover {
-    color: #fff;
+    color: #000;
 }
 
 ul.menu {
@@ -259,7 +260,7 @@ function toggleSubMenu(icon) {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -278,9 +279,9 @@ function toggleSubMenu(icon) {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
                                 <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -300,6 +301,7 @@ function toggleSubMenu(icon) {
                             <ul class="sub-menu">
                                 <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                                <li><span><a href="#">Delete my Account</a></span></li>
                             </ul>
                         </li>
                     </ul>
@@ -398,28 +400,13 @@ function toggleSubMenu(icon) {
                                 <label for="language">Languages</label>
                                 <div class="row">
                                     <div class="col-md-4 col-12">
-                                        <select id="lan">
-                                            <option disabled selected hidden>Enter languages</option>
-                                            <option value="lan">English</option>
-                                            <option value="lan">Gujrati</option>
-                                            <option value="lan">Marathi</option>
-                                        </select>
+                                        <input type="text" class="form-control" placeholder="Enter languages" />
                                     </div>
                                     <div class="col-md-4 col-12">
-                                        <select id="lan">
-                                            <option disabled selected hidden>Enter languages</option>
-                                            <option value="state">Bengali</option>
-                                            <option value="state">Hindi</option>
-                                            <option value="state">French</option>
-                                        </select>
+                                        <input type="text" class="form-control" placeholder="Enter languages" />
                                     </div>
                                     <div class="col-md-4 col-12">
-                                        <select id="lan">
-                                            <option disabled selected hidden>Enter languages</option>
-                                            <option value="city">Spanish</option>
-                                            <option value="city">Arabic</option>
-                                            <option value="city">Japanese</option>
-                                        </select>
+                                        <input type="text" class="form-control" placeholder="Enter languages" />
                                     </div>
                                 </div>
                             </div>
@@ -482,19 +469,19 @@ function toggleSubMenu(icon) {
                                         </div>
                                         <div class="col-sm-3 col-12 d-flex align-items-center">
                                             <input type="radio" id="homr" name="property" value="homr">
-                                            <label for="homr" class="m-0">Home Tutor</label>
+                                            <label for="homr" class="m-0">Farm House</label>
                                         </div>
                                         <div class="col-sm-3 col-12 d-flex align-items-center">
                                             <input type="radio" id="bootcamp" name="property" value="bootcamp">
-                                            <label for="bootcamp" class="m-0">Team Bootcamp</label>
+                                            <label for="bootcamp" class="m-0">Town House</label>
                                         </div>
                                         <div class="col-sm-3 col-12 d-flex align-items-center">
                                             <input type="radio" id="house" name="property" value="house">
-                                            <label for="house" class="m-0">Smart House</label>
+                                            <label for="house" class="m-0">Studio</label>
                                         </div>
                                         <div class="col-sm-3 col-12 d-flex align-items-center">
                                             <input type="radio" id="renewable" name="property" value="renewable">
-                                            <label for="renewable" class="m-0">Renewable Home</label>
+                                            <label for="renewable" class="m-0">Villa</label>
                                         </div>
                                         <div class="col-sm-3 col-12 d-flex align-items-center">
                                             <input type="radio" id="duplex" name="property" value="duplex">
@@ -504,13 +491,29 @@ function toggleSubMenu(icon) {
                                             <input type="radio" id="office" name="property" value="office">
                                             <label for="office" class="m-0">Home Office</label>
                                         </div>
+                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                            <input type="radio" id="office" name="property" value="office">
+                                            <label for="office" class="m-0">Boat House</label>
+                                        </div>
+                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                            <input type="radio" id="office" name="property" value="office">
+                                            <label for="office" class="m-0">Flat</label>
+                                        </div>
+                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                            <input type="radio" id="office" name="property" value="office">
+                                            <label for="office" class="m-0">Cabin</label>
+                                        </div>
+                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                            <input type="radio" id="office" name="property" value="office">
+                                            <label for="office" class="m-0">Hostel</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="about">About Host</label>
-                                    <textarea id="about" cols="30" rows="8" class="form-control"></textarea>
+                                    <label for="about">About the Host Tutor</label>
+                                    <textarea id="about" cols="30" rows="8" class="form-control" placeholder="Tell guests about yourself, skills"></textarea>
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>

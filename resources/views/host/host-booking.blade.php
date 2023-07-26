@@ -298,7 +298,7 @@ footer#footer {
     display: none;
 }
 
-table thead {
+table tfoot {
     background: #bee500 !important;
 }
 
@@ -368,7 +368,7 @@ table thead {
                 <ul class="menu">
                     <li class="dropdown">
                         <div onclick="toggleSubMenu(this)">
-                            <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                            <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                         </div>
                         <ul class="sub-menu dropdown">
                             <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -387,9 +387,9 @@ table thead {
                         </div>
                         <ul class="sub-menu">
                             <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                            <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                            <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
                             <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                            <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                            <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -409,6 +409,7 @@ table thead {
                         <ul class="sub-menu">
                             <li><span>Profile Setting</span></li>
                             <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                            <li><span><a href="#">Delete my Account</a></span></li>
                         </ul>
                     </li>
                 </ul>
@@ -430,7 +431,7 @@ table thead {
 
                     <div class="common-table">
                         <table>
-                            <thead>
+                            <!-- <thead>
                                 <th></th>
                                 <th>Date</th>
                                 <th>Listing Name</th>
@@ -448,7 +449,7 @@ table thead {
                                 <th>Revenue</th>
                                 <th>Total Payout</th>
                                 <th>Action</th>
-                            </thead>
+                            </thead> -->
 
                             <tbody>
                                 <tr>
@@ -480,7 +481,7 @@ table thead {
                                 </tr>
                             </tbody>
 
-                            <!-- <tfoot>
+                            <tfoot>
                                 <th>S/No</th>
                                 <th>Date</th>
                                 <th>Listing Name</th>
@@ -498,7 +499,7 @@ table thead {
                                 <th>Revenue</th>
                                 <th>Total Payout</th>
                                 <th>Action</th>
-                            </tfoot> -->
+                            </tfoot>
                         </table>
 
                     </div>

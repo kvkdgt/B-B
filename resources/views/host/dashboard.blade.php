@@ -300,11 +300,6 @@ table thead {
     right: -5px;
 }
 
-table, th, td {
-  border: 1px solid black !important;
-  border-collapse: collapse;
-}
-
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -368,7 +363,7 @@ table, th, td {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -386,9 +381,9 @@ table, th, td {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
                                 <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -411,6 +406,7 @@ table, th, td {
                             <ul class="sub-menu">
                                 <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                                <li><span><a href="#">Delete my Account</a></span></li>
                             </ul>
                         </li>
                     </ul>
@@ -569,7 +565,6 @@ table, th, td {
                     <div class="col-md-12 col-sm-12">
                         <div class="booking-block">
                             <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Recent Bookings</h4>
                                 <div class="">
                                     <select name="dropdown">
                                         <option value="All">All</option>
@@ -699,7 +694,9 @@ table, th, td {
                                     </tbody>
                                 </table>
 
-                                <table style="margin: 40px 0 20px;">
+                                <h4 class="mt-5">Conversion Rates</h4>
+
+                                <table>
                                     <thead>
                                         <th>S/No</th>
                                         <th>Date</th>
@@ -716,7 +713,7 @@ table, th, td {
                                 
                                 <div class="table-header d-flex align-items-center justify-content-between">
                                     <h4 class="my-4">Recent Reviews</h4>
-                                    <button class="btn btn-danger">Delete</button>
+                                    <!-- <button class="btn btn-danger">Delete</button> -->
                                 </div>
                                 <div class="table-heading">
                                     <table>

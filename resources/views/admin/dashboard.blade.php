@@ -355,7 +355,7 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                         <ul class="menu">
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
-                                    <span>Dashboard</span> <i class="fa-solid fa-caret-right"></i>
+                                    <span>Admin Dashboard</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu dropdown">
                                     <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
