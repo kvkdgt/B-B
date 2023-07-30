@@ -1003,39 +1003,68 @@
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city1" value="city1">
                                     <label for="city1">
-                                        City 1
+                                        France
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city2" value="city2">
                                     <label for="city2">
-                                        City 2
+                                        Netherlands
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city3" value="city3">
-                                    <label for="city3">
-                                        City 3
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                       Unite Kingdom
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city4" value="city4">
-                                    <label for="city4">
-                                        City 4
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Ghana
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city5" value="city5">
-                                    <label for="city5">
-                                        City 5
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Nigeria
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city6" value="city6">
-                                    <label for="city6">
-                                        City 6
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Kenya
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Canada
+                                    </label>
+                                </div>     
+                                
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Austria
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Switzerland
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        United States
+                                    </label>
+                                </div>
+                                
+
                             </div>
 
                             <!-- Prices -->
@@ -1111,6 +1140,41 @@
                                     <input type="radio" name="property_types" id="cabins" value="Cabins">
                                     <label for="private_houses">
                                         Cabins
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Villa
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Duplex
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Town house
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                       Studio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Waterfront
                                     </label>
                                 </div>
                             </div>
@@ -1217,6 +1281,36 @@
                                         4
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        5
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        6
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        7
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        8
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        9
+                                    </label>
+                                </div>
                                 <!-- Add more options for higher numbers of guests if needed -->
                             </div>
 
@@ -1273,6 +1367,37 @@
                                         washroom
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        City Tour
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Cycling
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Breakfast
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Dinner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Pool
+                                    </label>
+                                </div>
+
                             </div>
 
                         </div>

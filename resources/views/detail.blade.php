@@ -978,7 +978,7 @@
                         <div class="details-block card-time">
                             <div class="d-flex align-items-center">
                             <i class="fa-regular fa-clock" style="margin-right: 10px;">
-                            </i><h4 class="m-0">Time</h4>
+                            </i><h4 class="m-0">Time Notice</h4>
                             </div>
                             <div class="mt-4">
                             <p>Time In : 10:00 AM</p>
