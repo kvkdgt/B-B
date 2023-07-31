@@ -12,6 +12,9 @@
     <!-- Favicons -->
     <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon">
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
     <!-- Google Fonts -->
     <link
@@ -1423,6 +1426,7 @@
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
 
 
+
     <!-- Vendor JS Files -->
     <script src="{{env('BASE_URL')}}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="{{env('BASE_URL')}}/assets/vendor/aos/aos.js"></script>
@@ -1433,7 +1437,6 @@
     <script src="{{env('BASE_URL')}}/assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 
     <script>
     //    Scroll of Icons Script STARTS HERE    
@@ -1488,5 +1491,7 @@
         defer></script>
 
 </body>
+<script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 
+<script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
 </html>
