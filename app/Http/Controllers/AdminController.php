@@ -50,4 +50,12 @@ class AdminController extends Controller
     public function users(){
         return view('admin/users');
     }
+
+    public function cmsListing(){
+        return view('admin/cmsListing');
+    }
+
+    public function addNewPage(){
+        return view('admin/addNewPage');
+    }
 }

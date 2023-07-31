@@ -294,7 +294,7 @@
         overflow-x: hidden;
     }
 
-     .edit-profile-block::-webkit-scrollbar {
+    .edit-profile-block::-webkit-scrollbar {
         width: 5px;
     }
 
@@ -436,7 +436,7 @@
             <div class="row">
                 <div class="col-md-8 col-sm-12">
                     <div class="edit-profile-block">
-                    <!--  Stay & Learn Salsa  -->
+                        <!--  Stay & Learn Salsa  -->
                         <div class="mb-4">
                             <div class="listing-item row align-items-center">
                                 <div class="sub-main col-md-6 col-sm-12">
@@ -480,8 +480,8 @@
                                     </div> -->
                                 </div>
                                 <div class="bold-block d-flex align-items-center col-md-6 col-sm-12">
-                                <p class="m-0">120 Reviews</p>
-                                <p class="m-0">4.5 Stars</p>
+                                    <p class="m-0">120 Reviews</p>
+                                    <p class="m-0">4.5 Stars</p>
                                 </div>
                             </div>
                         </div>
@@ -503,8 +503,9 @@
                                 <div class="d-flex">
                                     <img src="assets/img/avatar.png">
                                     <div class="m-2">
-                                        <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                                viewBox="0 0 512 512" fill="#1da1f2">
+                                        <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
+                                                fill="#1da1f2">
                                                 <path
                                                     d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                             </svg></h4>
@@ -513,7 +514,8 @@
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-between host-content">
-                                    <p>My name is Kartik. I've 50 years experience as a yoga trainer. I also worked with the president of India in 1930.</p>
+                                    <p>My name is Kartik. I've 50 years experience as a yoga trainer. I also worked with
+                                        the president of India in 1930.</p>
                                     <a style="color: #fff; cursor: pointer;">Read More</a>
                                 </div>
                             </div>
@@ -526,7 +528,8 @@
                             <br>
                             <ul style="list-style: none; padding-left: 1.2rem;">
                                 <li>
-                                    <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>B.SC Fitness:
+                                    <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg"
+                                            style="margin-right: 8px;"></i>B.SC Fitness:
                                     </h4>
                                     <span style="margin-left: 35px;"> University of Poland,
                                         Poland</span>
@@ -535,7 +538,8 @@
                                 </li>
                                 <br>
                                 <li style="padding: 0;">
-                                    <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg" style="margin-right: 8px;"></i>Diploma
+                                    <h4 style="margin: 0 0 10px;"><i class="fa fa-graduation-cap fa-lg"
+                                            style="margin-right: 8px;"></i>Diploma
                                         Graphics:</h4>
                                     <span style="margin-left: 35px;"> University of Poland,
                                         Poland</span>
@@ -605,9 +609,12 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h5>Koh Samui, Suratthani, Thailand</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget
-                                            nisi bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
-                                            Massa eu sit laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                            eget
+                                            nisi bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla
+                                            faucibus.
+                                            Massa eu sit laoreet nunc mauris pellentesque. Tincidunt semper facilisi
+                                            tortor
                                             netus a pellentesque auctor maecenas id. Ac, egestas magna a consectetur
                                             fermentum. Urna, nec quam sed massa, pellentesque. Diam enim vel porta diam
                                             iaculis tellus cursus mauris. </p>
@@ -627,7 +634,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <p>
-                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M18.6562 0.75C19.1487 0.75 19.6363 0.846997 20.0913 1.03545C20.5463 1.22391 20.9597 1.50013 21.3079 1.84835C21.6561 2.19657 21.9323 2.60997 22.1208 3.06494C22.3093 3.51991 22.4062 4.00754 22.4062 4.5C22.4062 9.29175 21.2122 14.3903 19.4062 15.5198V23.25H17.9062V15.5205C16.1333 14.412 14.9498 9.474 14.9078 4.75875L14.9062 4.5L14.91 4.33725C14.9519 3.37181 15.365 2.45983 16.0629 1.79149C16.7609 1.12316 17.6899 0.750056 18.6562 0.75ZM11.9062 0.75V14.3385C13.644 14.7563 14.9062 16.596 14.9062 18.75C14.9062 21.2025 13.269 23.25 11.1562 23.25C9.0435 23.25 7.40625 21.2025 7.40625 18.75C7.40625 16.596 8.6685 14.7555 10.4062 14.3385V0.75H11.9062ZM0.65625 0.75H1.40625C4.75875 0.75 6.60675 5.52375 6.6555 14.6287L6.65625 15.75H2.1555L2.15625 23.25H0.65625V0.75ZM11.1562 15.75C9.95475 15.75 8.90625 17.061 8.90625 18.75C8.90625 20.439 9.95475 21.75 11.1562 21.75C12.3577 21.75 13.4062 20.439 13.4062 18.75C13.4062 17.061 12.3577 15.75 11.1562 15.75ZM2.15625 2.42925V14.25H5.1525L5.13975 13.527L5.1195 12.8153C4.911 6.86775 3.8325 3.46725 2.32425 2.523L2.23425 2.4705L2.15625 2.42925ZM16.41 4.368L16.4062 4.5L16.4078 4.7325C16.4415 7.97325 17.181 11.5823 17.907 13.275V2.3775C17.4893 2.5252 17.1245 2.79284 16.8582 3.14691C16.5919 3.50098 16.436 3.92574 16.41 4.368ZM19.407 2.37825V13.2728C20.1488 11.5403 20.9062 7.8 20.9062 4.5C20.9062 4.03466 20.762 3.58078 20.4934 3.2008C20.2247 2.82083 19.8457 2.53347 19.407 2.37825Z"
@@ -649,7 +656,10 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6">
                                         <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M288 48c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V192h40V120c0-13.3 10.7-24 24-24s24 10.7 24 24v72h24c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H432 336c-26.5 0-48-21.5-48-48V48zm64 32v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm16 80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H368zM352 272v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm176-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H528zM512 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H528c-8.8 0-16 7.2-16 16zM166.6 153.4l80 80c12.5 12.5 12.5 32.8 0 45.3l-80 80c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H146.7l-25.4-25.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0z"/></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+                                                <path
+                                                    d="M288 48c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48V192h40V120c0-13.3 10.7-24 24-24s24 10.7 24 24v72h24c26.5 0 48 21.5 48 48V464c0 26.5-21.5 48-48 48H432 336c-26.5 0-48-21.5-48-48V48zm64 32v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm16 80c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V176c0-8.8-7.2-16-16-16H368zM352 272v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H368c-8.8 0-16 7.2-16 16zm176-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H528zM512 368v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H528c-8.8 0-16 7.2-16 16zM166.6 153.4l80 80c12.5 12.5 12.5 32.8 0 45.3l-80 80c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L146.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H146.7l-25.4-25.4c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0z" />
+                                            </svg>
                                             City Tour
                                         </p>
                                     </div>
@@ -780,7 +790,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <p>
-                                        <i class="fa-solid fa-volume-xmark"></i>
+                                            <i class="fa-solid fa-volume-xmark"></i>
                                             No loud music
                                         </p>
                                     </div>
@@ -830,7 +840,8 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and workshop
+                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>B&B and
+                                            workshop
                                         </p>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -868,6 +879,36 @@
                                             <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Employees
                                         </p>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="details-block">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4><i class="fa-brands fa-leanpub"></i> How it Works</h4>
+                            </div>
+                            <div class="details-content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>
+                                            <i class="fa-solid fa-list"></i>
+                                            Read the Detaiils carefully
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>
+                                            <i class="fa-solid fa-list"></i>
+                                            Chat with host tutor to know more
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p>
+                                            <i class="fa-solid fa-list"></i>
+                                            Select your dates to book
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -977,13 +1018,14 @@
                         <!--  Choose Dates  -->
                         <div class="details-block card-time">
                             <div class="d-flex align-items-center">
-                            <i class="fa-regular fa-clock" style="margin-right: 10px;">
-                            </i><h4 class="m-0">Time Notice</h4>
+                                <i class="fa-regular fa-clock" style="margin-right: 10px;">
+                                </i>
+                                <h4 class="m-0">Time</h4>
                             </div>
                             <div class="mt-4">
-                            <p>Time In : 10:00 AM</p>
-                            <p>Time Out : 09:00 AM </p>
-                        </div>
+                                <p>Time In : 10:00 AM</p>
+                                <p>Time Out : 09:00 AM </p>
+                            </div>
                         </div>
                         <hr>
                         <div class="details-block">
@@ -1117,28 +1159,19 @@
                                                 <div class="form-field" style="margin: 0 -25px;">
                                                     <label>Select dates</label>
                                                     <!-- Single dropdown with date ranges -->
-                                                    <select name="date_range"
-                                                        style="padding: 0;min-width: 10px;width: 255px;height: 30px;">
-                                                        <optgroup>
-                                                            <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
-                                                        </optgroup>
-                                                        <optgroup>
-                                                            <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
-                                                        </optgroup>
-                                                        <!-- Add more date range options here as needed -->
-                                                        <optgroup>
-                                                            <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
-                                                        </optgroup>
-                                                        <optgroup>
-                                                            <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
-                                                        </optgroup>
-                                                        <optgroup>
-                                                            <option value="5">May 5 - May 9 (5 Days) - €25</option>
-                                                        </optgroup>
-                                                        <optgroup>
-                                                            <option value="12">Jun 15 - Jun 26 (12 Days) - €60</option>
-                                                        </optgroup>
-                                                    </select>
+                                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                                                    <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
+                                                    <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
+                                                    <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
+                                                    <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
+                                                    <option value="5">May 5 - May 9 (5 Days) - €25</option>
+
+
+
+
+
+</select>
+                                                  
                                                 </div>
                                             </div>
                                         </ul>
@@ -1155,7 +1188,7 @@
                                             <p class="m-0">€180</p>&nbsp;
 
                                         </div>
-                                        
+
                                     </div>
                                     <hr>
                                     <div class="item d-flex align-items-center justify-content-between">

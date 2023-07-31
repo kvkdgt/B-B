@@ -353,37 +353,38 @@ table thead {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3 col-sm-3">
-        <div class="mobile-menu open-menu">
-            <span class="show-menu"><i class="bi bi-list"></i>
-            </span>
-            <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-            </span>
-            <div class="page-sidebar"> 
+        <div class="col-lg-2 col-md-3 col-sm-3">
+            <div class="mobile-menu open-menu">
+                <span class="show-menu"><i class="bi bi-list"></i>
+                </span>
+                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="page-sidebar">
                     <div class="user-block">
                         <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
-                    </div>            
+                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('users')}}">  <span>Users</span> </a>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -403,7 +404,7 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
@@ -428,99 +429,158 @@ table thead {
                                         <li><span>About us</span></li>
                                     </ul>
                                 </li>
-                            </li>
-                                <li><span>Block IP addresses</span></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>0 ₹</span></li>
-                                        <li><span>0 $</span></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>English</span></li>
-                                        <li><span>French</span></li>
-                                        <li><span>German</span></li>
-                                    </ul>
-                                </li>
+                        </li>
+                        <li><span>Block IP addresses</span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>0 ₹</span></li>
+                                <li><span>0 $</span></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>English</span></li>
+                                <li><span>French</span></li>
+                                <li><span>German</span></li>
                             </ul>
                         </li>
                     </ul>
-                </div>  
-        </div>
-    </div>
-    <div class="col-lg-10 col-md-9 col-sm-9 col-12">
-        <div class="page-content">
-            <div class="row">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                    <h4>Accepted Bookings</h4>
-                    <div class="search">
-                        <button class="btn btn-danger">Delete</button>
-                        <input type="text" name="search" placeholder="Search here">
-                        <i class="bx bx-search"></i>
-                    </div>
+                    </li>
+                    </ul>
                 </div>
-                <div class="card-body">
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            <div class="page-content">
+                <div class="row">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4>Bookings</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
+                        </div>
+                    </div>
+                    <div class="card-body">
 
-                    <div class="common-table">
-                        <table>
-                            <thead>
-                                <th></th>
-                                <th>Date</th>
-                                <th>Listing Name</th>
-                                <th>Country</th>
-                                <th>Guest Name</th>
-                                <th>Guest Email</th>
-                                <th>Check In</th>
-                                <th>Check Out</th>
-                                <th>Total Nights</th>
-                                <th>Booking ID</th>
-                                <th>Status</th>
-                                <th>Service fee</th>
-                                <th>Other fee</th>
-                                <th>Security Deposit</th>
-                                <th>Revenue</th>
-                                <th>Total Payout</th>
-                                <th>Action</th>
-                            </thead>
+                        <div class="common-table">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Listing Name</th>
+                                    <th>Booking ID</th>
+                                    <th>Guest Name</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Status</th>
+                                    <th>Cost</th>
+                                    <th>Cleaning fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Guest Service fee</th>
+                                    <th>Total Amount</th>
+                                    <th>Pyment</th>
+                                </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
-                                    </td>
-                                    <td>25/03/2023</td>
-                                    <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                    <td>Germany</td>
-                                    <td>Abbas</td>
-                                    <td>test@gmail.com</td>
-                                    <td>25/03/2023</td>
-                                    <td>25/03/2023</td>
-                                    <td>08</td>
-                                    <td>123456789</td>
-                                    <td><span class="">Accepted</span></td>
-                                    <td>€49</td>
-                                    <td>€49</td>
-                                    <td>€49</td>
-                                    <td>€49</td>
-                                    <td>€495</td>
-                                    <td>
-                                        <a href="chat.html"><i class="fa fa-envelope"></i></a>
-                                        <a href="#"><i class="fa fa-print"></i></a>
-                                        <a href="#"><i class="fa fa-dollar"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>25/03/2023</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
+                                            <a href="detail.html">Stay &amp; Learn</a>
+                                        </td>
+                                        <td>12345</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
+                                            Abbas
+                                        </td>
+                                        <td>25/03/2023</td>
+                                        <td>25/03/2023</td>
+                                        <td><span class="">Accepted</span></td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€495</td>
+                                        <td>Accepted</td>
 
-                            <!-- <tfoot>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>10/04/2023</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-2.png" alt="">
+                                            <a href="detail.html">Relax &amp; Unwind</a>
+                                        </td>
+                                        <td>56789</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
+                                            Emily
+                                        </td>
+                                        <td>10/04/2023</td>
+                                        <td>12/04/2023</td>
+                                        <td><span class="">Pending</span></td>
+                                        <td>€75</td>
+                                        <td>€75</td>
+                                        <td>€75</td>
+                                        <td>€75</td>
+                                        <td>€750</td>
+                                        <td>Pending</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>05/06/2023</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-3.png" alt="">
+                                            <a href="detail.html">Family Fun</a>
+                                        </td>
+                                        <td>98765</td>
+                                        <td>
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
+                                            Michael
+                                        </td>
+                                        <td>05/06/2023
+                                            10/06/2023
+                                            15/06/2023
+                                        </td>
+                                        <td>08/06/2023
+                                            13/06/2023
+                                            16/06/2023
+                                        </td>
+                                        <td><span class="">Rejected</span></td>
+                                        <td>€120</td>
+                                        <td>€120</td>
+                                        <td>€120</td>
+                                        <td>€0</td>
+                                        <td>€0</td>
+                                        <td>Rejected</td>
+                                    </tr>
+
+                                </tbody>
+
+                                <!-- <tfoot>
                                 <th>S/No</th>
                                 <th>Date</th>
                                 <th>Listing Name</th>
@@ -539,14 +599,14 @@ table thead {
                                 <th>Total Payout</th>
                                 <th>Action</th>
                             </tfoot> -->
-                        </table>
+                            </table>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
 </main><!-- End #main -->

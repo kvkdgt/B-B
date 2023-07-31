@@ -398,8 +398,8 @@ table thead, table tfoot {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
+                                 <!--     <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> --> 
                                 <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
@@ -432,7 +432,7 @@ table thead, table tfoot {
                         <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
                         <div class="common-table">
                             <table>
-                                <!-- <thead>
+                                <thead>
                                     <th></th>
                                     <th>S/No</th>
                                     <th>Added Date</th>
@@ -441,7 +441,7 @@ table thead, table tfoot {
                                     <th>No of Saves</th>
                                     <th>marked as Reported</th>
                                     <th>Action</th>
-                                </thead> -->
+                                </thead>
 
                                 <tbody>
                                     <tr>
@@ -463,7 +463,7 @@ table thead, table tfoot {
                                         </td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <th></th>
                                     <th>S/No</th>
                                     <th>Added Date</th>
@@ -472,7 +472,7 @@ table thead, table tfoot {
                                     <th>No of Saves</th>
                                     <th>marked as Reported</th>
                                     <th>Action</th>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
 
                         </div>

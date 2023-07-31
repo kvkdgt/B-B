@@ -1425,7 +1425,7 @@
     <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
 
-
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
     <!-- Vendor JS Files -->
     <script src="{{env('BASE_URL')}}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1487,11 +1487,25 @@
         minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
     });
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
 
 </body>
 <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 <script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
+<script>
+    $(document).ready(function() {
+  $('#summernote').summernote({
+    height:200,
+  });
+});
+
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
 </html>
