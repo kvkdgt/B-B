@@ -32,6 +32,52 @@
 }
 
 /* ========= */
+
+.page-sidebar {
+    background: #fff;
+    height: calc(100vh - 75px);
+    margin: -10px;
+    box-shadow: 0 0 15px #ededed;
+    overflow-y: scroll;
+}
+
+.page-content {
+    height: calc(100vh - 75px);
+    overflow-y: scroll;
+    padding: 30px;
+    margin: -10px;
+}
+
+.page-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.page-content::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-content::-webkit-scrollbar-thumb {
+    background: #bee500;
+    border-radius: 10px;
+}
+
+.page-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.page-sidebar::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.page-sidebar::-webkit-scrollbar-thumb {
+    background: rgb(190 229 0 / 50%);
+    border-radius: 10px;
+}
+
+body {
+    overflow: hidden;
+}
+
 .side-edit-bar {
     background: #777;
     border-radius: 20px;
@@ -47,21 +93,19 @@ button.edit-btn {
 }
 
 .user-block {
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
 }
 
 .user-block h4 {
     margin: 5px 0 0;
-    color: #000;
 }
 
-.user-block a,
+/* .user-block a,
 .user-block a:hover {
-    color: #000;
-}
+    color: #fff;
+} */
 
 ul.menu {
     list-style: none;
@@ -79,7 +123,6 @@ ul.menu li span {
     padding: 5px 20px;
     transition: all 0.5s ease;
     border-radius: 20px;
-    cursor: pointer;
 }
 
 ul.menu li span:hover {
@@ -102,16 +145,12 @@ ul.sub-menu {
     color: white;
     list-style: none;
     margin: 0 20px;
-    padding: 10px 10px 0;
+    padding: 10px;
     display: none;
 }
 
 ul.menu li.dropdown.active i {
     transform: rotate(180deg);
-}
-
-ul.sub-menu li:last-child {
-    padding: 0;
 }
 
 .active ul.sub-menu {
@@ -129,9 +168,9 @@ ul.sub-menu li:last-child {
     margin: 0 0 30px;
 }
 
-.edit-profile label {
+/* .edit-profile label {
     display: block;
-}
+} */
 
 .edit-profile select {
     line-height: 35px;
@@ -197,6 +236,10 @@ ul.sub-menu li:last-child {
     margin: 0 0 30px;
 }
 
+span input {
+    height: auto !important;
+}
+
 /* .container {
         width: 1320px !important;
         max-width: 1320px !important;
@@ -243,56 +286,70 @@ function toggleSubMenu(icon) {
 }
 </script>
 
+
+<script>
+const activitiesSelect = document.getElementById('activities');
+const activityDetails = document.getElementById('activityDetails');
+
+activitiesSelect.addEventListener('change', updateSelectedActivities);
+
+function updateSelectedActivities() {
+    const selectedActivities = Array.from(activitiesSelect.selectedOptions).map(option => option.text);
+    activityDetails.textContent = "Selected activities: " + selectedActivities.join(", ");
+}
+</script>
+
 <main id="main">
 
     <section class="edit-profile">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-12">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-3">
                 <div class="mobile-menu open-menu">
-                
-                <div class="page-sidebar">
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>
-                    <ul class="menu">
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
-                                </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
-                            </ul>
+                    <div class="page-sidebar">
+                        <div class="user-block">
+                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                            <h4>Kartik Trivedi</h4>
+                            <a href="#">kartik@mailinator.com</a>
+                        </div>
+                        <ul class="menu">
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                        class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu dropdown">
+                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                    </li>
+                                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                    <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                        <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
+                                        <li><span><a href="{{route('createListing')}}">Create New Listing</span></a> -->
+                            </li>
+                        </ul>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -304,11 +361,12 @@ function toggleSubMenu(icon) {
                                 <li><span><a href="#">Delete my Account</a></span></li>
                             </ul>
                         </li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
-                </div>
-                <div class="col-md-9 col-sm-8 col-12">
+            <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+                <div class="page-content">
                     <div class="error-block d-flex align-items-center justify-content-between">
                         <p class="m-0">Please verify your identity.</p>
                         <button class="btn btn-primary">Verify</button>
@@ -323,7 +381,19 @@ function toggleSubMenu(icon) {
                             <div class="d-flex align-items-center justify-content-between">
                                 <h4>Personal Details</h4>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" class="form-control" placeholder="first name" required />
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" class="form-control" placeholder="last name" required />
+                                </div>
+                            </div>
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label for="profile">Profile Image</label>
                                     <div class="file-wrapper">
@@ -332,43 +402,9 @@ function toggleSubMenu(icon) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" class="form-control" placeholder="nehu" required />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" class="form-control" placeholder="nee" required />
-                                </div>
-                            </div>
+
                             <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="title">Host Title</label>
-                                    <input type="text" id="title" class="form-control" placeholder="eg.Pythonn Tutor"
-                                        required />
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="gender">Gender</label>
-                                    <select id="gender">
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="date">Date of Birth</label>
-                                    <input type="date" id="date" class="form-control" required />
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <label for="address">Address</label>
+                                <label for="address">Location</label>
                                 <div class="row">
                                     <div class="col-md-4 col-12">
                                         <select id="country">
@@ -396,33 +432,6 @@ function toggleSubMenu(icon) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
-                                <label for="language">Languages</label>
-                                <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <input type="text" class="form-control" placeholder="Enter languages" />
-                                    </div>
-                                    <div class="col-md-4 col-12">
-                                        <input type="text" class="form-control" placeholder="Enter languages" />
-                                    </div>
-                                    <div class="col-md-4 col-12">
-                                        <input type="text" class="form-control" placeholder="Enter languages" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h4>Links</h4>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="id">Government ID</label>
-                                    <div class="file-wrapper">
-                                        <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                        <input type="file" id="id" class="form-control" required />
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-sm-6 col-12">
                                 <div class="form-group">
                                     <label for="email">Email</label>
@@ -437,94 +446,297 @@ function toggleSubMenu(icon) {
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h4>Timing for Property</h4>
+                            <div class="col-12">
+                                <div>
+                                    <h3 style="margin: 0 0 10px;">About Me</h3>
+                                </div>
+                                <h6>Joined in 2018</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                    eget nisi
+                                    bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                    Massa eu
+                                    sit
+                                    laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
+                                    pellentesque
+                                    auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
+                                    quam sed
+                                    massa,
+                                    pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+                                <!-- </div> -->
+
                             </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="timein">Time In</label>
-                                    <input type="time" id="timein" class="form-control" placeholder="example@gmail.com"
-                                        required />
+
+                            <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                            <div class="col-sm-12">
+                                <div>
+                                    <h3 style="margin: 0 0 10px;">My Listing</h3>
+                                </div>
+                                <label for="address">Location of Listing</label>
+                                <div class="row">
+                                    <div class="col-md-4 col-12">
+                                        <select id="country">
+                                            <option disabled selected hidden>Please Selecte a Country</option>
+                                            <option value="country">Afghanistan</option>
+                                            <option value="country">Australia</option>
+                                            <option value="country">India</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <select id="state">
+                                            <option disabled selected hidden>Please Selecte a State</option>
+                                            <option value="state">Abaco</option>
+                                            <option value="state">Cat Island</option>
+                                            <option value="state">Long Island</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <select id="city">
+                                            <option disabled selected hidden>Please Selecte a City</option>
+                                            <option value="city">Ahmedabad</option>
+                                            <option value="city">Rajkot</option>
+                                            <option value="city">Junagadh</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-12">
-                                <div class="form-group">
-                                    <label for="timeout">Time Out</label>
-                                    <input type="time" id="timeout" class="form-control" placeholder="0912345678"
-                                        required />
-                                </div>
-                            </div>
-                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                            <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label for="property">Property Type</label>
+                                    <label for="property">Language</label>
                                     <div class="row radio-group">
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                        <div class="col-sm-4 col-12 d-flex align-items-center">
                                             <input type="radio" id="appartments" name="property" value="appartments">
-                                            <label for="appartments" class="m-0">Appartments</label>
+                                            <label for="appartments" class="m-0">English</label>
                                         </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                        <div class="col-sm-4 col-12 d-flex align-items-center">
                                             <input type="radio" id="private" name="property" value="private">
-                                            <label for="private" class="m-0">Private</label>
+                                            <label for="private" class="m-0">French</label>
                                         </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
+                                        <div class="col-sm-4 col-12 d-flex align-items-center">
                                             <input type="radio" id="homr" name="property" value="homr">
-                                            <label for="homr" class="m-0">Farm House</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="bootcamp" name="property" value="bootcamp">
-                                            <label for="bootcamp" class="m-0">Town House</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="house" name="property" value="house">
-                                            <label for="house" class="m-0">Studio</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="renewable" name="property" value="renewable">
-                                            <label for="renewable" class="m-0">Villa</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="duplex" name="property" value="duplex">
-                                            <label for="duplex" class="m-0">Duplex</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="office" name="property" value="office">
-                                            <label for="office" class="m-0">Home Office</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="office" name="property" value="office">
-                                            <label for="office" class="m-0">Boat House</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="office" name="property" value="office">
-                                            <label for="office" class="m-0">Flat</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="office" name="property" value="office">
-                                            <label for="office" class="m-0">Cabin</label>
-                                        </div>
-                                        <div class="col-sm-3 col-12 d-flex align-items-center">
-                                            <input type="radio" id="office" name="property" value="office">
-                                            <label for="office" class="m-0">Hostel</label>
+                                            <label for="homr" class="m-0">Hindi</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+
                             <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="about">About the Host Tutor</label>
-                                    <textarea id="about" cols="30" rows="8" class="form-control" placeholder="Tell guests about yourself, skills"></textarea>
+                                <label for="address">Property Type</label>
+                                <div class="row">
+                                    <div class="col-md-4 col-12">
+                                        <select id="country">
+                                            <option disabled selected hidden>Please Selecte a Country</option>
+                                            <option value="country">Villa</option>
+                                            <option value="country">Resort</option>
+                                            <option value="country">Appartment</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                            <div class="col-12">
+                                <div>
+                                    <h3 style="margin: 0 0 10px;">About the listing</h3>
+                                </div>
+                                <h5>Koh Samui, Suratthani, Thailand</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor eget
+                                    nisi bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                    Massa eu sit laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor
+                                    netus a pellentesque auctor maecenas id. Ac, egestas magna a consectetur
+                                    fermentum. Urna, nec quam sed massa, pellentesque. Diam enim vel porta diam
+                                    iaculis tellus cursus mauris. </p>
+                                <!-- </div> -->
+
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                            <div class="col-sm-12">
+                                <h3 style="margin: 0 0 10px; width: 100%;">What's Included</h3>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <input type="checkbox" id="breakfast" name="activities" value="breakfast"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="breakfast">Breakfast </label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="checkbox" id="gaming" name="activities" value="gaming"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="gaming">Gaming</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="checkbox" id="cityTour" name="activities" value="cityTour"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="cityTour">City Tour</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="checkbox" id="steamRoom" name="activities" value="steamRoom"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="steamRoom">Steam Room</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="checkbox" id="movieTheater" name="activities" value="movieTheater"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="movieTheater">Movie Theater</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="checkbox" id="wifi" name="activities" value="wifi"
+                                            style="margin-right: 5px; height: auto;">
+                                        <label for="wifi">Wifi</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
                                 <h4>Qualification</h4>
-                                <button class="btn btn-primary">Add More</button>
+                                <div class="col-sm-4 col-12">
+                                    <div class="form-group">
+                                        <label for="email">Title of Quaification</label>
+                                        <input type="email" id="email" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email">School Name</label>
+                                        <input type="email" id="email" class="form-control" required />
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <label for="email">From Year</label>
+                                    <select id="state">
+                                        <option value="state"> 2020</option>
+                                        <option value="state">2021</option>
+                                        <option value="state">2022</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <label for="email">To Year</label>
+                                    <select id="city">
+                                        <option value="state"> 2020</option>
+                                        <option value="state">2021</option>
+                                        <option value="state">2022</option>
+                                    </select>
+                                </div>
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <button class="btn btn-primary">Add More</button>
+                                </span>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+
+                            <div class="col-sm-12">
+                                <h4>Co-Host</h4>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" class="form-control" placeholder="nehu"
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profile">Profile Image</label>
+                                        <div class="file-wrapper">
+                                            <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                            <input type="file" id="profile" class="form-control" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <label for="email">Years of Experince</label>
+                                    <select id="state">
+                                        <option value="state"> 2020</option>
+                                        <option value="state">2021</option>
+                                        <option value="state">2022</option>
+                                    </select>
+                                    <label for="as">As</label>
+                                    <input type="text" id="lname" class="form-control" placeholder="" required />
+                                </div>
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <button class="btn btn-primary">Add More</button>
+                                </span>
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
                             <div class="d-flex align-items-center justify-content-between">
-                                <h4>My Album</h4>
-                                <button class="btn btn-primary">Add More</button>
+                                <div class="col-sm-12">
+                                    <h4>House Rules</h4>
+                                    <div class="d-flex">
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="breakfast" name="activities" value="breakfast"
+                                                style="margin-right: 5px;">
+                                            <label for="breakfast">No pets</label>
+                                        </span>
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="gaming" name="activities" value="gaming"
+                                                style="margin-right: 5px;">
+                                            <label for="gaming">No smoking</label>
+                                        </span>
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="cityTour" name="activities" value="cityTour"
+                                                style="margin-right: 5px;">
+                                            <label for="cityTour">No guest</label>
+                                        </span>
+                                        <button class="btn btn-primary">Add More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="col-sm-12">
+                                    <h4>Amenities</h4>
+                                    <div class="d-flex">
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="breakfast" name="activities" value="breakfast"
+                                                style="margin-right: 5px;">
+                                            <label for="breakfast">CCTV</label>
+                                        </span>
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="gaming" name="activities" value="gaming"
+                                                style="margin-right: 5px;">
+                                            <label for="gaming">TV</label>
+                                        </span>
+                                        <span style="flex: 0 0 30%;">
+                                            <input type="checkbox" id="cityTour" name="activities" value="cityTour"
+                                                style="margin-right: 5px;">
+                                            <label for="cityTour">Bath</label>
+                                        </span>
+                                        <button class="btn btn-primary">Add More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="col-sm-12">
+                                    <h4>Media</h4>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                        <div style="text-align:center">
+                                            <h5>How we Work</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                        <div style="text-align:center">
+                                            <h5>About Facility</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <img src="assets/img/hotels/hotel-3.png" width="100%">
+                                        <div style="text-align:center">
+                                            <h5>Rooms</h5>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary">Add More</button>
+                                </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
