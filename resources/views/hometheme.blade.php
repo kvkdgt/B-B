@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon">
+    <!-- <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon"> -->
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <!-- <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -39,27 +39,26 @@
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
 
     <style>
-
     #header {
         padding: 0;
     }
 
     #header .logo img {
-    max-height: 70px;
-}
+        max-height: 70px;
+    }
 
-.listings .listing-item .sub-main .slider-content p {
-    color: #000;
-}
+    .listings .listing-item .sub-main .slider-content p {
+        color: #000;
+    }
 
-.listings .listing-item .sub-main .slider-content p i {
-    margin-right: 7px;
-    font-size: 16px;
-}
+    .listings .listing-item .sub-main .slider-content p i {
+        margin-right: 7px;
+        font-size: 16px;
+    }
 
-#footer .copyright {
-    font-weight: 600;
-}
+    #footer .copyright {
+        font-weight: 600;
+    }
 
     .search-block input {
         font-size: 16px;
@@ -226,10 +225,10 @@
         font-size: 50px;
     }
 
-    
+
     @media screen and (max-width:575px) {
         .rate {
-        width: 50%;
+            width: 50%;
         }
     }
     </style>
@@ -239,6 +238,7 @@
 <body>
 
     <!-- ======= Header ======= -->
+    <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon">
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
@@ -358,10 +358,13 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4></h4> -->
                         <ul>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('about')}}">Terms</a></li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('safety')}}">Privacy Policy</a>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('about')}}">Terms</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('safety')}}">Privacy Policy</a>
                             </li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('blogs')}}">Careers</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('blogs')}}">Careers</a></li>
                         </ul>
 
                         <i class="fa-brands fa-stripe"></i>
@@ -370,10 +373,13 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('career')}}">About Us</a></li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('terms')}}">FAQ &amp;
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('career')}}">About Us</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('terms')}}">FAQ &amp;
                                     Conditions</a></li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="privacy.html">Safety Tips</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="privacy.html">Safety Tips</a></li>
                         </ul>
 
                         <i class="fa-brands fa-cc-paypal"></i>
@@ -436,7 +442,7 @@
                             <div class="d-grid">
                                 <label>Last Name</label>
                                 <input type="text" placeholder="last name">
-                              
+
                                 <!-- <span>Forgot Password?</span> -->
                             </div>
                             <div class="d-grid">
@@ -446,20 +452,20 @@
                             <div class="d-grid">
                                 <label>Gender</label>
                                 <select>
-                                <option>Male</option>
-                                <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
 
                                 </select>
                             </div>
-                         
+
                             <a href="host-dashboard.html" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
                             <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with stripe</a>
                             <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with paypal</a>
-                            
+
                         </form>
                     </div>
 
-                 
+
 
                 </div>
             </div>
@@ -570,7 +576,7 @@
                                 </table> -->
                                 <h4>Stay and Learn yoga</h4>
                                 <p>Stay and Learn yoga Stay and Learn yoga Stay and Learn yoga</p>
-                                <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                                 <hr>
                                 <h4>Rate your experience</h4>
                                 <div class="rate">
@@ -1072,7 +1078,7 @@
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city2" value="city2">
                                     <label for="city2">
-                                       Unite Kingdom
+                                        Unite Kingdom
                                     </label>
                                 </div>
                                 <div class="form-check">
@@ -1098,8 +1104,8 @@
                                     <label for="city2">
                                         Canada
                                     </label>
-                                </div>     
-                                
+                                </div>
+
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city2" value="city2">
                                     <label for="city2">
@@ -1120,7 +1126,7 @@
                                         United States
                                     </label>
                                 </div>
-                                
+
 
                             </div>
 
@@ -1224,7 +1230,7 @@
                                     <input type="radio" name="property_types" id="farm_houses" value="Farm House"
                                         checked>
                                     <label for="farm_houses">
-                                       Studio
+                                        Studio
                                     </label>
                                 </div>
                                 <div class="form-check">
@@ -1542,7 +1548,7 @@
     });
     </script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
 
@@ -1552,14 +1558,15 @@
 
 <script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
 <script>
-    $(document).ready(function() {
-  $('#summernote').summernote({
-    height:200,
-  });
+$(document).ready(function() {
+    $('#summernote').summernote({
+        height: 200,
+    });
 });
 
 $(document).ready(function() {
     $('.js-example-basic-multiple').select2();
 });
 </script>
+
 </html>

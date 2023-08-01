@@ -464,8 +464,8 @@ input.list-checkbox {
                             <ul class="sub-menu">
                                 <!--     <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                            </ul></i>
+<li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -502,7 +502,7 @@ input.list-checkbox {
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
-                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
                                                 width="100%">
                                         </div>
                                         <div class="slider-content">
@@ -531,7 +531,7 @@ input.list-checkbox {
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
                                         <div class="user-img-top">
-                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +541,7 @@ input.list-checkbox {
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
-                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
                                                 width="100%">
                                         </div>
                                         <div class="slider-content">
@@ -570,7 +570,7 @@ input.list-checkbox {
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
                                         <div class="user-img-top">
-                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
@@ -580,7 +580,7 @@ input.list-checkbox {
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
-                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
                                                 width="100%">
                                         </div>
                                         <div class="slider-content">
@@ -609,7 +609,7 @@ input.list-checkbox {
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
                                         <div class="user-img-top">
-                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
@@ -619,7 +619,7 @@ input.list-checkbox {
                                 <div class="listing-item">
                                     <div class="sub-main">
                                         <div class="img-sec p-rel">
-                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
                                                 width="100%">
                                         </div>
                                         <div class="slider-content">
@@ -648,7 +648,7 @@ input.list-checkbox {
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
                                         <div class="user-img-top">
-                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
