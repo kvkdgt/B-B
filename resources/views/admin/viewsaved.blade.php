@@ -264,7 +264,7 @@
 
 .listing-card .listing-item .sub-main .slider-content p {
     font-size: 14px;
-    color: #97959A;
+    color: #000;
     margin: 5px 0px;
 }
 
