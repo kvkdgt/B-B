@@ -853,7 +853,7 @@ table thead {
 
                         <!-- ========== Page 2 ========== -->
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-12">
                                 <div class="table-block" style="overflow-x: scroll">
                                     <table>
@@ -903,8 +903,171 @@ table thead {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
+<div class="row">
+    <table border="1">
+       <tr>
+        <td colspan="3">Check in</td>
+        <td colspan="3">Check out</td>
+        <td>Total Nights</td>
+        <td>Total Cost</td>
 
+
+       </tr>    
+       
+       <tr>
+        <td>
+            <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+
+
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+             
+
+
+
+            </select>
+        </td>
+        <td>
+            <select>
+                <option>Year</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+              
+
+
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+
+
+            </select>
+        </td>
+
+        <td>
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+             
+
+
+
+            </select>
+        </td>
+        <td>
+            <select>
+                <option>Year</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+              
+
+
+            </select>
+        </td>
+        <td>5</td>
+        <td>300</td>
+       </tr>   
+
+       
+
+    </table><br><br><br>
+    <button class="btn btn-primary" style="float:right; width:20%">Add More Dates</button>
+</div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
                         <div class="row">
