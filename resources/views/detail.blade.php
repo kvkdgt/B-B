@@ -504,10 +504,12 @@
                                     <img src="assets/img/avatar.png">
                                     <div class="m-2">
                                         <h4 class="m-0 d-flex align-items-center" style="gap: 10px;">Kartik Trivedi <svg
-                                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"
-                                                fill="#1da1f2">
+                                                viewBox="0 0 24 24" fill="#27a5f3" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
                                                 <path
-                                                    d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
                                             </svg></h4>
                                         <p class="m-0">Yoga Trainer</p>
                                         <p class="m-0">Lonsdale St, Melbourne</p>
@@ -1158,21 +1160,16 @@
                                             <div class="details-content">
                                                 <div class="form-field" style="margin: 0 -25px;">
                                                     <label>Select dates</label>
-                                                    <!-- Single dropdown with date ranges -->
-                                                    <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
-                                                    <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
-                                                    <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
-                                                    <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
-                                                    <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
-                                                    <option value="5">May 5 - May 9 (5 Days) - €25</option>
-
-
-
-
-
-</select>
-                                                  
+                                                    <select class="js-example-basic-multiple" name="states[]"
+                                                        multiple="multiple" readonly>
+                                                        <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
+                                                        <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
+                                                        <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
+                                                        <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
+                                                        <option value="5">May 5 - May 9 (5 Days) - €25</option>
+                                                    </select>
                                                 </div>
+
                                             </div>
                                         </ul>
                                         <hr>

@@ -507,8 +507,10 @@ table thead {
             <div class="page-content">
                 <div class="row">
                     <div class="listing-header d-flex align-items-center justify-content-between">
-                        <h4 class="m-0">Create a New Listing</h4>
+                        <h2 class="m-0">Create a New Listing</h2>
                     </div>
+                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
                     <div class="listing-content">
                         <!--  Title of Listing  -->
                         <div class="row align-items-center">
@@ -541,18 +543,18 @@ table thead {
                             <h3>Language of Instruction</h3>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text"  placeholder="Language 1">
+                                    <input type="text" placeholder="Language 1">
                                 </div>
                                 <div class="col">
-                                    <input type="text"  placeholder="Language 2">
+                                    <input type="text" placeholder="Language 2">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text"  placeholder="Language 3">
+                                    <input type="text" placeholder="Language 3">
                                 </div>
                                 <div class="col">
-                                    <input type="text"  placeholder="Language 4">
+                                    <input type="text" placeholder="Language 4">
                                 </div>
                             </div>
                         </div>
@@ -562,18 +564,18 @@ table thead {
                             <h3>What guest will learn (only for stay & learn)</h3>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text"  placeholder="Location 1">
+                                    <input type="text" placeholder="Location 1">
                                 </div>
                                 <div class="col">
-                                    <input type="text"  placeholder="Location 2">
+                                    <input type="text" placeholder="Location 2">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text"  placeholder="Location 3">
+                                    <input type="text" placeholder="Location 3">
                                 </div>
                                 <div class="col">
-                                    <input type="text"  placeholder="Location 4">
+                                    <input type="text" placeholder="Location 4">
                                 </div>
                             </div>
                         </div>
@@ -1133,32 +1135,24 @@ table thead {
                                 </div>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
                         <div class="row">
-                            <div class="col-6">
-                                <h3>How it Work</h3>
-                                <ul>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <h3>Cancellation Policy</h3>
-                                <ul>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                </ul>
+                            <div class="col-lg-12 textarea-block">
+                                <h3>How it Work </h3>
+                                <textarea rows="3" style="width:100%"></textarea>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
                         <div class="row">
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-lg-12 textarea-block">
+                                <h3>Cancellation Policy </h3>
+                                <textarea rows="3" style="width:100%"></textarea>
+                            </div>
+                        </div>
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <h4>Co-Hosts</h4>
                                 <div class="row" style="width:70%">
                                     <div class="col-6">
@@ -1185,7 +1179,9 @@ table thead {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 details-content">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 details-content">
                                 <h3>Media</h3>
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 text-center">
@@ -1203,9 +1199,7 @@ table thead {
                                 </div>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
                         <div class="item-block d-flex justify-content-between">
                             <button class="btn btn-primary">Preview</button>
                             <button class="btn btn-primary">Publish</button>
