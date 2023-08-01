@@ -12,6 +12,9 @@
     <!-- Favicons -->
     <link href="{{env('BASE_URL')}}/assets/img/logo1.png" rel="icon">
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
     <!-- Google Fonts -->
     <link
@@ -1003,39 +1006,68 @@
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city1" value="city1">
                                     <label for="city1">
-                                        City 1
+                                        France
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input type="radio" name="prices" id="city2" value="city2">
                                     <label for="city2">
-                                        City 2
+                                        Netherlands
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city3" value="city3">
-                                    <label for="city3">
-                                        City 3
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                       Unite Kingdom
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city4" value="city4">
-                                    <label for="city4">
-                                        City 4
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Ghana
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city5" value="city5">
-                                    <label for="city5">
-                                        City 5
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Nigeria
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="prices" id="city6" value="city6">
-                                    <label for="city6">
-                                        City 6
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Kenya
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Canada
+                                    </label>
+                                </div>     
+                                
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Austria
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        Switzerland
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input type="radio" name="prices" id="city2" value="city2">
+                                    <label for="city2">
+                                        United States
+                                    </label>
+                                </div>
+                                
+
                             </div>
 
                             <!-- Prices -->
@@ -1111,6 +1143,41 @@
                                     <input type="radio" name="property_types" id="cabins" value="Cabins">
                                     <label for="private_houses">
                                         Cabins
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Villa
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Duplex
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Town house
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                       Studio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
+                                    <label for="farm_houses">
+                                        Waterfront
                                     </label>
                                 </div>
                             </div>
@@ -1217,6 +1284,36 @@
                                         4
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        5
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        6
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        7
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        8
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="guests" id="guest4" value="4">
+                                    <label for="guest4">
+                                        9
+                                    </label>
+                                </div>
                                 <!-- Add more options for higher numbers of guests if needed -->
                             </div>
 
@@ -1273,6 +1370,37 @@
                                         washroom
                                     </label>
                                 </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        City Tour
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Cycling
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Breakfast
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Dinner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="roommatefacilities" id="washroom" value=" washroom">
+                                    <label for="washroom">
+                                        Pool
+                                    </label>
+                                </div>
+
                             </div>
 
                         </div>
@@ -1297,6 +1425,7 @@
     <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
     <!-- Vendor JS Files -->
     <script src="{{env('BASE_URL')}}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1308,7 +1437,6 @@
     <script src="{{env('BASE_URL')}}/assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 
     <script>
     //    Scroll of Icons Script STARTS HERE    
@@ -1359,9 +1487,25 @@
         minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
     });
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
         defer></script>
 
 </body>
+<script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
+<script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
+<script>
+    $(document).ready(function() {
+  $('#summernote').summernote({
+    height:200,
+  });
+});
+
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
 </html>

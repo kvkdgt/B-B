@@ -57,6 +57,10 @@ Route::get('/admin-revenue', [App\Http\Controllers\AdminController::class, 'reve
 Route::get('/admin-net-income', [App\Http\Controllers\AdminController::class, 'netincome'])->name('netincomeadmin');
 Route::get('/admin-pay-details', [App\Http\Controllers\AdminController::class, 'paydetail'])->name('paydetailadmin');
 Route::get('/users', [App\Http\Controllers\AdminController::class, 'users'])->name('users');
+Route::get('/cms', [App\Http\Controllers\AdminController::class, 'cmsListing'])->name('cms');
+Route::get('/add-new-page', [App\Http\Controllers\AdminController::class, 'addNewPage'])->name('add-new-page');
+
+
 
 
 

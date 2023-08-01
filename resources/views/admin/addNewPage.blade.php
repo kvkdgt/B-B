@@ -1,10 +1,6 @@
 @extends('hometheme')
 @section('content')
-
-
-<main id="main">
-
-    <style>
+<style>
     .profile {
         padding: 25px 0 10px;
     }
@@ -54,7 +50,6 @@
         color: #000;
         text-align: center;
         padding: 10px 0;
-        margin-top: 20px;
     }
 
     .user-block h4 {
@@ -287,28 +282,23 @@
         display: none;
     }
 
-    .search i {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-size: 20px;
-}
-
-.search input[type="text"] {
-    padding: 5px 20px;
-}
-
-.search {
-    position: relative;
-}
-
     table thead {
         background: #bee500 !important;
     }
 
-.report-block {
-    clear: both;
-}
+    .button-green i {
+        font-size: 28px;
+    }
+
+    .button-green span.badge {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        top: -20px;
+        padding: 0;
+        right: -5px;
+    }
+
     @media screen and (max-width: 767px) {
         .page-sidebar {
             display: none;
@@ -349,12 +339,14 @@
         }
 
     }
-    </style>
+</style>
+<main id="main">
+
     <script>
-    function toggleSubMenu(icon) {
-        var subMenu = icon.nextElementSibling;
-        subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
-    }
+        function toggleSubMenu(icon) {
+            var subMenu = icon.nextElementSibling;
+            subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
 
     <div class="row">
@@ -365,25 +357,25 @@
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="page-sidebar">
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
+                            </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -391,20 +383,21 @@
                                 <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
+                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
                             </ul>
                         </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                                <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
                         <li class="dropdown">
@@ -412,80 +405,41 @@
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
-                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
-                                <li><span><a href="#">Delete my Account</a></span></li>
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li><span>Update Pages</span></li>
+                                <li><span>Block IP addresses</span></li>
+                                <li><span>General Settings</span></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-9">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
-                <div class="row">
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                        <h4>Liked Listing</h4>
-                        <div class="search">
-                            <button class="btn btn-danger">Delete</button>
-                            <input type="text" name="search" placeholder="Search here">
-                            <i class="bx bx-search"></i>
+                <form>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" placeholder="Enter Page Name" style="width:100%">
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                        <div class="common-table">
-                            <table>
-                                <thead>
-                                    <th></th>
-                                    <th>S/No</th>
-                                    <th>Added Date</th>
-                                    <th>Listing Name</th>
-                                    <th>No of Likes</th>
-                                    <th>No of Saves</th>
-                                    <th>marked as Reported</th>
-                                    <th>Action</th>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </td>
-                                        <td>01</td>
-                                        <td>25/03/2023</td>
-                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>
-                                            <a href="#"><i class="fa fa-edit"></i></a>
-                                            <a href="#"><i class="fa fa-trash text-danger"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <th></th>
-                                    <th>S/No</th>
-                                    <th>Added Date</th>
-                                    <th>Listing Name</th>
-                                    <th>No of Likes</th>
-                                    <th>No of Saves</th>
-                                    <th>marked as Reported</th>
-                                    <th>Action</th>
-                                </tfoot>
-                            </table>
-
+                        <div class="col-6">
+                            <input type="text" placeholder="Enter Page Slug" style="width:100%">
                         </div>
 
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea id="summernote" name="editordata"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+<a href="#" class="btn btn-success" style="width:100%">Submit</a>
+                    </div>
+                    </div>
+
+                </form>
             </div>
         </div>
-    </div>
-
-
-</main><!-- End #main -->
+</main>

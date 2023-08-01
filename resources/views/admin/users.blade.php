@@ -307,7 +307,7 @@ table thead {
 }
 
 .user-card .listing-item .sub-main .slider-content a {
-color: #353535;
+    color: #353535;
 }
 
 button.verfied {
@@ -325,6 +325,7 @@ button.verfied {
     border: 2px solid #bee500;
     border-radius: 50%;
 }
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -376,261 +377,271 @@ button.verfied {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3 col-sm-3">
-        <div class="mobile-menu open-menu">
-            <span class="show-menu"><i class="bi bi-list"></i>
-            </span>
-            <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-            </span>
-            <div class="page-sidebar"> 
-                <div class="user-block">
-                    <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
-                    <h4>Kartik Trivedi</h4>
-                    <a href="#">kartik@mailinator.com</a>
-                </div>            
-                <ul class="menu">
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                            <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
-                        </div>
-                        <ul class="sub-menu dropdown">
-                            <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                        <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                        <a href="{{route('users')}}">  <span>Users</span> </a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                            <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                        </div>
-                        <ul class="sub-menu">
-                            <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                            <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                            <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                            <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
-                        </ul>
-                    </li>
-                    <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                            <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                        </div>
-                        <ul class="sub-menu">
-                                <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                            <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
-                            <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
-                        </ul></i>
-                    </li>
-                    <li class="dropdown">
-                        <div onclick="toggleSubMenu(this)">
-                            <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                        </div>
-                        <ul class="sub-menu">
-                            <li><span>Profile Setting</span></li>
-                            <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>FAQ</span></li>
-                                    <li><span>Safety Tips</span></li>
-                                    <li><span>How it works</span></li>
-                                    <li><span>Privacy</span></li>
-                                    <li><span>Terms</span></li>
-                                    <li><span>About us</span></li>
-                                </ul>
-                            </li>
+        <div class="col-lg-2 col-md-3 col-sm-3">
+            <div class="mobile-menu open-menu">
+                <span class="show-menu"><i class="bi bi-list"></i>
+                </span>
+                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="page-sidebar">
+                    <div class="user-block">
+                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
+                    </div>
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span><a href="{{route('dashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu dropdown">
+                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
+                                </li>
+                            </ul>
                         </li>
-                            <li><span>Block IP addresses</span></li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>Euro &euro;</span></li>
-                                    <li><span>USD $</span></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <div onclick="toggleSubMenu(this)">
-                                    <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
-                                </div>
-                                <ul class="sub-menu">
-                                    <li><span>English</span></li>
-                                    <li><span>French</span></li>
-                                    <li><span>German</span></li>
-                                </ul>
-                            </li>
-                        </ul>
+
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
+                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                            </ul>
+                        </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
+                            </ul></i>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>FAQ</span></li>
+                                        <li><span>Safety Tips</span></li>
+                                        <li><span>How it works</span></li>
+                                        <li><span>Privacy</span></li>
+                                        <li><span>Terms</span></li>
+                                        <li><span>About us</span></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        <li><span>Block IP addresses</span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Euro &euro;</span></li>
+                                <li><span>USD $</span></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>English</span></li>
+                                <li><span>French</span></li>
+                                <li><span>German</span></li>
+                            </ul>
+                        </li>
+                    </ul>
                     </li>
-                </ul>
-            </div>  
-        </div>
-    </div>
-    <div class="col-lg-10 col-md-9 col-sm-9">
-        <div class="page-content">
-            <div class="card-header d-flex align-items-center justify-content-between">
-                <h4>Users</h4>
-                <div class="search">
-                    <button class="btn btn-danger">Delete Profile</button>
-                    <button class="btn btn-primary">Block/Unblock</button>
-                </div>
-            </div>
-            <div class="row user-card mt-5">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                    <input type="checkbox">
-                    <div class="listing-item">
-                        <div class="sub-main p-rel">
-                            <div class="img-sec p-rel">
-                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                            </div>
-                            <div class="user-img-top">
-                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
-                            </div>
-                            <div class="slider-content">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h4>Rahul</h4>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Joined 
-                                        Feb 2, 2000
-                                    </p>
-                                </div>
-                                <div class="">
-                                    <button class="verfied">Verified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Listing Created 80</p>
-                                </div>
-                                <div class="">
-                                    <p>Revenue $ 28,000</p>
-                                </div>
-                                <div class="">
-                                    <button type="button" class="btn btn-primary">Chat User</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                    <input type="checkbox">
-                    <div class="listing-item">
-                        <div class="sub-main p-rel">
-                            <div class="img-sec p-rel">
-                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                            </div>
-                            <div class="user-img-top">
-                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
-                            </div>
-                            <div class="slider-content">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h4>Rahul</h4>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Joined 
-                                        Feb 2, 2000
-                                    </p>
-                                </div>
-                                <div class="">
-                                    <button class="verfied">Verified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Listing Created 80</p>
-                                </div>
-                                <div class="">
-                                    <p>Revenue $ 28,000</p>
-                                </div>
-                                <div class="">
-                                    <button type="button" class="btn btn-primary">Chat User</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                    <input type="checkbox">
-                    <div class="listing-item">
-                        <div class="sub-main p-rel">
-                            <div class="img-sec p-rel">
-                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                            </div>
-                            <div class="user-img-top">
-                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
-                            </div>
-                            <div class="slider-content">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h4>Rahul</h4>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Joined 
-                                        Feb 2, 2000
-                                    </p>
-                                </div>
-                                <div class="">
-                                    <button class="verfied">Unverified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Listing Created 80</p>
-                                </div>
-                                <div class="">
-                                    <p>Revenue $ 28,000</p>
-                                </div>
-                                <div class="">
-                                    <button type="button" class="btn btn-primary">Chat User</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                    <input type="checkbox">
-                    <div class="listing-item">
-                        <div class="sub-main p-rel">
-                            <div class="img-sec p-rel">
-                                <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                            </div>
-                            <div class="user-img-top">
-                                <img src="http://127.0.0.1:8000/assets/img/avatar.png">
-                            </div>
-                            <div class="slider-content">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h4>Rahul</h4>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Joined 
-                                        Feb 2, 2000
-                                    </p>
-                                </div>
-                                <div class="">
-                                    <button class="verfied">Unverified</button><p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <p>Total Listing Created 80</p>
-                                </div>
-                                <div class="">
-                                    <p>Revenue $ 28,000</p>
-                                </div>
-                                <div class="">
-                                    <button type="button" class="btn btn-primary">Chat User</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="col-lg-10 col-md-9 col-sm-9">
+            <div class="page-content">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h4>Users</h4>
+                    <div class="search">
+                        <button class="btn btn-danger">Delete Profile</button>
+                        <button class="btn btn-primary">Block/Unblock</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row user-card mt-5">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                        <input type="checkbox">
+                        <div class="listing-item">
+                            <div class="sub-main p-rel">
+                                <div class="img-sec p-rel">
+                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                </div>
+                                <div class="user-img-top">
+                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                </div>
+                                <div class="slider-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Rahul</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined
+                                            Feb 2, 2000
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button class="verfied">Verified</button>
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Total Listing Created 80</p>
+                                    </div>
+                                    <div class="">
+                                        <p>Revenue $ 28,000</p>
+                                    </div>
+                                    <div class="">
+                                        <a href="{{route('chat')}}"><button type="button" class="btn btn-primary">Chat
+                                                User</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                        <input type="checkbox">
+                        <div class="listing-item">
+                            <div class="sub-main p-rel">
+                                <div class="img-sec p-rel">
+                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                </div>
+                                <div class="user-img-top">
+                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                </div>
+                                <div class="slider-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Rahul</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined
+                                            Feb 2, 2000
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button class="verfied">Verified</button>
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Total Listing Created 80</p>
+                                    </div>
+                                    <div class="">
+                                        <p>Revenue $ 28,000</p>
+                                    </div>
+                                    <div class="">
+                                         <a href="{{route('chat')}}"><button type="button" class="btn btn-primary">Chat
+                                                User</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                        <input type="checkbox">
+                        <div class="listing-item">
+                            <div class="sub-main p-rel">
+                                <div class="img-sec p-rel">
+                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                </div>
+                                <div class="user-img-top">
+                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                </div>
+                                <div class="slider-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Rahul</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined
+                                            Feb 2, 2000
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button class="verfied">Unverified</button>
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Total Listing Created 80</p>
+                                    </div>
+                                    <div class="">
+                                        <p>Revenue $ 28,000</p>
+                                    </div>
+                                    <div class="">
+                                         <a href="{{route('chat')}}"><button type="button" class="btn btn-primary">Chat
+                                                User</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                        <input type="checkbox">
+                        <div class="listing-item">
+                            <div class="sub-main p-rel">
+                                <div class="img-sec p-rel">
+                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                </div>
+                                <div class="user-img-top">
+                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                </div>
+                                <div class="slider-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h4>Rahul</h4>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined
+                                            Feb 2, 2000
+                                        </p>
+                                    </div>
+                                    <div class="">
+                                        <button class="verfied">Unverified</button>
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Total Listing Created 80</p>
+                                    </div>
+                                    <div class="">
+                                        <p>Revenue $ 28,000</p>
+                                    </div>
+                                    <div class="">
+                                         <a href="{{route('chat')}}"><button type="button" class="btn btn-primary">Chat
+                                                User</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 </main><!-- End #main -->

@@ -410,7 +410,7 @@ table thead {
                             <ul class="sub-menu">
                             <li><span>Profile Setting</span></li>
                                     <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                    <li><span>Update Pages</span></li>
+                                    <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
                                     <li><span>Block IP addresses</span></li>
                                     <li><span>General Settings</span></li>
                             </ul>
