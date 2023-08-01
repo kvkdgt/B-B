@@ -373,13 +373,13 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                             </li>
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                    <span>All Listing</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
                                     <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                    <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                                    <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
                                     <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                    <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                                    <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                                 </ul>
                             </li>
                             <li class="dropdown">

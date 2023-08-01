@@ -910,23 +910,24 @@ table thead {
                         <div class="row">
                             <div class="col-12">
                                 <h3>Other Costs</h3>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Cleaning Fee</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$20</p>
+                                        <!-- <p>$20</p> -->
+                                        <input type="text" placeholder="Enter Cost" class="form-control">
                                     </div>
                                     <div class="col-5">
                                         <p>(We suggest 10% of Booking Cost)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Refundable Security</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$0</p>
+                                        <input type="text" placeholder="Enter Cost" class="form-control">
                                     </div>
                                     <div class="col-5">
                                         <p>(To be retained bu Admin and refunded upon request)</p>
@@ -940,12 +941,12 @@ table thead {
                         <div class="row">
                             <div class="col-12">
                                 <h3>Total</h3>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Service Fee</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$48</p>
+                                        <input type="text" class="form-control" placeholder="$20" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total
@@ -953,23 +954,23 @@ table thead {
                                             + cleaning fee)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Total</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$368</p>
+                                        <input type="text" class="form-control" placeholder="$50" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(What guest will pay)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Host income</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$304</p>
+                                        <input type="text" class="form-control" placeholder="$30" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(After deduction of host fee 5% and guest fee 15%)</p>
@@ -1156,8 +1157,18 @@ table thead {
                         <div class="row">
                             <div class="col-md-12">
                                 <h4>Co-Hosts</h4>
-                                <div class="row" style="width:70%">
-                                    <div class="col-6">
+                                <div class="row" style="max-width: 70%; margin: auto;">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
+                                            <img src="assets/img/avatar.png">
+                                        </div>
+                                        <div style="text-align: center;padding-top: 10px;">
+                                            <h4 class="m-0">Rahul</h4>
+                                            <h5>Yoga Trainer</h5>
+                                            <p>5 years of experience</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
                                         <div
                                             style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
                                             <img src="assets/img/avatar.png">
@@ -1168,7 +1179,7 @@ table thead {
                                             <p>5 years of experience</p>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-4 col-sm-12">
                                         <div
                                             style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
                                             <img src="assets/img/avatar.png">

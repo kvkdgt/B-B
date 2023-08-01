@@ -341,7 +341,7 @@ table thead {
 .listing-card .listing-item .sub-main .slider-content p {
     font-size: 14px;
     color: #000;
-    margin: 5px 0px;
+    margin: 0 0 15px;
 }
 
 .listing-card .listing-item .sub-main .footer a {
@@ -357,6 +357,12 @@ table thead {
     border-top: 1px solid #DEDEDE;
     padding: 10px;
     text-align: center;
+}
+
+input.list-checkbox {
+    position: absolute;
+    top: 0;
+    left: -7px;
 }
 
 @media screen and (max-width: 767px) {
@@ -445,13 +451,13 @@ table thead {
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                <span>All Listing</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
+                                <!-- <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
                                 <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -524,6 +530,7 @@ table thead {
                         </div>
                     </div>
                     <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
                         <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
                         <!-- <div class="common-table">
                             <table>
@@ -570,36 +577,31 @@ table thead {
                                 </tfoot> 
                             </table>
                         </div> -->
+
+                        <a href="#" class="btn btn-primary">Move to Recommended</a>
+                        </div>
                         <div class="row listing-card">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox">
+                                <input type="checkbox" class="list-checkbox" />
                                     <div class="listing-item">
                                         <div class="sub-main">
                                             <div class="img-sec p-rel">
                                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                             </div>
                                             <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
-                                                    <path
-                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
-                                                </svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Python (Intro)
-                                                <p>
-                                                    <span>Feb 5 - 15</span> Duplex
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>$300</p>
-                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>akeja, logos</p>
-                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                                <p><button class="btn btn-danger">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">
@@ -612,34 +614,26 @@ table thead {
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox">
+                                    <input type="checkbox" class="list-checkbox" />
                                     <div class="listing-item">
                                         <div class="sub-main">
                                             <div class="img-sec p-rel">
                                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                             </div>
                                             <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
-                                                    <path
-                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
-                                                </svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Python (Intro)
-                                                <p>
-                                                    <span>Feb 5 - 15</span> Duplex
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>$300</p>
-                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>akeja, logos</p>
-                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                                <p><button class="btn btn-danger">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">
@@ -652,34 +646,26 @@ table thead {
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox">
+                                    <input type="checkbox" class="list-checkbox">
                                     <div class="listing-item">
                                         <div class="sub-main">
                                             <div class="img-sec p-rel">
                                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                             </div>
                                             <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
-                                                    <path
-                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
-                                                </svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Python (Intro)
-                                                <p>
-                                                    <span>Feb 5 - 15</span> Duplex
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>$300</p>
-                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>akeja, logos</p>
-                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                                <p><button class="btn btn-danger">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">
@@ -692,34 +678,26 @@ table thead {
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox">
+                                    <input type="checkbox" class="list-checkbox">
                                     <div class="listing-item">
                                         <div class="sub-main">
                                             <div class="img-sec p-rel">
                                                 <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                             </div>
                                             <div class="slider-content">
-                                            <div class="d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#27a5f3">
-                                                    <path
-                                                        d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
-                                                </svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>Python (Intro)
-                                                <p>
-                                                    <span>Feb 5 - 15</span> Duplex
-                                                </p>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>$300</p>
-                                                <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
-
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <p>akeja, logos</p>
-                                                <p> <i class="fa fa-map-marker"></i>10 km away</p>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                                <p><button class="btn btn-danger">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">
