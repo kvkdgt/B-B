@@ -190,6 +190,45 @@ ul.menu li.dropdown.active i {
     margin: 0 0 30px;
 }
 
+.user-img-top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.user-img-top img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #bee500;
+    border-radius: 50%;
+}
+
+.listings .listing-item  {
+    position: relative;
+}
+
+.listings .listing-item .sub-main .footer a {
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto 0;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listings .listing-item .sub-main .footer a:hover {
+    background: #fff !important;
+    color: #73cf42 !important;
+}
+
+.listings .listing-item .sub-main .footer {
+    padding: 5px !important;
+}
+
 /* .container {
         width: 1320px !important;
         max-width: 1320px !important;
@@ -415,37 +454,40 @@ ul.menu li.dropdown.active i {
                                 <div class="host-block">
                                     <div class="listings">
                                         <h4>My Listings </h4>
-                                        <div class="listing-item sm" style="margin-bottom: 20px;">
+                                        <div class="listing-item">
                                             <div class="sub-main">
                                                 <div class="img-sec p-rel">
-                                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="">
                                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+                                                    <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+
                                                 </div>
                                                 <div class="slider-content">
-                                                    <a href="detail.html">Stay and Learn Yoga </a>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <a href="http://127.0.0.1:8000/detail" class="text-green">Stay and Learn </a>
+                                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                    </div>
                                                     <div class="d-flex justify-content-between">
-                                                        <p>Ashtanga Yoga</p>
-                                                        <p>
-                                                            <span>4.3</span> 7 Ratings
+                                                        <p>Python (Intro)
+                                                        </p><p>
+                                                            <span>Feb 5 - 15</span> Duplex
                                                         </p>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
-                                                        <p>$200 Per Night</p>
-                                                        <p> <i class="fa fa-map-marker"></i> Paris , France</p>
+                                                        <p>$300</p>
+                                                        <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>akeja, logos</p>
+                                                        <p> <i class="fa fa-map-marker"></i>10 km away</p>
                                                     </div>
                                                 </div>
-                                                <div class="footer">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="assets/img/avatar.png">
-
-                                                            <div class="m-2">
-                                                                <h6 class="m-0">Kartik Trivedi</h6>
-                                                                <p class="m-0">Yoga Trainer</p>
-                                                            </div>
-                                                        </div>
-                                                        <a href="chat.html">Chat Now</a>
-                                                    </div>
+                                                <div class="footer chat-button">
+                                                    <a href="http://127.0.0.1:8000/chat">Chat Now</a>
+                                                </div>
+                                                <div class="user-img-top">
+                                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                                 </div>
                                                 <div class="share">
                                                     <div class="d-flex justify-content-center">
@@ -458,37 +500,40 @@ ul.menu li.dropdown.active i {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="listing-item sm">
+                                        <div class="listing-item">
                                             <div class="sub-main">
                                                 <div class="img-sec p-rel">
-                                                    <img src="assets/img/hotels/hotel-1.png" alt="">
+                                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="">
                                                     <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+                                                    <span class="icon-sec-right"><i class="fas fa-heart"></i></span>
+
                                                 </div>
                                                 <div class="slider-content">
-                                                    <a href="detail.html">Stay and Learn Yoga </a>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <a href="http://127.0.0.1:8000/detail" class="text-green">Stay and Learn </a>
+                                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                    </div>
                                                     <div class="d-flex justify-content-between">
-                                                        <p>Ashtanga Yoga</p>
-                                                        <p>
-                                                            <span>4.3</span> 7 Ratings
+                                                        <p>Python (Intro)
+                                                        </p><p>
+                                                            <span>Feb 5 - 15</span> Duplex
                                                         </p>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
-                                                        <p>$200 Per Night</p>
-                                                        <p> <i class="fa fa-map-marker"></i> Paris , France</p>
+                                                        <p>$300</p>
+                                                        <p> <span>&nbsp;18 </span>&nbsp;Reviews</p>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p>akeja, logos</p>
+                                                        <p> <i class="fa fa-map-marker"></i>10 km away</p>
                                                     </div>
                                                 </div>
-                                                <div class="footer">
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="d-flex">
-                                                            <img src="assets/img/avatar.png">
-                                                            <div class="m-2">
-                                                                <h6 class="m-0">Kartik Trivedi</h6>
-                                                                <p class="m-0">Yoga Trainer</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <a href="chat.html">Chat Now</a>
-                                                    </div>
+                                                <div class="footer chat-button">
+                                                    <a href="http://127.0.0.1:8000/chat">Chat Now</a>
+                                                </div>
+                                                <div class="user-img-top">
+                                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
                                                 </div>
                                                 <div class="share">
                                                     <div class="d-flex justify-content-center">
