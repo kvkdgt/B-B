@@ -284,7 +284,7 @@ footer#footer {
     display: none;
 }
 
-table thead, table tfoot {
+table thead {
     background: #bee500 !important;
 }
 
@@ -301,6 +301,68 @@ table thead, table tfoot {
 
 .search {
     position: relative;
+}
+
+.listing-card .listing-item {
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 25px;
+}
+
+.listing-card .slider-content {
+    padding: 10px;
+}
+
+.listing-card .listing-item .sub-main .slider-content a {
+    color: #353535;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.listing-card .user-img-top {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.listing-card .user-img-top img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #bee500;
+    border-radius: 50%;
+}
+
+.listing-card .listing-item .sub-main .img-sec img {
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+}
+
+.listing-card .listing-item .sub-main .slider-content p {
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 15px;
+}
+
+.listing-card .listing-item .sub-main .footer a {
+    color: #1DA1F2;
+    font-weight: 500;
+    font-size: 18px;
+    margin: auto 0;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.listing-card .listing-item .sub-main .footer {
+    border-top: 1px solid #DEDEDE;
+    padding: 10px;
+    text-align: center;
+}
+
+input.list-checkbox {
+    position: absolute;
+    top: 0;
+    left: -7px;
 }
 
 @media screen and (max-width: 767px) {
@@ -344,6 +406,7 @@ table thead, table tfoot {
 
 }
 </style>
+
 <main id="main">
 
     <script>
@@ -369,7 +432,8 @@ table thead, table tfoot {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -398,8 +462,8 @@ table thead, table tfoot {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <!--     <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> --> 
+                                <!--     <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
@@ -417,11 +481,11 @@ table thead, table tfoot {
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+        <div class="col-lg-10 col-md-9 col-sm-9">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <h4>View All</h4>
+                        <h4>All Listings</h4>
                         <div class="search">
                             <button class="btn btn-danger">Delete</button>
                             <input type="text" name="search" placeholder="Search here">
@@ -429,57 +493,172 @@ table thead, table tfoot {
                         </div>
                     </div>
                     <div class="card-body">
-                        <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                        <div class="common-table">
-                            <table>
-                                <thead>
-                                    <th></th>
-                                    <th>S/No</th>
-                                    <th>Added Date</th>
-                                    <th>Listing Name</th>
-                                    <th>No of Likes</th>
-                                    <th>No of Saves</th>
-                                    <th>marked as Reported</th>
-                                    <th>Action</th>
-                                </thead>
-
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
+                        </div>
+                        <div class="row listing-card">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox" />
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
                                             </div>
-                                        </td>
-                                        <td>01</td>
-                                        <td>25/03/2023</td>
-                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>25</td>
-                                        <td>
-                                            <a href="#"><i class="fa fa-edit"></i></a>
-                                            <a href="#"><i class="fa fa-trash text-danger"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <!-- <tfoot>
-                                    <th></th>
-                                    <th>S/No</th>
-                                    <th>Added Date</th>
-                                    <th>Listing Name</th>
-                                    <th>No of Likes</th>
-                                    <th>No of Saves</th>
-                                    <th>marked as Reported</th>
-                                    <th>Action</th>
-                                </tfoot> -->
-                            </table>
-
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox" />
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
+                                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                                <a href="{{route('detail')}}">Stay and Learn </a>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="inner-content">
+                                                <p>Python (Intro)</p>
+                                                <p>Paris, France | 10km away</p>
+                                                <p> Dec 20 - Dec 28, 2023</p>
+                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>428 Reviews</b></p>
+                                                <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer chat-button">
+                                            <a href="{{route('chat')}}">Chat Now</a>
+                                        </div>
+                                        <div class="user-img-top">
+                                            <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

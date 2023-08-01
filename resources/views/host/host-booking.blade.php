@@ -445,7 +445,7 @@ table thead {
                                     <th>Security Deposit</th>
                                     <th>Guest Service fee</th>
                                     <th>Total Amount</th>
-                                    <th>Pyment</th>
+                                    <th>Payment</th>
                                 </thead>
 
                                 <tbody>
