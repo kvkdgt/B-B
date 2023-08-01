@@ -39,7 +39,7 @@ Route::get('/host-all-listing', [App\Http\Controllers\HostController::class, 'al
 Route::get('/host-saved-listing', [App\Http\Controllers\HostController::class, 'savedlisting'])->name('savedlisting');
 Route::get('/host-liked-listing', [App\Http\Controllers\HostController::class, 'likedlisting'])->name('likedlisting');
 Route::get('/sample', [App\Http\Controllers\HostController::class, 'sample'])->name('sample');
-Route::get('/admin-dashboard', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard');
+Route::get('/admin-dashboard', [App\Http\Controllers\AdminController::class, 'admindashboard'])->name('admindashboard');
 Route::get('/host-revenue', [App\Http\Controllers\HostController::class, 'revenue'])->name('revenue');
 Route::get('/host-net-income', [App\Http\Controllers\HostController::class, 'netincome'])->name('netincome');
 Route::get('/host-pay-details', [App\Http\Controllers\HostController::class, 'paydetail'])->name('paydetail');
