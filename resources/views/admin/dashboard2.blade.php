@@ -194,11 +194,56 @@ ul.sub-menu li:last-child {
 
 .total-block {
     /* background: #FFFFFF; */
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
-    border-radius: 25px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 0 5px #ededed;
+    border-radius: 7px;
     margin-bottom: 25px;
-    padding: 25px;
+    padding: 20px;
+}
+
+.TriSea-technologies-Switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.TriSea-technologies-Switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.TriSea-technologies-Switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.TriSea-technologies-Switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
 }
 
 .total-header {
@@ -579,21 +624,13 @@ table thead {
                                 <canvas id="income_pie_chart" style="width:100%;max-width:700px"></canvas>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-12">
                         <div class="col-md-12 col-sm-12">
                             <div class="booking-block">
                                 <div class="total-header d-flex align-items-center justify-content-between">
                                     <h4>Conversion Rate</h4>
-                                    <div class="">
-                                        <select name="dropdown">
-                                            <option value="All">All</option>
-                                            <option value="Monthly">Monthly</option>
-                                            <option value="Weekly">Weekly</option>
-                                        </select>
-                                    </div>
                                 </div>
                                 <div class="common-table">
-                                    <table>
+                                    <table class="mb-3">
                                         <thead>
                                             <th>S/No</th>
                                             <th>Date</th>
@@ -609,7 +646,10 @@ table thead {
                                                 <td>Rahul</td>
                                                 <td>02</td>
                                                 <td>04</td>
-                                                <td></td>
+                                                <td><div class="TriSea-technologies-Switch">
+                                                    <input id="TriSeaSuccess" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaSuccess" class="label-success"></label>
+                                                </div></td>
                                             </tr>
                                             <tr>
                                             <td>02</td>
@@ -617,35 +657,22 @@ table thead {
                                                 <td>Rahul</td>
                                                 <td>02</td>
                                                 <td>04</td>
-                                                <td></td>
+                                                <td><div class="TriSea-technologies-Switch">
+                                                    <input id="TriSeaSuccess1" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaSuccess1" class="label-success"></label>
+                                                </div></td>
                                             </tr>
                                           
                                         </tbody>
                                     </table>
-
-                                  
-
-                                    <div class="table-heading">
-                                        <table>
-                                            <thead></thead>
-                                        </table>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
                     <!--  Recent Bookings  -->
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-12 col-sm-12 mt-3">
                         <div class="booking-block">
                             <div class="total-header d-flex align-items-center justify-content-between">
                                 <h4>Recent Bookings</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="common-table">
                                 <table>
@@ -783,7 +810,7 @@ table thead {
                                     </tbody>
                                 </table> -->
                                 
-                                <div class="table-header d-flex align-items-center justify-content-between mt-5">
+                                <div class="table-header d-flex align-items-center justify-content-between mt-3">
                                     <h4 class="my-4">Recent Reviews</h4>
                                     <button class="btn btn-danger">Delete</button>
                                 </div>

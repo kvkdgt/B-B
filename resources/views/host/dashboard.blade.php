@@ -194,11 +194,11 @@ ul.sub-menu li:last-child {
 
 .total-block {
     /* background: #FFFFFF; */
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
-    border-radius: 25px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 0 5px #ededed;
+    border-radius: 7px;
     margin-bottom: 25px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .total-header {
@@ -566,7 +566,7 @@ table thead {
                     <!--  Recent Bookings  -->
                     <div class="col-md-12 col-sm-12">
                         <div class="booking-block">
-                            <div class="total-header d-flex align-items-center justify-content-between">
+                            <!-- <div class="total-header d-flex align-items-center justify-content-between">
                                 <div class="">
                                     <select name="dropdown">
                                         <option value="All">All</option>
@@ -574,9 +574,40 @@ table thead {
                                         <option value="Weekly">Weekly</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="common-table">
-                                <table>
+                             
+                                <h4 class="mb-5">Conversion Rates</h4>
+
+                                <table class="mb-5">
+                                    <thead>
+                                        <th>S/No</th>
+                                        <th>Date</th>
+                                        <th>Accept Total</th>
+                                        <th>Reject Total</th>
+                                        <th>Status</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2/8/22</td>
+                                            <td>18</td>
+                                            <td>2</td>
+                                            <td>Unblock</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2/8/22</td>
+                                            <td>18</td>
+                                            <td>3</td>
+                                            <td>Block</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h4 class="mb-5">Recent Booking</h4>
+
+                                <table class="mb-3">
                                     <thead>
                                         <th>S/No</th>
                                         <th>Date</th>
@@ -696,55 +727,42 @@ table thead {
                                     </tbody>
                                 </table>
 
-                                <h4 class="mt-5">Conversion Rates</h4>
-
-                                <table>
-                                    <thead>
-                                        <th>S/No</th>
-                                        <th>Date</th>
-                                        <th>Accept Total</th>
-                                        <th>Reject Total</th>
-                                    </thead>
-                                    <tbody>
-                                        <td>1</td>
-                                        <td>2/8/22</td>
-                                        <td>18</td>
-                                        <td>2</td>
-                                    </tbody>
-                                </table>
-
                                 <div class="table-header d-flex align-items-center justify-content-between">
                                     <h4 class="my-4">Recent Reviews</h4>
                                     <!-- <button class="btn btn-danger">Delete</button> -->
                                 </div>
                                 <div class="table-heading">
                                     <table>
-                                        <tr>
-                                            <td style="width: 20px;">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </td>
-                                            <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40"
-                                                    height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
-                                            <td>3Star</td>
-                                            <td>Reviews Good B&B</a></td>
-                                            <td>Reply</td>
+                                    <thead>
+                                            <tr><th></th>
+                                            <th>Name</th>
+                                            <th>Rating</th>
+                                            <th>Reviews</th>
+                                            <th>Status</th>
                                         </tr>
-                                        <tr>
-                                            <td style="width: 20px;">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </td>
-                                            <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40"
-                                                    height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
-                                            <td>2Star</td>
-                                            <td>Reviews Fair B&B</a></td>
-                                            <td>Reply</td>
-                                        </tr>
+                                        </thead>
+                                    <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                    <td>3Star</td>
+                                    <td>Reviews Good B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20px;">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                    <td>2Star</td>
+                                    <td>Reviews Fair B&B</a></td>
+                                    <td>Reply</td>
+                                </tr>
                                     </table>
                                 </div>
                             </div>
