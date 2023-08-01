@@ -393,9 +393,7 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li>
+
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -436,8 +434,8 @@ table thead {
                                 <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span>0 ₹</span></li>
-                                <li><span>0 $</span></li>
+                                <li><span>Euro &euro; </span></li>
+                                <li><span>USD $</span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
