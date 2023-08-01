@@ -298,7 +298,7 @@ footer#footer {
     display: none;
 }
 
-table tfoot {
+table tfoot, table thead {
     background: #bee500 !important;
 }
 
@@ -450,7 +450,7 @@ table tfoot {
                                 <th>Revenue</th>
                                 <th>Total Payout</th>
                                 <th>Action</th>
-                            </thead> -->
+                            </thead>
 
                                 <tbody>
                                     <tr>
