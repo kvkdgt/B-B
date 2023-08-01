@@ -410,7 +410,61 @@
             </div>
         </div>
     </footer><!-- End Footer -->
+    <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body form-modal">
+                    <div class="header">
+                        <h3 class="text-center">Booking Form</h3>
+                        <p>Booking ID : 4957475-48</p>
+                    </div>
+                    <hr>
+                    <h4>Stay and Learn Yoga</h4>
+                    <h4>Feb 5 - 15 &nbsp;&nbsp;&nbsp;&nbsp;$300</h4>
+                    <h4>Mumbai, India</h4>
+                    <h4>2 Adult Guest (max)</h4>
 
+
+                    <hr>
+                    <div class="content m-5">
+                        <form action="#" method="get">
+                            <h4>1 Guest</h4>
+                            <div class="d-grid">
+                                <label>First Name</label>
+                                <input type="text" placeholder="first name">
+                            </div>
+                            <div class="d-grid">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="last name">
+                              
+                                <!-- <span>Forgot Password?</span> -->
+                            </div>
+                            <div class="d-grid">
+                                <label>Photo</label>
+                                <input type="file" placeholder="first name">
+                            </div>
+                            <div class="d-grid">
+                                <label>Gender</label>
+                                <select>
+                                <option>Male</option>
+                                <option>Female</option>
+
+                                </select>
+                            </div>
+                         
+                            <a href="host-dashboard.html" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
+                            <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with stripe</a>
+                            <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with paypal</a>
+                            
+                        </form>
+                    </div>
+
+                 
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

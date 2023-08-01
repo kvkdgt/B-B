@@ -159,40 +159,76 @@
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
+                                    <div class="item left">
+                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
+                                        <div class="text-box">
+                                            <p>Selected Dates</p>
+                                            <span>Feb 6-10 : 300$</span><br>
+                                            <span>Feb 6-10 : 300$</span>
+
+                                        </div>
+                                    </div>
 
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
                                         <div class="text-box">
-                                            <p>Stay and Learn
-                                                <hr>
-                                                Check-in date: 08/20/2023<br>
-                                                Check-out este 06/30/2023<br>
-                                                Total Days. 10<br>
-                                                <br>
-                                                price per night: C00<br>
-                                                Total Nights: euro 3000<br>
-                                                Discount @ 5% €150<br>
-                                                Cleaning Fee: 39<br>
-                                                Service fee: cA6t<br>
-                                                Other Fee: 0<br>
-                                                No of Guess: 1<br>
-                                                <br>
-                                                Total Amount: 3501<br><br>
-                                            <div class="">
-                                                <a class="chat-in-button btn btn-pill btn-danger">Withdraw
-                                                    Booking</a><br>
-                                                <a class="chat-in-button btn btn-pill btn-primary">Edit Booking</a><br>
-                                                <a class="chat-in-button btn btn-pill btn-danger" style="    background-color: green !important;
-    border: 0px;">Confirmed & Proceed</a>
-
+                                         <div class="row">
+                                            <div class="col-7">
+                                                Stay and Learn |
                                             </div>
+                                            <div class="col">
+                                                2 Adult
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                               Feb 5 - 15
+                                            </div>
+                                            <div class="col">
+                                                $ 300
+                                            </div>
+                                         </div>
 
-                                            <hr>
+                                         <div class="row">
+                                            <div class="col-7">
+                                               Cleaning Fee
+                                            </div>
+                                            <div class="col">
+                                                $ 20
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                              Security Deposit
+                                            </div>
+                                            <div class="col">
+                                                $ 50
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                              Service Fee
+                                            </div>
+                                            <div class="col">
+                                                $ 50
+                                            </div>
+                                         </div>
+<br>
+                                         <div class="row">
+                                            <div class="col-7">
+                                             <b> Total</b>
+                                            </div>
+                                            <div class="col">
+                                              <b>  $ 500</b>
+                                            </div>
+                                         </div><br>
+<button class="btn btn-primary"  data-target="#chatModal" data-toggle="modal"
+                        href="#chatModal">Click to provide your booking details</button>
 
-                                            </p>
-                                            <span>01:10 PM</span>
                                         </div>
                                     </div>
+
+                                    
 
 
 
