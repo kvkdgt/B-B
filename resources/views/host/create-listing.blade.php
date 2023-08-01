@@ -185,6 +185,14 @@ ul.sub-menu li:last-child {
     position: relative;
 }
 
+.file-wrapper input#profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+
 .error-block {
     background: rgb(255, 0, 0, 10%);
     color: red;
@@ -802,44 +810,39 @@ table thead {
                                 <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
                             </div>
                             <div class="details-content">
-                                <div class="previous-wrapper d-flex">
-                                    <div class="previous-block text-center">
-                                        <div class="form-group">
-                                            <div class="file-wrapper">
-                                                <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                                <input type="file" id="profile" class="form-control" required />
+                                <div class="previous-wrapper">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i
+                                                            class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
                                             </div>
+                                            <input type="text" name="b-b" id="workshop" />
                                         </div>
-                                        <input type="text" name="b-b" id="workshop" />
-                                    </div>
-                                    <div class="previous-block text-center">
-                                        <div class="form-group">
-                                            <div class="file-wrapper">
-                                                <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                                <input type="file" id="profile" class="form-control" required />
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i
+                                                            class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
                                             </div>
+                                            <input type="text" name="b-b" id="workshop" />
                                         </div>
-                                        <input type="text" name="b-b" id="workshop" />
-                                    </div>
-                                    <div class="previous-block text-center">
-                                        <div class="form-group">
-                                            <div class="file-wrapper">
-                                                <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                                <input type="file" id="profile" class="form-control" required />
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i
+                                                            class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
                                             </div>
+                                            <input type="text" name="b-b" id="workshop" />
                                         </div>
-                                        <input type="text" name="b-b" id="workshop" />
                                     </div>
-                                    <div class="previous-block text-center">
-                                        <div class="form-group">
-                                            <div class="file-wrapper">
-                                                <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                                <input type="file" id="profile" class="form-control" required />
-                                            </div>
-                                        </div>
-                                        <input type="text" name="b-b" id="workshop" />
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
@@ -854,8 +857,7 @@ table thead {
                                     <table>
                                         <thead>
                                             <tr style="height: 40px;">
-                                                <th></th>
-                                                <th colspan="5">Date (Select your availability)</th>
+                                                <th colspan="4" style="text-align: center;">Date (Select your availability)</th>
                                                 <th>Total Nights</th>
                                                 <th>Total Nights Cost</th>
                                             </tr>
