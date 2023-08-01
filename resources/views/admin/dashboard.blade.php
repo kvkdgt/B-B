@@ -194,11 +194,11 @@ ul.sub-menu li:last-child {
 
 .total-block {
     /* background: #FFFFFF; */
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07); */
-    border-radius: 25px;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 0 5px #ededed;
+    border-radius: 7px;
     margin-bottom: 25px;
-    padding: 25px;
+    padding: 20px;
 }
 
 .total-header {
@@ -286,6 +286,8 @@ footer#footer {
 table thead {
     background: #bee500 !important;
 }
+
+
 
 @media screen and (max-width: 767px) {
     .page-sidebar {
@@ -579,7 +581,10 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                                                 <td>Rahul</td>
                                                 <td>02</td>
                                                 <td>04</td>
-                                                <td></td>
+                                                <td><div class="TriSea-technologies-Switch pull-right">
+                                                    <input id="TriSeaSuccess" name="TriSea1" type="checkbox"/>
+                                                    <label for="TriSeaSuccess" class="label-success"></label>
+                                                </div></td>
                                             </tr>
                                             <tr>
                                             <td>02</td>
@@ -589,17 +594,8 @@ span.hide-menu, .mobile-menu.open-menu span.show-menu {
                                                 <td>04</td>
                                                 <td></td>
                                             </tr>
-                                          
                                         </tbody>
                                     </table>
-
-                                  
-
-                                    <div class="table-heading">
-                                        <table>
-                                            <thead></thead>
-                                        </table>
-                                    </div>
                                 </div>
                             </div>
                         </div>
