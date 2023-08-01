@@ -273,13 +273,13 @@ function toggleSubMenu(icon) {
                             </li>
                             <li class="dropdown">
                                 <div onclick="toggleSubMenu(this)">
-                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                    <span>All Listing</span> <i class="fa-solid fa-caret-right"></i>
                                 </div>
                                 <ul class="sub-menu">
                                     <li><span>View All</li>
-                                    <li><span>View Liked Listing</span></li>
+                                    <!-- <li><span>View Liked Listing</span></li>
                                     <li><span>View Saved Listing</span></li>
-                                    <li><span>Create New Listing</span></li>
+                                    <li><span>Create New Listing</span></li> -->
                                 </ul>
                             </li>
                             <li class="dropdown">
