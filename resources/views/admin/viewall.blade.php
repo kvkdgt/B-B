@@ -304,17 +304,17 @@ table thead {
 }
 
 .listing-card .listing-item {
-        margin-bottom: 15px;
-        background: #FFFFFF;
-        border: 1px solid #DEDEDE;
-        border-radius: 25px;
-    }
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 25px;
+}
 
-    .listing-card .slider-content {
-        padding: 10px;
-    }
+.listing-card .slider-content {
+    padding: 10px;
+}
 
-    .listing-card .listing-item .sub-main .slider-content a {
+.listing-card .listing-item .sub-main .slider-content a {
     color: #353535;
     font-weight: 600;
     font-size: 18px;
@@ -416,37 +416,38 @@ input.list-checkbox {
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar"> 
+                <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
-                    </div>            
+                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('users')}}">  <span>Users</span> </a>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -455,7 +456,7 @@ input.list-checkbox {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                
+
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -464,8 +465,8 @@ input.list-checkbox {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
@@ -489,31 +490,31 @@ input.list-checkbox {
                                         <li><span>About us</span></li>
                                     </ul>
                                 </li>
-                            </li>
-                                <li><span>Block IP addresses</span></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>0 ₹</span></li>
-                                        <li><span>0 $</span></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>English</span></li>
-                                        <li><span>French</span></li>
-                                        <li><span>German</span></li>
-                                    </ul>
-                                </li>
+                        </li>
+                        <li><span>Block IP addresses</span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Euro &euro;</span></li>
+                                <li><span>USD $</span></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>English</span></li>
+                                <li><span>French</span></li>
+                                <li><span>German</span></li>
                             </ul>
                         </li>
                     </ul>
-                </div>  
+                    </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-9">
@@ -529,8 +530,9 @@ input.list-checkbox {
                     </div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                        <a href="{{route('admincreateListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
-                        <!-- <div class="common-table">
+                            <a href="{{route('admincreateListing')}}" class="btn btn-primary mb-3">Create New
+                                Listing</a>
+                            <!-- <div class="common-table">
                             <table>
                                 <thead>
                                     <th></th>
@@ -576,20 +578,28 @@ input.list-checkbox {
                             </table>
                         </div> -->
 
-                        <a href="#" class="btn btn-primary">Move to Recommended</a>
+                            <a href="#" class="btn btn-primary">Move to Recommended</a>
                         </div>
                         <div class="row listing-card">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
                                 <input type="checkbox" class="list-checkbox" />
-                                    <div class="listing-item">
-                                        <div class="sub-main">
-                                            <div class="img-sec p-rel">
-                                                <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                                            </div>
-                                            <div class="slider-content">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
                                             <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                             <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -599,30 +609,38 @@ input.list-checkbox {
                                                 <p><b>428 Reviews</b></p>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
-                                                <p><button class="btn btn-danger" data-target="#reportModal" data-toggle="modal"
-                        href="#reportModal">Read Report</button></p>
+                                                <p><button class="btn btn-danger" data-target="#reportModal"
+                                                        data-toggle="modal" href="#reportModal">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
-                                            <div class="user-img-top">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                            </div>
+                                        <div class="user-img-top">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox" class="list-checkbox" />
-                                    <div class="listing-item">
-                                        <div class="sub-main">
-                                            <div class="img-sec p-rel">
-                                                <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                                            </div>
-                                            <div class="slider-content">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox" />
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
                                             <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                             <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -638,23 +656,31 @@ input.list-checkbox {
                                         <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
-                                            <div class="user-img-top">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                            </div>
+                                        <div class="user-img-top">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox" class="list-checkbox">
-                                    <div class="listing-item">
-                                        <div class="sub-main">
-                                            <div class="img-sec p-rel">
-                                                <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                                            </div>
-                                            <div class="slider-content">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
                                             <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                             <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -670,23 +696,31 @@ input.list-checkbox {
                                         <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
-                                            <div class="user-img-top">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                            </div>
+                                        <div class="user-img-top">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
-                                    <input type="checkbox" class="list-checkbox">
-                                    <div class="listing-item">
-                                        <div class="sub-main">
-                                            <div class="img-sec p-rel">
-                                                <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
-                                            </div>
-                                            <div class="slider-content">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 d-flex align-items-start">
+                                <input type="checkbox" class="list-checkbox">
+                                <div class="listing-item">
+                                    <div class="sub-main">
+                                        <div class="img-sec p-rel">
+                                            <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt=""
+                                                width="100%">
+                                        </div>
+                                        <div class="slider-content">
                                             <div class="d-flex align-items-center justify-content-between mb-2">
                                                 <a href="{{route('detail')}}">Stay and Learn </a>
-                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                                <svg stroke="currentColor" fill="rgba(39, 165, 243)" stroke-width="0"
+                                                    viewBox="0 0 24 24" height="20px" width="20px"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path
+                                                        d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                             <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -702,9 +736,8 @@ input.list-checkbox {
                                         <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
                                         </div>
-                                            <div class="user-img-top">
-                                                <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                            </div>
+                                        <div class="user-img-top">
+                                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
                                     </div>
                                 </div>
@@ -714,6 +747,7 @@ input.list-checkbox {
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

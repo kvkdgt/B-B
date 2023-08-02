@@ -441,8 +441,8 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
+                                 <!--  <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> --> -->
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>

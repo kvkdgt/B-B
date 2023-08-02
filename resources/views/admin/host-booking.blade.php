@@ -360,6 +360,11 @@ table thead {
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
                 <div class="page-sidebar">
+                    <div class="user-block">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                        <h4>Kartik Trivedi</h4>
+                        <a href="#">kartik@mailinator.com</a>
+                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -379,7 +384,7 @@ table thead {
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('adminbooking')}}"> <span>Users</span> </a>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -397,7 +402,7 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
@@ -409,11 +414,42 @@ table thead {
                             <ul class="sub-menu">
                                 <li><span>Profile Setting</span></li>
                                 <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
-                                <li><span>Block IP addresses</span></li>
-                                <li><span>General Settings</span></li>
+                                <li class="dropdown">
+                                    <div onclick="toggleSubMenu(this)">
+                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li><span>FAQ</span></li>
+                                        <li><span>Safety Tips</span></li>
+                                        <li><span>How it works</span></li>
+                                        <li><span>Privacy</span></li>
+                                        <li><span>Terms</span></li>
+                                        <li><span>About us</span></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        <li><span>Block IP addresses</span></li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>Euro &euro;</span></li>
+                                <li><span>USD $</span></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><span>English</span></li>
+                                <li><span>French</span></li>
+                                <li><span>German</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
