@@ -599,7 +599,8 @@ input.list-checkbox {
                                                 <p><b>428 Reviews</b></p>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
-                                                <p><button class="btn btn-danger">Read Report</button></p>
+                                                <p><button class="btn btn-danger" data-target="#reportModal" data-toggle="modal"
+                        href="#reportModal">Read Report</button></p>
                                             </div>
                                         </div>
                                         <div class="footer chat-button">

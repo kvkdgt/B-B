@@ -527,6 +527,22 @@
         </div>
     </div>
 
+    <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body form-modal">
+                    
+                    <div class="content m-5">
+                     
+                    </div>
+
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade bd-example-modal-xl" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
