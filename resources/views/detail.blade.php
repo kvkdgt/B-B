@@ -1156,9 +1156,9 @@
                                 <div class="details-content">
                                     <div class="cost-details">
                                         <h4>Cost Details</h4>
-                                        <ul>
+                                        <ul class="p-0">
                                             <div class="details-content">
-                                                <div class="form-field" style="margin: 0 -25px;">
+                                                <div class="form-field">
                                                     <label>Select dates</label>
                                                     <select class="js-example-basic-multiple" name="states[]"
                                                         multiple="multiple" readonly>

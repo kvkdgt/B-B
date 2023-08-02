@@ -279,6 +279,7 @@ footer#footer {
     overflow-y: scroll;
     padding: 30px;
     margin: -10px;
+    overflow-x: hidden;
 }
 
 .page-content::-webkit-scrollbar {
@@ -303,7 +304,15 @@ table thead {
 }
 
 .user-card .slider-content {
-    padding: 10px;
+    padding: 15px;
+    background: #f3f2f2;
+    border-radius: 0 0 25px 25px;
+}
+
+.user-card input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: -5px;
 }
 
 .user-card .listing-item .sub-main .slider-content a {
@@ -324,6 +333,17 @@ button.verfied {
 .user-img-top img {
     border: 2px solid #bee500;
     border-radius: 50%;
+}
+
+.listing-item {
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 25px;
+}
+
+.img-sec.p-rel img {
+    border-radius: 25px 25px 0 0;
 }
 
 @media screen and (max-width: 767px) {

@@ -288,6 +288,10 @@ table thead {
     background: #bee500 !important;
 }
 
+input[readonly] {
+    background-color: #fff !important;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
