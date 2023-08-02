@@ -592,7 +592,7 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
-                                <h4>Qualification</h4>
+                                <h4>Academic Qualification</h4>
                                 <div class="col-sm-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>
