@@ -185,6 +185,14 @@ ul.sub-menu li:last-child {
     position: relative;
 }
 
+.file-wrapper input#profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+
 .error-block {
     background: rgb(255, 0, 0, 10%);
     color: red;
@@ -436,21 +444,29 @@ table thead {
     }
     </script>
 
+    <script>
+    function toggleLearnDiv() {
+        var learnCheckbox = document.getElementById("learn");
+        var learnDiv = document.getElementById("learnDiv");
+
+        if (learnCheckbox.checked) {
+            learnDiv.style.display = "block";
+        } else {
+            learnDiv.style.display = "none";
+        }
+    }
+    </script>
+
 
 
     <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar"> 
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>            
+                <div class="page-sidebar">             
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -469,7 +485,7 @@ table thead {
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('users')}}">  <span>Users</span> </a>
+                            <a href="{{route('adminbooking')}}">  <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -497,54 +513,25 @@ table thead {
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span>Profile Setting</span></li>
-                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>FAQ</span></li>
-                                        <li><span>Safety Tips</span></li>
-                                        <li><span>How it works</span></li>
-                                        <li><span>Privacy</span></li>
-                                        <li><span>Terms</span></li>
-                                        <li><span>About us</span></li>
-                                    </ul>
-                                </li>
-                            </li>
-                                <li><span>Block IP addresses</span></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>0 ₹</span></li>
-                                        <li><span>0 $</span></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>English</span></li>
-                                        <li><span>French</span></li>
-                                        <li><span>German</span></li>
-                                    </ul>
-                                </li>
+                            <li><span>Profile Setting</span></li>
+                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                    <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
+                                    <li><span>Block IP addresses</span></li>
+                                    <li><span>General Settings</span></li>
                             </ul>
                         </li>
                     </ul>
-                </div>  
+                </div>
             </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
                 <div class="row">
                     <div class="listing-header d-flex align-items-center justify-content-between">
-                        <h4 class="m-0">Create a New Listing</h4>
+                        <h2 class="m-0">Create a New Listing</h2>
                     </div>
+                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
                     <div class="listing-content">
                         <!--  Title of Listing  -->
                         <div class="row align-items-center">
@@ -552,11 +539,12 @@ table thead {
                                 <h3 class="m-0">Title of Listing</h3>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="checkbox" id="learn" name="stay" value="learn">
+                                <input type="radio" id="learn" name="stay" value="learn" onclick="toggleLearnDiv()"
+                                    checked>
                                 <label for="learn">Stay & Learn</label>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="checkbox" id="event" name="stay" value="event">
+                                <input type="radio" id="event" name="stay" value="event" onclick="toggleLearnDiv()">
                                 <label for="event">Stay For Event</label>
                             </div>
                         </div>
@@ -573,54 +561,47 @@ table thead {
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                         <!--  Maximum Guest Allowed  -->
-                        <div class="item">
+                        <div class="guest-location">
                             <h3>Language of Instruction</h3>
-                            <div class="lag-radio-block d-flex">
-                                <span>
-                                    <input type="checkbox" id="english" name="english" value="lan">
-                                    <label for="english">English</label></span><span>
-                                    <input type="checkbox" id="french" name="french" value="lan">
-                                    <label for="french">French</label></span><span>
-                                    <input type="checkbox" id="german" name="german" value="lan">
-                                    <label for="german">German</label></span><span>
-                                    <input type="checkbox" id="spanish" name="spanish" value="lan">
-                                    <label for="spanish">Spanish</label></span><span>
-                                    <input type="checkbox" id="turkish" name="turkish" value="lan">
-                                    <label for="turkish">Turkish</label></span>
-                                <span>
-                                    <input type="checkbox" name="lan" id="russian" value="russian">
-                                    <label for="russian">Russian</label></span><span>
-                                    <input type="checkbox" name="lan" id="polish" value="polish">
-                                    <label for="polish">Polish</label></span><span>
-                                    <input type="checkbox" name="lan" id="arbic" value="arbic">
-                                    <label for="arbic">Arabic</label></span><span>
-                                    <input type="checkbox" name="lan" id="dutch" value="dutch">
-                                    <label for="dutch">Dutch</label></span><span>
-                                    <input type="checkbox" name="lan" id="chinese" value="chienese">
-                                    <label for="chienese">Chinese</label></span>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" placeholder="Language 1">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Language 2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" placeholder="Language 3">
+                                </div>
+                                <div class="col">
+                                    <input type="text" placeholder="Language 4">
+                                </div>
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                         <!--  Listing Property Type  -->
-                        <div class="guest-location">
+                        <div class="guest-location" id="learnDiv">
                             <h3>What guest will learn (only for stay & learn)</h3>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" disabled placeholder="Location 1">
+                                    <input type="text" placeholder="Location 1">
                                 </div>
                                 <div class="col">
-                                    <input type="text" disabled placeholder="Location 2">
+                                    <input type="text" placeholder="Location 2">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" disabled placeholder="Location 3">
+                                    <input type="text" placeholder="Location 3">
                                 </div>
                                 <div class="col">
-                                    <input type="text" disabled placeholder="Location 4">
+                                    <input type="text" placeholder="Location 4">
                                 </div>
                             </div>
                         </div>
+
 
                         <div class="item location-block">
                             <h3>Learn Location (Where is the Learning Place? Select one)</h3>
@@ -649,12 +630,14 @@ table thead {
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                         <div class="row">
-                            <div class="col-lg-3 col-md-12 textarea-block">
+                            <div class="col-lg-12 textarea-block">
                                 <h3>About the B&B Listing </h3>
-                                <textarea rows="3"
+                                <textarea rows="3" style="width:100%"
                                     placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
                             </div>
-                            <div class="col-lg-9 col-md-12">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
                                 <h3>Listing photo & video</h3>
                                 <div class="details-block">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -723,7 +706,7 @@ table thead {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-9 col-md-12">
+                            <div class="col-md-12">
                                 <h3>Maximum Number of Guests(Adults)</h3>
                                 <select>
                                     <option>1</option>
@@ -739,59 +722,68 @@ table thead {
                                     <div class="details-content">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-6 image-block text-center">
-                                                <img src="assets/img/hotels/hotel-2.png">
-                                                <p>1 Bedroom</p>
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                                <input type="text" name="b-b" id="workshop" />
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
-                                                <img src="assets/img/hotels/hotel-3.png">
-                                                <p>1 Drawing Room</p>
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                                <input type="text" name="b-b" id="workshop" />
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
-                                                <img src="assets/img/hotels/hotel-3.png">
-                                                <p>2 Bathrooms</p>
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                                <input type="text" name="b-b" id="workshop" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-12">
+
+                        </div>
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 guest-freebies">
                                 <h3>Ideal Guest</h3>
-                                <div class="row ideal-block">
-                                    <div class="col-lg-12 col-md-6">
+                                <div class="row">
+                                    <span>
                                         <input type="checkbox">
-                                        Students
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Students</label></span><span>
                                         <input type="checkbox">
-                                        Tourists
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Founders</label></span><span>
                                         <input type="checkbox">
-                                        Founders
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Family</label></span><span>
                                         <input type="checkbox">
-                                        Employees
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Digital Workers</label></span>
+                                    <span>
                                         <input type="checkbox">
-                                        Family
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Tourists</label></span><span>
                                         <input type="checkbox">
-                                        Gen Z
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label>Employees</label></span><span>
                                         <input type="checkbox">
-                                        Digital Workers
-                                    </div>
-                                    <div class="col-lg-12 col-md-6">
+                                        <label> Gen Z</label></span><span>
                                         <input type="checkbox">
-                                        Backpackers
-                                    </div>
+                                        <label>Backpackers</label></span>
+
 
                                 </div>
-
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
@@ -835,26 +827,35 @@ table thead {
                                 <h3>Previous Videos (upload videos of Events & Tutorials) </h3>
                             </div>
                             <div class="details-content">
-                                <div class="previous-wrapper d-flex">
-                                    <div class="previous-block text-center">
-                                        <img src="assets/img/hotels/hotel-2.png">
-                                        <p>Title 1</p>
-                                    </div>
-                                    <div class="previous-block text-center">
-                                        <img src="assets/img/hotels/hotel-3.png">
-                                        <p>Title 1</p>
-                                    </div>
-                                    <div class="previous-block text-center">
-                                        <img src="assets/img/hotels/hotel-3.png">
-                                        <p>Title 1</p>
-
-                                    </div>
-                                    <div class="previous-block text-center">
-                                        <img src="assets/img/hotels/hotel-2.png">
-                                        <p>Title 1</p>
-                                    </div>
-                                    <div class="more-block">
-                                        <button class="btn btn-primary">Add More</button>
+                                <div class="previous-wrapper">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
+                                            </div>
+                                            <input type="text" name="b-b" id="workshop" />
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
+                                            </div>
+                                            <input type="text" name="b-b" id="workshop" />
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 image-block text-center">
+                                            <div class="form-group">
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
+                                            </div>
+                                            <input type="text" name="b-b" id="workshop" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -864,95 +865,226 @@ table thead {
 
                         <!-- ========== Page 2 ========== -->
 
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-12">
                                 <div class="table-block" style="overflow-x: scroll">
                                     <table>
                                         <thead>
                                             <tr style="height: 40px;">
-                                                <th></th>
-                                                <th colspan="5">Date (Select your availability)</th>
+                                                <th colspan="4" style="text-align: center;">Date (Select your availability)</th>
                                                 <th>Total Nights</th>
                                                 <th>Total Nights Cost</th>
                                             </tr>
                                         </thead>
                                         <tr>
-                                            <td>1.</td>
+                                            <td><input type="checkbox" name="check" value="1"></td>
+                                            <td>Day</td>
                                             <td>Month</td>
-                                            <td>Day</td>
-                                            <td>Month
-                                            <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
-                                            <td>300</td>
+                                            <td>$200</td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>Feb</td>
-                                            <td>10</td>
-                                            <td>Feb</td>
-                                            <td>15</td>
-                                            <td>2023</td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2.</td>
+                                            <td><input type="checkbox" name="check" value="2"></td>
+                                            <td>Day</td>
                                             <td>Month</td>
-                                            <td>Day</td>
-                                            <td>Month
-                                            <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
-                                            <td>300</td>
+                                            <td>$200</td>
+
                                         </tr>
                                         <tr>
-                                            <td>3.</td>
+                                            <td><input type="checkbox" name="check" value="3"></td>
+                                            <td>Day</td>
                                             <td>Month</td>
-                                            <td>Day</td>
-                                            <td>Month
-                                            <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
-                                            <td>300</td>
+                                            <td>$200</td>
+
                                         </tr>
                                         <tr>
-                                            <td>4.</td>
+                                            <td><input type="checkbox" name="check" value="4"></td>
+                                            <td>Day</td>
                                             <td>Month</td>
-                                            <td>Day</td>
-                                            <td>Month
-                                            <td>Day</td>
                                             <td>Year</td>
                                             <td>5 Nights</td>
-                                            <td>300</td>
+                                            <td>$200</td>
+
                                         </tr>
                                     </table>
                                 </div>
-                            </div>
-                        </div>
 
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3>Dates (Select your availability mutiple date are possible)</h3>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td colspan="3">Check in</td>
+                                    <td colspan="3">Check out</td>
+                                    <td>Total Nights</td>
+                                    <td>Total Cost</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select>
+                                            <option>Month</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <select>
+                                            <option>Day</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                            <option>28</option>
+                                            <option>29</option>
+                                            <option>30</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Year</option>
+                                            <option>2023</option>
+                                            <option>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <select>
+                                            <option>Month</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>
+                                    </td>
+
+                                    <td>
+                                        <select>
+                                            <option>Day</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                            <option>28</option>
+                                            <option>29</option>
+                                            <option>30</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Year</option>
+                                            <option>2023</option>
+                                            <option>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                        </select>
+                                    </td>
+                                    <td>5</td>
+                                    <td>300</td>
+                                </tr>
+
+
+
+                            </table><br><br><br>
+                            <button class="btn btn-primary" style="float:right; width:20%">Add More Dates</button>
+                        </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
                         <div class="row">
                             <div class="col-12">
                                 <h3>Other Costs</h3>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Cleaning Fee</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$20</p>
+                                        <!-- <p>$20</p> -->
+                                        <input type="text" placeholder="Enter Cost" class="form-control">
                                     </div>
                                     <div class="col-5">
                                         <p>(We suggest 10% of Booking Cost)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Refundable Security</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$0</p>
+                                        <input type="text" placeholder="Enter Cost" class="form-control">
                                     </div>
                                     <div class="col-5">
                                         <p>(To be retained bu Admin and refunded upon request)</p>
@@ -966,35 +1098,36 @@ table thead {
                         <div class="row">
                             <div class="col-12">
                                 <h3>Total</h3>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Service Fee</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$48</p>
+                                        <input type="text" class="form-control" placeholder="$20" disabled>
                                     </div>
                                     <div class="col-5">
-                                        <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total nightcost
+                                        <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total
+                                            nightcost
                                             + cleaning fee)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Total</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$368</p>
+                                        <input type="text" class="form-control" placeholder="$50" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(What guest will pay)</p>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-sm-3 col-4">
                                         <p>Host income</p>
                                     </div>
                                     <div class="col-2">
-                                        <p>$304</p>
+                                        <input type="text" class="form-control" placeholder="$30" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(After deduction of host fee 5% and guest fee 15%)</p>
@@ -1162,51 +1295,54 @@ table thead {
                                 </div>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
                         <div class="row">
-                            <div class="col-6">
-                                <h3>How it Work</h3>
-                                <ul>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <h3>Cancellation Policy</h3>
-                                <ul>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                                </ul>
+                            <div class="col-lg-12 textarea-block">
+                                <h3>How it Work </h3>
+                                <textarea rows="3" style="width:100%"></textarea>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
                         <div class="row">
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-lg-12 textarea-block">
+                                <h3>Cancellation Policy </h3>
+                                <textarea rows="3" style="width:100%"></textarea>
+                            </div>
+                        </div>
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <h4>Co-Hosts</h4>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                                            padding: 20px; background: #ededed;">
-                                            <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                <div class="row" style="max-width: 70%; margin: auto;">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div
+                                            style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
+                                            <img src="assets/img/avatar.png">
                                         </div>
-                                        <div>
+                                        <div style="text-align: center;padding-top: 10px;">
                                             <h4 class="m-0">Rahul</h4>
                                             <h5>Yoga Trainer</h5>
                                             <p>5 years of experience</p>
                                         </div>
                                     </div>
-                                    <div class="col-6">
-                                        <div style="border: 1px solid; border-radius: 10px; width: 70%;
-                                                            padding: 20px; background: #ededed;">
-                                            <img src="assets/img/avatar.png" style="margin-right: 10px;">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div
+                                            style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
+                                            <img src="assets/img/avatar.png">
                                         </div>
-                                        <div>
+                                        <div style="text-align: center;padding-top: 10px;">
+                                            <h4 class="m-0">Rahul</h4>
+                                            <h5>Yoga Trainer</h5>
+                                            <p>5 years of experience</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div
+                                            style="border: 1px solid;border-radius: 10px;padding: 20px;background: #ededed;display: flex;justify-content: center;">
+                                            <img src="assets/img/avatar.png">
+                                        </div>
+                                        <div style="text-align: center;padding-top: 10px;">
                                             <h4 class="m-0">Rahul</h4>
                                             <h5>Yoga Trainer</h5>
                                             <p>5 years of experience</p>
@@ -1214,7 +1350,9 @@ table thead {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 details-content">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 details-content">
                                 <h3>Media</h3>
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 text-center">
@@ -1232,9 +1370,7 @@ table thead {
                                 </div>
                             </div>
                         </div>
-
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
                         <div class="item-block d-flex justify-content-between">
                             <button class="btn btn-primary">Preview</button>
                             <button class="btn btn-primary">Publish</button>

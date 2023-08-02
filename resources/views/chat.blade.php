@@ -172,66 +172,76 @@
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
                                         <div class="text-box">
-                                         <div class="row">
-                                            <div class="col-7">
-                                                Stay and Learn |
+                                            <div class="row">
+                                                <ul>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                Stay and Learn |
+                                                            </div>
+                                                            <div class="col">
+                                                                2 Adult
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                Feb 5 - 15
+                                                            </div>
+                                                            <div class="col">
+                                                                $ 300
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                Cleaning Fee
+                                                            </div>
+                                                            <div class="col">
+                                                                $ 20
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                Security Deposit <br />
+                                                                (refundable)
+                                                            </div>
+                                                            <div class="col">
+                                                                $ 50
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                Status B&amp;B <br />
+                                                                service fee
+                                                            </div>
+                                                            <div class="col">
+                                                                $ 50
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <b> Total</b>
+                                                            </div>
+                                                            <div class="col">
+                                                                <b> $ 500</b>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col">
-                                                2 Adult
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-7">
-                                               Feb 5 - 15
-                                            </div>
-                                            <div class="col">
-                                                $ 300
-                                            </div>
-                                         </div>
-
-                                         <div class="row">
-                                            <div class="col-7">
-                                               Cleaning Fee
-                                            </div>
-                                            <div class="col">
-                                                $ 20
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-7">
-                                              Security Deposit
-                                            </div>
-                                            <div class="col">
-                                                $ 50
-                                            </div>
-                                         </div>
-                                         <div class="row">
-                                            <div class="col-7">
-                                              Service Fee
-                                            </div>
-                                            <div class="col">
-                                                $ 50
-                                            </div>
-                                         </div>
-<br>
-                                         <div class="row">
-                                            <div class="col-7">
-                                             <b> Total</b>
-                                            </div>
-                                            <div class="col">
-                                              <b>  $ 500</b>
-                                            </div>
-                                         </div><br>
-<button class="btn btn-primary"  data-target="#chatModal" data-toggle="modal"
-                        href="#chatModal">Click to provide your booking details</button>
-
+                                            <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal"
+                                                href="#chatModal">Click to provide your booking details</button>
                                         </div>
                                     </div>
-
-                                    
-
-
-
                                 </div>
                                 <div class="suggested-message">
                                     <span class="messages-suggestions">

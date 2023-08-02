@@ -47,6 +47,7 @@ Route::get('/change-password', [App\Http\Controllers\HostController::class, 'cha
 Route::get('/host/edit-payment-setting', [App\Http\Controllers\HostController::class, 'editPaymentSetting'])->name('editPaymentSetting');
 
 Route::get('/admin-profile', [App\Http\Controllers\AdminController::class, 'adminProfile'])->name('adminProfile');
+Route::get('/admin-create-listing', [App\Http\Controllers\AdminController::class, 'admincreateListing'])->name('admincreateListing');
 Route::get('/edit-admin-profile', [App\Http\Controllers\AdminController::class, 'editadminProfile'])->name('editadminProfile');
 Route::get('/admin-notifications', [App\Http\Controllers\AdminController::class, 'adminNotification'])->name('adminNotification');
 Route::get('/admin-booking', [App\Http\Controllers\AdminController::class, 'adminbooking'])->name('adminbooking');

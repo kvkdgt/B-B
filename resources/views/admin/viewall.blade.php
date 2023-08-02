@@ -529,7 +529,7 @@ input.list-checkbox {
                     </div>
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                        <a href="{{route('createListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
+                        <a href="{{route('admincreateListing')}}" class="btn btn-primary mb-3">Create New Listing</a>
                         <!-- <div class="common-table">
                             <table>
                                 <thead>

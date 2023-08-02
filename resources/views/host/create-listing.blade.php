@@ -507,8 +507,9 @@ table thead {
                             <ul class="sub-menu">
                                 <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -917,16 +918,16 @@ table thead {
                             </div>
                         </div> -->
                         <div class="row">
-                            <table border="1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3>Dates (Select your availability mutiple date are possible)</h3>
+                            </div>
+                            <table>
                                 <tr>
                                     <td colspan="3">Check in</td>
                                     <td colspan="3">Check out</td>
                                     <td>Total Nights</td>
                                     <td>Total Cost</td>
-
-
                                 </tr>
-
                                 <tr>
                                     <td>
                                         <select>
@@ -943,8 +944,6 @@ table thead {
                                             <option>October</option>
                                             <option>November</option>
                                             <option>December</option>
-
-
                                         </select>
                                     </td>
 
@@ -981,10 +980,6 @@ table thead {
                                             <option>28</option>
                                             <option>29</option>
                                             <option>30</option>
-
-
-
-
                                         </select>
                                     </td>
                                     <td>
@@ -994,9 +989,6 @@ table thead {
                                             <option>2024</option>
                                             <option>2025</option>
                                             <option>2026</option>
-
-
-
                                         </select>
                                     </td>
 
@@ -1015,8 +1007,6 @@ table thead {
                                             <option>October</option>
                                             <option>November</option>
                                             <option>December</option>
-
-
                                         </select>
                                     </td>
 
@@ -1053,10 +1043,6 @@ table thead {
                                             <option>28</option>
                                             <option>29</option>
                                             <option>30</option>
-
-
-
-
                                         </select>
                                     </td>
                                     <td>
@@ -1066,9 +1052,6 @@ table thead {
                                             <option>2024</option>
                                             <option>2025</option>
                                             <option>2026</option>
-
-
-
                                         </select>
                                     </td>
                                     <td>5</td>

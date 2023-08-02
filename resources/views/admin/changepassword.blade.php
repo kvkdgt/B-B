@@ -354,7 +354,8 @@ table thead {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -383,10 +384,11 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">

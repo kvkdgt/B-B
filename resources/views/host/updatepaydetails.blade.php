@@ -400,10 +400,11 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                    <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -423,7 +424,7 @@ table thead {
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                        <h4>PAYMENTS &amp; PAYOUTS</h4>
+                        <h4>Request Payout</h4>
                         <div class="search">
                             <button class="btn btn-danger">Delete</button>
                             <input type="text" name="search" placeholder="Search here">

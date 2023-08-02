@@ -458,9 +458,9 @@
                                 </select>
                             </div>
 
-                            <a href="host-dashboard.html" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
-                            <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with stripe</a>
-                            <a href="host-dashboard.html" class="btn btn-primary w-40 p-3">Confirm & pay with paypal</a>
+                            <a href="" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
+                            <a href="" class="btn btn-primary w-40 p-3">Confirm & pay with stripe</a>
+                            <a href="" class="btn btn-primary w-40 p-3">Confirm & pay with paypal</a>
 
                         </form>
                     </div>

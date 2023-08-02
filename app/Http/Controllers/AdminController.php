@@ -14,7 +14,7 @@ class AdminController extends Controller
         return view('admin/host-profile');
     }
 
-    public function createListing(){
+    public function admincreateListing(){
         return view('admin/create-listing');
     }
 

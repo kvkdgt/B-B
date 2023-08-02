@@ -441,8 +441,8 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
@@ -467,7 +467,7 @@ table thead {
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6">
-                    <a href="{{route('createListing')}}"><button class="btn btn-primary"> + Create Listing</button></a>
+                    <a href="{{route('admincreateListing')}}"><button class="btn btn-primary"> + Create Listing</button></a>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">

@@ -349,33 +349,34 @@ table thead {
     }
     </script>
 
-<div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
                 <span class="show-menu"><i class="bi bi-list"></i>
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar">             
+                <div class="page-sidebar">
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Users</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -384,7 +385,7 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                
+
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -393,8 +394,8 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                 <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li>
+                                <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
                             </ul></i>
                         </li>
@@ -403,11 +404,11 @@ table thead {
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                            <li><span>Profile Setting</span></li>
-                                    <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                    <li><span>Update Pages</span></li>
-                                    <li><span>Block IP addresses</span></li>
-                                    <li><span>General Settings</span></li>
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
+                                <li><span>Block IP addresses</span></li>
+                                <li><span>General Settings</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -417,32 +418,32 @@ table thead {
         <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
                 <a href="{{ route('add-new-page') }}" class="btn btn-primary">+ Add New Page</a><br><br>
-            <div class="common-table">
-                                    <table>
-                                        <thead>
-                                            <th>S/No</th>
-                                            <th>CMS Page Name</th>
-                                            <th>Path</th>
-                                            <th>Admin Action</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>01</td>
-                                                <td>Terms & Conditions</td>
-                                                <td>/TermsAndConditions</td>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                            </tr>
-                                            <tr>
-                                            <td>02</td>
-                                                <td>Privacy policy</td>
-                                                <td>/privacy-policy</td>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                            </tr>
-                                          
-                                        </tbody>
-                                    </table>
+                <div class="common-table">
+                    <table>
+                        <thead>
+                            <th>S/No</th>
+                            <th>CMS Page Name</th>
+                            <th>Path</th>
+                            <th>Admin Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Terms & Conditions</td>
+                                <td>/TermsAndConditions</td>
+                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Privacy policy</td>
+                                <td>/privacy-policy</td>
+                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                            </tr>
 
-                                </div>
+                        </tbody>
+                    </table>
+
+                </div>
             </div>
         </div>
 </main>
