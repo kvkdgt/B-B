@@ -527,13 +527,40 @@
         </div>
     </div>
 
-    <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade bd-example-modal-lg" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body form-modal">
                     
                     <div class="content m-5">
-                     
+                     <table border="1">
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>S.No</td>
+                            <td>Listing Link</td>
+                            <td>Host Name</td>
+                            <td>Reporter Name</td>
+                            <td>Location</td>
+                            <td>Subject</td>
+                            <td>Message</td>
+                            <td>Action</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>dummylink.com</td>
+                            <td>Kartik Trivedi</td>
+                            <td>Ketul Trivedi</td>
+                            <td>Mehsana</td>
+                            <td>Testing Demo</td>
+                            <td>Testing Demo</td>
+                            <td>
+                                <a href="#" class="btn btn-primary">Remove Listing</a>
+                                <a href="{{ route('chat') }}" class="btn btn-primary">Chat Host</a>
+
+                            </td>
+                        </tr>
+                     </table>
                     </div>
 
                    
