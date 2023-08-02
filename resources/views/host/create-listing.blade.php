@@ -730,7 +730,7 @@ table thead {
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
-                                                <input type="text" name="b-b" id="workshop" />
+                                                <input type="text" name="b-b" id="workshop" placeholder="enter title here"/>
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
@@ -740,7 +740,7 @@ table thead {
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
-                                                <input type="text" name="b-b" id="workshop" />
+                                                <input type="text" name="b-b" id="workshop" placeholder="enter title here"/>
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
@@ -750,7 +750,7 @@ table thead {
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
-                                                <input type="text" name="b-b" id="workshop" />
+                                                <input type="text" name="b-b" id="workshop" placeholder="enter title here"/>
                                             </div>
                                         </div>
                                     </div>
@@ -837,7 +837,7 @@ table thead {
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
-                                            <input type="text" name="b-b" id="workshop" />
+                                            <input type="text" name="b-b" id="workshop" placeholder="enter title here"/>
                                         </div>
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
@@ -846,7 +846,7 @@ table thead {
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
-                                            <input type="text" name="b-b" id="workshop" />
+                                            <input type="text" name="b-b" id="workshop" placeholder="enter title here" />
                                         </div>
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
@@ -855,7 +855,7 @@ table thead {
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
-                                            <input type="text" name="b-b" id="workshop" />
+                                            <input type="text" name="b-b" id="workshop" placeholder="enter title here"/>
                                         </div>
                                     </div>
                                 </div>

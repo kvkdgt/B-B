@@ -516,7 +516,7 @@ function toggleSubMenu(icon) {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
-                                <h4>Qualification</h4>
+                                <h4>Academic Qualification</h4>
                                 <button class="btn btn-primary">Add More</button>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
