@@ -385,7 +385,7 @@ button.verfied {
                 </span>
                 <div class="page-sidebar">
                     <div class="user-block">
-                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
                     </div>
@@ -417,9 +417,7 @@ button.verfied {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -496,10 +494,10 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                 </div>
                                 <div class="user-img-top">
-                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                 </div>
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -533,10 +531,10 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                 </div>
                                 <div class="user-img-top">
-                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                 </div>
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -570,10 +568,10 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                 </div>
                                 <div class="user-img-top">
-                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                 </div>
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
@@ -607,10 +605,10 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="http://127.0.0.1:8000/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
                                 </div>
                                 <div class="user-img-top">
-                                    <img src="http://127.0.0.1:8000/assets/img/avatar.png">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                 </div>
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">

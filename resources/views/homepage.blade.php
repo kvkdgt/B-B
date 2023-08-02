@@ -109,15 +109,18 @@
     color: green;
 }
 
-.listings .listing-item .sub-main .slider-content a.text-red, .listings .icons a.text-red:hover {
+.listings .listing-item .sub-main .slider-content a.text-red,
+.listings .icons a.text-red:hover {
     color: red;
 }
 
-.listings .listing-item .sub-main .slider-content a.text-green, .listings .icons a.text-green:hover {
+.listings .listing-item .sub-main .slider-content a.text-green,
+.listings .icons a.text-green:hover {
     color: green
 }
 
-.listings .listing-item .sub-main .slider-content a.text-blue, .listings .icons a.text-blue:hover {
+.listings .listing-item .sub-main .slider-content a.text-blue,
+.listings .icons a.text-blue:hover {
     color: blue;
 }
 
@@ -262,8 +265,6 @@
                                 Learn</a>
                             <a href="#tab2" class="text-red" data-toggle="tab" style="margin-right: 20px;">Stay for
                                 event</a>
-                            <a href="#tab3" class="text-blue" data-toggle="tab" style="margin-right: 20px;">Stay for
-                                Teach</a>
                         </div>
 
                     </div>
@@ -278,7 +279,14 @@
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                             <p>Python (Intro)</p>
@@ -307,7 +315,14 @@
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                             <p>Python (Intro)</p>
@@ -339,7 +354,14 @@
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                             <p>Python (Intro)</p>
@@ -371,7 +393,14 @@
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                             <p>Python (Intro)</p>
@@ -407,6 +436,7 @@
                             <a href="#tab2" class="text-red" data-toggle="tab"
                                 style="border-bottom: 2px solid #bfe506; margin-right: 20px; padding-bottom: 7px">Stay
                                 for event</a>
+<<<<<<< HEAD
                             <a href="#tab3" class="text-blue" data-toggle="tab" style="margin-right: 20px;">Stay for
                                 Teach</a>
                         </div>
@@ -530,25 +560,9 @@
                                 </div>
                             </div>
                         </div>
+=======
+>>>>>>> c3332d0808a3cdfa160b561eb9023b65a554d18d
 
-                    </div>
-            </section>
-            <div class="load-more-block">
-                <button type="button" class="load-btn">Load More</button>
-            </div>
-        </div>
-        <div class="tab-pane" id="tab3">
-            <section id="listings" class="listings">
-                <div class="container" data-aos="fade-up">
-                    <div class="mb-4 d-flex align-items-center justify-content-between">
-                        <div class="icons">
-                            <a href="#tab1" class="text-green" data-toggle="tab" style="margin-right: 20px;">Stay &
-                                Learn</a>
-                            <a href="#tab2" class="text-red" data-toggle="tab"
-                                style="margin-right: 20px;">Stay
-                                for event</a>
-                            <a href="#tab3" class="text-blue" data-toggle="tab" style="border-bottom: 2px solid #bfe506; margin-right: 20px; padding-bottom: 7px">Stay for
-                                Teach</a>
                         </div>
                     </div>
                     <div class="row">
@@ -562,8 +576,15 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-blue">Stay and Teach</a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -592,8 +613,15 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-blue">Stay and Teach</a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -621,8 +649,15 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-blue">Stay and Teach</a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                                 <p>Python (Intro)</p>
@@ -650,8 +685,15 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-blue">Stay and Teach</a>
-                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z"></path></svg>
+                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg>
                                         </div>
                                         <div class="inner-content">
                                                 <p>Python (Intro)</p>

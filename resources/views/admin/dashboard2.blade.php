@@ -432,9 +432,7 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -469,7 +467,7 @@ table thead {
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6">
-                        <button class="btn btn-primary"> + Create Listing</button>
+                    <a href="{{route('createListing')}}"><button class="btn btn-primary"> + Create Listing</button></a>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">
@@ -832,7 +830,7 @@ table thead {
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         </div>
                                     </td>
-                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
                                     <td>3Star</td>
                                     <td>Reviews Good B&B</a></td>
                                     <td>Reply</td>
@@ -843,7 +841,7 @@ table thead {
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         </div>
                                     </td>
-                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
                                     <td>2Star</td>
                                     <td>Reviews Fair B&B</a></td>
                                     <td>Reply</td>

@@ -359,11 +359,12 @@ table thead {
                 </span>
                 <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
                 </span>
-                <div class="page-sidebar">             
+                <div class="page-sidebar">
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
@@ -372,7 +373,7 @@ table thead {
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('hostbooking')}}">  <span>Bookings</span> </a>
+                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -392,7 +393,7 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
                                 <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
                                 <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
@@ -418,7 +419,8 @@ table thead {
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6">
-                        <button class="btn btn-primary"> + Create Listing</button>
+                        <a href="{{route('createListing')}}"><button class="btn btn-primary"> + Create
+                                Listing</button></a>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">
@@ -426,18 +428,18 @@ table thead {
                         </form>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6" style="text-align: center;">
-                    <button class="btn button-green" type="button">
-                    <i class="fa-regular fa-bell"></i><span class="badge">10</span>
-                    </button>
+                        <button class="btn button-green" type="button">
+                            <i class="fa-regular fa-bell"></i><span class="badge">10</span>
+                        </button>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-6">
-                    <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <div>
-                            <h4>Kartik Trivedi</h4>
-                            <a href="#">kartik@mailinator.com</a>
+                        <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
+                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                            <div>
+                                <h4>Kartik Trivedi</h4>
+                                <a href="#">kartik@mailinator.com</a>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="row">

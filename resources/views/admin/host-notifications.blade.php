@@ -368,7 +368,7 @@ table thead {
                 </span>
                 <div class="page-sidebar"> 
                     <div class="user-block">
-                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
                     </div>            
@@ -399,9 +399,7 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>

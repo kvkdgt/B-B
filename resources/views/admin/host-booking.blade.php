@@ -361,7 +361,7 @@ table thead {
                 </span>
                 <div class="page-sidebar">
                     <div class="user-block">
-                        <img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="50" height="50">
+                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
                     </div>
@@ -393,9 +393,6 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlistingadmin')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlistingadmin')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -436,8 +433,8 @@ table thead {
                                 <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span>0 ₹</span></li>
-                                <li><span>0 $</span></li>
+                                <li><span>Euro &euro; </span></li>
+                                <li><span>USD $</span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -485,7 +482,7 @@ table thead {
                                     <th>Security Deposit</th>
                                     <th>Guest Service fee</th>
                                     <th>Total Amount</th>
-                                    <th>Pyment</th>
+                                    <th>Payment</th>
                                 </thead>
 
                                 <tbody>
@@ -577,7 +574,6 @@ table thead {
                                         <td>€0</td>
                                         <td>Rejected</td>
                                     </tr>
-
                                 </tbody>
 
                                 <!-- <tfoot>

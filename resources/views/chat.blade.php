@@ -1,40 +1,42 @@
 @extends('hometheme')
 @section('content')
 <style>
-    .chat-person-profile{
-        background-color: #eeeeee !important;
-    }
-    .messages-suggestions {
-        background: #adfe00;
-        padding: 9px;
-        border-radius: 25px;
-    }
+.chat-person-profile {
+    background-color: #eeeeee !important;
+}
 
-    .new-message-count {
-        color: red;
-        font-weight: 600;
-        font-size: 16px !important;
-    }
-    .chat-in-button {
-        margin:5px;
-    }
+.messages-suggestions {
+    background: #adfe00;
+    padding: 9px;
+    border-radius: 25px;
+}
 
-    .message-icon {
-        height: 20px !important;
-        width: 20px;
-    }
+.new-message-count {
+    color: red;
+    font-weight: 600;
+    font-size: 16px !important;
+}
 
-    .card {
-        border-radius: 0px !important;
-        border: 0px !important;
-    }
+.chat-in-button {
+    margin: 5px;
+}
 
-    .send-btn {
-        position: relative;
-        right: 46px;
-        fill: #5e6057;
-        font-size: 17px;
-    }
+.message-icon {
+    height: 20px !important;
+    width: 20px;
+}
+
+.card {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+
+.send-btn {
+    position: relative;
+    right: 46px;
+    fill: #5e6057;
+    font-size: 17px;
+}
 </style>
 
 <main id="main">
@@ -56,7 +58,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
 
                                     </div>
                                 </div>
@@ -64,7 +67,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">1</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">1</span> </p>
 
                                     </div>
                                 </div>
@@ -72,7 +76,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">2</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">2</span> </p>
 
                                     </div>
                                 </div>
@@ -80,14 +85,16 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">6</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">6</span> </p>
 
                                     </div>
                                 </div>
@@ -95,7 +102,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
 
                                     </div>
                                 </div>
@@ -103,7 +111,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
 
                                     </div>
                                 </div>
@@ -111,7 +120,8 @@
                                     <img src="assets/img/team/team-1.jpg" alt="Chat Profile">
                                     <div class="w-100">
                                         <h5>John Doe <span>2 july 2023</span> </h5>
-                                        <p> <span class="new-message-count"><img class="message-icon" src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
+                                        <p> <span class="new-message-count"><img class="message-icon"
+                                                    src="{{env('BASE_URL')}}/assets/img/message.png">5</span> </p>
 
                                     </div>
                                 </div>
@@ -135,45 +145,90 @@
                         <div class="card-body">
                             <div class="chat-section">
                                 <div class="messages">
-                                    <div class="item left">
-                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
+                                    <div class="item right justify-content-end">
+                                        <img src="assets/img/team/team-3.jpg" alt="Receiver">
                                         <div class="text-box">
-                                            <p>Lorum ipsum dolor</p>
+                                            <p>Hey</p>
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
-                                    <div class="item right justify-content-end">
+                                    <div class="item left">
+                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
                                         <div class="text-box">
-                                            <p>Stay and Learn
-                                                <hr>
-                                                Check-in date: 08/20/2023<br>
-                                                Check-out este 06/30/2023<br>
-                                                Total Days. 10<br>
-                                                <br>
-                                                price per night: C00<br>
-                                                Total Nights: euro 3000<br>
-                                                Discount @ 5% €150<br>
-                                                Cleaning Fee: 39<br>
-                                                Service fee: cA6t<br>
-                                                Other Fee: 0<br>
-                                                No of Guess: 1<br>
-                                                <br>
-                                                Total Amount: 3501<br><br>
-                                                <div class="">
-                                                <a class="chat-in-button btn btn-pill btn-danger">Withdraw Booking</a><br>
-                                                <a class="chat-in-button btn btn-pill btn-primary">Edit Booking</a><br>
-                                                <a class="chat-in-button btn btn-pill btn-danger" style="    background-color: green !important;
-    border: 0px;">Confirmed & Proceed</a>
-
-                                                </div>
-                                               
-                                                <hr>
-
-                                            </p>
-                                            <span>01:10 PM</span>
+                                            <p>Hello</p>
+                                            <span>01:05 PM</span>
                                         </div>
-                                        <img src="assets/img/team/team-3.jpg" alt="Receiver">
                                     </div>
+                                    <div class="item left">
+                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
+                                        <div class="text-box">
+                                            <p>Selected Dates</p>
+                                            <span>Feb 6-10 : 300$</span><br>
+                                            <span>Feb 6-10 : 300$</span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="item left">
+                                        <img src="assets/img/team/team-1.jpg" alt="Sender">
+                                        <div class="text-box">
+                                         <div class="row">
+                                            <div class="col-7">
+                                                Stay and Learn |
+                                            </div>
+                                            <div class="col">
+                                                2 Adult
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                               Feb 5 - 15
+                                            </div>
+                                            <div class="col">
+                                                $ 300
+                                            </div>
+                                         </div>
+
+                                         <div class="row">
+                                            <div class="col-7">
+                                               Cleaning Fee
+                                            </div>
+                                            <div class="col">
+                                                $ 20
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                              Security Deposit
+                                            </div>
+                                            <div class="col">
+                                                $ 50
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                            <div class="col-7">
+                                              Service Fee
+                                            </div>
+                                            <div class="col">
+                                                $ 50
+                                            </div>
+                                         </div>
+<br>
+                                         <div class="row">
+                                            <div class="col-7">
+                                             <b> Total</b>
+                                            </div>
+                                            <div class="col">
+                                              <b>  $ 500</b>
+                                            </div>
+                                         </div><br>
+<button class="btn btn-primary"  data-target="#chatModal" data-toggle="modal"
+                        href="#chatModal">Click to provide your booking details</button>
+
+                                        </div>
+                                    </div>
+
+                                    
 
 
 
@@ -195,8 +250,10 @@
                                     <input type="text" disabled placeholder="Select suggested message"">
                                     <span class=" send-btn">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                        <path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
                                     </svg>
                                     </span>
                                     <!-- <button data-target=" #signUpModal" data-toggle="modal" class="btn btn-primary-outline">Login / Signup required to type message</button>
@@ -217,12 +274,13 @@
                             <h4>about John Doe </h4>
                         </div>
                         <div class="card-body listings">
-                        <img style="height:40" src="assets/img/team/team-1.jpg" alt="Chat Profile">
+                            <img style="height:40" src="assets/img/team/team-1.jpg" alt="Chat Profile">
 
-                            <span style="font-size:20;font-weight:600">John Doe</span><hr>
-                           Date of Join : Dec 20, 2022<br>
-                           <a href="" style="color:blue">View Profile</a>&nbsp;|
-                           <a href="" style="color:blue">Reviews</a>
+                            <span style="font-size:20;font-weight:600">John Doe</span>
+                            <hr>
+                            Date of Join : Dec 20, 2022<br>
+                            <a href="" style="color:blue">View Profile</a>&nbsp;|
+                            <a href="" style="color:blue">Reviews</a>
 
                         </div>
                     </div>

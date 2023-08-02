@@ -347,8 +347,8 @@ function updateSelectedActivities() {
                                     <ul class="sub-menu">
                                         <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                         <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li>
-                                        <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
-                                    </ul></i>
+        <li><a href="{{route('paydetail')}}"><span>Update pay Details</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                                    </ul></i>
                                 </li>
                                 <li class="dropdown">
                                     <div onclick="toggleSubMenu(this)">
@@ -379,13 +379,13 @@ function updateSelectedActivities() {
                                 <div class="col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="fname">First Name</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="nehu" required />
+                                        <input type="text" id="fname" class="form-control" placeholder="first name" required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                        <input type="text" id="lname" class="form-control" placeholder="last name" required />
                                     </div>
                                 </div>
                                 <div class="col-12">
