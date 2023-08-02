@@ -747,7 +747,7 @@ table thead {
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         </div>
                                     </td>
-                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
                                     <td>3Star</td>
                                     <td>Reviews Good B&B</a></td>
                                     <td>Reply</td>
@@ -758,7 +758,7 @@ table thead {
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         </div>
                                     </td>
-                                    <td><img src="http://127.0.0.1:8000/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
                                     <td>2Star</td>
                                     <td>Reviews Fair B&B</a></td>
                                     <td>Reply</td>
