@@ -365,6 +365,10 @@ input.list-checkbox {
     left: -7px;
 }
 
+td a.btn {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
