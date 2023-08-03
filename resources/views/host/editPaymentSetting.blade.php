@@ -356,12 +356,9 @@ table thead {
 
     <div class="row">
 
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                <span class="show-menu"><i class="bi bi-list"></i>
-                </span>
-                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                </span>
+
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -377,7 +374,6 @@ table thead {
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
                         </li>
                         <li class="dropdown">

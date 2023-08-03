@@ -60,6 +60,9 @@ Route::get('/admin-pay-details', [App\Http\Controllers\AdminController::class, '
 Route::get('/users', [App\Http\Controllers\AdminController::class, 'users'])->name('users');
 Route::get('/cms', [App\Http\Controllers\AdminController::class, 'cmsListing'])->name('cms');
 Route::get('/add-new-page', [App\Http\Controllers\AdminController::class, 'addNewPage'])->name('add-new-page');
+Route::get('/admin-change-password', [App\Http\Controllers\AdminController::class, 'adminchangepassword'])->name('adminchangepassword');
+Route::get('/admin-profile-setting', [App\Http\Controllers\AdminController::class, 'adminprofilesetting'])->name('adminprofilesetting');
+
 
 
 

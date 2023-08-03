@@ -355,10 +355,7 @@ table thead {
 
     <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                <span class="show-menu"><i class="bi bi-list"></i>
-                </span>
-                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                </span>
+
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -368,12 +365,12 @@ table thead {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -397,10 +394,11 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">

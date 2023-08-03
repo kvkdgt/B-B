@@ -355,12 +355,9 @@ table thead {
 
     <div class="row">
 
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                <span class="show-menu"><i class="bi bi-list"></i>
-                </span>
-                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                </span>
+
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -370,12 +367,12 @@ table thead {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -399,10 +396,11 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                     <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-<li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>                            </ul></i>
+                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                            </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -422,72 +420,72 @@ table thead {
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>PAYMENTS &amp; PAYOUTS</h4>
-                            <div class="search">
-                                <button class="btn btn-danger">Delete</button>
-                                <input type="text" name="search" placeholder="Search here">
-                                <i class="bx bx-search"></i>
-                            </div>
+                        <h4>PAYMENTS &amp; PAYOUTS</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
                         </div>
-                        <div class="card-body">
-                            <div class="common-table">
-                                <table>
-                                    <thead>
-                                        <th></th>
-                                        <th>Date</th>
-                                        <th>Listing Name</th>
-                                        <th>Host Name</th>
-                                        <th>Host Email</th>
-                                        <th>Guest Name</th>
-                                        <th>Guest Email</th>
-                                        <th>Country</th>
-                                        <th>Check In</th>
-                                        <th>Check Out</th>
-                                        <th>Total Nights</th>
-                                        <th>Booking ID</th>
-                                        <th>Service fee</th>
-                                        <th>Other fee</th>
-                                        <th>Security Deposit</th>
-                                        <th>Total Cost</th>
-                                        <th>Net Income</th>
-                                        <th>Total Payout</th>
-                                        <th>Action</th>
-                                    </thead>
+                    </div>
+                    <div class="card-body">
+                        <div class="common-table">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Listing Name</th>
+                                    <th>Host Name</th>
+                                    <th>Host Email</th>
+                                    <th>Guest Name</th>
+                                    <th>Guest Email</th>
+                                    <th>Country</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Total Nights</th>
+                                    <th>Booking ID</th>
+                                    <th>Service fee</th>
+                                    <th>Other fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Total Cost</th>
+                                    <th>Net Income</th>
+                                    <th>Total Payout</th>
+                                    <th>Action</th>
+                                </thead>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </td>
-                                            <td>25/03/2023</td>
-                                            <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                            <td><a href="host-profile.html">Host Name</a></td>
-                                            <td>host@gmail.com</td>
-                                            <td><a href="host-profile.html">Guest Name</a></td>
-                                            <td>guest@gmail.com</td>
-                                            <td>Germany</td>
-                                            <td>03/04/2023</td>
-                                            <td>09/04/2023</td>
-                                            <td>08</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€495</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>
-                                                <a href="#"><i class="fa fa-eye"></i></a>
-                                                <a href="chat.html"><i class="fa fa-dollar"></i></a>
-                                                <a href="#"><i class="fa fa-print"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>25/03/2023</td>
+                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                        <td><a href="host-profile.html">Host Name</a></td>
+                                        <td>host@gmail.com</td>
+                                        <td><a href="host-profile.html">Guest Name</a></td>
+                                        <td>guest@gmail.com</td>
+                                        <td>Germany</td>
+                                        <td>03/04/2023</td>
+                                        <td>09/04/2023</td>
+                                        <td>08</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€495</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-eye"></i></a>
+                                            <a href="chat.html"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-print"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
-                                    <!-- <tfoot>
+                                <!-- <tfoot>
                                         <th></th>
                                         <th>Date</th>
                                         <th>Listing Name</th>
@@ -508,14 +506,14 @@ table thead {
                                         <th>Total Payout</th>
                                         <th>Action</th>
                                     </tfoot> -->
-                                </table>
+                            </table>
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 

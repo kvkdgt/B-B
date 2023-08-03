@@ -339,12 +339,9 @@ table thead {
     </script>
 
     <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                <span class="show-menu"><i class="bi bi-list"></i>
-                </span>
-                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                </span>
+
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -358,14 +355,19 @@ table thead {
                                     class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
-                                <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
+                            </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -373,32 +375,35 @@ table thead {
                                 <span>All Listing</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+
                             </ul>
                         </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                                <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
+                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+
                             </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                            <ul class="sub-menu">
-                                <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
-                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                             <ul class="sub-menu">
+                                <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
+                                <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
+                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
+                                <!-- <li><span>Block IP addresses</span></li> -->
                             </ul>
                         </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>

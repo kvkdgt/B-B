@@ -315,64 +315,68 @@ function updateSelectedActivities() {
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i
                                     class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div onclick="toggleSubMenu(this)">
+                                <span>All Listing</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
-                                <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
-                                <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
+                                <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
+
                             </ul>
                         </li>
+                        <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
-                                <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
+                                <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
+                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+
                             </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                            <ul class="sub-menu">
-                                <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
-                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
-                                <li><span><a href="#">Delete my Account</a></span></li>
+                             <ul class="sub-menu">
+                                <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
+                                <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
+                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
+                                <!-- <li><span>Block IP addresses</span></li> -->
                             </ul>
                         </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </div>
         </div>
             <div class="col-lg-10 col-md-9 col-sm-9 col-12">
                 <div class="page-content">
-                    <div class="error-block d-flex align-items-center justify-content-between">
-                        <p class="m-0">Please verify your identity.</p>
-                        <button class="btn btn-primary">Verify</button>
-                    </div>
                     <div class="d-flex align-items-center justify-content-between m-4">
-                        <h3 class="m-0">Edit Profile</h3>
-                        <a href="#" class="btn btn-primary">ID # VTRULYR9</a>
+                        <h3 class="m-0">Profile Setting</h3>
+                        <!-- <a href="#" class="btn btn-primary">ID # VTRULYR9</a> -->
                     </div>
                     <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                     <form action="">
@@ -593,7 +597,7 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
-                                <h4>Academic Qualification</h4>
+                                <h4>Qualification</h4>
                                 <div class="col-sm-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>

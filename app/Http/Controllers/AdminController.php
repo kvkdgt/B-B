@@ -13,6 +13,9 @@ class AdminController extends Controller
     public function adminProfile(){
         return view('admin/host-profile');
     }
+    public function adminprofilesetting(){
+        return view('admin/profilesetting');
+    }
 
     public function admincreateListing(){
         return view('admin/create-listing');
@@ -43,7 +46,7 @@ class AdminController extends Controller
     }  public function paydetail(){
         return view('admin/updatepaydetails');
     }
-    public function changepassword(){
+    public function adminchangepassword(){
         return view('admin/changepassword');
     }
 

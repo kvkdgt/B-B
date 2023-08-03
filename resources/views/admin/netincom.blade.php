@@ -354,38 +354,35 @@ table thead {
     </script>
 
     <div class="row">
-
-        <div class="col-lg-2 col-md-3 col-sm-3">
+    <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                <span class="show-menu"><i class="bi bi-list"></i>
-                </span>
-                <span class="hide-menu"><i class="fa-solid fa-xmark"></i>
-                </span>
-                <div class="page-sidebar"> 
+
+                <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                         <h4>Kartik Trivedi</h4>
                         <a href="#">kartik@mailinator.com</a>
-                    </div>            
+                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
+                                <span><a href="{{route('admindashboard')}}">Admin Dashboard</a></span> <i
+                                    class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
                                 <li><span><a href="{{route('adminNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
-                        
+
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('adminbooking')}}">  <span>Bookings</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Bookings</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                            <a href="{{route('users')}}">  <span>Users</span> </a>
+                                <a href="{{route('users')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -394,7 +391,7 @@ table thead {
                             </div>
                             <ul class="sub-menu">
                                 <li><span><a href="{{route('alllistingadmin')}}">View All</a></li>
-                                
+
                             </ul>
                         </li>
                         <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
@@ -403,128 +400,99 @@ table thead {
                                 <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                  <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
+                                <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetailadmin')}}"><span>Update pay Details</span></a></li>
+                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+
                             </ul></i>
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                            <ul class="sub-menu">
-                                <li><span>Profile Setting</span></li>
-                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Update Pages</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>FAQ</span></li>
-                                        <li><span>Safety Tips</span></li>
-                                        <li><span>How it works</span></li>
-                                        <li><span>Privacy</span></li>
-                                        <li><span>Terms</span></li>
-                                        <li><span>About us</span></li>
-                                    </ul>
-                                </li>
-                            </li>
-                                <li><span>Block IP addresses</span></li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Currency</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>0 ₹</span></li>
-                                        <li><span>0 $</span></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <div onclick="toggleSubMenu(this)">
-                                        <span>Default Langauage</span> <i class="fa-solid fa-caret-right"></i>
-                                    </div>
-                                    <ul class="sub-menu">
-                                        <li><span>English</span></li>
-                                        <li><span>French</span></li>
-                                        <li><span>German</span></li>
-                                    </ul>
-                                </li>
+                             <ul class="sub-menu">
+                                <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
+                                <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
+                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
+                                <!-- <li><span>Block IP addresses</span></li> -->
                             </ul>
                         </li>
                     </ul>
-                </div>  
+                    </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col-md-9 col-lg-10 col-sm-9 col-12">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                            <h4>PAYMENTS &amp; PAYOUTS</h4>
-                            <div class="search">
-                                <button class="btn btn-danger">Delete</button>
-                                <input type="text" name="search" placeholder="Search here">
-                                <i class="bx bx-search"></i>
-                            </div>
+                        <h4>PAYMENTS &amp; PAYOUTS</h4>
+                        <div class="search">
+                            <button class="btn btn-danger">Delete</button>
+                            <input type="text" name="search" placeholder="Search here">
+                            <i class="bx bx-search"></i>
                         </div>
-                        <div class="card-body">
-                            <div class="common-table">
-                                <table>
-                                    <thead>
-                                        <th></th>
-                                        <th>Date</th>
-                                        <th>Listing Name</th>
-                                        <th>Host Name</th>
-                                        <th>Host Email</th>
-                                        <th>Guest Name</th>
-                                        <th>Guest Email</th>
-                                        <th>Country</th>
-                                        <th>Check In</th>
-                                        <th>Check Out</th>
-                                        <th>Total Nights</th>
-                                        <th>Booking ID</th>
-                                        <th>Service fee</th>
-                                        <th>Other fee</th>
-                                        <th>Security Deposit</th>
-                                        <th>Total Cost</th>
-                                        <th>Net Income</th>
-                                        <th>Total Payout</th>
-                                        <th>Action</th>
-                                    </thead>
+                    </div>
+                    <div class="card-body">
+                        <div class="common-table">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Listing Name</th>
+                                    <th>Host Name</th>
+                                    <th>Host Email</th>
+                                    <th>Guest Name</th>
+                                    <th>Guest Email</th>
+                                    <th>Country</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Total Nights</th>
+                                    <th>Booking ID</th>
+                                    <th>Service fee</th>
+                                    <th>Other fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Total Cost</th>
+                                    <th>Net Income</th>
+                                    <th>Total Payout</th>
+                                    <th>Action</th>
+                                </thead>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </td>
-                                            <td>25/03/2023</td>
-                                            <td><a href="detail.html">Stay &amp; Learn</a></td>
-                                            <td><a href="host-profile.html">Host Name</a></td>
-                                            <td>host@gmail.com</td>
-                                            <td><a href="host-profile.html">Guest Name</a></td>
-                                            <td>guest@gmail.com</td>
-                                            <td>Germany</td>
-                                            <td>03/04/2023</td>
-                                            <td>09/04/2023</td>
-                                            <td>08</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>€495</td>
-                                            <td>€49</td>
-                                            <td>€49</td>
-                                            <td>
-                                                <a href="#"><i class="fa fa-eye"></i></a>
-                                                <a href="chat.html"><i class="fa fa-dollar"></i></a>
-                                                <a href="#"><i class="fa fa-print"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                            </div>
+                                        </td>
+                                        <td>25/03/2023</td>
+                                        <td><a href="detail.html">Stay &amp; Learn</a></td>
+                                        <td><a href="host-profile.html">Host Name</a></td>
+                                        <td>host@gmail.com</td>
+                                        <td><a href="host-profile.html">Guest Name</a></td>
+                                        <td>guest@gmail.com</td>
+                                        <td>Germany</td>
+                                        <td>03/04/2023</td>
+                                        <td>09/04/2023</td>
+                                        <td>08</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>€495</td>
+                                        <td>€49</td>
+                                        <td>€49</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-eye"></i></a>
+                                            <a href="chat.html"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-print"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
-                                    <!-- <tfoot>
+                                <!-- <tfoot>
                                         <th></th>
                                         <th>Date</th>
                                         <th>Listing Name</th>
@@ -545,14 +513,14 @@ table thead {
                                         <th>Total Payout</th>
                                         <th>Action</th>
                                     </tfoot> -->
-                                </table>
+                            </table>
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
