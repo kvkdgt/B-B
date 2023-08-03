@@ -479,7 +479,7 @@ table thead {
                                         <td>€49</td>
                                         <td>
                                             <a href="#"><i class="fa fa-eye"></i></a>
-                                            <a href="chat.html"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-dollar"></i></a>
                                             <a href="#"><i class="fa fa-print"></i></a>
                                         </td>
                                     </tr>
