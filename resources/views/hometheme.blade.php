@@ -14,7 +14,9 @@
     <link href="{{env('BASE_URL')}}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <!-- <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link
@@ -200,6 +202,9 @@
 
     .rate>input:checked~label {
         color: #ffc700;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
     }
 
     .rate:not(:checked)>label:hover,

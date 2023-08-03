@@ -345,6 +345,7 @@ table thead {
 }
 .chat-button{
 background-color: #1DA1F2;
+border-radius: 22px;
 }
 .listing-card .listing-item .sub-main .footer a {
     color:white;

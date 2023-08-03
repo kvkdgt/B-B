@@ -458,7 +458,7 @@
                                             </p>
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <p>$300</p>
+                                            <p>€300</p>
                                             <p>
                                                 <span>&nbsp;18 </span>&nbsp;Reviews
                                             </p>

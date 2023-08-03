@@ -9,6 +9,11 @@
     font-weight: 700;
 }
 
+.adult-bold{
+    font-size: 16px;
+    font-weight: 600px;
+}
+
 .text-last {
     text-align: right;
 }
@@ -99,6 +104,8 @@
 
 .text-red {
     color: red;
+    font-size: 20px;;
+
 }
 
 .text-blue {
@@ -107,6 +114,7 @@
 
 .text-green {
     color: green;
+    font-size: 20px;;
 }
 
 .listings .listing-item .sub-main .slider-content a.text-red,
@@ -292,7 +300,7 @@
                                             <p><b>Python (Intro)</b></p>
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
-                                            <p>150 | 2 Adult Guests</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -328,7 +336,7 @@
                                             <p><b>Python (Intro)</b></p>
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
-                                            <p>150 | 2 Adult Guests</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -367,7 +375,7 @@
                                             <p><b>Python (Intro)</b></p>
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
-                                            <p>150 | 2 Adult Guests</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -406,7 +414,7 @@
                                             <p><b>Python (Intro)</b></p>
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
-                                            <p>150 | 2 Adult Guests</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -464,7 +472,7 @@
                                                 <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
                                             </div>
                                     </div>
@@ -501,7 +509,7 @@
                                                 <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
                                             </div>
                                     </div>
@@ -537,7 +545,7 @@
                                                 <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
                                             </div>
                                     </div>
@@ -573,7 +581,7 @@
                                                 <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
                                             </div>
                                     </div>
