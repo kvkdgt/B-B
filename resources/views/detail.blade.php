@@ -1205,7 +1205,7 @@
                                         <h3 class="m-0">Total</h3>
                                         <p class="m-0">€268</p>
                                     </div>
-                                    <a href="chat.html" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
+                                    <a href="{{route('chat')}}" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
                                 </div>
                             </div>
                             <div data-target="#report-modal" data-toggle="modal" href="#report-modal"

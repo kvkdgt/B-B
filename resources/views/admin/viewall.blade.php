@@ -343,9 +343,11 @@ table thead {
     color: #000;
     margin: 0 0 15px;
 }
-
+.chat-button{
+background-color: #1DA1F2;
+}
 .listing-card .listing-item .sub-main .footer a {
-    color: #1DA1F2;
+    color: white;
     font-weight: 500;
     font-size: 18px;
     margin: auto 0;

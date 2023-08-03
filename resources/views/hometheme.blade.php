@@ -379,7 +379,7 @@
                                     href="{{route ('terms')}}">FAQ &amp;
                                     Conditions</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="privacy.html">Safety Tips</a></li>
+                                    href="{{route('safety')}}">Safety Tips</a></li>
                         </ul>
 
                         <i class="fa-brands fa-cc-paypal"></i>

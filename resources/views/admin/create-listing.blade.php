@@ -9,6 +9,9 @@
 .listings h4 {
     margin: 0 0 10px;
 }
+.second-tr:hover{
+background-color: white !important;
+}
 
 .host-block {
     /* border: 1px solid rgba(0, 0, 0, 0.5);
@@ -928,7 +931,7 @@ table thead {
                                     <td>Total Cost</td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td class="second-tr">
                                         <select>
                                             <option>Month</option>
                                             <option>January</option>
@@ -946,7 +949,7 @@ table thead {
                                         </select>
                                     </td>
 
-                                    <td>
+                                    <td class="second-tr">
                                         <select>
                                             <option>Day</option>
                                             <option>1</option>

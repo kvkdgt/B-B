@@ -5,7 +5,9 @@
 .profile {
     padding: 25px 0 10px;
 }
-
+.second-tr:hover{
+background-color: white !important;
+}
 .listings h4 {
     margin: 0 0 10px;
 }
@@ -922,13 +924,13 @@ table thead {
                                 <h3>Dates (Select your availability mutiple date are possible)</h3>
                             </div>
                             <table>
-                                <tr>
+                                <tr class="second-tr">
                                     <td colspan="3">Check in</td>
                                     <td colspan="3">Check out</td>
                                     <td>Total Nights</td>
                                     <td>Total Cost</td>
                                 </tr>
-                                <tr>
+                                <tr class="second-tr">
                                     <td>
                                         <select>
                                             <option>Month</option>
