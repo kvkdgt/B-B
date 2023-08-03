@@ -338,7 +338,7 @@ ul.menu li.dropdown.active i {
 
                                         <!-- Other Info -->
                                         <div class="sidebar">
-                                            <a href="chat.html" class="btn btn-primary w-100">Chat with
+                                            <a href="{{ route('chat') }}" class="btn btn-primary w-100">Chat with
                                                 Me</a>
                                         </div>
 
@@ -481,7 +481,7 @@ ul.menu li.dropdown.active i {
                                                     </div>
                                                 </div>
                                                 <div class="footer chat-button">
-                                                    <a href="{{env('BASE_URL')}}chat">Chat Now</a>
+                                                    <a href="{{ route('chat') }}">Chat Now</a>
                                                 </div>
                                                 <div class="user-img-top">
                                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
@@ -526,7 +526,7 @@ ul.menu li.dropdown.active i {
                                                     </div>
                                                 </div>
                                                 <div class="footer chat-button">
-                                                    <a href="{{env('BASE_URL')}}chat">Chat Now</a>
+                                                    <a href="{{ route('chat') }}">Chat Now</a>
                                                 </div>
                                                 <div class="user-img-top">
                                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
