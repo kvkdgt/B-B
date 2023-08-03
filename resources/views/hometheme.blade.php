@@ -364,12 +364,12 @@
                         <!-- <h4></h4> -->
                         <ul>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('about')}}">Terms</a></li>
+                                    href="{{route ('terms')}}">Terms</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('safety')}}">Privacy Policy</a>
+                                    href="{{route ('privacy')}}">Privacy Policy</a>
                             </li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('blogs')}}">Careers</a></li>
+                                    href="{{route ('career')}}">Careers</a></li>
                         </ul>
 
                         <i class="fa-brands fa-stripe"></i>
@@ -379,9 +379,9 @@
                         <!-- <h4>Our Services</h4> -->
                         <ul>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('career')}}">About Us</a></li>
+                                    href="{{route ('about')}}">About Us</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('terms')}}">FAQ &amp;
+                                    href="/faq">FAQ &amp;
                                     Conditions</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
                                     href="{{route('safety')}}">Safety Tips</a></li>
@@ -393,9 +393,9 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i class="fa-brands fa-facebook"></i>&nbsp;<a href="{{route ('career')}}">Facebook</a>
+                            <li><i class="fa-brands fa-facebook"></i>&nbsp;<a href="https://www.facebook.com">Facebook</a>
                             </li>
-                            <li><i class="fa-brands fa-twitter"></i> &nbsp;<a href="{{route ('terms')}}">Twitter</a>
+                            <li><i class="fa-brands fa-twitter"></i> &nbsp;<a href="https://www.twitter.com">Twitter</a>
                             </li>
                         </ul>
                     </div>

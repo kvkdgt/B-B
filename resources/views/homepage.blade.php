@@ -11,7 +11,7 @@
 
 .adult-bold{
     font-size: 16px;
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .text-last {
