@@ -624,40 +624,51 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
-
-                            <div class="col-sm-12">
-                                <h4>Co-Host</h4>
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="fname">First Name</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="nehu"
-                                            required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="nee" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="profile">Profile Image</label>
-                                        <div class="file-wrapper">
-                                            <button type="button"><i class="fa-solid fa-camera"></i></button>
-                                            <input type="file" id="profile" class="form-control" required />
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h4>Co-Host</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" id="fname" class="form-control" placeholder="nehu"
+                                                    required />
+                                            </div>
+                                            <label for="email">Area of Experince</label>
+                                            <select id="state">
+                                                <option value="state"> 2020</option>
+                                                <option value="state">2021</option>
+                                                <option value="state">2022</option>
+                                            </select>
                                         </div>
-                                    </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                            </div>
+                                            <label for="email">Years of Experince</label>
+                                            <select id="state">
+                                                <option value="state"> 2020</option>
+                                                <option value="state">2021</option>
+                                                <option value="state">2022</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="form-group">
+                                                <label for="profile">Profile Image</label>
+                                                <div class="file-wrapper">
+                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <input type="file" id="profile" class="form-control" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <button class="btn btn-primary">Add More</button>
+                                            </span>
+                                        </div>        
+                                    </div>                        
                                 </div>
-                                <div class="col-md-4 col-12">
-                                    <label for="email">Years of Experince</label>
-                                    <select id="state">
-                                        <option value="state"> 2020</option>
-                                        <option value="state">2021</option>
-                                        <option value="state">2022</option>
-                                    </select>
-                                    <label for="as">As</label>
-                                    <input type="text" id="lname" class="form-control" placeholder="" required />
-                                </div>
-                                <span class="d-flex align-items-center justify-content-center">
-                                    <button class="btn btn-primary">Add More</button>
-                                </span>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 

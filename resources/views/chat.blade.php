@@ -37,6 +37,63 @@
     fill: #5e6057;
     font-size: 17px;
 }
+
+.slideLeft {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideRight {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .categories {
+    position: relative;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.categories {
+    width: 90%;
+    margin: auto;
+}
+
+.icon-box .button-green {
+    background: #bee500;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.icon-box .button-green:hover {
+    background: #bee500;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 5px;
+}
+
 </style>
 
 <main id="main">
@@ -147,21 +204,21 @@
                                 <div class="messages">
                                     <div class="item right justify-content-end">
                                         <img src="assets/img/team/team-3.jpg" alt="Receiver">
-                                        <div class="text-box">
+                                        <div class="text-box py-4">
                                             <p>Hey</p>
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
-                                        <div class="text-box">
+                                        <div class="text-box py-4">
                                             <p>Hello</p>
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
-                                        <div class="text-box">
+                                        <div class="text-box py-4">
                                             <p>Selected Dates</p>
                                             <span>Feb 6-10 : 300$</span><br>
                                             <span>Feb 6-10 : 300$</span>
@@ -171,8 +228,8 @@
 
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
-                                        <div class="text-box">
-                                            <div class="row">
+                                        <div class="text-box py-4">
+                                            <!-- <div class="row">
                                                 <ul>
                                                     <li>
                                                         <div class="row">
@@ -237,13 +294,25 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div> -->
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <h5 class="m-0">Cleaning Fee</h5>
+                                                <p class="m-0">€30</p>
+                                            </div>
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <h5 class="m-0">Security Deposite</h5>
+                                                <p class="m-0">€15</p>
+                                            </div>
+                                            <div class="item d-flex align-items-center justify-content-between">
+                                                <h5 class="m-0">Service Fee</h5>
+                                                <p class="m-0">€33</p>
                                             </div>
                                             <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal"
                                                 href="#chatModal">Click to provide your booking details</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="suggested-message">
+                                <!-- <div class="suggested-message">
                                     <span class="messages-suggestions">
                                         Good Morning
                                     </span>&nbsp;
@@ -253,10 +322,33 @@
                                     <span class="messages-suggestions">
                                         What is the price?
                                     </span>
-                                </div>
+                                </div> -->
+                                <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="slideLeft">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="categories d-flex overflow-auto aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-box">
+                    <button class="btn button-green"><a href="">Good Morning</a></button>
+                </div>
+                <div class="icon-box">
+                    <button class="btn button-green"><a href="">i need to book B&B</a></button>
+                </div>
+                <div class="icon-box">
+                    <button class="btn button-green"><a href="">What is the price?</a></button>
+                </div>
+                <div class="icon-box">
+                    <button class="btn button-green"><a href="">What is the price?</a></button>
+                </div>
+            </div>
+            <div class="slideRight">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
                                 <div class="send-message">
-                                    <!--                                    <input type="text" name="message" placeholder="Type your message here">-->
-                                    <!--                                    <a data-target="#optionsModal" data-toggle="modal" href="#optionsModal">Login / Signup required to type message in the text field</a>-->
+                                    <!-- <input type="text" name="message" placeholder="Type your message here">-->
+                                    <!-- <a data-target="#optionsModal" data-toggle="modal" href="#optionsModal">Login / Signup required to type message in the text field</a>-->
                                     <input type="text" disabled placeholder="Select suggested message"">
                                     <span class=" send-btn">
 

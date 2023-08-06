@@ -719,7 +719,7 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
-                            <div class="d-flex align-items-center justify-content-between">
+                            <!-- <div class="d-flex align-items-center justify-content-between">
                                 <div class="col-sm-12">
                                     <h4>Media</h4>
                                     <div class="col-md-3 col-sm-6">
@@ -742,7 +742,67 @@ function updateSelectedActivities() {
                                     </div>
                                     <button class="btn btn-primary">Add More</button>
                                 </div>
+                            </div> -->
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4>Media</h4>
                             </div>
+                            <div class="row">
+                            <div class="col-md-3 col-sm-6 image-block text-center">
+                                <div class="form-group">
+                                    <div class="file-wrapper">
+                                        <button type="button"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <input type="file" id="profile" class="form-control" required />
+                                    </div>
+                                </div>
+                                <input type="text" name="b-b" id="workshop" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 image-block text-center">
+                                <div class="form-group">
+                                    <div class="file-wrapper">
+                                        <button type="button"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <input type="file" id="profile" class="form-control" required />
+                                    </div>
+                                </div>
+                                <input type="text" name="b-b" id="workshop" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 image-block text-center">
+                                <div class="form-group">
+                                    <div class="file-wrapper">
+                                        <button type="button"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <input type="file" id="profile" class="form-control" required />
+                                    </div>
+                                </div>
+                                <input type="text" name="b-b" id="workshop" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 image-block text-center">
+                                <button class="btn btn-primary">Add More</button>
+                            </div>
+                        </div>
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                            <div class="row">
+                            <div class="col-lg-12 textarea-block">
+                                <h3>How it Work </h3>
+                                <!-- <textarea rows="3" style="width:100%"></textarea> -->
+                                <ul><li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                    <li>There are many variations of passages of Lorem Ipsum available</li>
+                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                        <div class="row">
+                            <div class="col-lg-12 textarea-block">
+                                <h3>Cancellation Policy </h3>
+                                <!-- <textarea rows="3" style="width:100%"></textarea> -->
+                                <ul><li>There are many variations of passages of Lorem Ipsum available</li>
+                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                    <li>There are many variations of passages of Lorem Ipsum available</li>
+                                </ul>
+                            </div>
+                        </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
                                 <input type="submit" class="btn btn-primary update-btn form-control" value="Update" />

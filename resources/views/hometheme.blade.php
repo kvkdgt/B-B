@@ -368,8 +368,8 @@
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
                                     href="{{route ('privacy')}}">Privacy Policy</a>
                             </li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="{{route ('career')}}">Careers</a></li>
+                            <!-- <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('career')}}"> &amp;</a></li> -->
                         </ul>
 
                         <i class="fa-brands fa-stripe"></i>
@@ -381,8 +381,7 @@
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
                                     href="{{route ('about')}}">About Us</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
-                                    href="/faq">FAQ &amp;
-                                    Conditions</a></li>
+                                    href="/faq">FAQ</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
                                     href="{{route('safety')}}">Safety Tips</a></li>
                         </ul>

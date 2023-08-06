@@ -443,6 +443,24 @@ table thead {
                                 <td>/privacy-policy</td>
                                 <td><a href="#" class="btn btn-primary">Edit</a></td>
                             </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>FAQ</td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Safety Tips</td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>About Us</td>
+                                <td></td>
+                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                            </tr>
 
                         </tbody>
                     </table>

@@ -552,10 +552,10 @@ table thead {
                                 <h3 class="m-0">Listing Name</h3>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="text" />
+                                <input type="text" placeholder="Python (Intro)"/>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="text" />
+                                <input type="text" placeholder="Oktoberfest (Munich)" />
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
@@ -642,7 +642,7 @@ table thead {
                                     <div class="d-flex align-items-center justify-content-between">
                                     </div>
                                     <div class="details-content">
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-4 col-sm-6 text-center">
                                                 <img src="assets/img/hotels/hotel-2.png">
                                             </div>
@@ -652,15 +652,70 @@ table thead {
                                             <div class="col-md-4 col-sm-6 text-center">
                                                 <img src="assets/img/hotels/hotel-3.png">
                                             </div>
-                                            <div class="col-md-4 col-sm-6 text-center">
-                                                <!-- <img src="assets/img/hotels/hotel-3.png">-->
+                                        </div> -->
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
                                             </div>
-
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6 image-block text-center">
+                                                <div class="form-group">
+                                                    <div class="file-wrapper">
+                                                        <button type="button"><i
+                                                                class="fa-solid fa-camera"></i></button>
+                                                        <input type="file" id="profile" class="form-control" required />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                        
                         <div class="row">
                             <div class="col-lg-8 col-md-12">
                                 <h3>Location </h3>
@@ -1059,11 +1114,8 @@ table thead {
                                         </select>
                                     </td>
                                     <td>5</td>
-                                    <td>300</td>
+                                    <td>&#8364; 300</td>
                                 </tr>
-
-
-
                             </table><br><br><br>
                             <button class="btn btn-primary" style="float:right; width:20%">Add More Dates</button>
                         </div>
@@ -1304,7 +1356,11 @@ table thead {
                         <div class="row">
                             <div class="col-lg-12 textarea-block">
                                 <h3>How it Work </h3>
-                                <textarea rows="3" style="width:100%"></textarea>
+                                <!-- <textarea rows="3" style="width:100%"></textarea> -->
+                                <ul><li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                    <li>There are many variations of passages of Lorem Ipsum available</li>
+                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
@@ -1312,11 +1368,15 @@ table thead {
                         <div class="row">
                             <div class="col-lg-12 textarea-block">
                                 <h3>Cancellation Policy </h3>
-                                <textarea rows="3" style="width:100%"></textarea>
+                                <!-- <textarea rows="3" style="width:100%"></textarea> -->
+                                <ul><li>There are many variations of passages of Lorem Ipsum available</li>
+                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                    <li>There are many variations of passages of Lorem Ipsum available</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                        <div class="row">
+                        <!-- <div class="row">
                             <div class="col-md-12">
                                 <h4>Co-Hosts</h4>
                                 <div class="row" style="max-width: 70%; margin: auto;">
@@ -1374,8 +1434,8 @@ table thead {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                        </div> -->
+                        <!-- <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div> -->
                         <div class="item-block d-flex justify-content-between">
                             <button class="btn btn-primary">Preview</button>
                             <button class="btn btn-primary">Publish</button>

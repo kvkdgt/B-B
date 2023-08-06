@@ -368,6 +368,11 @@ input.list-checkbox {
     left: -7px;
 }
 
+.adult-bold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -518,18 +523,18 @@ input.list-checkbox {
                                                 </svg>
                                             </div>
                                             <div class="inner-content">
-                                                <p>Python (Intro)</p>
+                                                <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
-                                                <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p>
+                                                <!-- <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p> -->
                                             </div>
                                         </div>
-                                        <div class="footer chat-button">
+                                        <!-- <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
-                                        </div>
+                                        </div> -->
                                         <div class="user-img-top">
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
@@ -557,18 +562,18 @@ input.list-checkbox {
                                                 </svg>
                                             </div>
                                             <div class="inner-content">
-                                                <p>Python (Intro)</p>
+                                                <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p>
+                                                <!-- <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p> -->
                                             </div>
                                         </div>
-                                        <div class="footer chat-button">
+                                        <!-- <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
-                                        </div>
+                                        </div> -->
                                         <div class="user-img-top">
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
@@ -596,18 +601,18 @@ input.list-checkbox {
                                                 </svg>
                                             </div>
                                             <div class="inner-content">
-                                                <p>Python (Intro)</p>
+                                                <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p>
+                                                <!-- <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p> -->
                                             </div>
                                         </div>
-                                        <div class="footer chat-button">
+                                        <!-- <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
-                                        </div>
+                                        </div> -->
                                         <div class="user-img-top">
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>
@@ -635,18 +640,18 @@ input.list-checkbox {
                                                 </svg>
                                             </div>
                                             <div class="inner-content">
-                                                <p>Python (Intro)</p>
+                                                <p><b>Python (Intro)</b></p>
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
-                                                <p>150 | 2 Adult Guests</p>
+                                                <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p>
+                                                <!-- <p>Date Created | 02/05/2023</p>
+                                                <p>No of time saved | 20</p> -->
                                             </div>
                                         </div>
-                                        <div class="footer chat-button">
+                                        <!-- <div class="footer chat-button">
                                             <a href="{{route('chat')}}">Chat Now</a>
-                                        </div>
+                                        </div> -->
                                         <div class="user-img-top">
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         </div>

@@ -289,7 +289,7 @@
         cursor: pointer;
     }
 
-    .edit-profile-block {
+    /* .edit-profile-block {
         height: 100vh;
         overflow-x: hidden;
     }
@@ -305,7 +305,7 @@
     .edit-profile-block::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 10px;
-    }
+    } */
 
     .host-content p {
         font-size: 18px;
@@ -320,6 +320,11 @@
         justify-content: center;
         gap: 30px;
     }
+
+    button.show-more {
+    background: #bee500;
+    color: #000;
+}
     </style>
 
 

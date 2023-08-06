@@ -284,6 +284,10 @@ footer#footer {
     display: none;
 }
 
+input[readonly] {
+    background-color: #fff !important;
+}
+
 table thead {
     background: #bee500 !important;
 }

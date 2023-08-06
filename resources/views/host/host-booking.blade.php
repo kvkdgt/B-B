@@ -298,7 +298,7 @@ footer#footer {
     display: none;
 }
 
-table thead {
+table thead, table tfoot {
     background: #bee500 !important;
 }
 
@@ -538,25 +538,22 @@ table thead {
 
                                 </tbody>
 
-                                <!-- <tfoot>
-                                <th>S/No</th>
-                                <th>Date</th>
-                                <th>Listing Name</th>
-                                <th>Host Profile</th>
-                                <th>Country</th>
-                                <th>Guest Name</th>
-                                <th>Guest Email</th>
-                                <th>Check In</th>
-                                <th>Check Out</th>
-                                <th>Total Nights</th>
-                                <th>Status</th>
-                                <th>Service fee</th>
-                                <th>Other fee</th>
-                                <th>Security Deposit</th>
-                                <th>Revenue</th>
-                                <th>Total Payout</th>
-                                <th>Action</th>
-                            </tfoot> -->
+                                <thead>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Listing Name</th>
+                                    <th>Booking ID</th>
+                                    <th>Guest Name</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Status</th>
+                                    <th>Cost</th>
+                                    <th>Cleaning fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Guest Service fee</th>
+                                    <th>Total Amount</th>
+                                    <th>Payment</th>
+                                </thead>
                             </table>
 
                         </div>
