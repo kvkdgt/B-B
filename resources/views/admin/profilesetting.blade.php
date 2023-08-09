@@ -402,7 +402,7 @@ function updateSelectedActivities() {
                                 <div class="form-group">
                                     <label for="profile">Profile Image</label>
                                     <div class="file-wrapper">
-                                        <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                    <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -648,7 +648,7 @@ function updateSelectedActivities() {
                                     <div class="form-group">
                                         <label for="profile">Profile Image</label>
                                         <div class="file-wrapper">
-                                            <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                             <input type="file" id="profile" class="form-control" required />
                                         </div>
                                     </div>
@@ -750,8 +750,7 @@ function updateSelectedActivities() {
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <div class="form-group">
                                     <div class="file-wrapper">
-                                        <button type="button"><i
-                                                class="fa-solid fa-camera"></i></button>
+                                    <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -760,8 +759,7 @@ function updateSelectedActivities() {
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <div class="form-group">
                                     <div class="file-wrapper">
-                                        <button type="button"><i
-                                                class="fa-solid fa-camera"></i></button>
+                                       <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -770,8 +768,7 @@ function updateSelectedActivities() {
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <div class="form-group">
                                     <div class="file-wrapper">
-                                        <button type="button"><i
-                                                class="fa-solid fa-camera"></i></button>
+                                       <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>

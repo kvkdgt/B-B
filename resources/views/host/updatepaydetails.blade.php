@@ -284,7 +284,7 @@ footer#footer {
     display: none;
 }
 
-table thead {
+table thead, table tfoot {
     background: #bee500 !important;
 }
 
@@ -302,6 +302,7 @@ table thead {
 .search {
     position: relative;
 }
+
 
 @media screen and (max-width: 767px) {
     .page-sidebar {
@@ -422,7 +423,7 @@ table thead {
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h4>Request Payout</h4>
                         <div class="search">
-                            <button class="btn btn-danger">Delete</button>
+                            <!-- <button class="btn btn-danger">Delete</button> -->
                             <input type="text" name="search" placeholder="Search here">
                             <i class="bx bx-search"></i>
                         </div>
@@ -433,7 +434,7 @@ table thead {
                                 <thead>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
+                                    <th> Listing Name link</th>
                                     <th>Host Name</th>
                                     <th>Host Email</th>
                                     <th>Guest Name</th>
@@ -441,9 +442,10 @@ table thead {
                                     <th>Country</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Total Nights</th>
+                                    <th>No of Nights</th>
                                     <th>Booking ID</th>
                                     <th>Service fee</th>
+                                    <th>Cleaning Fee</th>
                                     <th>Other fee</th>
                                     <th>Security Deposit</th>
                                     <th>Total Cost</th>
@@ -474,6 +476,7 @@ table thead {
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€49</td>
+                                        <td>€49</td>
                                         <td>€495</td>
                                         <td>€49</td>
                                         <td>€49</td>
@@ -485,10 +488,10 @@ table thead {
                                     </tr>
                                 </tbody>
 
-                                <!-- <tfoot>
+                                <thead>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
+                                    <th> Listing Name link</th>
                                     <th>Host Name</th>
                                     <th>Host Email</th>
                                     <th>Guest Name</th>
@@ -496,16 +499,17 @@ table thead {
                                     <th>Country</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Total Nights</th>
+                                    <th>No of Nights</th>
                                     <th>Booking ID</th>
                                     <th>Service fee</th>
+                                    <th>Cleaning Fee</th>
                                     <th>Other fee</th>
                                     <th>Security Deposit</th>
                                     <th>Total Cost</th>
                                     <th>Net Income</th>
                                     <th>Total Payout</th>
                                     <th>Action</th>
-                                </tfoot> -->
+                                </thead>
                             </table>
 
                         </div>
