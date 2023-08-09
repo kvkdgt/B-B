@@ -1061,7 +1061,7 @@ table thead {
                                             <option>2026</option>
                                         </select>
                                     </td>
-                                    <td>5</td>
+                                    <td>&#8364; 5</td>
                                     <td>&#8364; 300</td>
                                 </tr>
 

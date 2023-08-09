@@ -1167,6 +1167,7 @@
                                                     <label>Select dates</label>
                                                     <select class="js-example-basic-multiple" name="states[]"
                                                         multiple="multiple" readonly>
+                                                        <option value="" selected disabled hidden>Multiple Dates can be booked</option>
                                                         <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
                                                         <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
                                                         <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
@@ -1210,7 +1211,7 @@
                                         <h3 class="m-0">Total</h3>
                                         <p class="m-0">€268</p>
                                     </div>
-                                    <a href="{{route('chat')}}" class="btn btn-primary w-100 mt-5 mb-5">Chat with Host</a>
+                                    <a href="{{route('chat')}}" class="btn  w-100 mt-5 mb-5" style="background:#bee500 !important;">Reserve</a>
                                 </div>
                             </div>
                             <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
