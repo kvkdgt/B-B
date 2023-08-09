@@ -5,9 +5,11 @@
 .profile {
     padding: 25px 0 10px;
 }
-.second-tr:hover{
-background-color: white !important;
+
+.second-tr:hover {
+    background-color: white !important;
 }
+
 .listings h4 {
     margin: 0 0 10px;
 }
@@ -448,8 +450,19 @@ table thead {
 
     <script>
     function toggleLearnDiv() {
-        var learnCheckbox = document.getElementById("learn");
+        var learnCheckbox = document.getElementById("event");
         var learnDiv = document.getElementById("learnDiv");
+
+        if (!learnCheckbox.checked) {
+            learnDiv.style.display = "block";
+        } else {
+            learnDiv.style.display = "none";
+        }
+    }
+
+    function toggleListDiv() {
+        var learnCheckbox = document.getElementById("learn");
+        var learnDiv = document.getElementById("listdiv");
 
         if (learnCheckbox.checked) {
             learnDiv.style.display = "block";
@@ -457,12 +470,18 @@ table thead {
             learnDiv.style.display = "none";
         }
     }
+
+
+    function toggleDiv() {
+        toggleListDiv();
+        toggleLearnDiv();
+    }
     </script>
 
 
 
     <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
 
                 <div class="page-sidebar">
@@ -538,12 +557,11 @@ table thead {
                                 <h3 class="m-0">Title of Listing</h3>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="radio" id="learn" name="stay" value="learn" onclick="toggleLearnDiv()"
-                                    checked>
+                                <input type="radio" id="learn" name="stay" value="learn" onclick="toggleDiv()" checked>
                                 <label for="learn">Stay & Learn</label>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="radio" id="event" name="stay" value="event" onclick="toggleLearnDiv()">
+                                <input type="radio" id="event" name="stay" value="event" onclick="toggleDiv()">
                                 <label for="event">Stay For Event</label>
                             </div>
                         </div>
@@ -552,9 +570,9 @@ table thead {
                                 <h3 class="m-0">Listing Name</h3>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <input type="text" placeholder="Python (Intro)"/>
+                                <input type="text" placeholder="Python (Intro)" />
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="col-lg-4 col-md-6 col-sm-6" id="listdiv">
                                 <input type="text" placeholder="Oktoberfest (Munich)" />
                             </div>
                         </div>
@@ -579,53 +597,57 @@ table thead {
                                 </div>
                             </div>
                         </div>
-                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                         <!--  Listing Property Type  -->
-                        <div class="guest-location" id="learnDiv">
-                            <h3>What guest will learn (only for stay & learn)</h3>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" placeholder="Location 1">
-                                </div>
-                                <div class="col">
-                                    <input type="text" placeholder="Location 2">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" placeholder="Location 3">
-                                </div>
-                                <div class="col">
-                                    <input type="text" placeholder="Location 4">
-                                </div>
-                            </div>
-                        </div>
 
+                        <div id="learnDiv">
+                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
-                        <div class="item location-block">
-                            <h3>Learn Location (Where is the Learning Place? Select one)</h3>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="checkbox" name="b-b" value="only" id="only">
-                                    <label for="only">B&B only</label>
+                            <div class="guest-location">
+                                <h3>What guest will learn (only for stay & learn)</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="Location 1">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="Location 2">
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="checkbox" name="b-b" value="office" id="office">
-                                    <label for="office">B&B and office</label>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="checkbox" name="b-b" value="farm" id="farm">
-                                    <label for="farm">B&B and farm</label>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="checkbox" name="b-b" id="outdoor" value="outdoor">
-                                    <label for="outdoor">B&B and outdoor</label>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <input type="checkbox" name="b-b" id="workshop" value="workshop">
-                                    <label for="workshop">B&B and in the workshop</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" placeholder="Location 3">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" placeholder="Location 4">
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="item location-block">
+                                <h3>Learn Location (Where is the Learning Place? Select one)</h3>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="checkbox" name="b-b" value="only" id="only">
+                                        <label for="only">B&B only</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="checkbox" name="b-b" value="office" id="office">
+                                        <label for="office">B&B and office</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="checkbox" name="b-b" value="farm" id="farm">
+                                        <label for="farm">B&B and farm</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="checkbox" name="b-b" id="outdoor" value="outdoor">
+                                        <label for="outdoor">B&B and outdoor</label>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <input type="checkbox" name="b-b" id="workshop" value="workshop">
+                                        <label for="workshop">B&B and in the workshop</label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                         <div class="row">
@@ -657,8 +679,8 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -666,8 +688,8 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -675,8 +697,8 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -684,8 +706,8 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -693,8 +715,8 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -702,12 +724,12 @@ table thead {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
-                                                        <input type="file" id="profile" class="form-control" required />
+                                                        <button type="button"><i class="fa-regular fa-square-plus"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -715,7 +737,7 @@ table thead {
                         </div>
 
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                        
+
                         <div class="row">
                             <div class="col-lg-8 col-md-12">
                                 <h3>Location </h3>
@@ -778,8 +800,8 @@ table thead {
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -789,8 +811,8 @@ table thead {
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -800,8 +822,8 @@ table thead {
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"><i
-                                                                class="fa-solid fa-camera"></i></button>
+                                                        <button type="button"
+                                                            style="background:#bee500 !important">Uploade Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -889,7 +911,8 @@ table thead {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                        Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
@@ -899,7 +922,8 @@ table thead {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                        Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
@@ -909,7 +933,8 @@ table thead {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                        Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
@@ -976,148 +1001,158 @@ table thead {
 
                             </div>
                         </div> -->
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Dates (Select your availability mutiple date are possible)</h3>
+                        </div>
                         <div class="row">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h3>Dates (Select your availability mutiple date are possible)</h3>
+                            <div class="table-block">
+                                <table>
+                                    <thead>
+                                        <tr style="height: 40px;">
+                                            <td colspan="3">Check in</td>
+                                            <td colspan="3">Check out</td>
+                                            <td>Total Nights</td>
+                                            <td>Total Cost</td>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td>
+                                            <select>
+                                                <option>Month</option>
+                                                <option>January</option>
+                                                <option>February</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>August</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select>
+                                                <option>Year</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select>
+                                                <option>Month</option>
+                                                <option>January</option>
+                                                <option>February</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>August</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select>
+                                                <option>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select>
+                                                <option>Year</option>
+                                                <option>2023</option>
+                                                <option>2024</option>
+                                                <option>2025</option>
+                                                <option>2026</option>
+                                            </select>
+                                        </td>
+
+                                        <td>5</td>
+
+                                        <td>&#8364; 300</td>
+                                    </tr>
+                                </table>
                             </div>
-                            <table>
-                                <tr class="second-tr">
-                                    <td colspan="3">Check in</td>
-                                    <td colspan="3">Check out</td>
-                                    <td>Total Nights</td>
-                                    <td>Total Cost</td>
-                                </tr>
-                                <tr class="second-tr">
-                                    <td>
-                                        <select>
-                                            <option>Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>August</option>
-                                            <option>September</option>
-                                            <option>October</option>
-                                            <option>November</option>
-                                            <option>December</option>
-                                        </select>
-                                    </td>
 
-                                    <td>
-                                        <select>
-                                            <option>Day</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select>
-                                            <option>Year</option>
-                                            <option>2023</option>
-                                            <option>2024</option>
-                                            <option>2025</option>
-                                            <option>2026</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select>
-                                            <option>Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>August</option>
-                                            <option>September</option>
-                                            <option>October</option>
-                                            <option>November</option>
-                                            <option>December</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select>
-                                            <option>Day</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select>
-                                            <option>Year</option>
-                                            <option>2023</option>
-                                            <option>2024</option>
-                                            <option>2025</option>
-                                            <option>2026</option>
-                                        </select>
-                                    </td>
-                                    <td>5</td>
-                                    <td>&#8364; 300</td>
-                                </tr>
-                            </table><br><br><br>
-                            <button class="btn btn-primary" style="float:right; width:20%">Add More Dates</button>
+                            <button class="btn btn-primary"
+                                style="float:right; width:20% ; background:#bee500 !important">Add More
+                                Dates</button>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
@@ -1357,7 +1392,8 @@ table thead {
                             <div class="col-lg-12 textarea-block">
                                 <h3>How it Work </h3>
                                 <!-- <textarea rows="3" style="width:100%"></textarea> -->
-                                <ul><li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                                <ul>
+                                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
                                     <li>There are many variations of passages of Lorem Ipsum available</li>
                                     <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
                                 </ul>
@@ -1369,7 +1405,8 @@ table thead {
                             <div class="col-lg-12 textarea-block">
                                 <h3>Cancellation Policy </h3>
                                 <!-- <textarea rows="3" style="width:100%"></textarea> -->
-                                <ul><li>There are many variations of passages of Lorem Ipsum available</li>
+                                <ul>
+                                    <li>There are many variations of passages of Lorem Ipsum available</li>
                                     <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
                                     <li>There are many variations of passages of Lorem Ipsum available</li>
                                 </ul>
@@ -1437,8 +1474,8 @@ table thead {
                         </div> -->
                         <!-- <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div> -->
                         <div class="item-block d-flex justify-content-between">
-                            <button class="btn btn-primary">Preview</button>
-                            <button class="btn btn-primary">Publish</button>
+                            <button class="btn btn-primary" style="background:#bee500 !important">Preview</button>
+                            <button class="btn btn-primary" style="background:#bee500 !important">Publish</button>
                         </div>
                     </div>
                 </div>

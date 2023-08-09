@@ -377,7 +377,6 @@ ul.menu li.dropdown.active i {
                                 <div class="d-flex align-items-center justify-content-between">
                                     <h3 style="margin: 0 0 10px;">About Me</h3>
                                 </div>
-                                <h6>Joined in 2018</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
                                     eget nisi

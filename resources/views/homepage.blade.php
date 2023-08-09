@@ -9,7 +9,7 @@
     font-weight: 700;
 }
 
-.adult-bold{
+.adult-bold {
     font-size: 16px;
     font-weight: 600;
 }
@@ -104,7 +104,8 @@
 
 .text-red {
     color: red;
-    font-size: 20px;;
+    font-size: 22px;
+    ;
 
 }
 
@@ -114,7 +115,8 @@
 
 .text-green {
     color: green;
-    font-size: 20px;;
+    font-size: 22px;
+    ;
 }
 
 .listings .listing-item .sub-main .slider-content a.text-red,
@@ -286,7 +288,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
+                                                                                     <a href="{{route('detail')}}" style="font-size: 22px;" class="text-green">Stay and Learn </a>
+
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -301,6 +304,11 @@
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
                                             <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -322,7 +330,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
+                                                                                     <a href="{{route('detail')}}" style="font-size: 22px;" class="text-green">Stay and Learn </a>
+
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -337,6 +346,11 @@
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
                                             <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -361,7 +375,8 @@
 
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
+                                                                                     <a href="{{route('detail')}}" style="font-size: 22px;" class="text-green">Stay and Learn </a>
+
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -376,6 +391,11 @@
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
                                             <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -400,7 +420,7 @@
 
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-green">Stay and Learn </a>
+                                            <a href="{{route('detail')}}" style="font-size: 22px;" class="text-green">Stay and Learn </a>
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -415,6 +435,11 @@
                                             <p>Paris, France | 10km away</p>
                                             <p> Dec 20 - Dec 28, 2023</p>
                                             <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                             <p><b>428 Reviews</b></p>
                                         </div>
                                     </div>
@@ -458,7 +483,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <a href="{{route('detail')}}" style="font-size: 22px;" class="text-red">Stay
+                                                for Event</a>
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -469,12 +495,17 @@
                                             </svg>
                                         </div>
                                         <div class="inner-content">
-                                                <p><b>Python (Intro)</b></p>
-                                                <p>Paris, France | 10km away</p>
-                                                <p> Dec 20 - Dec 28, 2023</p>
-                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
-                                            </div>
+                                            <p><b>Python (Intro)</b></p>
+                                            <p>Paris, France | 10km away</p>
+                                            <p> Dec 20 - Dec 28, 2023</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <p><b>428 Reviews</b></p>
+                                        </div>
                                     </div>
                                     <!-- <div class="footer chat-button">
                                         <a href="{{route('chat')}}">Chat Now</a>
@@ -495,7 +526,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <a href="{{route('detail')}}" style="font-size: 22px;" class="text-red">Stay
+                                                for Event</a>
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -506,12 +538,17 @@
                                             </svg>
                                         </div>
                                         <div class="inner-content">
-                                                <p><b>Python (Intro)</b></p>
-                                                <p>Paris, France | 10km away</p>
-                                                <p> Dec 20 - Dec 28, 2023</p>
-                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
-                                            </div>
+                                            <p><b>Python (Intro)</b></p>
+                                            <p>Paris, France | 10km away</p>
+                                            <p> Dec 20 - Dec 28, 2023</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <p><b>428 Reviews</b></p>
+                                        </div>
                                     </div>
                                     <!-- <div class="footer chat-button">
                                         <a href="{{route('chat')}}">Chat Now</a>
@@ -531,7 +568,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <a href="{{route('detail')}}" style="font-size: 22px;" class="text-red">Stay
+                                                for Event</a>
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -542,12 +580,17 @@
                                             </svg>
                                         </div>
                                         <div class="inner-content">
-                                                <p><b>Python (Intro)</b></p>
-                                                <p>Paris, France | 10km away</p>
-                                                <p> Dec 20 - Dec 28, 2023</p>
-                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
-                                            </div>
+                                            <p><b>Python (Intro)</b></p>
+                                            <p>Paris, France | 10km away</p>
+                                            <p> Dec 20 - Dec 28, 2023</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <p><b>428 Reviews</b></p>
+                                        </div>
                                     </div>
                                     <!-- <div class="footer chat-button">
                                         <a href="{{route('chat')}}">Chat Now</a>
@@ -567,7 +610,8 @@
                                     </div>
                                     <div class="slider-content">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <a href="{{route('detail')}}" class="text-red">Stay for Event</a>
+                                            <a href="{{route('detail')}}" style="font-size: 22px;" class="text-red">Stay
+                                                for Event</a>
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                                                 viewBox="0 0 24 24" height="1em" width="1em"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -578,12 +622,17 @@
                                             </svg>
                                         </div>
                                         <div class="inner-content">
-                                                <p><b>Python (Intro)</b></p>
-                                                <p>Paris, France | 10km away</p>
-                                                <p> Dec 20 - Dec 28, 2023</p>
-                                                <p class="adult-bold">€150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
-                                            </div>
+                                            <p><b>Python (Intro)</b></p>
+                                            <p>Paris, France | 10km away</p>
+                                            <p> Dec 20 - Dec 28, 2023</p>
+                                            <p class="adult-bold">€150 | 2 Adult Guests</p>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <p><b>428 Reviews</b></p>
+                                        </div>
                                     </div>
                                     <!-- <div class="footer chat-button">
                                         <a href="{{route('chat')}}">Chat Now</a>

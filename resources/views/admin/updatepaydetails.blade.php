@@ -354,7 +354,7 @@ table thead {
     </script>
 
     <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
 
                 <div class="page-sidebar">
@@ -402,7 +402,7 @@ table thead {
                             <ul class="sub-menu">
                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
-                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
 
                             </ul></i>
                         </li>
@@ -410,7 +410,7 @@ table thead {
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                             <ul class="sub-menu">
+                            <ul class="sub-menu">
                                 <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
                                 <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
