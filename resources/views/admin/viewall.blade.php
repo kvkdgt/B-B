@@ -581,7 +581,11 @@ td a.btn {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p>150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
                                                 <p><button class="btn btn-danger" data-target="#reportModal"
@@ -622,7 +626,11 @@ td a.btn {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p>150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
                                                 <p><button class="btn btn-danger">Read Report</button></p>
@@ -662,7 +670,11 @@ td a.btn {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p>150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
                                                 <p><button class="btn btn-danger">Read Report</button></p>
@@ -702,7 +714,11 @@ td a.btn {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p>150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <p>Date Created | 02/05/2023</p>
                                                 <p>No of time saved | 20</p>
                                                 <p><button class="btn btn-danger">Read Report</button></p>

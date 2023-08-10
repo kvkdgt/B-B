@@ -634,34 +634,39 @@ function updateSelectedActivities() {
                                 <div class="col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="fname">First Name</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="nehu"
+                                        <input type="text" id="fname" class="form-control" placeholder="First Name"
                                             required />
                                     </div>
                                     <div class="form-group">
                                         <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                        <input type="text" id="lname" class="form-control" placeholder="Last Name" required />
                                     </div>
                                     <div class="form-group">
                                         <label for="profile">Profile Image</label>
                                         <div class="file-wrapper">
                                             <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                             <input type="file" id="profile" class="form-control" required />
+                                            
                                         </div>
+                                      
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-12">
                                     <label for="email">Years of Experince</label>
                                     <select id="state">
+                                    <option value="" selected disabled> Select Years of experince</option>
+
                                         <option value="state"> 2020</option>
                                         <option value="state">2021</option>
                                         <option value="state">2022</option>
                                     </select>
                                     <label for="as">As</label>
                                     <input type="text" id="lname" class="form-control" placeholder="As" required />
-                                </div>
-                                <span class="d-flex align-items-center justify-content-center">
+                                    <span class="d-flex align-items-center justify-content-center">
                                     <button class="btn btn-primary">Add More</button>
                                 </span>
+                                </div>
+                                
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 

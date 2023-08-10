@@ -1310,8 +1310,7 @@ table thead th:last-child {
                                             <option>2026</option>
                                         </select>
                                     </td>
-                                    <td>&#8364; 5</td>
-                                    <td>&#8364; 300</td>
+                                   
                                 </tr>
 
 

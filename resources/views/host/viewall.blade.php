@@ -533,7 +533,11 @@ input.list-checkbox {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p class="adult-bold">€150 | 2 Adult Guests</p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <div class="clr-gray">
                                                     <p>Date Created | 02/05/2023</p>
                                                     <p>No of time saved | 20</p>
@@ -574,7 +578,11 @@ input.list-checkbox {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <div class="clr-gray">
                                                     <p>Date Created | 02/05/2023</p>
                                                     <p>No of time saved | 20</p>
@@ -615,7 +623,11 @@ input.list-checkbox {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <div class="clr-gray">
                                                     <p>Date Created | 02/05/2023</p>
                                                     <p>No of time saved | 20</p>
@@ -656,7 +668,11 @@ input.list-checkbox {
                                                 <p>Paris, France | 10km away</p>
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
-                                                <p><b>428 Reviews</b></p>
+                                                <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span><b>428 Reviews</b>
                                                 <div class="clr-gray">
                                                     <p>Date Created | 02/05/2023</p>
                                                     <p>No of time saved | 20</p>

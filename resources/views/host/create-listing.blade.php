@@ -1277,8 +1277,7 @@ table thead th {
                                             <option>2026</option>
                                         </select>
                                     </td>
-                                    <td>&#8364; 5</td>
-                                    <td>&#8364; 300</td>
+                                   
                                 </tr>
                             </table><br><br><br>
                             <button class="btn btn-primary" style="float:right; width:20%">Add More Dates</button>
