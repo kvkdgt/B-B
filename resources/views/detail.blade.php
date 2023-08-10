@@ -833,47 +833,49 @@
                                 <h4><i class="fa-solid fa-location-dot"></i> Instructional Material</h4>
                             </div>
                             <div class="details-content">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Interactive Broadband
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Computers
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>VR Headset
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Gamification & App's
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>3D Printing
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Online
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Textbooks
-                                        </p>
-                                    </div><div class="col-lg-6 col-md-6 col-sm-6">
-                                        <p>
-                                            <i class="fa-solid fa-check" style="margin-right: 10px;"></i>Samples & models
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-globe" style="margin-right: 10px;"></i>Interactive Broadband
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-laptop" style="margin-right: 10px;"></i>Computers
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-vr-cardboard" style="margin-right: 10px;"></i>VR Headset
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-gamepad" style="margin-right: 10px;"></i>Gamification & Apps
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-cube" style="margin-right: 10px;"></i>3D Printing
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-wifi" style="margin-right: 10px;"></i>Online
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-book" style="margin-right: 10px;"></i>Textbooks
+        </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <p>
+            <i class="fa-solid fa-flask" style="margin-right: 10px;"></i>Samples & Models
+        </p>
+    </div>
+</div>
+
                             </div>
                         </div>
                         <hr>
