@@ -589,14 +589,14 @@ table thead {
                                             <td>1</td>
                                             <td>2/8/22</td>
                                             <td>18</td>
-                                            <td>2</td>
+                                            <td><progress id="file" value="2" max="5"> 2 </progress>&nbsp;2 of 5</td>
                                             <td>Unblock</td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>2/8/22</td>
                                             <td>18</td>
-                                            <td>3</td>
+                                            <td><progress id="file" value="5" max="5"> 5 </progress>&nbsp;5 of 5</td>
                                             <td>Block</td>
                                         </tr>
                                     </tbody>

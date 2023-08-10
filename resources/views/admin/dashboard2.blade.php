@@ -254,6 +254,15 @@ ul.sub-menu li:last-child {
     margin: 0;
     padding: 7px;
 }
+progress::-webkit-progress-bar {
+  background-color: yellow;
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: blue;
+  border-radius: 7px;
+  box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+}
 
 /* .container {
     max-width: 1600px;
@@ -642,7 +651,7 @@ table thead {
                                                 <td>02/08/2020</td>
                                                 <td>Rahul</td>
                                                 <td>02</td>
-                                                <td>04</td>
+                                                <td><progress id="file" value="2" max="5"> 2 </progress>&nbsp;2 of 5</td>
                                                 <td><div class="TriSea-technologies-Switch">
                                                     <input id="TriSeaSuccess" name="TriSea1" type="checkbox"/>
                                                     <label for="TriSeaSuccess" class="label-success"></label>
@@ -653,7 +662,7 @@ table thead {
                                                 <td>02/08/2020</td>
                                                 <td>Rahul</td>
                                                 <td>02</td>
-                                                <td>04</td>
+                                                <td><progress id="file" value="4" max="5"> 4 </progress>&nbsp;4 of 5</td>
                                                 <td><div class="TriSea-technologies-Switch">
                                                     <input id="TriSeaSuccess1" name="TriSea1" type="checkbox"/>
                                                     <label for="TriSeaSuccess1" class="label-success"></label>

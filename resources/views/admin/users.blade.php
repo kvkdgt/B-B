@@ -397,7 +397,7 @@ button.verfied {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
 
                 <div class="page-sidebar">
@@ -445,7 +445,7 @@ button.verfied {
                             <ul class="sub-menu">
                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
-                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
 
                             </ul></i>
                         </li>
@@ -453,7 +453,7 @@ button.verfied {
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                             <ul class="sub-menu">
+                            <ul class="sub-menu">
                                 <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
                                 <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
@@ -482,26 +482,45 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="100%">
                                 </div>
-                                <div class="user-img-top">
+                                <!-- <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                </div>
+                                </div> -->
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <h4>Rahul</h4>
+                                        <h4>Rahul Ronaldo</h4>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Joined
-                                            Feb 2, 2000
+                                        <p>10 year as Yoga Tutor
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>User ID : 123456789
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined Feb 2, 1530 AD
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="verfied">Verified</button>
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p class="verfied">Verified <svg viewBox="0 0 24 24" fill="#27a5f3" height="1em"
+                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg></p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Total Listing Created 80</p>
+                                        <p>Berlin , Germany</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p>Listing : 30</p>
                                     </div>
                                     <div class="">
                                         <p>Revenue $ 28,000</p>
@@ -519,26 +538,45 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="100%">
                                 </div>
-                                <div class="user-img-top">
+                                <!-- <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                </div>
+                                </div> -->
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <h4>Rahul</h4>
+                                        <h4>Rahul Ronaldo</h4>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Joined
-                                            Feb 2, 2000
+                                        <p>10 year as Yoga Tutor
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>User ID : 123456789
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined Feb 2, 1530 AD
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="verfied">Verified</button>
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p class="verfied">Verified <svg viewBox="0 0 24 24" fill="#27a5f3" height="1em"
+                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg></p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Total Listing Created 80</p>
+                                        <p>Berlin , Germany</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p>Listing : 30</p>
                                     </div>
                                     <div class="">
                                         <p>Revenue $ 28,000</p>
@@ -556,26 +594,45 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="100%">
                                 </div>
-                                <div class="user-img-top">
+                                <!-- <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                </div>
+                                </div> -->
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <h4>Rahul</h4>
+                                        <h4>Rahul Ronaldo</h4>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Joined
-                                            Feb 2, 2000
+                                        <p>10 year as Yoga Tutor
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>User ID : 123456789
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined Feb 2, 1530 AD
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="verfied">Unverified</button>
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p class="verfied">Verified <svg viewBox="0 0 24 24" fill="#27a5f3" height="1em"
+                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg></p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Total Listing Created 80</p>
+                                        <p>Berlin , Germany</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p>Listing : 30</p>
                                     </div>
                                     <div class="">
                                         <p>Revenue $ 28,000</p>
@@ -593,26 +650,45 @@ button.verfied {
                         <div class="listing-item">
                             <div class="sub-main p-rel">
                                 <div class="img-sec p-rel">
-                                    <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="" width="100%">
+                                    <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="100%">
                                 </div>
-                                <div class="user-img-top">
+                                <!-- <div class="user-img-top">
                                     <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
-                                </div>
+                                </div> -->
                                 <div class="slider-content">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <h4>Rahul</h4>
+                                        <h4>Rahul Ronaldo</h4>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Joined
-                                            Feb 2, 2000
+                                        <p>10 year as Yoga Tutor
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>User ID : 123456789
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p>Joined Feb 2, 1530 AD
                                         </p>
                                     </div>
                                     <div class="">
-                                        <button class="verfied">Unverified</button>
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p class="verfied">Verified <svg viewBox="0 0 24 24" fill="#27a5f3" height="1em"
+                                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                <path
+                                                    d="M23 12l-2.44-2.79.34-3.69-3.61-.82-1.89-3.2L12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 12l2.44 2.79-.34 3.7 3.61.82L8.6 22.5l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81 1.48-1.48 2.32 2.33 5.85-5.87 1.48 1.48-7.33 7.35z">
+                                                </path>
+                                            </svg></p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p>Total Listing Created 80</p>
+                                        <p>Berlin , Germany</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <p>Listing : 30</p>
                                     </div>
                                     <div class="">
                                         <p>Revenue $ 28,000</p>

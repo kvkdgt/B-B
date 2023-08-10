@@ -347,7 +347,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-4">
                         <div class="footer-info">
-                            <h3><a href="index.html" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png"
+                            <h3><a href="/" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png"
                                         alt="" style="width: 100% ; height: auto"></a></h3>
                         </div>
                     </div>
@@ -425,7 +425,7 @@
             <div class="modal-content">
                 <div class="modal-body form-modal">
                     <div class="header">
-                        <h3 class="text-center">Booking Form</h3>
+                        <h3 class="text-center" style="color:#bee500">Booking Form</h3>
                         <p>Booking ID : 4957475-48</p>
                     </div>
                     <hr>
@@ -463,8 +463,8 @@
                             </div>
 
                             <a href="" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
-                            <a href="" class="btn btn-primary w-40 p-3">Confirm & pay with stripe</a>
-                            <a href="" class="btn btn-primary w-40 p-3">Confirm & pay with paypal</a>
+                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-stripe"></i>  Confirm & pay with stripe</a>
+                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-cc-paypal"></i>  Confirm & pay with paypal</a>
 
                         </form>
                     </div>

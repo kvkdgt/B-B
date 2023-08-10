@@ -3186,3 +3186,12 @@ select{
   font-size: 13px;
   color: #fff;
 }
+
+.checked {
+  color: orange;
+}
+
+
+.page-sidebar { 
+  background-color: #948f8f61 !important;
+}

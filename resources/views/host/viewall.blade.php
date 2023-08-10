@@ -343,12 +343,14 @@ table thead {
     color: #000;
     margin: 0 0 15px;
 }
-.chat-button{
-background-color: #1DA1F2;
-border-radius: 22px;
+
+.chat-button {
+    background-color: #1DA1F2;
+    border-radius: 22px;
 }
+
 .listing-card .listing-item .sub-main .footer a {
-    color:white;
+    color: white;
     font-weight: 500;
     font-size: 18px;
     margin: auto 0;
@@ -425,7 +427,7 @@ input.list-checkbox {
     </script>
 
     <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
 
                 <div class="page-sidebar">

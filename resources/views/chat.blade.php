@@ -93,7 +93,6 @@
     text-align: center;
     margin: 0 5px;
 }
-
 </style>
 
 <main id="main">
@@ -308,7 +307,8 @@
                                                 <p class="m-0">€33</p>
                                             </div>
                                             <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal"
-                                                href="#chatModal">Click to provide your booking details</button>
+                                                href="#chatModal">Click to provide your booking details</button> <button
+                                                class="btn btn-primary" href="#chatModal">Cancle</button>
                                         </div>
                                     </div>
                                 </div>
@@ -324,28 +324,29 @@
                                     </span>
                                 </div> -->
                                 <div class="container aos-init aos-animate" data-aos="fade-up">
-            <div class="slideLeft">
-                <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="categories d-flex overflow-auto aos-init aos-animate" data-aos="zoom-in" data-aos-delay="250">
-                <div class="icon-box">
-                    <button class="btn button-green"><a href="">Good Morning</a></button>
-                </div>
-                <div class="icon-box">
-                    <button class="btn button-green"><a href="">i need to book B&B</a></button>
-                </div>
-                <div class="icon-box">
-                    <button class="btn button-green"><a href="">What is the price?</a></button>
-                </div>
-                <div class="icon-box">
-                    <button class="btn button-green"><a href="">What is the price?</a></button>
-                </div>
-            </div>
-            <div class="slideRight">
-                <i class="fa-solid fa-arrow-right"></i>
-            </div>
+                                    <div class="slideLeft">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                    <div class="categories d-flex overflow-auto aos-init aos-animate" data-aos="zoom-in"
+                                        data-aos-delay="250">
+                                        <div class="icon-box">
+                                            <button class="btn button-green"><a href="">Good Morning</a></button>
+                                        </div>
+                                        <div class="icon-box">
+                                            <button class="btn button-green"><a href="">i need to book B&B</a></button>
+                                        </div>
+                                        <div class="icon-box">
+                                            <button class="btn button-green"><a href="">What is the price?</a></button>
+                                        </div>
+                                        <div class="icon-box">
+                                            <button class="btn button-green"><a href="">What is the price?</a></button>
+                                        </div>
+                                    </div>
+                                    <div class="slideRight">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
 
-        </div>
+                                </div>
                                 <div class="send-message">
                                     <!-- <input type="text" name="message" placeholder="Type your message here">-->
                                     <!-- <a data-target="#optionsModal" data-toggle="modal" href="#optionsModal">Login / Signup required to type message in the text field</a>-->

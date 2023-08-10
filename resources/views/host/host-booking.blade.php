@@ -298,7 +298,8 @@ footer#footer {
     display: none;
 }
 
-table thead, table tfoot {
+table thead,
+table tfoot {
     background: #bee500 !important;
 }
 
@@ -353,9 +354,8 @@ table thead, table tfoot {
     </script>
     <div class="row">
 
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -420,7 +420,7 @@ table thead, table tfoot {
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h4>Bookings</h4>
                         <div class="search">
-                            <button class="btn btn-danger">Delete</button>
+                            <!-- <button class="btn btn-danger">Delete</button> -->
                             <input type="text" name="search" placeholder="Search here">
                             <i class="bx bx-search"></i>
                         </div>

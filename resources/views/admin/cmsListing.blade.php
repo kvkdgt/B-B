@@ -350,7 +350,7 @@ table thead {
     </script>
 
     <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-3">
+        <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
 
                 <div class="page-sidebar">
@@ -398,7 +398,7 @@ table thead {
                             <ul class="sub-menu">
                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
-                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
 
                             </ul></i>
                         </li>
@@ -406,7 +406,7 @@ table thead {
                             <div onclick="toggleSubMenu(this)">
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
-                             <ul class="sub-menu">
+                            <ul class="sub-menu">
                                 <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
                                 <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
                                 <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
@@ -421,7 +421,7 @@ table thead {
         </div>
         <div class="col-lg-10 col-md-9 col-sm-9 col-12">
             <div class="page-content">
-                <a href="{{ route('add-new-page') }}" class="btn btn-primary">+ Add New Page</a><br><br>
+                <a href="{{ route('add-new-page') }}"  style="background:#bee500 !important"  class="btn btn-primary">+ Add New Page</a><br><br>
                 <div class="common-table">
                     <table>
                         <thead>
@@ -435,31 +435,31 @@ table thead {
                                 <td>01</td>
                                 <td>Terms & Conditions</td>
                                 <td>/TermsAndConditions</td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                <td><a href="#"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a></td>
                             </tr>
                             <tr>
                                 <td>02</td>
                                 <td>Privacy policy</td>
                                 <td>/privacy-policy</td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                <td><a href="#"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a></td>
                             </tr>
                             <tr>
                                 <td>03</td>
                                 <td>FAQ</td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                <td><a href="#"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a></td>
                             </tr>
                             <tr>
                                 <td>04</td>
                                 <td>Safety Tips</td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                <td><a href="#"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a></td>
                             </tr>
                             <tr>
                                 <td>05</td>
                                 <td>About Us</td>
                                 <td></td>
-                                <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                <td><a href="#"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a></td>
                             </tr>
 
                         </tbody>
