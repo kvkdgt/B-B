@@ -235,9 +235,11 @@
                                         <div class="text-box py-4">
                                             <p>Selected Dates</p><br />
                                             <span>Feb 5 - Feb 15 (10 Days) - €50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
-                                                        class="cancel-button"><i class="fas fa-times"></i></button></span><br>
+                                                    class="cancel-button" style="background:#1DA1F2"><i
+                                                        class="fas fa-times"></i></button></span><br>
                                             <span>Feb 20 - Feb 28 (9 Days) - €45 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
-                                                        class="cancel-button"><i class="fas fa-times"></i></button></span><br />
+                                                    class="cancel-button" style="background:#1DA1F2"><i
+                                                        class="fas fa-times"></i></button></span><br />
                                             <p>Bookings 2 adult guest 10 Nights €180</p><br />
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Cleaning Fee</h5>
@@ -245,11 +247,11 @@
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Security Deposit</h5>
-                                                <p class="m-0">€15 </p>
+                                                <p class="m-0">€15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Service Fee</h5>
-                                                <p class="m-0">€33 </p>
+                                                <p class="m-0">€33 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                             </div>
 
                                             <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal"
