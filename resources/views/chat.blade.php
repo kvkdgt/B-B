@@ -228,8 +228,12 @@
                                             <h4>Stay & Learn Salsa</h4>
                                            <h4> Cost Details</h4>
                                             <p>Selected Dates</p><br />
-                                            <span>Feb 5 - Feb 15 (10 Days) - €50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="cancel-button" style="background:#1DA1F2"><i class="fas fa-times"></i></button></span><br>
-                                            <span>Feb 20 - Feb 28 (9 Nights) - €45 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="cancel-button" style="background:#1DA1F2"><i class="fas fa-times"></i></button></span><br />
+                                            <span>Feb 5 - Feb 15 (10 Days) - €50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                                                    class="cancel-button" style="background:#bee500"><i
+                                                        class="fas fa-times"></i></button></span><br>
+                                            <span>Feb 20 - Feb 28 (9 Days) - €45 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                                                    class="cancel-button" style="background:#bee500"><i
+                                                        class="fas fa-times"></i></button></span><br />
                                             <p>Bookings 2 adult guest 10 Nights €180</p><br />
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Cleaning Fee</h5>

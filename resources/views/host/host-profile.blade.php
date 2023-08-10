@@ -173,7 +173,7 @@ ul.menu li.dropdown.active i {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {
@@ -207,7 +207,7 @@ ul.menu li.dropdown.active i {
 }
 
 .listings .listing-item .sub-main .footer a {
-    color: #1DA1F2;
+    color: #bee500;
     font-weight: 500;
     font-size: 18px;
     margin: auto 0;

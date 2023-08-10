@@ -56,15 +56,15 @@
 
 .load-more-block button.load-btn {
     background: transparent;
-    border: 1px solid #1da1f2;
+    border: 1px solid #bee500;
     padding: 7px 30px;
     border-radius: 20px;
-    color: #1da1f2;
+    color: #bee500;
     transition: all 0.5s ease;
 }
 
 .load-more-block button.load-btn:hover {
-    background: #1da1f2;
+    background: #bee500;
     color: #fff;
     transition: all 0.5s ease;
 }

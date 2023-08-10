@@ -348,7 +348,7 @@
 }
 
 .listing-card .listing-item .sub-main .footer a {
-    color: #1DA1F2;
+    color: #bee500;
     font-weight: 500;
     font-size: 18px;
     margin: auto 0;

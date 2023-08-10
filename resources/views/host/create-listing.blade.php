@@ -181,7 +181,7 @@ ul.sub-menu li:last-child {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {
@@ -223,6 +223,10 @@ ul.sub-menu li:last-child {
     padding: 7px;
 }
 
+.form-block label {
+    font-family: "Time New Roman", Garamond, serif;
+    font-size: 24px;
+}
 /* .container {
     max-width: 1600px;
     width: 100%
@@ -451,6 +455,10 @@ table thead th:last-child {
 
 table thead th {
     color: #000 !important;
+}
+
+table tbody tr:hover {
+    background: #fff !important;
 }
 
 @media (max-width: 667px) {
@@ -699,8 +707,7 @@ table thead th {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -708,8 +715,7 @@ table thead th {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -717,8 +723,7 @@ table thead th {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -726,8 +731,7 @@ table thead th {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -735,8 +739,7 @@ table thead th {
                                             <div class="col-md-2 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -820,35 +823,32 @@ table thead th {
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
                                                 <input type="text" name="b-b" id="workshop"
-                                                    placeholder="enter title here" />
+                                                    placeholder="Enter title here" />
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
                                                 <input type="text" name="b-b" id="workshop"
-                                                    placeholder="enter title here" />
+                                                    placeholder="Enter title here" />
                                             </div>
                                             <div class="col-md-4 col-sm-6 image-block text-center">
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
-                                                        <button type="button"
-                                                            style="background:#bee500 !important">Upload Photo</button>
+                                                        <button type="button">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
                                                 <input type="text" name="b-b" id="workshop"
-                                                    placeholder="enter title here" />
+                                                    placeholder="Enter title here" />
                                             </div>
                                         </div>
                                     </div>
@@ -931,35 +931,35 @@ table thead th {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Upload
+                                                    <button type="button">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
                                             <input type="text" name="b-b" id="workshop"
-                                                placeholder="enter title here" />
+                                                placeholder="Enter title here" />
                                         </div>
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Upload
+                                                    <button type="button">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
                                             <input type="text" name="b-b" id="workshop"
-                                                placeholder="enter title here" />
+                                                placeholder="Enter title here" />
                                         </div>
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Upload
+                                                    <button type="button">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>
                                             <input type="text" name="b-b" id="workshop"
-                                                placeholder="enter title here" />
+                                                placeholder="Enter title here" />
                                         </div>
                                     </div>
                                 </div>
@@ -1432,12 +1432,15 @@ table thead th {
                             </div>
                         </div>
                         <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                        <div class="row">
+                        <div class="row mb-5">
                             <div class="col-md-12">
-                                <h4>Co-Hosts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <label for="dontShowCheckbox">Don't show</label>
+                            <div class="block-heading d-flex align-items-center mb-4" style="gap: 30px;">
+                                <h3 class="m-0">Co-Hosts</h3>
+                                <div class="form-block">
+                                    <label class="m-0" for="dontShowCheckbox">Don't show</label>
                                     <input type="checkbox" id="dontShowCheckbox">
-                                </h4>
+                                </div>
+                                </div>
                                 <div class="row" style="max-width: 70%; margin: auto;">
                                     <div class="col-md-4 col-sm-12">
                                         <div
@@ -1477,10 +1480,13 @@ table thead th {
                         </div>
                         <div class="row">
                             <div class="col-md-12 details-content">
-                                <h3>Media &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="dontShowCheckbox">Don't
-                                        show</label>
+                            <div class="block-heading d-flex align-items-center mb-4" style="gap: 30px;">
+                                <h3 class="m-0">Media</h3>
+                                <div class="form-block">
+                                    <label class="m-0" for="dontShowCheckbox">Don't show</label>
                                     <input type="checkbox" id="dontShowCheckbox">
-                                </h3>
+                                </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-4 col-sm-6 text-center">
                                         <img src="assets/img/hotels/hotel-2.png">
