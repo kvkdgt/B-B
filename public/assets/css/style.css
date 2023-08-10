@@ -10,7 +10,12 @@ body {
 #main{
     margin-top: 85px;
 }
-
+.progress {
+  height:10px !important;
+}
+.progress-bar{
+  background-color: #bee500 !important;
+}
 a {
   color: #353535;
   text-decoration: none;
