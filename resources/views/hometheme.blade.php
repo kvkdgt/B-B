@@ -462,9 +462,9 @@
                                 </select>
                             </div>
 
-                            <a href="" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
-                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-stripe"></i>  Confirm & pay with stripe</a>
-                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-cc-paypal"></i>  Confirm & pay with paypal</a>
+                            <a href="" class="btn  w-30 p-3" style="background-color:#bee500">Add 2nd Guest</a><br><br>
+                            <a href="" class="btn  w-40 p-3" style="background-color:#bee500">  Confirm & pay with stripe <i class="fa-brands fa-stripe"></i></a>
+                            <a href="" class="btn  w-40 p-3" style="background-color:#bee500">  Confirm & pay with paypal <i class="fa-brands fa-cc-paypal"></i></a>
 
                         </form>
                     </div>
