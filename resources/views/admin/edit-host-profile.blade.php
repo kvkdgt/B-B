@@ -330,7 +330,7 @@ function toggleSubMenu(icon) {
                                 <div class="form-group">
                                     <label for="profile">Profile Image</label>
                                     <div class="file-wrapper">
-                                        <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -436,7 +436,7 @@ function toggleSubMenu(icon) {
                                 <div class="form-group">
                                     <label for="id">Government ID</label>
                                     <div class="file-wrapper">
-                                        <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="id" class="form-control" required />
                                     </div>
                                 </div>

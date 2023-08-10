@@ -516,7 +516,7 @@ button.verfied {
                                         <p>Berlin , Germany</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p>Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                     </div>
 
                                     <div class="d-flex justify-content-between">
@@ -572,7 +572,7 @@ button.verfied {
                                         <p>Berlin , Germany</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p>Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                     </div>
 
                                     <div class="d-flex justify-content-between">
@@ -628,7 +628,7 @@ button.verfied {
                                         <p>Berlin , Germany</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p>Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                     </div>
 
                                     <div class="d-flex justify-content-between">
@@ -684,7 +684,7 @@ button.verfied {
                                         <p>Berlin , Germany</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <p class="my-2">Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
+                                        <p>Email : <a href="mailto:good@gmail.com">good@gmail.com</a></p>
                                     </div>
 
                                     <div class="d-flex justify-content-between">

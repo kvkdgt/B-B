@@ -297,7 +297,7 @@ footer#footer {
 }
 
 table thead {
-    background: #bee500 !important;
+    background: #fff !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -431,6 +431,26 @@ table thead {
 .previous-block {
     flex: 0 0 22.5%;
     padding: 0 12px;
+}
+
+table tbody tr td:nth-child(3n) {
+    border-right: 1px solid #000;
+}
+
+table thead th:first-child {
+    border-right: 1px solid #000;
+}
+
+table thead th:not(:nth-last-of-type(2)) {
+    border-right: 1px solid #000;
+}
+
+table thead th:last-child {
+    border-right: none;
+}
+
+table thead th {
+    color:#000 !important;
 }
 
 @media (max-width: 667px) {
@@ -1009,10 +1029,10 @@ table thead {
                                 <table>
                                     <thead>
                                         <tr style="height: 40px;">
-                                            <td colspan="3">Check in</td>
-                                            <td colspan="3">Check out</td>
-                                            <td>Total Nights</td>
-                                            <td>Total Cost</td>
+                                            <th colspan="3">Check in</th>
+                                            <th colspan="3">Check out</th>
+                                            <th>Total Nights</th>
+                                            <th>Total Cost</th>
                                         </tr>
                                     </thead>
                                     <tr>
@@ -1304,7 +1324,7 @@ table thead {
                                         <p>Service Fee</p>
                                     </div>
                                     <div class="col-2">
-                                        <input type="text" class="form-control" placeholder="$20" disabled>
+                                        <input type="text" class="form-control" placeholder="&#8364; 20" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total
@@ -1317,7 +1337,7 @@ table thead {
                                         <p>Total</p>
                                     </div>
                                     <div class="col-2">
-                                        <input type="text" class="form-control" placeholder="$50" disabled>
+                                        <input type="text" class="form-control" placeholder="&#8364; 50" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(What guest will pay)</p>
@@ -1328,7 +1348,7 @@ table thead {
                                         <p>Host income</p>
                                     </div>
                                     <div class="col-2">
-                                        <input type="text" class="form-control" placeholder="$30" disabled>
+                                        <input type="text" class="form-control" placeholder="&#8364; 30" disabled>
                                     </div>
                                     <div class="col-5">
                                         <p>(After deduction of host fee 5% and guest fee 15%)</p>

@@ -394,7 +394,7 @@ function updateSelectedActivities() {
                                 <div class="form-group">
                                     <label for="profile">Profile Image</label>
                                     <div class="file-wrapper">
-                                        <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -593,13 +593,13 @@ function updateSelectedActivities() {
                                 <div class="col-sm-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>
-                                        <input type="email" id="email" class="form-control" required />
+                                        <input type="email" id="email" class="form-control" placeholder="qualification" required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="email">School Name</label>
-                                        <input type="email" id="email" class="form-control" required />
+                                        <input type="email" id="email" class="form-control" placeholder="School Name" required />
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-12">
@@ -657,7 +657,7 @@ function updateSelectedActivities() {
                                             <div class="form-group">
                                                 <label for="profile">Profile Image</label>
                                                 <div class="file-wrapper">
-                                                    <button type="button"><i class="fa-solid fa-camera"></i></button>
+                                                    <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>

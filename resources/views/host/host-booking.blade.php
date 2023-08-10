@@ -432,18 +432,20 @@ table tfoot {
                                 <thead>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
-                                    <th>Booking ID</th>
-                                    <th>Guest Name</th>
+                                    <th> Listing Name link</th>
+                                    <th>Country</th>
+                                    <th>Guest Photo & Name</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Status</th>
-                                    <th>Cost</th>
-                                    <th>Cleaning fee</th>
+                                    <th>No of Nights</th>
+                                    <th>Booking ID</th>
+                                    <th>Booking Status</th>
+                                    <th>Service fee</th>
+                                    <th>Other fee</th>
                                     <th>Security Deposit</th>
-                                    <th>Guest Service fee</th>
-                                    <th>Total Amount</th>
-                                    <th>Payment</th>
+                                    <th>Revenue</th>
+                                    <th>Total Payout</th>
+                                    <th>Action</th>
                                 </thead>
 
                                 <tbody>
@@ -459,20 +461,26 @@ table tfoot {
                                             <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-1.png" alt="">
                                             <a href="detail.html">Stay &amp; Learn</a>
                                         </td>
-                                        <td>12345</td>
+                                        <td>Germany</td>
                                         <td>
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                             Abbas
                                         </td>
                                         <td>25/03/2023</td>
                                         <td>25/03/2023</td>
+                                        <td>2</td>
+                                        <td>12345</td>
                                         <td><span class="">Accepted</span></td>
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€495</td>
-                                        <td>Accepted</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-eye"></i></a>
+                                            <a href="#"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-print"></i></a>
+                                        </td>
 
                                     </tr>
                                     <tr>
@@ -487,20 +495,26 @@ table tfoot {
                                             <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-2.png" alt="">
                                             <a href="detail.html">Relax &amp; Unwind</a>
                                         </td>
-                                        <td>56789</td>
+                                        <td>Germany</td>
                                         <td>
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                             Emily
                                         </td>
                                         <td>10/04/2023</td>
                                         <td>12/04/2023</td>
-                                        <td><span class="">Pending</span></td>
+                                        <td>2</td>
+                                        <td>56789</td>
+                                        <td><span class="">Rejected </span></td>
                                         <td>€75</td>
                                         <td>€75</td>
                                         <td>€75</td>
                                         <td>€75</td>
                                         <td>€750</td>
-                                        <td>Pending</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-eye"></i></a>
+                                            <a href="#"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-print"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -514,7 +528,7 @@ table tfoot {
                                             <img src="{{env('BASE_URL')}}/assets/img/hotels/hotel-3.png" alt="">
                                             <a href="detail.html">Family Fun</a>
                                         </td>
-                                        <td>98765</td>
+                                        <td>Germany</td>
                                         <td>
                                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                             Michael
@@ -527,33 +541,41 @@ table tfoot {
                                             13/06/2023
                                             16/06/2023
                                         </td>
-                                        <td><span class="">Rejected</span></td>
+                                        <td>1</td>
+                                        <td>98765</td>
+                                        <td><span class="">Refunded </span></td>
                                         <td>€120</td>
                                         <td>€120</td>
                                         <td>€120</td>
                                         <td>€0</td>
                                         <td>€0</td>
-                                        <td>Rejected</td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-eye"></i></a>
+                                            <a href="#"><i class="fa fa-dollar"></i></a>
+                                            <a href="#"><i class="fa fa-print"></i></a>
+                                        </td>
                                     </tr>
 
                                 </tbody>
 
-                                <thead>
+                                <tfoot>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
-                                    <th>Booking ID</th>
-                                    <th>Guest Name</th>
+                                    <th> Listing Name link</th>
+                                    <th>Country</th>
+                                    <th>Guest Photo & Name</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
-                                    <th>Status</th>
-                                    <th>Cost</th>
-                                    <th>Cleaning fee</th>
+                                    <th>No of Nights</th>
+                                    <th>Booking ID</th>
+                                    <th>Booking Status</th>
+                                    <th>Service fee</th>
+                                    <th>Other fee</th>
                                     <th>Security Deposit</th>
-                                    <th>Guest Service fee</th>
-                                    <th>Total Amount</th>
-                                    <th>Payment</th>
-                                </thead>
+                                    <th>Revenue</th>
+                                    <th>Total Payout</th>
+                                    <th>Action</th>
+                                </tfoot>
                             </table>
 
                         </div>

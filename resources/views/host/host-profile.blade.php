@@ -275,176 +275,175 @@ ul.menu li.dropdown.active i {
         <div class="container" data-aos="fade-up">
             <div class="row mt-5">
                 <div class="col-md-12 col-sm-12">
-
-                    <div class="host-header">
-                        <div class="profile d-flex align-items-center"
-                            style="justify-content: space-around; flex-wrap: wrap;">
-                            <div>
-                                <img src="assets/img/avatar.png" style="width:105px">
-                            </div>
-                            <div class="d-flex" style="gap:20px">
-                                <div>
-                                    <h3 class="m-0">Kartik Trivedi</h3>
-                                    <h4 style="margin-bottom: 10px;">Yoga Trainer</h4>
-                                    <a class="btn btn-primary" href="{{ route('editHostProfile') }}">Edit Profile</a>
-                                    <p style="margin:10px 0">Joined December 2020</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h3 class="m-0">Profile ID</h3>
-                                    <p style="margin: 7px 0">8875AF</p>
-                                </div>
-                                <div>
-                                    <a class="btn btn-primary">Verify Now</a>
-                                    <p style="margin: 7px 0 0">20 Days Left</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
+                    <!-- <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div> -->
                     <div class="host-body">
                         <div class="row">
-                            <!--  Right Side Cart  -->
-                            <div class="col-lg-3">
-                                <div class="host-block">
-                                    <div class="">
-                                        <div class="item">
-                                            <p><b>Verified User</b></p>
+                            <div class="col-lg-8">
+                                <div class="host-header">
+                                    <div class="profile d-flex align-items-center"
+                                        style="justify-content: space-around; flex-wrap: wrap;">
+                                        <div>
+                                            <img src="assets/img/avatar.png" style="width:105px">
                                         </div>
-                                        <div class="item">
-                                            <p><b>1403 Reviews</b></p>
-                                        </div>
-                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-
-                                        <div class="sidebar">
-                                            <h4>Details Provided</h4>
-                                            <div class="side-cart-item" style="display:flex;">
-                                                <p>Email Address</p>
-                                                <i class='bx bx-check'></i>
-                                            </div>
-                                            <div class="side-cart-item" style="display:flex;">
-                                                <p>Phone Number</p>
-                                                <i class='bx bx-check'></i>
-                                            </div>
-                                            <div class="side-cart-item" style="display:flex;">
-                                                <p>Government ID Card</p>
-                                                <i class='bx bx-check'></i>
+                                        <div class="d-flex" style="gap:20px">
+                                            <div>
+                                                <h3 class="m-0">Kartik Trivedi</h3>
+                                                <h4 style="margin-bottom: 10px;">Yoga Trainer</h4>
+                                                <a class="btn btn-primary" href="{{ route('editHostProfile') }}">Edit Profile</a>
+                                                <p style="margin:10px 0">Joined December 2020</p>
                                             </div>
                                         </div>
-
-
-                                        <!-- Other Info -->
-                                        <div class="sidebar">
-                                            <a href="{{ route('chat') }}" class="btn btn-primary w-100">Chat with
-                                                Me</a>
-                                        </div>
-
-                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                        <!-- Timing -->
-                                        <div class="sidebar">
-                                            <h4>Payment Type</h4>
-                                            <div class="side-cart-item">
-                                                <p>Stripe</p>
+                                        <div>
+                                            <div>
+                                                <h3 class="m-0">Profile ID</h3>
+                                                <p style="margin: 7px 0">8875AF</p>
                                             </div>
-                                            <div class="side-cart-item">
-                                                <p>PayPal</p>
-                                            </div>
-                                        </div>
-                                        <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                        <!-- Cancellation Policy -->
-                                        <div class="sidebar" style="margin-bottom: 0;">
-                                            <h4 style="margin-bottom: 15px;">House Rules</h4>
-                                            <div class="side-cart-item">
-                                                <ul style="list-style-type: disc; margin: 0;">
-                                                    <li>No pets</li>
-                                                    <li>No shoes</li>
-                                                    <li>No smoking</li>
-                                                    <li>No outside food</li>
-                                                    <li>No loud music</li>
-                                                    <li>No parties</li>
-                                                    <li style="padding: 0;">No unauthorized guests</li>
-                                                </ul>
+                                            <div>
+                                                <a class="btn btn-primary" disabled>Verify Now</a>
+                                                <p style="margin: 7px 0 0">20 Days Left</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            <!--  Right Side Cart  -->
+                                <div class="col-lg-4">
+                                    <div class="host-block">
+                                        <div class="">
+                                            <div class="item">
+                                                <p><b>Verified User</b></p>
+                                            </div>
+                                            <div class="item">
+                                                <p><b>1403 Reviews</b></p>
+                                            </div>
+                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
 
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h3 style="margin: 0 0 10px;">About Me</h3>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
-                                    eget nisi
-                                    bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
-                                    Massa eu
-                                    sit
-                                    laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
-                                    pellentesque
-                                    auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
-                                    quam sed
-                                    massa,
-                                    pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
-                                <!-- </div> -->
+                                            <div class="sidebar">
+                                                <h4>Details Provided</h4>
+                                                <div class="side-cart-item" style="display:flex;">
+                                                    <p>Email Address</p>
+                                                    <i class='bx bx-check'></i>
+                                                </div>
+                                                <div class="side-cart-item" style="display:flex;">
+                                                    <p>Phone Number</p>
+                                                    <i class='bx bx-check'></i>
+                                                </div>
+                                                <div class="side-cart-item" style="display:flex;">
+                                                    <p>Government ID Card</p>
+                                                    <i class='bx bx-check'></i>
+                                                </div>
+                                            </div>
 
-                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                <div
-                                    style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
-                                    <h3 class="m-0">Location</h3>
-                                    <p class="m-0">Paris , Frence</p>
-                                </div>
-                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                <div
-                                    style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
-                                    <h3 class="m-0">Languages</h3>
-                                    <p class="m-0">English , French</p>
-                                </div>
-                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                <!-- <div class="card"> -->
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h3>Academic Qualification</h3>
-                                </div>
-                                <ul style="list-style: disc">
-                                    <li><b>B.SC Fitness: </b>University of Poland, Poland </li>
-                                    <li style="padding: 0"><b>Diploma Graphics: </b>University of Poland, Poland </li>
-                                </ul>
-                                <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
-                                <!-- </div> -->
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <h3>About My Listing</h3>
-                                </div>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
-                                    eget nisi
-                                    bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
-                                    Massa eu
-                                    sit
-                                    laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
-                                    pellentesque
-                                    auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
-                                    quam sed
-                                    massa,
-                                    pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+                                            <!-- Other Info -->
+                                            <div class="sidebar">
+                                                <a href="{{ route('chat') }}" class="btn btn-primary w-100">Chat with
+                                                    Me</a>
+                                            </div>
 
-                                <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
-                                <h3>What's Included</h3>
-                                <div class="item" style="display: flex;">
-                                    <ul style="list-style-type: disc; flex: 1;">
-                                        <li>Wi-Fi</li>
-                                        <li>Breakfast</li>
-                                        <li>Room cleaning</li>
+                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                            <!-- Timing -->
+                                            <div class="sidebar">
+                                                <h4>Payment Type</h4>
+                                                <div class="side-cart-item">
+                                                    <p>Stripe</p>
+                                                </div>
+                                                <div class="side-cart-item">
+                                                    <p>PayPal</p>
+                                                </div>
+                                            </div>
+                                            <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                            <!-- Cancellation Policy -->
+                                            <div class="sidebar" style="margin-bottom: 0;">
+                                                <h4 style="margin-bottom: 15px;">House Rules</h4>
+                                                <div class="side-cart-item">
+                                                    <ul style="list-style-type: disc; margin: 0;">
+                                                        <li>No pets</li>
+                                                        <li>No shoes</li>
+                                                        <li>No smoking</li>
+                                                        <li>No outside food</li>
+                                                        <li>No loud music</li>
+                                                        <li>No parties</li>
+                                                        <li style="padding: 0;">No unauthorized guests</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3 style="margin: 0 0 10px;">About Me</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                        eget nisi
+                                        bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                        Massa eu
+                                        sit
+                                        laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
+                                        pellentesque
+                                        auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
+                                        quam sed
+                                        massa,
+                                        pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+                                    <!-- </div> -->
+
+                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                    <div
+                                        style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
+                                        <h3 class="m-0">Location</h3>
+                                        <p class="m-0">Paris , Frence</p>
+                                    </div>
+                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                    <div
+                                        style="display: flex; align-items: center; justify-content: space-between; margin: 1.5em 0;">
+                                        <h3 class="m-0">Languages</h3>
+                                        <p class="m-0">English , French</p>
+                                    </div>
+                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                    <!-- <div class="card"> -->
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>Academic Qualification</h3>
+                                    </div>
+                                    <ul style="list-style: disc">
+                                        <li><b>B.SC Fitness: </b>University of Poland, Poland </li>
+                                        <li style="padding: 0"><b>Diploma Graphics: </b>University of Poland, Poland </li>
                                     </ul>
-                                    <ul style="list-style-type: disc; flex: 1;">
-                                        <li>Hot shower</li>
-                                        <li>Air conditioning</li>
-                                        <li>Gym access</li>
-                                    </ul>
-                                </div>
+                                    <div class="divider" style=" border-top: 1px solid gray;margin: 16px 0;"></div>
+                                    <!-- </div> -->
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h3>About My Listing</h3>
+                                    </div>
 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum tortor
+                                        eget nisi
+                                        bibendum morbi at pulvinar consectetur. Ac id nec sed sed nulla faucibus.
+                                        Massa eu
+                                        sit
+                                        laoreet nunc mauris pellentesque. Tincidunt semper facilisi tortor netus a
+                                        pellentesque
+                                        auctor maecenas id. Ac, egestas magna a consectetur fermentum. Urna, nec
+                                        quam sed
+                                        massa,
+                                        pellentesque. Diam enim vel porta diam iaculis tellus cursus mauris. </p>
+
+                                    <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
+                                    <h3>What's Included</h3>
+                                    <div class="item" style="display: flex;">
+                                        <ul style="list-style-type: disc; flex: 1;">
+                                            <li>Wi-Fi</li>
+                                            <li>Breakfast</li>
+                                            <li>Room cleaning</li>
+                                        </ul>
+                                        <ul style="list-style-type: disc; flex: 1;">
+                                            <li>Hot shower</li>
+                                            <li>Air conditioning</li>
+                                            <li>Gym access</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
                             </div>
                             <!--  My Listing  -->
                             <div class="col-lg-4">

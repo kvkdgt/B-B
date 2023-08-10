@@ -643,6 +643,22 @@ img{
 }
 
 
+ul.menu li a:hover {
+  color: green;
+}
+
+ul.menu li:hover a {
+  color: green;
+}
+
+ul.menu li.dropdown span {
+  cursor: pointer;
+}
+
+ul.menu li {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Form Modal Section (login, sign up, forgot, contact)
 --------------------------------------------------------------*/

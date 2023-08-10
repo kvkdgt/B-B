@@ -375,6 +375,10 @@ input.list-checkbox {
     font-weight: 600;
 }
 
+.clr-gray p {
+    color: gray !important;
+}
+
 @media screen and (max-width: 767px) {
     .page-sidebar {
         display: none;
@@ -530,8 +534,10 @@ input.list-checkbox {
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p class="adult-bold">€150 | 2 Adult Guests</p>
                                                 <p><b>428 Reviews</b></p>
-                                                <!-- <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p> -->
+                                                <div class="clr-gray">
+                                                    <p>Date Created | 02/05/2023</p>
+                                                    <p>No of time saved | 20</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- <div class="footer chat-button">
@@ -569,8 +575,10 @@ input.list-checkbox {
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <!-- <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p> -->
+                                                <div class="clr-gray">
+                                                    <p>Date Created | 02/05/2023</p>
+                                                    <p>No of time saved | 20</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- <div class="footer chat-button">
@@ -608,8 +616,10 @@ input.list-checkbox {
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <!-- <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p> -->
+                                                <div class="clr-gray">
+                                                    <p>Date Created | 02/05/2023</p>
+                                                    <p>No of time saved | 20</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- <div class="footer chat-button">
@@ -647,8 +657,10 @@ input.list-checkbox {
                                                 <p> Dec 20 - Dec 28, 2023</p>
                                                 <p><b>€150 | 2 Adult Guests</b></p>
                                                 <p><b>428 Reviews</b></p>
-                                                <!-- <p>Date Created | 02/05/2023</p>
-                                                <p>No of time saved | 20</p> -->
+                                                <div class="clr-gray">
+                                                    <p>Date Created | 02/05/2023</p>
+                                                    <p>No of time saved | 20</p>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- <div class="footer chat-button">

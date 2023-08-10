@@ -298,7 +298,7 @@ footer#footer {
     display: none;
 }
 
-table thead {
+table thead, table tfoot {
     background: #bee500 !important;
 }
 
@@ -425,7 +425,7 @@ table thead {
                     <div class="card-header d-flex align-items-center justify-content-between">
                         <h4>Bookings</h4>
                         <div class="search">
-                            <button class="btn btn-danger">Delete</button>
+                            <!-- <button class="btn btn-danger">Delete</button> -->
                             <input type="text" name="search" placeholder="Search here">
                             <i class="bx bx-search"></i>
                         </div>
@@ -437,16 +437,16 @@ table thead {
                                 <thead>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
+                                    <th>Listing Photo & Link</th>
                                     <th>Booking ID</th>
-                                    <th>Guest Name</th>
+                                    <th>Guest Photo & Name</th>
                                     <th>Check In</th>
                                     <th>Check Out</th>
                                     <th>Status</th>
                                     <th>Cost</th>
                                     <th>Cleaning fee</th>
                                     <th>Security Deposit</th>
-                                    <th>Guest Service fee</th>
+                                    <th>Service fee</th>
                                     <th>Total Amount</th>
                                     <th>Payment</th>
                                 </thead>
@@ -477,7 +477,7 @@ table thead {
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€495</td>
-                                        <td>Accepted</td>
+                                        <td>Received</td>
 
                                     </tr>
                                     <tr>
@@ -499,7 +499,7 @@ table thead {
                                         </td>
                                         <td>10/04/2023</td>
                                         <td>12/04/2023</td>
-                                        <td><span class="">Pending</span></td>
+                                        <td><span class="">Rejected</span></td>
                                         <td>€75</td>
                                         <td>€75</td>
                                         <td>€75</td>
@@ -532,35 +532,32 @@ table thead {
                                             13/06/2023
                                             16/06/2023
                                         </td>
-                                        <td><span class="">Rejected</span></td>
+                                        <td><span class="">Canceled</span></td>
                                         <td>€120</td>
                                         <td>€120</td>
                                         <td>€120</td>
                                         <td>€0</td>
                                         <td>€0</td>
-                                        <td>Rejected</td>
+                                        <td>Received</td>
                                     </tr>
                                 </tbody>
 
-                                <!-- <tfoot>
-                                <th>S/No</th>
-                                <th>Date</th>
-                                <th>Listing Name</th>
-                                <th>Host Profile</th>
-                                <th>Country</th>
-                                <th>Guest Name</th>
-                                <th>Guest Email</th>
-                                <th>Check In</th>
-                                <th>Check Out</th>
-                                <th>Total Nights</th>
-                                <th>Status</th>
-                                <th>Service fee</th>
-                                <th>Other fee</th>
-                                <th>Security Deposit</th>
-                                <th>Revenue</th>
-                                <th>Total Payout</th>
-                                <th>Action</th>
-                            </tfoot> -->
+                                <tfoot>
+                                    <th></th>
+                                    <th>Date</th>
+                                    <th>Listing Photo & Link</th>
+                                    <th>Booking ID</th>
+                                    <th>Guest Photo & Name</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Status</th>
+                                    <th>Cost</th>
+                                    <th>Cleaning fee</th>
+                                    <th>Security Deposit</th>
+                                    <th>Service fee</th>
+                                    <th>Total Amount</th>
+                                    <th>Payment</th>
+                                </tfoot>
                             </table>
 
                         </div>

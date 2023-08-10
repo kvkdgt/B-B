@@ -284,7 +284,7 @@ footer#footer {
     display: none;
 }
 
-table thead {
+table thead, table tfoot {
     background: #bee500 !important;
 }
 
@@ -440,22 +440,22 @@ table thead {
                                 <thead>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
+                                    <th>Listing Photo & Link</th>
                                     <th>Host Name</th>
                                     <th>Host Email</th>
+                                    <th>Booking ID</th>
                                     <th>Guest Name</th>
                                     <th>Guest Email</th>
-                                    <th>Country</th>
-                                    <th>Check In</th>
-                                    <th>Check Out</th>
-                                    <th>Total Nights</th>
-                                    <th>Booking ID</th>
-                                    <th>Service fee</th>
-                                    <th>Other fee</th>
+                                    <!-- <th>Country</th> -->
+                                    <!-- <th>Check In</th>
+                                    <th>Check Out</th> -->
+                                    <th>Cost</th>
+                                    <th>Cleaning Fee</th>
                                     <th>Security Deposit</th>
-                                    <th>Total Cost</th>
+                                    <th>Total Amount</th>
+                                    <th>15% Guest fee</th>
+                                    <th>15% Guest fee</th>
                                     <th>Net Income</th>
-                                    <th>Total Payout</th>
                                     <th>Action</th>
                                 </thead>
 
@@ -471,13 +471,14 @@ table thead {
                                         <td><a href="detail.html">Stay &amp; Learn</a></td>
                                         <td><a href="host-profile.html">Host Name</a></td>
                                         <td>host@gmail.com</td>
+                                        <td>€49</td>
                                         <td><a href="host-profile.html">Guest Name</a></td>
                                         <td>guest@gmail.com</td>
-                                        <td>Germany</td>
-                                        <td>03/04/2023</td>
-                                        <td>09/04/2023</td>
+                                        <!-- <td>Germany</td> -->
+                                        <!-- <td>03/04/2023</td>
+                                        <td>09/04/2023</td> -->
                                         <td>08</td>
-                                        <td>€49</td>
+                                        
                                         <td>€49</td>
                                         <td>€49</td>
                                         <td>€49</td>
@@ -492,27 +493,27 @@ table thead {
                                     </tr>
                                 </tbody>
 
-                                <!-- <tfoot>
+                                <tfoot>
                                     <th></th>
                                     <th>Date</th>
-                                    <th>Listing Name</th>
+                                    <th>Listing Photo & Link</th>
                                     <th>Host Name</th>
                                     <th>Host Email</th>
+                                    <th>Booking ID</th>
                                     <th>Guest Name</th>
                                     <th>Guest Email</th>
-                                    <th>Country</th>
-                                    <th>Check In</th>
-                                    <th>Check Out</th>
-                                    <th>Total Nights</th>
-                                    <th>Booking ID</th>
-                                    <th>Service fee</th>
-                                    <th>Other fee</th>
+                                    <!-- <th>Country</th> -->
+                                    <!-- <th>Check In</th>
+                                    <th>Check Out</th> -->
+                                    <th>Cost</th>
+                                    <th>Cleaning Fee</th>
                                     <th>Security Deposit</th>
-                                    <th>Total Cost</th>
+                                    <th>Total Amount</th>
+                                    <th>15% Guest fee</th>
+                                    <th>15% Guest fee</th>
                                     <th>Net Income</th>
-                                    <th>Total Payout</th>
                                     <th>Action</th>
-                                </tfoot> -->
+                                </tfoot>
                             </table>
 
                         </div>

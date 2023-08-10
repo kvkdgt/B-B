@@ -93,6 +93,10 @@
     text-align: center;
     margin: 0 5px;
 }
+
+.text-box button:not(:last-child) {
+    margin-bottom: 20px;
+}
 </style>
 
 <main id="main">
