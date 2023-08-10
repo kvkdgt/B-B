@@ -177,7 +177,7 @@ ul.sub-menu li:last-child {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {
@@ -345,7 +345,7 @@ table thead {
 }
 
 .chat-button {
-    background-color: #1DA1F2;
+    background-color: #bee500;
     border-radius: 22px;
 }
 

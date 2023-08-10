@@ -177,7 +177,7 @@ ul.sub-menu li:last-child {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {

@@ -220,7 +220,7 @@ ul.menu li.dropdown.active i {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {
@@ -394,7 +394,7 @@ function updateSelectedActivities() {
                                 <div class="form-group">
                                     <label for="profile">Profile Image</label>
                                     <div class="file-wrapper">
-                                        <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
+                                        <button type="button">Uploade Photo</button>
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
@@ -657,7 +657,7 @@ function updateSelectedActivities() {
                                             <div class="form-group">
                                                 <label for="profile">Profile Image</label>
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important;">Uploade Photo</button>
+                                                    <button type="button">Uploade Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
                                             </div>

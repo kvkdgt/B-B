@@ -174,7 +174,7 @@ ul.menu li.dropdown.active i {
     height: 100px;
     display: block;
     background: transparent;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .file-wrapper {

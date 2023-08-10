@@ -1,6 +1,7 @@
 @extends('hometheme')
 @section('content')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <main id="main">
     <style>
     .item:hover h5 {
@@ -54,15 +55,15 @@
 
     .load-more-block button.load-btn {
         background: transparent;
-        border: 1px solid #1da1f2;
+        border: 1px solid #bee500;
         padding: 7px 30px;
         border-radius: 20px;
-        color: #1da1f2;
+        color: #bee500;
         transition: all 0.5s ease;
     }
 
     .load-more-block button.load-btn:hover {
-        background: #1da1f2;
+        background: #bee500;
         color: #fff;
         transition: all 0.5s ease;
     }
@@ -115,7 +116,7 @@
 
     .show-more {
         font-size: 14px;
-        background: #1DA1F2;
+        background: #bee500;
         border-radius: 25px;
         float: right;
         color: #fff;
@@ -164,7 +165,7 @@
 
     .about-us .details-content a {
         font-size: 14px;
-        background: #1DA1F2;
+        background: #bee500;
         border-radius: 25px;
         float: right;
         color: #fff;
@@ -233,7 +234,7 @@
 
     .average {
         color: #fff;
-        background: #1da1f2;
+        background: #bee500;
         padding: 20px;
     }
 
@@ -328,6 +329,30 @@
     button.show-more {
         background: #bee500;
         color: #000;
+    }
+
+    .pop-up1, .pop-up2, .pop-up3 {
+        position: relative;
+    }
+
+    .pop-up1 h5, .pop-up2 h5, .pop-up3 h5{
+        cursor: pointer;
+    }
+
+    .add-block {
+        display: none;
+        background: #fff;
+        position: absolute;
+        top: 30px;
+        right: 320px;
+        width: 100%;
+        box-shadow: 0 0 10px #e8e8e8;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .add1 .add-block, .add2 .add-block, .add3 .add-block {
+        display: block;
     }
     </style>
 
@@ -482,7 +507,7 @@
                                     <!-- <div class="user-img-top">
                                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png">
                                         <h4 class="justify-content-center d-flex">Ketul <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                                viewBox="0 0 512 512" fill="#1da1f2" style="margin-left: 10px;">
+                                                viewBox="0 0 512 512" fill="#bee500" style="margin-left: 10px;">
                                                 <path
                                                     d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z" />
                                             </svg></h4>
@@ -1230,10 +1255,10 @@
                                                         <option value="" selected disabled hidden>Multiple Dates can be
                                                             booked</option>
                                                         <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
-                                                        <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
-                                                        <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
+                                                        <option value="9">Feb 20 - Feb 28 (9 Nights) - €45</option>
+                                                        <option value="7">Mar 10 - Mar 17 (7 Nights) - €35</option>
                                                         <option value="14">Apr 1 - Apr 14 (14 Days) - €70</option>
-                                                        <option value="5">May 5 - May 9 (5 Days) - €25</option>
+                                                        <option value="5">May 5 - May 9 (5 Nights) - €25</option>
                                                     </select>
                                                 </div>
 
@@ -1255,17 +1280,27 @@
 
                                     </div>
                                     <hr>
-                                    <div class="item d-flex align-items-center justify-content-between">
+                                    <div class="item d-flex align-items-center justify-content-between pop-up1">
                                         <h5 class="m-0"><u>Cleaning Fee</u></h5>
                                         <p class="m-0">€30</p>
+                                        <div class="add-block">
+                                            <!-- <i class="fa-solid fa-xmark"></i> -->
+                                            <h5>This helps us run our platform and offer services like 24/7 support on your trip.</h5>
+                                        </div>
                                     </div>
-                                    <div class="item d-flex align-items-center justify-content-between">
+                                    <div class="item d-flex align-items-center justify-content-between pop-up2">
                                         <h5 class="m-0"><u>Security Deposit</u></h5>
                                         <p class="m-0">€15</p>
+                                        <div class="add-block">
+                                            <h5>This helps us run our platform and offer services like 24/7 support on your trip.</h5>
+                                        </div>
                                     </div>
-                                    <div class="item d-flex align-items-center justify-content-between">
+                                    <div class="item d-flex align-items-center justify-content-between pop-up3">
                                         <h5 class="m-0"><u>Service Fee</u></h5>
                                         <p class="m-0">€33</p>
+                                        <div class="add-block">
+                                            <h5>This helps us run our platform and offer services like 24/7 support on your trip.</h5>
+                                        </div>
                                     </div>
                                     <hr>
                                     <div class="item d-flex align-items-center justify-content-between">
@@ -1273,7 +1308,7 @@
                                         <p class="m-0">€268</p>
                                     </div>
                                     <a href="{{route('chat')}}" class="btn  w-100 mt-5 mb-5"
-                                        style="background:#bee500 !important;">Reserve</a>
+                                        style="background:#bee500 !important; color: #fff;">Reserve</a>
                                 </div>
                             </div>
                             <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
@@ -1290,5 +1325,28 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $(document).ready(function(){
+        $(".pop-up1").click(function(){
+            $(".pop-up1").toggleClass("add1");
+            $(".pop-up2").removeClass("add2");
+            $(".pop-up3").removeClass("add3");
+        });
+
+        $(".pop-up2").click(function(){
+        $(".pop-up2").toggleClass("add2");
+        $(".pop-up1").removeClass("add1");
+            $(".pop-up3").removeClass("add3");
+        
+        });
+        $(".pop-up3").click(function(){
+        $(".pop-up3").toggleClass("add3");
+        $(".pop-up2").removeClass("add2");
+            $(".pop-up1").removeClass("add1");
+        });
+    });
+    </script>
+    
 
 </main><!-- End #main -->
