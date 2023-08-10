@@ -219,100 +219,43 @@
                                             <span>01:05 PM</span>
                                         </div>
                                     </div>
-                                    <div class="item left">
+                                    <!-- <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
                                         <div class="text-box py-4">
                                             <p>Selected Dates</p>
-                                            <span>Feb 6-10 : 300$</span><br>
-                                            <span>Feb 6-10 : 300$</span>
-
+                                            <span>Feb 5 - Feb 15 (10 Days) - €50</span><br>
+                                            <span>Feb 20 - Feb 28 (9 Days) - €45</span><br/>
+                                            <p>Bookings 2 adult guest 10 Nights €180</p>
                                         </div>
-                                    </div>
+                                    </div> -->
+
 
                                     <div class="item left">
                                         <img src="assets/img/team/team-1.jpg" alt="Sender">
                                         <div class="text-box py-4">
-                                            <!-- <div class="row">
-                                                <ul>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                Stay and Learn |
-                                                            </div>
-                                                            <div class="col">
-                                                                2 Adult
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                Feb 5 - 15
-                                                            </div>
-                                                            <div class="col">
-                                                                $ 300
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                Cleaning Fee
-                                                            </div>
-                                                            <div class="col">
-                                                                $ 20
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                Security Deposit <br />
-                                                                (refundable)
-                                                            </div>
-                                                            <div class="col">
-                                                                $ 50
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                Status B&amp;B <br />
-                                                                service fee
-                                                            </div>
-                                                            <div class="col">
-                                                                $ 50
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="row">
-                                                            <div class="col-7">
-                                                                <b> Total</b>
-                                                            </div>
-                                                            <div class="col">
-                                                                <b> $ 500</b>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div> -->
+                                            <p>Selected Dates</p><br />
+                                            <span>Feb 5 - Feb 15 (10 Days) - €50</span><br>
+                                            <span>Feb 20 - Feb 28 (9 Days) - €45</span><br />
+                                            <p>Bookings 2 adult guest 10 Nights €180</p><br />
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Cleaning Fee</h5>
-                                                <p class="m-0">€30</p>
+                                                <p class="m-0">€30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                                                        class="cancel-button"><i class="fas fa-times"></i></button></p>
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
-                                                <h5 class="m-0">Security Deposite</h5>
-                                                <p class="m-0">€15</p>
+                                                <h5 class="m-0">Security Deposit</h5>
+                                                <p class="m-0">€15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                                                        class="cancel-button"><i class="fas fa-times"></i></button></p>
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Service Fee</h5>
-                                                <p class="m-0">€33</p>
+                                                <p class="m-0">€33 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                                                        class="cancel-button"><i class="fas fa-times"></i></button></p>
                                             </div>
+
                                             <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal"
-                                                href="#chatModal">Click to provide your booking details</button> <button
-                                                class="btn btn-primary" href="#chatModal">Cancle</button>
+                                                href="#chatModal">Click to provide your booking details</button>
+
                                         </div>
                                     </div>
                                 </div>

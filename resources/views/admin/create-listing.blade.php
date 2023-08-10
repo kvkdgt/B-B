@@ -446,7 +446,7 @@ table thead th:not(:nth-last-of-type(2)) {
 }
 
 table thead th {
-    color:#000 !important;
+    color: #000 !important;
 }
 
 table thead th:last-child {
@@ -708,7 +708,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -717,7 +717,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -726,7 +726,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -735,7 +735,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -744,7 +744,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -829,7 +829,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -840,7 +840,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -851,7 +851,7 @@ table thead th:last-child {
                                                 <div class="form-group">
                                                     <div class="file-wrapper">
                                                         <button type="button"
-                                                            style="background:#bee500 !important">Uploade Photo</button>
+                                                            style="background:#bee500 !important">Upload Photo</button>
                                                         <input type="file" id="profile" class="form-control" required />
                                                     </div>
                                                 </div>
@@ -939,7 +939,7 @@ table thead th:last-child {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                    <button type="button" style="background:#bee500 !important">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
@@ -950,7 +950,7 @@ table thead th:last-child {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                    <button type="button" style="background:#bee500 !important">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
@@ -961,7 +961,7 @@ table thead th:last-child {
                                         <div class="col-md-4 col-sm-6 image-block text-center">
                                             <div class="form-group">
                                                 <div class="file-wrapper">
-                                                    <button type="button" style="background:#bee500 !important">Uploade
+                                                    <button type="button" style="background:#bee500 !important">Upload
                                                         Photo</button>
                                                     <input type="file" id="profile" class="form-control" required />
                                                 </div>
@@ -1177,141 +1177,6 @@ table thead th:last-child {
                                     </tr>
                                 </table>
                             </div>
-                            <table>
-                                <tr>
-                                    <td colspan="3">Check in</td>
-                                    <td colspan="3">Check out</td>
-                                    <td>Total Nights</td>
-                                    <td>Total Cost</td>
-                                </tr>
-                                <tr>
-                                    <td class="second-tr">
-                                        <select>
-                                            <option>Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>August</option>
-                                            <option>September</option>
-                                            <option>October</option>
-                                            <option>November</option>
-                                            <option>December</option>
-                                        </select>
-                                    </td>
-
-                                    <td class="second-tr">
-                                        <select>
-                                            <option>Day</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select>
-                                            <option>Year</option>
-                                            <option>2023</option>
-                                            <option>2024</option>
-                                            <option>2025</option>
-                                            <option>2026</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select>
-                                            <option>Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>August</option>
-                                            <option>September</option>
-                                            <option>October</option>
-                                            <option>November</option>
-                                            <option>December</option>
-                                        </select>
-                                    </td>
-
-                                    <td>
-                                        <select>
-                                            <option>Day</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select>
-                                            <option>Year</option>
-                                            <option>2023</option>
-                                            <option>2024</option>
-                                            <option>2025</option>
-                                            <option>2026</option>
-                                        </select>
-                                    </td>
-                                   
-                                </tr>
 
 
                             <button class="btn btn-primary"

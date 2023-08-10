@@ -833,48 +833,52 @@
                                 <h4><i class="fa-solid fa-location-dot"></i> Instructional Material</h4>
                             </div>
                             <div class="details-content">
-                            <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-globe" style="margin-right: 10px;"></i>Interactive Broadband
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-laptop" style="margin-right: 10px;"></i>Computers
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-vr-cardboard" style="margin-right: 10px;"></i>VR Headset
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-gamepad" style="margin-right: 10px;"></i>Gamification & Apps
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-cube" style="margin-right: 10px;"></i>3D Printing
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-wifi" style="margin-right: 10px;"></i>Online
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-book" style="margin-right: 10px;"></i>Textbooks
-        </p>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-6">
-        <p>
-            <i class="fa-solid fa-flask" style="margin-right: 10px;"></i>Samples & Models
-        </p>
-    </div>
-</div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-globe" style="margin-right: 10px;"></i>Interactive
+                                            Broadband
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-laptop" style="margin-right: 10px;"></i>Computers
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-vr-cardboard" style="margin-right: 10px;"></i>VR
+                                            Headset
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-gamepad" style="margin-right: 10px;"></i>Gamification
+                                            & Apps
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-cube" style="margin-right: 10px;"></i>3D Printing
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-wifi" style="margin-right: 10px;"></i>Online
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-book" style="margin-right: 10px;"></i>Textbooks
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <p>
+                                            <i class="fa-solid fa-flask" style="margin-right: 10px;"></i>Samples &
+                                            Models
+                                        </p>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -1223,7 +1227,8 @@
                                                     <label>Select dates</label>
                                                     <select class="js-example-basic-multiple" name="states[]"
                                                         multiple="multiple" readonly>
-                                                        <option value="" selected disabled hidden>Multiple Dates can be booked</option>
+                                                        <option value="" selected disabled hidden>Multiple Dates can be
+                                                            booked</option>
                                                         <option value="10">Feb 5 - Feb 15 (10 Days) - €50</option>
                                                         <option value="9">Feb 20 - Feb 28 (9 Days) - €45</option>
                                                         <option value="7">Mar 10 - Mar 17 (7 Days) - €35</option>
@@ -1267,7 +1272,8 @@
                                         <h3 class="m-0">Total</h3>
                                         <p class="m-0">€268</p>
                                     </div>
-                                    <a href="{{route('chat')}}" class="btn  w-100 mt-5 mb-5" style="background:#bee500 !important;">Reserve</a>
+                                    <a href="{{route('chat')}}" class="btn  w-100 mt-5 mb-5"
+                                        style="background:#bee500 !important;">Reserve</a>
                                 </div>
                             </div>
                             <div data-target="#report-modal" data-toggle="modal" href="#report-modal"
