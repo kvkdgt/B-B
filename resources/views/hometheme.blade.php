@@ -1603,7 +1603,8 @@
 <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
-<script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
+<script src="{{env('BASE_URL')}}/assets/js/host-dashboard.js"></script>
+
 <script>
 $(document).ready(function() {
     $('#summernote').summernote({

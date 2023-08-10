@@ -1,6 +1,65 @@
 @extends('hometheme')
 @section('content')
+<script>
+     var canvas = document.getElementById("total_chart");
+      var ctx = canvas.getContext("2d");
+      var data = [30,10,45,15,75,25,115,45,13,104,78,12];
+      var labels = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
+      // Draw the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Listings',
+            data: data,
+            lineTension: 0,
+            pointStyle: 'circle',
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+//            borderColor: 'transparent',
+            pointRadius: 1,
+            pointHoverRadius: 5,
+            pointHoverBorderWidth: 5,
+            pointBorderColor: 'transparent',
+            borderWidth: 1,
+            fill: {
+                target: 'origin',
+                above: 'rgba(29, 161, 242, 0.5)',   // Area will be red above the origin
+//                below: 'rgb(0, 0, 255)'    // And blue below the origin
+              }
+          }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false,
+                    labels: {
+                        color: 'rgb(255, 99, 132)'
+                    }
+                }
+            },
+            scales: {
+              x: {
+                display: false,
+                title: {
+                  display: true,
+                  text: 'Month'
+                }
+              },
+              y: {
+                display: false,
+                title: {
+                  display: true,
+                  text: 'Value'
+                }
+              }
+            }
+          },
+      });
+    </script>
 <style>
 .profile {
     padding: 25px 0 10px;
@@ -555,7 +614,7 @@ table thead {
                             <canvas id="total_income_chart" style="width:100%;max-width:700px"></canvas>
                         </div>
                     </div>
-
+                    
                     <!--  Total Revenue  -->
                     <div class="col-md-4 col-sm-12">
                         <div class="total-header d-flex align-items-center justify-content-between">
@@ -573,7 +632,7 @@ table thead {
                         </div>
                     </div>
 
-
+                   
 
                     <!--  Bookings  -->
                     <div class="col-md-8 col-sm-12">
@@ -610,20 +669,20 @@ table thead {
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                            <div class="total-header d-flex align-items-center justify-content-between">
-                                <h4>Total Users</h4>
-                                <div class="">
-                                    <select name="dropdown">
-                                        <option value="All">All</option>
-                                        <option value="Monthly">Monthly</option>
-                                        <option value="Weekly">Weekly</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="total-block">
-                                <canvas id="income_pie_chart" style="width:100%;max-width:700px"></canvas>
+                        <div class="total-header d-flex align-items-center justify-content-between">
+                            <h4>Total Users</h4>
+                            <div class="">
+                                <select name="dropdown">
+                                    <option value="All">All</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Weekly">Weekly</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="total-block">
+                            <canvas id="total_chart" style="width:100%;max-width:700px"></canvas>
+                        </div>
+                    </div>
                         <div class="col-md-12 col-sm-12">
                             <div class="booking-block">
                                 <div class="total-header d-flex align-items-center justify-content-between">
@@ -859,5 +918,6 @@ table thead {
             </div>
         </div>
     </div>
+    <script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
 
 </main><!-- End #main -->

@@ -62,6 +62,9 @@ var canvas = document.getElementById("total_listing_chart");
       });
       
 
+     
+      
+
 //Total Revenue Chart
 
 var canvas = document.getElementById("total_revenue_chart");
@@ -124,6 +127,66 @@ var canvas = document.getElementById("total_revenue_chart");
       });
 
 
+var canvas = document.getElementById("total_chart");
+var ctx = canvas.getContext("2d");
+var data = [30,10,45,15,75,25,115,45,13,104,78,12];
+var labels = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+// Draw the chart
+var chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [{
+      label: 'Listings',
+      data: data,
+      lineTension: 0,
+      pointStyle: 'circle',
+      backgroundColor: 'rgba(54, 162, 235, 0.2)',
+      borderColor: 'rgba(54, 162, 235, 1)',
+//            borderColor: 'transparent',
+      pointRadius: 1,
+      pointHoverRadius: 5,
+      pointHoverBorderWidth: 5,
+      pointBorderColor: 'transparent',
+      borderWidth: 1,
+      fill: {
+          target: 'origin',
+          above: 'rgba(29, 161, 242, 0.5)',   // Area will be red above the origin
+//                below: 'rgb(0, 0, 255)'    // And blue below the origin
+        }
+    }]
+  },
+  options: {
+      responsive: true,
+      plugins: {
+          legend: {
+              display: false,
+              labels: {
+                  color: 'rgb(255, 99, 132)'
+              }
+          }
+      },
+      scales: {
+        x: {
+          display: false,
+          title: {
+            display: true,
+            text: 'Month'
+          }
+        },
+        y: {
+          display: false,
+          title: {
+            display: true,
+            text: 'Value'
+          }
+        }
+      }
+    },
+});
+
+     
 //Total Net Income Chart
 
 var canvas = document.getElementById("total_income_chart");
@@ -284,4 +347,5 @@ var canvas = document.getElementById("income_pie_chart");
       });
 
 
+      
 
