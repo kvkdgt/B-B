@@ -597,7 +597,7 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
-                                <h4>Qualification</h4>
+                                <h4>Academic Qualification</h4>
                                 <div class="col-sm-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>
@@ -639,7 +639,7 @@ function updateSelectedActivities() {
                                         <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="fname">First Name</label>
-                                                <input type="text" id="fname" class="form-control" placeholder="nehu"
+                                                <input type="text" id="fname" class="form-control" placeholder="First name"
                                                     required />
                                             </div>
                                             <label for="email">Area of Experince</label>
@@ -652,7 +652,7 @@ function updateSelectedActivities() {
                                         <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="lname">Last Name</label>
-                                                <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                                <input type="text" id="lname" class="form-control" placeholder="Last name" required />
                                             </div>
                                             <label for="email">Years of Experince</label>
                                             <select id="state">

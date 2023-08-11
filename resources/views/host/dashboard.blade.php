@@ -421,7 +421,7 @@ table thead {
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-6">
                         <form class="m-0">
-                            <input type="search" class="form-control" placeholder="Search Deshboard" />
+                            <input type="search" class="form-control" placeholder="Search Dashboard" />
                         </form>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6" style="text-align: center;">
@@ -750,7 +750,7 @@ table thead {
                                     </td>
                                     <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
                                     <td>3Star</td>
-                                    <td>Reviews Good B&B</a></td>
+                                    <td> Good B&B</a></td>
                                     <td>Reply</td>
                                 </tr>
                                 <tr>
@@ -761,7 +761,7 @@ table thead {
                                     </td>
                                     <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
                                     <td>2Star</td>
-                                    <td>Reviews Fair B&B</a></td>
+                                    <td> Fair B&B</a></td>
                                     <td>Reply</td>
                                 </tr>
                                     </table>

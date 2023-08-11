@@ -303,67 +303,68 @@ function updateSelectedActivities() {
 
     <section class="edit-profile">
         <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
-            <div class="mobile-menu open-menu">
+            <div class="col-lg-2 col-md-3 col-sm-3">
+                <div class="mobile-menu open-menu">
 
-                <div class="page-sidebar">
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>
-                    <ul class="menu">
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
-                                    class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><span><a href="{{route('alllisting')}}">View All</a></li>
-                                <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
+                    <div class="page-sidebar">
+                        <div class="user-block">
+                            <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
+                            <h4>Kartik Trivedi</h4>
+                            <a href="#">kartik@mailinator.com</a>
+                        </div>
+                        <ul class="menu">
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i
+                                        class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu dropdown">
+                                    <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <a href="{{route('hostbooking')}}"> <span>Bookings</span> </a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>My Listing</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><span><a href="{{route('alllisting')}}">View All</a></li>
+                                    <!-- <li><span><a href="{{route('likedlisting')}}">View Liked Listing</span></a></li>
                                 <li><span><a href="{{route('savedlisting')}}">View Saved Listing</span></a></li>
                                 <li><span><a href="{{route('createListing')}}">Create New Listing</span></a></li> -->
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Payments & Payouts</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <!-- <li><a href="{{route('revenue')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincome')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
-                                <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a></li>
-                            </ul></i>
-                        </li>
-                        <li class="dropdown">
-                            <div onclick="toggleSubMenu(this)">
-                                <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
-                            </div>
-                            <ul class="sub-menu">
-                                <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
-                                <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
-                                <li><span><a href="#">Delete my Account</a></span></li>
-                            </ul>
-                        </li>
-                    </ul>
+                                    <li><a href="{{route('paydetail')}}"><span>Request Payout</span></a></li>
+                                    <li><a href="{{route('editPaymentSetting')}}"><span>Edit Account Details</span></a>
+                                    </li>
+                                </ul></i>
+                            </li>
+                            <li class="dropdown">
+                                <div onclick="toggleSubMenu(this)">
+                                    <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
+                                </div>
+                                <ul class="sub-menu">
+                                    <li><a href="{{route('profilesetting')}}"><span>Profile Setting</span></a></li>
+                                    <li><span><a href="{{route('changepassword')}}">Change Password</a></span></li>
+                                    <li><span><a href="#">Delete my Account</a></span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="col-lg-10 col-md-9 col-sm-9 col-12">
                 <div class="page-content">
                     <div class="d-flex align-items-center justify-content-between m-4">
@@ -589,17 +590,19 @@ function updateSelectedActivities() {
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
-                                <h4>Qualification</h4>
+                                <h4>Academic Qualification</h4>
                                 <div class="col-sm-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>
-                                        <input type="email" id="email" class="form-control" placeholder="qualification" required />
+                                        <input type="email" id="email" class="form-control" placeholder="qualification"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-12">
                                     <div class="form-group">
                                         <label for="email">School Name</label>
-                                        <input type="email" id="email" class="form-control" placeholder="School Name" required />
+                                        <input type="email" id="email" class="form-control" placeholder="School Name"
+                                            required />
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-12">
@@ -631,8 +634,8 @@ function updateSelectedActivities() {
                                         <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="fname">First Name</label>
-                                                <input type="text" id="fname" class="form-control" placeholder="nehu"
-                                                    required />
+                                                <input type="text" id="fname" class="form-control"
+                                                    placeholder="First name" required />
                                             </div>
                                             <label for="email">Area of Experince</label>
                                             <select id="state">
@@ -644,7 +647,8 @@ function updateSelectedActivities() {
                                         <div class="col-md-6 col-12">
                                             <div class="form-group">
                                                 <label for="lname">Last Name</label>
-                                                <input type="text" id="lname" class="form-control" placeholder="nee" required />
+                                                <input type="text" id="lname" class="form-control"
+                                                    placeholder="Last name" required />
                                             </div>
                                             <label for="email">Years of Experince</label>
                                             <select id="state">
@@ -666,8 +670,8 @@ function updateSelectedActivities() {
                                             <span class="d-flex align-items-center justify-content-center">
                                                 <button class="btn btn-primary">Add More</button>
                                             </span>
-                                        </div>        
-                                    </div>                        
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
