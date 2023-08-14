@@ -81,12 +81,15 @@
     }
 
     .icon-box .button-green {
-        background: #bee500;
+        background: #000;
         border-radius: 20px;
         text-align: center;
         margin: 0 5px;
     }
 
+    .icon-box .button-green a {
+        color: #fff;
+    }
     .icon-box .button-green:hover {
         background: #bee500;
         border-radius: 20px;
@@ -229,11 +232,11 @@
                                            <h4> Cost Details</h4>
                                             <p>Selected Dates</p><br />
                                             <span>Feb 5 - Feb 15 (10 Days) - €50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
-                                                    class="cancel-button" style="background:#bee500"><i
-                                                        class="fas fa-times"></i></button></span><br>
+                                                    class="cancel-button" style="background:#000"><i
+                                                        class="fas fa-times" style="color: #fff;"></i></button></span><br>
                                             <span>Feb 20 - Feb 28 (9 Days) - €45 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
-                                                    class="cancel-button" style="background:#bee500"><i
-                                                        class="fas fa-times"></i></button></span><br />
+                                                    class="cancel-button" style="background:#000"><i
+                                                        class="fas fa-times" style="color: #fff;"></i></button></span><br />
                                             <p>Bookings 2 adult guest 10 Nights €180</p><br />
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Cleaning Fee</h5>
@@ -248,7 +251,7 @@
                                                 <p class="m-0">€33 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                             </div>
 
-                                            <button class="btn btn-primary" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
+                                            <button class="btn btn-primary" style="background: #000;" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
 
                                         </div>
                                     </div>
