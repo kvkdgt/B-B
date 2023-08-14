@@ -21,8 +21,9 @@ a {
   text-decoration: none;
 }
 
+
 a:hover {
-  color: #bee500;
+  color: #100c0c;
   text-decoration: none;
 }
 
@@ -1490,6 +1491,7 @@ section {
 .card .card-body .sidebar{
     margin: 20px 0;
 }
+
 
 .card .card-body .sidebar .item{
     display: flex;

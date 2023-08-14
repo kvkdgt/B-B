@@ -462,9 +462,9 @@
                                 </select>
                             </div>
 
-                            <a href="" class="btn btn-primary w-30 p-3">Add 2nd Guest</a><br><br>
-                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-stripe"></i>  Confirm & pay with stripe</a>
-                            <a href="" class="btn btn-primary w-40 p-3"><i class="fa-brands fa-cc-paypal"></i>  Confirm & pay with paypal</a>
+                            <a href="" class="btn  w-30 p-3" style="background-color:#bee500">Add 2nd Guest</a><br><br>
+                            <a href="" class="btn  w-40 p-3" style="background-color:#bee500">  Confirm & pay with stripe <i class="fa-brands fa-stripe"></i></a>
+                            <a href="" class="btn  w-40 p-3" style="background-color:#bee500">  Confirm & pay with paypal <i class="fa-brands fa-cc-paypal"></i></a>
 
                         </form>
                     </div>
@@ -1603,7 +1603,8 @@
 <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
-<script src="{{env('BASE_URL')}}/assets/js/admin-dashboard.js"></script>
+<script src="{{env('BASE_URL')}}/assets/js/host-dashboard.js"></script>
+
 <script>
 $(document).ready(function() {
     $('#summernote').summernote({
