@@ -234,7 +234,7 @@
 
     .average {
         color: #fff;
-        background: #bee500;
+        background: #868383;
         padding: 20px;
     }
 

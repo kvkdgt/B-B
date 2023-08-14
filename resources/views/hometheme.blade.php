@@ -39,7 +39,7 @@
 
     <!-- Template Main CSS File -->
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
     #header {
         padding: 0;
@@ -271,7 +271,7 @@
                             <li><a href="#">French</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#"><span>USD</span> <i class="fa-solid fa-angle-down"></i></a>
+                    <li class="dropdown1"><a href="#"><span>USD</span> <i class="fa-solid fa-angle-down"></i></a>
                         <ul>
                             <li><a href="#">USD</a></li>
                             <li><a href="#">EUR</a></li>
@@ -1614,6 +1614,17 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.js-example-basic-multiple').select2();
 });
+    $(document).ready(function(){
+        $("ul li.dropdown").click(function(){
+            $("ul li.dropdown").toggleClass("open");
+            $("ul li.dropdown1").removeClass("open");
+        })
+
+        $("ul li.dropdown1").click(function(){
+            $("ul li.dropdown1").toggleClass("open");
+            $("ul li.dropdown").removeClass("open");
+        })
+    });
 </script>
 
 </html>
