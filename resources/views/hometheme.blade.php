@@ -280,11 +280,14 @@
                             <li><a href="#">EUR</a></li>
                         </ul>
                     </li>
-
+                    <?php if(session()->get('userData')==null) {?>
                     <button id="loginBtn" class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
                         href="#loginModal">Login</button>
                     <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal"
                         href="#signUpModal">Signup</button>
+                        <?php } else{?>
+                            ADD Profile here
+                            <?php } ?>
                     <!-- <button class="btn btn-outline" data-target="#ratingModal" data-toggle="modal" href="#ratingModal">Add Rating</button> -->
 
                     <!-- <li class="dropdown">
@@ -747,22 +750,22 @@
                         <p>Please enter your details to sign up</p>
                     </div>
                     <div class="content m-5">
-                        <form action="#" method="get">
+                        <form id="signupForm" action="{{ route('signupUser') }}" method="POST">
                             <div class="d-grid">
                                 <label>First Name</label>
-                                <input type="text" placeholder="John">
+                                <input type="text" name="first_name" placeholder="John">
                             </div>
                             <div class="d-grid">
                                 <label>Last Name</label>
-                                <input type="text" placeholder="Doe">
+                                <input type="text" name="last_name" placeholder="Doe">
                             </div>
                             <div class="d-grid">
                                 <label>Email</label>
-                                <input type="email" placeholder="johndoe@gmail.com">
+                                <input type="email" name="email" placeholder="johndoe@gmail.com">
                             </div>
                             <div class="d-grid">
                                 <label>Password</label>
-                                <input type="password" placeholder="*************">
+                                <input type="password" name="password" placeholder="*************">
                             </div>
                             <div class="form-check">
                                 <label for="agreedTermsCheckBox">
@@ -770,8 +773,10 @@
                                     Technologies Terms and Privacy Policy and opt in for marketing products.
                                 </label>
                             </div>
-                            <button data-target="#verificationModal" data-toggle="modal" data-dismiss="modal"
-                                class="btn btn-primary w-100 p-3">Sign Up</button>
+                            <input type="submit" class="btn btn-primary w-100 p-3" value="signup">
+
+                                <!-- <input type="submit" data-target="#verificationModal" data-toggle="modal" data-dismiss="modal"
+                                    class="btn btn-primary w-100 p-3" value="signup"> -->
 
                         </form>
                     </div>
@@ -1668,6 +1673,36 @@ $(document).ready(function() {
                         $("#loginBtn").click();
                     });
                     toastr.success("Login Successful.", "Success");
+                    // Do something (e.g., redirect, show success message)
+                } else {
+                    // Login failed
+                    // Show error message (response.message)
+                    toastr.error(response.message, "Error");
+                }
+            },
+            error: function(xhr, status, error) {
+                // Handle AJAX error here
+                console.error(error);
+            }
+        });
+    });
+
+    $("#signupForm").submit(function(event) {
+        alert("hello")
+        event.preventDefault(); // Prevent default form submission
+
+        var formData = $(this).serialize(); // Serialize form data
+
+        $.ajax({
+            url: $(this).attr("action"), // Form action URL
+            type: $(this).attr("method"), // Form method (POST)
+            data: formData, // Serialized form data
+            dataType: "json", // Expected response data type
+            success: function(response) {
+                // Handle the API response here
+                if (response.success) {
+                  
+                    toastr.success("Account Created Successfully.", "Success");
                     // Do something (e.g., redirect, show success message)
                 } else {
                     // Login failed
