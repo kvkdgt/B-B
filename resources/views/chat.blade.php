@@ -238,20 +238,22 @@
                                                     class="cancel-button" style="background:#000"><i
                                                         class="fas fa-times" style="color: #fff;"></i></button></span><br />
                                             <p>Bookings 2 adult guest 10 Nights €180</p><br />
+                                          
                                             <div class="item d-flex align-items-center justify-content-between">
+                                              
                                                 <h5 class="m-0">Cleaning Fee</h5>
                                                 <p class="m-0">€30 </p>
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Security Deposit</h5>
-                                                <p class="m-0">€15 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                <p class="m-0">€15 </p>
                                             </div>
                                             <div class="item d-flex align-items-center justify-content-between">
                                                 <h5 class="m-0">Service Fee</h5>
-                                                <p class="m-0">€33 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                                <p class="m-0">€33</p>
                                             </div>
 
-                                            <button class="btn btn-primary" style="background: #000;" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
+                                            <button class="btn btn-primary" style="background: #2b2b2b !important;" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
 
                                         </div>
                                     </div>

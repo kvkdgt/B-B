@@ -1126,24 +1126,28 @@
                             </div>
                             <div class="details-content">
                                 <div class="row reviews">
-                                    <div class="col-md-6 col-sm-12 mb-5">
-                                        <div class="d-flex align-items-center justify-content-around average">
-                                            <h2 class="m-0">4.5</h2>
-                                            <div class="">
+                                    <!-- <div class="col-md-6 col-sm-12 mb-5"> -->
+                                            <!-- <div class="">
                                                 <h4>Superb Reviews</h4>
                                                 <p class="m-0">Out of 15 Reviews</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 mb-5">
+                                            </div> -->
+                                    <!-- </div> -->
+                                    <div class="col-md-12 col-sm-12 mb-5">
+                                    <div class=" average">
+
                                         <div class="d-flex ratings">
+                                        <h2 class="m-0">4.5 star reviews</h2>
+
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star-half'></i>
                                             <i class="bx bx-star"></i>
                                         </div>
+                                        </div>
+
                                     </div>
+                                    <!-- <div class="col-md-6 col-sm-12 mb-5"></div> -->
                                     <div class="col-md-6 col-sm-12 mb-5">
                                         <div class="d-flex item team-block">
                                             <img src="assets/img/team/team-1.jpg">
