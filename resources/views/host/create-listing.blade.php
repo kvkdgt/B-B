@@ -466,6 +466,14 @@ table tbody tr:hover {
         width: 70% !important;
     }
 }
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;  
+}
 </style>
 <main id="main">
 
@@ -587,11 +595,11 @@ table tbody tr:hover {
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <input type="radio" id="learn" name="stay" value="learn" onclick="toggleDiv()" checked>
-                                <label for="learn">Stay & Learn</label>
+                                <label for="learn" class="text-red">Stay & Learn</label>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <input type="radio" id="event" name="stay" value="event" onclick="toggleDiv()">
-                                <label for="event">Stay For Event</label>
+                                <label for="event" class="text-green">Stay For Event</label>
                             </div>
                         </div>
                         <div class="row align-items-center listing-name">
@@ -635,18 +643,18 @@ table tbody tr:hover {
                                 <h3>What guest will learn (only for stay & learn)</h3>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Location 1">
+                                        <input type="text" placeholder="Lesson 1">
                                     </div>
                                     <div class="col">
-                                        <input type="text" placeholder="Location 2">
+                                        <input type="text" placeholder="Lesson 2">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Location 3">
+                                        <input type="text" placeholder="Lesson 3">
                                     </div>
                                     <div class="col">
-                                        <input type="text" placeholder="Location 4">
+                                        <input type="text" placeholder="Lesson 4">
                                     </div>
                                 </div>
                             </div>
