@@ -355,7 +355,7 @@ table thead {
     <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-3">
             <div class="mobile-menu open-menu">
-                
+
                 <div class="page-sidebar">
                     <ul class="menu">
                         <li class="dropdown">
@@ -364,7 +364,9 @@ table thead {
                                     class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li>
+                                    <span><a href="{{route('editHostProfile')}}">Profile</a></span></span>
+                                    <span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
@@ -415,6 +417,10 @@ table thead {
             <div class="page-content">
                 <!--  Statistics  -->
                 <div class="row align-items-center my-4">
+                    <div class="error-block d-flex align-items-center justify-content-between">
+                        <p class="m-0">To keep you and other user safe , Please verify your identity.</p>
+                        <button class="btn btn-primary">Verify</button>
+                    </div>
                     <div class="col-lg-2 col-md-3 col-sm-3 col-sm-6">
                         <a href="{{route('createListing')}}"><button class="btn btn-primary"> + Create
                                 Listing</button></a>
@@ -433,7 +439,7 @@ table thead {
                         <div class="user-block d-flex align-items-center justify-content-end" style="gap:10px;">
                             <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
                             <div>
-                                <h4>Kartik Trivedi</h4>
+                                <h4><a href="{{route('editHostProfile')}}">Kartik Trivedi</a></h4>
                                 <a href="#">kartik@mailinator.com</a>
                             </div>
                         </div>
@@ -573,7 +579,7 @@ table thead {
                                 </div>
                             </div> -->
                             <div class="common-table">
-                             
+
                                 <h4 class="mb-5">Conversion Rates</h4>
 
                                 <table class="mb-5">
@@ -589,23 +595,31 @@ table thead {
                                             <td>1</td>
                                             <td>2/8/22</td>
                                             <td>18</td>
-                                            <td> <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>&nbsp;5 of 5</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>&nbsp;5 of 5
+                                            </td>
                                             <td>Unblock</td>
                                         </tr>
                                         <tr>
                                             <td>1</td>
                                             <td>2/8/22</td>
                                             <td>18</td>
-                                            <td> <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>&nbsp;5 of 5</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>&nbsp;5 of 5
+                                            </td>
                                             <td>Block</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                
+
                                 <h4 class="mb-5">Recent Booking</h4>
 
                                 <table class="mb-3">
@@ -734,36 +748,41 @@ table thead {
                                 </div>
                                 <div class="table-heading">
                                     <table>
-                                    <thead>
-                                            <tr><th></th>
-                                            <th>Name</th>
-                                            <th>Rating</th>
-                                            <th>Reviews</th>
-                                            <th>Status</th>
-                                        </tr>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Rating</th>
+                                                <th>Reviews</th>
+                                                <th>Status</th>
+                                            </tr>
                                         </thead>
-                                    <tr>
-                                    <td style="width: 20px;">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
-                                    </td>
-                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
-                                    <td>3Star</td>
-                                    <td> Good B&B</a></td>
-                                    <td>Reply</td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 20px;">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        </div>
-                                    </td>
-                                    <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40" height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
-                                    <td>2Star</td>
-                                    <td> Fair B&B</a></td>
-                                    <td>Reply</td>
-                                </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40"
+                                                    height="40" style="object-fit: cover;">&nbsp; &nbsp; Alan</td>
+                                            <td>3Star</td>
+                                            <td> Good B&B</a></td>
+                                            <td>Reply</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 20px;">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td><img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="40"
+                                                    height="40" style="object-fit: cover;">&nbsp; &nbsp; Paul</td>
+                                            <td>2Star</td>
+                                            <td> Fair B&B</a></td>
+                                            <td>Reply</td>
+                                        </tr>
                                     </table>
                                 </div>
                             </div>

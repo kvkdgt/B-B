@@ -359,7 +359,8 @@ input[readonly] {
                                     class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('editHostProfile')}}">Profile</a></span></span>
+                                <span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>

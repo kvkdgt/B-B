@@ -384,7 +384,8 @@
                                 <span><a href="{{route('dashboard')}}">Host Dashboard</a></span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('editHostProfile')}}">Profile</a></span></span>
+                                <span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
                                 <li><span><a href="{{route('chat')}}">Chat</a></span></span></li>
                             </ul>

@@ -319,7 +319,8 @@ function updateSelectedActivities() {
                                     class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu dropdown">
-                                <li><span><a href="{{route('hostNotification')}}">Notification</a></span></span>
+                                <li><span><a href="{{route('editHostProfile')}}">Profile</a></span></span>
+                                <span><a href="{{route('hostNotification')}}">Notification</a></span></span>
                                 </li>
                             </ul>
                         </li>
@@ -367,7 +368,7 @@ function updateSelectedActivities() {
             <div class="col-lg-10 col-md-9 col-sm-9 col-12">
                 <div class="page-content">
                     <div class="error-block d-flex align-items-center justify-content-between">
-                        <p class="m-0">Please verify your identity.</p>
+                        <p class="m-0">To keep you and other user safe , Please verify your identity.</p>
                         <button class="btn btn-primary">Verify</button>
                     </div>
                     <div class="d-flex align-items-center justify-content-between m-4">
