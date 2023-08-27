@@ -100,6 +100,12 @@
     .text-box button:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    @media screen and (max-width:575px) {
+        .chat .card .card-body .chat-section .messages .item .text-box {
+            min-width: 200px !important;
+        }
+    }
 </style>
 
 <main id="main">
@@ -253,7 +259,7 @@
                                                 <p class="m-0">€33</p>
                                             </div>
 
-                                            <button class="btn btn-primary" style="background: #2b2b2b !important;" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
+                                            <button class="btn btn-primary" style="background: #2b2b2b !important; white-space: break-spaces;" data-target="#chatModal" data-toggle="modal" href="#chatModal">Click to provide your booking details</button>
 
                                         </div>
                                     </div>

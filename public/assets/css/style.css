@@ -41,9 +41,9 @@ img{
     border-radius: 25px;
 }
 
-.row{
+/* .row{
     margin: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -555,6 +555,7 @@ img{
 
 .content a.btn {
   padding: 6px 5px !important;
+  white-space: break-spaces;
 }
 
 .content a.btn i {
@@ -625,7 +626,7 @@ img{
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #151515;
+  color: #151515 !important;
   background-color: #bee500 !important;
 }
 
@@ -697,10 +698,6 @@ ul.menu li {
 # Form Modal Section (login, sign up, forgot, contact)
 --------------------------------------------------------------*/
 
-.form-modal{
-    
-}
-
 .form-modal .header {
     text-align: center;
 }
@@ -717,6 +714,7 @@ ul.menu li {
     border-radius: 25px;
     padding: 10px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .form-modal .content form textarea {
@@ -801,10 +799,6 @@ ul.menu li {
 # Filters
 --------------------------------------------------------------*/
 
-.filters{
-    
-}
-
 .filters .header{
     color: #353535;
     font-size: 24px;
@@ -844,10 +838,6 @@ input[readonly]
 # Common pages
 --------------------------------------------------------------*/
 
-.common-pages{
-    
-}
-
 .common-pages h2{
     font-weight: 700;
     font-size: 28px;
@@ -872,11 +862,7 @@ input[readonly]
 
 /*--------------------------------------------------------------
 #  Blogs
---------------------------------------------------------------*/
-
-.blogs{
-    
-}
+--------------------------------------------------------------*/ 
 
 .blogs .blog-item{
     border-radius: 25px;
@@ -1401,7 +1387,6 @@ section {
     font-size: 24px;
 }
 
-
 .card .card-body .form-field{
     display: flex;
     border: 1px solid #353535;
@@ -1443,11 +1428,6 @@ section {
     border: none;
     min-width: auto;
     border-bottom: 0.5px solid #999;
-}
-
-
-.card .card-body .cost-details{
-    
 }
 .card .card-body .cost-details h4{
     font-size: 16px;
@@ -1580,10 +1560,6 @@ section {
     font-size: 10px;
 }
 
-.form-check .form-check-input{
-/*    margin-left: auto;*/
-}
-
 
 /*--------------------------------------------------------------
 # Host Profile - My Album
@@ -1659,9 +1635,6 @@ table tfoot th{
     font-weight: 600;
     color: #fff;
     padding: 10px;
-}
-
-table tbody tr{
 }
 
 table tbody tr:hover{
@@ -1858,6 +1831,7 @@ select{
     display: flex;
     width: 75%;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .chat .card .card-body .chat-section .messages .right{
     float: right;
@@ -2088,9 +2062,7 @@ select{
 .listings .sm .sub-main .footer img{
     height: 30px;
 }
-.listings .sm .sub-main .img-sec .icon-sec-right {
-	
-}
+
 .listings .sm .sub-main .img-sec .icon-sec-right i {
     padding: 4px;
     font-size: 12px;
@@ -3245,4 +3217,125 @@ select{
 
 .page-sidebar { 
   background-color: #948f8f61 !important;
+}
+
+@media screen and (max-width:1199px) {
+  .page-wrapper-dashboard {
+    padding-top: 20px;
+}
+}
+
+@media screen and (max-width:991px) {
+
+  #footer .footer-top .footer-newsletter .btn {
+    padding: 10px 0px;
+  }
+
+  #header .container.d-flex {
+    flex-direction: column;
+}
+
+  #header .logo {
+    margin: auto;
+}
+
+  .search-area {
+      width: 100%;
+      justify-content: start;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+
+  .navbar-mobile {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .page-sidebar {
+    /* display: none; */
+    opacity: 1;
+    top: 0;
+    left: -200px;
+    transition: all 0.4s ease-in;
+    position: relative;
+    padding: 60px 0 0;
+    backdrop-filter: blur(20px);
+  }
+
+  .page-content {
+    padding: 50px 30px;
+    margin: 0px;
+}
+
+.mobile-menu {
+  position: relative;
+}
+.mobile-menu>span {
+  font-size: 24px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  z-index: 999;
+  display: block;
+  transform: rotate(90deg);
+}
+
+.mobile-menu span svg {
+  fill: #bee500;
+}
+
+.open-menu .mobile-menu>span {
+  transform: rotate(-90deg);
+}
+
+.open-menu .mobile-menu span svg {
+  fill: #fff;
+}
+
+.open-menu .page-sidebar {
+  /* display: block; */
+  opacity: 1;
+    width: 100%;
+    min-width: 200px;
+    z-index: 1;
+    position: relative;
+    background-color: #948f8f61 !important;
+    left: 0;
+    top: 0;
+    transition: all 0.4s ease-in;
+    backdrop-filter: blur(20px);
+}
+}
+
+@media (max-width: 767px) {
+  .search-area {
+      width: 100%;
+  }
+
+  .page-wrapper-dashboard {
+    padding-top: 0px;
+}
+  
+}
+
+@media screen and (max-width: 575px) {
+  .page-content {
+    padding: 50px 0px;
+  }
+
+  .mobile-menu>span {
+    font-size: 24px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+
+  .card-header {
+    flex-direction: column;
+}
 }

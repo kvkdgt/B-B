@@ -241,10 +241,10 @@ function toggleSubMenu(icon) {
 
     <section class="edit-profile">
         <div class="container">
-            <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-3">
-            <div class="mobile-menu open-menu">
-
+        <div class="row m-0 page-wrapper-dashboard">
+        <div class="col-lg-2 col-md-3 col-sm-1 col-1">
+     <div class="mobile-menu">
+<span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg></span>
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -538,4 +538,11 @@ function toggleSubMenu(icon) {
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function () {
+            $('.mobile-menu').click(function () {
+                $('body').toggleClass('open-menu')
+            });
+        });
+    </script>
 </main>

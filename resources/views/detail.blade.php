@@ -354,6 +354,43 @@
     .add1 .add-block, .add2 .add-block, .add3 .add-block {
         display: block;
     }
+
+    @media screen and (max-width: 1199px) {
+        .cost-details .item {
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            justify-content: center !important;
+        }
+
+        .host-content p {
+            font-size: 18px;
+            max-width: 450px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .included-block p {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .host-content p {
+            max-width: 350px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .details-block {
+            padding: 20px 0;
+        }
+
+        .details-block.fixed-block {
+            padding: 20px;
+        }
+
+        .about-us .details-content a {
+            width: 100%;
+        }
+    }
     </style>
 
 

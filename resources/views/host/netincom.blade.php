@@ -1,6 +1,6 @@
 @extends('hometheme')
 @section('content')
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <style>
 .profile {
     padding: 25px 0 10px;
@@ -304,43 +304,42 @@ table thead {
 }
 
 @media screen and (max-width: 767px) {
-    .page-sidebar {
+    /*.page-sidebar {
         display: none;
     }
-
-    .mobile-menu>span {
+ .mobile-menu>span {
         font-size: 24px;
         position: absolute;
         top: -60px;
         z-index: 999;
         display: block;
-    }
+    }*/
 
     #header .logo {
         margin-left: auto !important;
     }
 
-    .search-area {
+    /* .search-area {
         display: block !important;
-    }
+    } */
 
     .search-block form {
         margin: 0;
     }
 
-    .mobile-menu.open-menu .page-sidebar {
+    /* .mobile-menu.open-menu .page-sidebar {
         display: block;
         margin: -15px;
-    }
+    } */
 
-    .mobile-menu.open-menu span.hide-menu {
+    /* .mobile-menu.open-menu span.hide-menu {
         display: block;
     }
 
     span.hide-menu,
     .mobile-menu.open-menu span.show-menu {
         display: none;
-    }
+    } */
 
 }
 </style>
@@ -353,11 +352,10 @@ table thead {
     }
     </script>
 
-    <div class="row">
-
-    <div class="col-lg-2 col-md-3 col-sm-3">
-            <div class="mobile-menu open-menu">
-
+    <div class="row m-0 page-wrapper-dashboard">
+        <div class="col-lg-2 col-md-3 col-sm-1 col-1">
+     <div class="mobile-menu">
+<span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg></span>
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -417,7 +415,7 @@ table thead {
                 </div>
             </div>
         </div>
-        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+        <div class="col-lg-10 col-md-9 col-sm-11 col-10">
             <div class="page-content">
                 <div class="row">
                     <div class="card-header d-flex align-items-center justify-content-between">
@@ -517,5 +515,11 @@ table thead {
     </div>
     </div>
 
-
+    <script>
+        $(document).ready(function () {
+            $('.mobile-menu').click(function () {
+                $('body').toggleClass('open-menu')
+            });
+        });
+    </script>
 </main><!-- End #main -->

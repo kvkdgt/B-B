@@ -252,15 +252,18 @@ ul.menu li.dropdown.active i {
             max-width: 970px !important;
             width: 970px !important;
         } 
-    }
-    @media screen and (min-width: 768px) {
-        .container {
+    }*/
+    @media screen and (max-width: 767px) {
+        /* .container {
             max-width: 750px !important;
             width: 750px !important;
-        } 
+        }  */
+        .profile div:first-child {
+            width: 100%;
+        }
     }
 
-    @media screen and (min-width: 576px) {
+    /*@media screen and (min-width: 576px) {
         .container {
             max-width: 100% !important;
             width: 100% !important;

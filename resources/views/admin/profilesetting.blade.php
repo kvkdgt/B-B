@@ -1,5 +1,6 @@
 @extends('hometheme')
 @section('content')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <style>
 .profile {
     padding: 25px 0 10px;
@@ -302,10 +303,10 @@ function updateSelectedActivities() {
 <main id="main">
 
     <section class="edit-profile">
-        <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3">
-            <div class="mobile-menu open-menu">
-
+        <div class="row m-0 page-wrapper-dashboard">
+        <div class="col-lg-2 col-md-3 col-sm-1 col-1">
+     <div class="mobile-menu">
+<span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg></span>
                 <div class="page-sidebar">
                     <div class="user-block">
                         <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
@@ -372,7 +373,7 @@ function updateSelectedActivities() {
                 </div>
             </div>
         </div>
-            <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            <div class="col-lg-10 col-md-9 col-sm-11 col-10">
                 <div class="page-content">
                     <div class="d-flex align-items-center justify-content-between m-4">
                         <h3 class="m-0">Profile Setting</h3>
@@ -563,32 +564,32 @@ function updateSelectedActivities() {
                             <div class="col-sm-12">
                                 <h3 style="margin: 0 0 10px; width: 100%;">What's Included</h3>
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="breakfast" name="activities" value="breakfast"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="breakfast">Breakfast </label>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="gaming" name="activities" value="gaming"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="gaming">Gaming</label>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="cityTour" name="activities" value="cityTour"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="cityTour">City Tour</label>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="steamRoom" name="activities" value="steamRoom"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="steamRoom">Steam Room</label>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="movieTheater" name="activities" value="movieTheater"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="movieTheater">Movie Theater</label>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-6 col-12">
                                         <input type="checkbox" id="wifi" name="activities" value="wifi"
                                             style="margin-right: 5px; height: auto;">
                                         <label for="wifi">Wifi</label>
@@ -598,13 +599,13 @@ function updateSelectedActivities() {
                             <div class="divider" style="border-top: 1px solid gray; margin: 16px 0;"></div>
                             <div class="col-sm-12">
                                 <h4>Academic Qualification</h4>
-                                <div class="col-sm-4 col-12">
+                                <div class="col-md-4 col-12">
                                     <div class="form-group">
                                         <label for="email">Title of Quaification</label>
                                         <input type="email" id="email" class="form-control" placeholder="Qualification" required />
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-12">
+                                <div class="col-md-4 col-12">
                                     <div class="form-group">
                                         <label for="email">School Name</label>
                                         <input type="email" id="email" class="form-control" placeholder="Name" required />
@@ -682,23 +683,31 @@ function updateSelectedActivities() {
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="col-sm-12">
                                     <h4>House Rules</h4>
-                                    <div class="d-flex">
-                                        <span style="flex: 0 0 30%;">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="breakfast" name="activities" value="breakfast"
                                                 style="margin-right: 5px;">
                                             <label for="breakfast">No pets</label>
                                         </span>
-                                        <span style="flex: 0 0 30%;">
+</div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="gaming" name="activities" value="gaming"
                                                 style="margin-right: 5px;">
                                             <label for="gaming">No smoking</label>
                                         </span>
-                                        <span style="flex: 0 0 30%;">
+</div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="cityTour" name="activities" value="cityTour"
                                                 style="margin-right: 5px;">
                                             <label for="cityTour">No guest</label>
                                         </span>
+</div>
+                                        <div class="col-lg-3 col-md-6 col-12">
                                         <button class="btn btn-primary">Add More</button>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -707,23 +716,31 @@ function updateSelectedActivities() {
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="col-sm-12">
                                     <h4>Amenities</h4>
-                                    <div class="d-flex">
-                                        <span style="flex: 0 0 30%;">
+                                    <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="breakfast" name="activities" value="breakfast"
                                                 style="margin-right: 5px;">
                                             <label for="breakfast">CCTV</label>
                                         </span>
-                                        <span style="flex: 0 0 30%;">
+</div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="gaming" name="activities" value="gaming"
                                                 style="margin-right: 5px;">
                                             <label for="gaming">TV</label>
                                         </span>
-                                        <span style="flex: 0 0 30%;">
+</div>
+                                        <div class="col-lg-3 col-md-6 col-12">
+                                        <span>
                                             <input type="checkbox" id="cityTour" name="activities" value="cityTour"
                                                 style="margin-right: 5px;">
                                             <label for="cityTour">Bath</label>
                                         </span>
+</div>
+<div class="col-lg-3 col-md-6 col-12">
                                         <button class="btn btn-primary">Add More</button>
+</div>
                                     </div>
                                 </div>
                             </div>
@@ -764,7 +781,7 @@ function updateSelectedActivities() {
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
-                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center" />
+                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center form-control" />
                             </div>
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <div class="form-group">
@@ -773,7 +790,7 @@ function updateSelectedActivities() {
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
-                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center" />
+                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center form-control" />
                             </div>
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <div class="form-group">
@@ -782,7 +799,7 @@ function updateSelectedActivities() {
                                         <input type="file" id="profile" class="form-control" required />
                                     </div>
                                 </div>
-                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center" />
+                                <input type="text" name="b-b" id="workshop" placeholder="Title" class="text-center form-control" />
                             </div>
                             <div class="col-md-3 col-sm-6 image-block text-center">
                                 <button class="btn btn-primary">Add More</button>
@@ -820,4 +837,11 @@ function updateSelectedActivities() {
             </div>
         </div>
     </section>
+    <script>
+        $(document).ready(function () {
+            $('.mobile-menu').click(function () {
+                $('body').toggleClass('open-menu')
+            });
+        });
+    </script>
 </main>
