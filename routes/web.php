@@ -64,6 +64,8 @@ Route::get('/admin-change-password', [App\Http\Controllers\AdminController::clas
 Route::get('/admin-profile-setting', [App\Http\Controllers\AdminController::class, 'adminprofilesetting'])->name('adminprofilesetting');
 Route::POST('/auth/loginUser', [App\Http\Controllers\AuthController::class, 'login'])->name('loginUser');
 Route::POST('/auth/signup', [App\Http\Controllers\AuthController::class, 'signup'])->name('signupUser');
+Route::GET('/login/google', [App\Http\Controllers\AuthController::class, 'redirectToGoogle'])->name('redirectToGoogle');
+Route::GET('login/google/callback', [App\Http\Controllers\AuthController::class, 'handleGoogleCallback'])->name('handleGoogleCallback');
 
 
 
