@@ -16,11 +16,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <!-- Vendor CSS Files -->
     <link href="{{env('BASE_URL')}}/assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,211 +35,214 @@
     <link href="{{env('BASE_URL')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="{{env('BASE_URL')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Template Main CSS File -->
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <style>
-        #header {
-            padding: 0;
-        }
+    #header {
+        padding: 0;
+    }
 
-        #header .logo img {
-            max-height: 70px;
-        }
+    #header .logo img {
+        max-height: 70px;
+    }
 
-        .listings .listing-item .sub-main .slider-content p {
-            color: #000;
-        }
+    .listings .listing-item .sub-main .slider-content p {
+        color: #000;
+    }
 
-        .listings .listing-item .sub-main .slider-content p i {
-            margin-right: 7px;
-            font-size: 16px;
-        }
+    .listings .listing-item .sub-main .slider-content p i {
+        margin-right: 7px;
+        font-size: 16px;
+    }
 
-        #footer .copyright {
-            font-weight: 600;
-        }
+    #footer .copyright {
+        font-weight: 600;
+    }
 
-        .search-block input {
-            font-size: 16px;
-            color: #353535;
-            border: 1px solid #D9D9D9;
-            border-radius: 25px;
-            padding: 10px;
-            height: auto;
-        }
+    .search-block input {
+        font-size: 16px;
+        color: #353535;
+        border: 1px solid #D9D9D9;
+        border-radius: 25px;
+        padding: 10px;
+        height: auto;
+    }
 
-        .search-block .form-control:focus {
-            box-shadow: none;
-            border-color: #bee500;
-        }
+    .search-block .form-control:focus {
+        box-shadow: none;
+        border-color: #bee500;
+    }
 
-        .search-block {
-            position: relative;
-            flex: 0 0 70%;
-        }
+    .search-block {
+        position: relative;
+        flex: 0 0 70%;
+    }
 
-        #footer {
-            padding: 0;
-        }
+    #footer {
+        padding: 0;
+    }
 
-        #footer .footer-top {
-            background: #000;
-        }
+    #footer .footer-top {
+        background: #000;
+    }
 
-        #footer .footer-top .footer-links ul a,
-        #footer .footer-top h4,
-        #footer .footer-top .footer-links ul i {
-            color: #fff;
-        }
+    #footer .footer-top .footer-links ul a,
+    #footer .footer-top h4,
+    #footer .footer-top .footer-links ul i {
+        color: #fff;
+    }
 
-        .footer-info a {
-            display: block;
-            margin: -20px 0;
-        }
+    .footer-info a {
+        display: block;
+        margin: -20px 0;
+    }
 
-        .footer-newsletter,
-        .footer-newsletter h4 {
-            text-align: center;
-        }
+    .footer-newsletter,
+    .footer-newsletter h4 {
+        text-align: center;
+    }
 
-        .footer-newsletter button {
-            width: 100%;
-            max-width: 70%;
-            margin: auto;
-        }
+    .footer-newsletter button {
+        width: 100%;
+        max-width: 70%;
+        margin: auto;
+    }
 
-        #footer .copyright {
-            padding: 15px 0;
-        }
+    #footer .copyright {
+        padding: 15px 0;
+    }
 
-        .search-block span {
-            position: absolute;
-            top: 7px;
-            right: 9px;
-            background: #bee500;
-            width: 68px;
-            height: 30px;
-            border-radius: 50px;
-            text-align: center;
-            line-height: 26px;
-        }
+    .search-block span {
+        position: absolute;
+        top: 7px;
+        right: 9px;
+        background: #bee500;
+        width: 68px;
+        height: 30px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 26px;
+    }
 
-        .search-block span i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            line-height: 30px;
-        }
+    .search-block span i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
+    }
 
-        .search-block {
-            position: relative;
-            flex: 0 0 70%;
-        }
+    .search-block {
+        position: relative;
+        flex: 0 0 70%;
+    }
 
-        .navbar button.btn.btn-outline {
-            border: 1px solid black;
-            border-radius: 20px;
-            margin-left: 20px;
-            padding: 5px 25px;
-            color: black;
-            transition: all 0.5s ease;
-            font-size: 16px;
-            font-weight: 500;
-        }
+    .navbar button.btn.btn-outline {
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: 20px;
+        padding: 5px 25px;
+        color: black;
+        transition: all 0.5s ease;
+        font-size: 16px;
+        font-weight: 500;
+    }
 
-        .navbar button.btn.btn-outline:hover {
-            background: #bfe506;
-            color: #000;
-            transition: all 0.5s ease;
-        }
+    .navbar button.btn.btn-outline:hover {
+        background: #bfe506;
+        color: #000;
+        transition: all 0.5s ease;
+    }
 
+    .container {
+        max-width: 1600px;
+        width: 100%
+    }
+
+    @media (min-width: 1799px) {
         .container {
-            max-width: 1600px;
-            width: 100%
+            width: 1440px;
         }
+    }
 
-        @media (min-width: 1799px) {
-            .container {
-                width: 1440px;
-            }
+
+    @media (min-width: 1470px) {
+        .container {
+            width: 1140px;
         }
+    }
+
+    .rate {
+        width: 36%;
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
+
+    .rate:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked)>label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+    .rate:not(:checked)>label:before {
+        content: '★ ';
+    }
+
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+
+    .rating-value {
+        clear: both;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .footer-links i {
+        font-size: 50px;
+    }
 
 
-        @media (min-width: 1470px) {
-            .container {
-                width: 1140px;
-            }
-        }
-
+    @media screen and (max-width:575px) {
         .rate {
-            width: 36%;
-            float: left;
-            height: 46px;
-            padding: 0 10px;
-        }
-
-        .rate:not(:checked)>input {
-            position: absolute;
-            top: -9999px;
-        }
-
-        .rate:not(:checked)>label {
-            float: right;
-            width: 1em;
-            overflow: hidden;
-            white-space: nowrap;
-            cursor: pointer;
-            font-size: 30px;
-            color: #ccc;
-        }
-
-        .rate:not(:checked)>label:before {
-            content: '★ ';
-        }
-
-        .rate>input:checked~label {
-            color: #ffc700;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .rate:not(:checked)>label:hover,
-        .rate:not(:checked)>label:hover~label {
-            color: #deb217;
-        }
-
-        .rate>input:checked+label:hover,
-        .rate>input:checked+label:hover~label,
-        .rate>input:checked~label:hover,
-        .rate>input:checked~label:hover~label,
-        .rate>label:hover~input:checked~label {
-            color: #c59b08;
-        }
-
-        .rating-value {
-            clear: both;
-            justify-content: space-between;
             width: 50%;
         }
-
-        .footer-links i {
-            font-size: 50px;
-        }
-
-
-        @media screen and (max-width:575px) {
-            .rate {
-                width: 50%;
-            }
-        }
+    }
     </style>
 
 </head>
+
 
 <body>
 
@@ -243,7 +251,8 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt="" class="img-fluid"><span style="font-size: 20px;">Status B&B</span></a>
+            <a href="/" class="logo me-auto me-lg-0"><img src="{{env('BASE_URL')}}/assets/img/logo1.png" alt=""
+                    class="img-fluid"><span style="font-size: 20px;">Status B&B</span></a>
 
             <div class="search-area">
 
@@ -273,19 +282,21 @@
                         </ul>
                     </li>
                     <?php if (session()->get('userData') == null) { ?>
-                        <button id="loginBtn" class="btn btn-outline" data-target="#loginModal" data-toggle="modal" href="#loginModal">Login</button>
-                        <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal" href="#signUpModal">Signup</button>
+                    <button id="loginBtn" class="btn btn-outline" data-target="#loginModal" data-toggle="modal"
+                        href="#loginModal">Login</button>
+                    <button class="btn btn-outline" data-target="#signUpModal" data-toggle="modal"
+                        href="#signUpModal">Signup</button>
                     <?php } else { ?>
-                        <li class="dropdown">
-                            <a href="#">
-                                <span><img src="assets/img/avatar.png" style="border-radius: 50%;" alt="Profile"></span>
-                            </a>
-                            <ul>
-                                
-                                <li><a href="host-dashboard.html">Profile</a></li>
-                                <li><a href="admin-login.html">Admin</a></li>
-                            </ul>
-                        </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <span><img src="assets/img/avatar.png" style="border-radius: 50%;" alt="Profile"></span>
+                        </a>
+                        <ul>
+
+                            <li><a href="host-dashboard.html">Profile</a></li>
+                            <li><a href="admin-login.html">Admin</a></li>
+                        </ul>
+                    </li>
                     <?php } ?>
                     <!-- <button class="btn btn-outline" data-target="#ratingModal" data-toggle="modal" href="#ratingModal">Add Rating</button> -->
 
@@ -352,13 +363,15 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-4">
                         <div class="footer-info">
-                            <h3><a href="/" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt="" style="width: 100% ; height: auto"></a></h3>
+                            <h3><a href="/" class="logo"><img src="{{env('BASE_URL')}}/assets/img/logo.png" alt=""
+                                        style="width: 100% ; height: auto"></a></h3>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
                         <div class="footer-newsletter">
                             <h4>Contact Us</h4>
-                            <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal" href="#contactFormModal">Click here to contact us</button>
+                            <button class="btn btn-gray-outline" data-target="#contactFormModal" data-toggle="modal"
+                                href="#contactFormModal">Click here to contact us</button>
 
                         </div>
                     </div>
@@ -366,8 +379,10 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4></h4> -->
                         <ul>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('terms')}}">Terms</a></li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('privacy')}}">Privacy Policy</a>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('terms')}}">Terms</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('privacy')}}">Privacy Policy</a>
                             </li>
                             <!-- <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
                                     href="{{route ('career')}}"> &amp;</a></li> -->
@@ -379,10 +394,12 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route ('about')}}">About Us</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route ('about')}}">About Us</a></li>
                             <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="/faq">FAQ</a>
                             </li>
-                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a href="{{route('safety')}}">Safety Tips</a></li>
+                            <li><i style="margin-right: 7px;" class="fa-solid fa-angle-right"></i><a
+                                    href="{{route('safety')}}">Safety Tips</a></li>
                         </ul>
 
                         <i class="fa-brands fa-cc-paypal"></i>
@@ -391,7 +408,8 @@
                     <div class="col-lg-2 col-md-2 footer-links">
                         <!-- <h4>Our Services</h4> -->
                         <ul>
-                            <li><i class="fa-brands fa-facebook"></i>&nbsp;<a href="https://www.facebook.com">Facebook</a>
+                            <li><i class="fa-brands fa-facebook"></i>&nbsp;<a
+                                    href="https://www.facebook.com">Facebook</a>
                             </li>
                             <li><i class="fa-brands fa-twitter"></i> &nbsp;<a href="https://www.twitter.com">Twitter</a>
                             </li>
@@ -469,9 +487,6 @@
 
                         </form>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -488,23 +503,26 @@
                     <div class="content m-5">
                         <form id="loginForm" action="{{ route('loginUser') }}" method="POST">
                             <div class="d-grid">
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="johndoe@gmail.com">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
                             </div>
                             <div class="d-grid">
-                                <label>Password</label>
-                                <input type="password" name="password" placeholder="*************">
-                                <a class="btn btn-outline" data-target="#forgotPasswordModal" data-toggle="modal" href="#forgotPasswordModal" data-dismiss="modal">Forgot Password?</a>
-                                <!-- <span>Forgot Password?</span> -->
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" placeholder="*************"
+                                    required>
+                                <small id="passwordHelp" class="form-text text-muted">Password must be at least 8
+                                    characters long, contain 1 uppercase letter, 1 lowercase letter, and 1 special
+                                    character.</small>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" value="" id="remeberMeCheckBox">
-                                <label for="remeberMeCheckBox">
+                                <input type="checkbox" id="rememberMeCheckBox" name="rememberMe">
+                                <label for="rememberMeCheckBox">
                                     Remember me
                                 </label>
                             </div>
                             <input type="submit" class="btn btn-primary w-100 p-3" value="Login">
                         </form>
+
                     </div>
 
                     <div class="footer">
@@ -531,7 +549,8 @@
         </div>
     </div>
 
-    <div class="modal fade bd-example-modal-lg" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -574,7 +593,8 @@
         </div>
     </div>
 
-    <div class="modal fade bd-example-modal-xl" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-xl" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -660,7 +680,8 @@
     </div>
 
     <!-- forgot password -->
-    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -728,7 +749,8 @@
 
 
     <!-- Sign Up Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle" aria-hidden="true">
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalTitle"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -748,7 +770,7 @@
                             </div>
                             <div class="d-grid">
                                 <label>Email</label>
-                                <input type="email" name="email" placeholder="johndoe@gmail.com">
+                                <input type="email" name="email" placeholder="johndoe@gmail.com" required>
                             </div>
                             <div class="d-grid">
                                 <label>Password</label>
@@ -792,7 +814,8 @@
 
 
     <!-- Contact Form Modal -->
-    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalTitle" aria-hidden="true">
+    <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalTitle"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body form-modal">
@@ -1096,7 +1119,8 @@
 
 
     <!-- Filters Modal -->
-    <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="filtersModalTitle" aria-hidden="true">
+    <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="filtersModalTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content" style="margin-left:  -120px !important;width: 1101px !important;">
                 <div class="modal-body filters m-5">
@@ -1214,7 +1238,8 @@
                             <div class="col-md-2 col-sm-6">
                                 <h5>Property Type</h5>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Farm House
                                     </label>
@@ -1232,7 +1257,8 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="private_houses" value="Private Houses">
+                                    <input type="radio" name="property_types" id="private_houses"
+                                        value="Private Houses">
                                     <label for="private_houses">
                                         Private Houses
                                     </label>
@@ -1256,31 +1282,36 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Villa
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Duplex
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Town house
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Studio
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House" checked>
+                                    <input type="radio" name="property_types" id="farm_houses" value="Farm House"
+                                        checked>
                                     <label for="farm_houses">
                                         Waterfront
                                     </label>
@@ -1444,13 +1475,15 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="EquippedKitchen" value="Equipped Kitchen">
+                                    <input type="radio" name="roommatefacilities" id="EquippedKitchen"
+                                        value="Equipped Kitchen">
                                     <label for="EquippedKitchen">
                                         Equipped Kitchen
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input type="radio" name="roommatefacilities" id="ParkingSpace" value="Parking Space">
+                                    <input type="radio" name="roommatefacilities" id="ParkingSpace"
+                                        value="Parking Space">
                                     <label for="ParkingSpace">
                                         Parking Space
                                     </label>
@@ -1522,7 +1555,8 @@
 
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
@@ -1541,57 +1575,58 @@
     <!-- Template Main JS File -->
 
     <script>
-        //    Scroll of Icons Script STARTS HERE    
-        const rightButtons = Array.from(document.getElementsByClassName('slideRight'));
-        const leftButtons = Array.from(document.getElementsByClassName('slideLeft'));
-        const containers = Array.from(document.getElementsByClassName('categories'));
+    //    Scroll of Icons Script STARTS HERE    
+    const rightButtons = Array.from(document.getElementsByClassName('slideRight'));
+    const leftButtons = Array.from(document.getElementsByClassName('slideLeft'));
+    const containers = Array.from(document.getElementsByClassName('categories'));
 
 
 
-        let index = 0;
-        for (const rightButton of rightButtons) {
-            const container = containers[index];
-            rightButton.addEventListener("click", function() {
-                container.scrollLeft += 150;
-            });
-            index++;
-        }
-
-        index = 0;
-        for (const leftButton of leftButtons) {
-            const container = containers[index];
-            leftButton.addEventListener("click", function() {
-                container.scrollLeft -= 150;
-            });
-            index++;
-        }
-
-        //    Scroll of Icons Script STARTS ENDS
-
-
-        document.getElementById('search-options')
-            .addEventListener('click', function(event) {
-                $("#search-area-expanded").css("display", "block");
-                $("#search-options").css("display", "none");
-                $("#search-close").css("display", "flex");
-            });
-        document.getElementById('search-close')
-            .addEventListener('click', function(event) {
-                $("#search-close").css("display", "none");
-                $("#search-options").css("display", "block");
-                $("#search-area-expanded").css("display", "none");
-            });
-
-        $('#checkin').datepicker({
-            minDate: new Date()
+    let index = 0;
+    for (const rightButton of rightButtons) {
+        const container = containers[index];
+        rightButton.addEventListener("click", function() {
+            container.scrollLeft += 150;
         });
-        $('#checkout').datepicker({
-            minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
+        index++;
+    }
+
+    index = 0;
+    for (const leftButton of leftButtons) {
+        const container = containers[index];
+        leftButton.addEventListener("click", function() {
+            container.scrollLeft -= 150;
         });
+        index++;
+    }
+
+    //    Scroll of Icons Script STARTS ENDS
+
+
+    document.getElementById('search-options')
+        .addEventListener('click', function(event) {
+            $("#search-area-expanded").css("display", "block");
+            $("#search-options").css("display", "none");
+            $("#search-close").css("display", "flex");
+        });
+    document.getElementById('search-close')
+        .addEventListener('click', function(event) {
+            $("#search-close").css("display", "none");
+            $("#search-options").css("display", "block");
+            $("#search-area-expanded").css("display", "none");
+        });
+
+    $('#checkin').datepicker({
+        minDate: new Date()
+    });
+    $('#checkout').datepicker({
+        minDate: new Date((new Date()).valueOf() + 1000 * 3600 * 24)
+    });
     </script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
 
 </body>
 <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
@@ -1600,98 +1635,140 @@
 <script src="{{env('BASE_URL')}}/assets/js/host-dashboard.js"></script>
 
 <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({
-            height: 200,
-        });
+$(document).ready(function() {
+    $('#summernote').summernote({
+        height: 200,
     });
+});
 
-    $(document).ready(function() {
-        $('.js-example-basic-multiple').select2();
-    });
-    $(document).ready(function() {
-        $("ul li.dropdown").click(function() {
-            $("ul li.dropdown").toggleClass("open");
-            $("ul li.dropdown1").removeClass("open");
-        })
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+$(document).ready(function() {
+    $("ul li.dropdown").click(function() {
+        $("ul li.dropdown").toggleClass("open");
+        $("ul li.dropdown1").removeClass("open");
+    })
 
-        $("ul li.dropdown1").click(function() {
-            $("ul li.dropdown1").toggleClass("open");
-            $("ul li.dropdown").removeClass("open");
-        })
-    });
+    $("ul li.dropdown1").click(function() {
+        $("ul li.dropdown1").toggleClass("open");
+        $("ul li.dropdown").removeClass("open");
+    })
+});
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-        // Intercept form submission
-        $("#loginForm").submit(function(event) {
-            event.preventDefault(); // Prevent default form submission
+$(document).ready(function() {
+    // Intercept form submission
+    $("#loginForm").submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
 
-            var formData = $(this).serialize(); // Serialize form data
+        var formData = $(this).serialize(); // Serialize form data
 
-            $.ajax({
-                url: $(this).attr("action"), // Form action URL
-                type: $(this).attr("method"), // Form method (POST)
-                data: formData, // Serialized form data
-                dataType: "json", // Expected response data type
-                success: function(response) {
-                    // Handle the API response here
-                    if (response.success) {
-                        // Login successful
-                        $(document).ready(function() {
-                            // Programmatically trigger the click event of the login button
-                            $("#loginBtn").click();
-                        });
-                        toastr.success("Login Successful.", "Success");
-                        // Do something (e.g., redirect, show success message)
-                    } else {
-                        // Login failed
-                        // Show error message (response.message)
-                        toastr.error(response.message, "Error");
-                    }
-                },
-                error: function(xhr, status, error) {
-                    // Handle AJAX error here
-                    console.error(error);
+        $.ajax({
+            url: $(this).attr("action"), // Form action URL
+            type: $(this).attr("method"), // Form method (POST)
+            data: formData, // Serialized form data
+            dataType: "json", // Expected response data type
+            success: function(response) {
+                // Handle the API response here
+                if (response.success) {
+                    // Login successful
+                    $(document).ready(function() {
+                        // Programmatically trigger the click event of the login button
+                        $("#loginBtn").click();
+                    });
+                    toastr.success("Login Successful.", "Success");
+                    // Do something (e.g., redirect, show success message)
+                } else {
+                    // Login failed
+                    // Show error message (response.message)
+                    toastr.error(response.message, "Error");
                 }
-            });
-        });
-
-        $("#signupForm").submit(function(event) {
-            alert("hello")
-            event.preventDefault(); // Prevent default form submission
-
-            var formData = $(this).serialize(); // Serialize form data
-
-            $.ajax({
-                url: $(this).attr("action"), // Form action URL
-                type: $(this).attr("method"), // Form method (POST)
-                data: formData, // Serialized form data
-                dataType: "json", // Expected response data type
-                success: function(response) {
-                    // Handle the API response here
-                    if (response.success) {
-
-                        toastr.success("Account Created Successfully.", "Success");
-                        // Do something (e.g., redirect, show success message)
-                    } else {
-                        // Login failed
-                        // Show error message (response.message)
-                        toastr.error(response.message, "Error");
-                    }
-                },
-                error: function(xhr, status, error) {
-                    // Handle AJAX error here
-                    console.error(error);
-                }
-            });
+            },
+            error: function(xhr, status, error) {
+                // Handle AJAX error here
+                console.error(error);
+            }
         });
     });
+
+    $("#signupForm").submit(function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var formData = $(this).serialize(); // Serialize form data
+
+        $.ajax({
+            url: $(this).attr("action"), // Form action URL
+            type: $(this).attr("method"), // Form method (POST)
+            data: formData, // Serialized form data
+            dataType: "json", // Expected response data type
+            success: function(response) {
+                // Handle the API response here
+                if (response.success) {
+
+                    toastr.success("Account Created Successfully.", "Success");
+                    // Do something (e.g., redirect, show success message)
+                } else {
+                    // Login failed
+                    // Show error message (response.message)
+                    toastr.error(response.message, "Error");
+                }
+            },
+            error: function(xhr, status, error) {
+                // Handle AJAX error here
+                console.error(error);
+            }
+        });
+    });
+});
 </script>
 
+<!-- FORM Script -->
+<script>
+const passwordInput = document.getElementById('password');
+const passwordHelp = document.getElementById('passwordHelp');
+
+passwordInput.addEventListener('input', validatePassword);
+
+function validatePassword() {
+    const password = passwordInput.value;
+
+    const lengthRequirement = password.length >= 8;
+    const uppercaseRequirement = /[A-Z]/.test(password);
+    const lowercaseRequirement = /[a-z]/.test(password);
+    const specialCharacterRequirement = /[!@#$%^&*()_+{}\[\]:;<>,.?~]/.test(password);
+
+    if (lengthRequirement && uppercaseRequirement && lowercaseRequirement && specialCharacterRequirement) {
+        passwordInput.setCustomValidity('');
+        passwordHelp.style.display = 'none';
+    } else {
+        passwordInput.setCustomValidity('Password does not meet the requirements.');
+        passwordHelp.style.display = 'block';
+    }
+}
+</script>
+
+<!-- Sign-up form -->
+<script>
+function validateForm() {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+
+    var emailInput = document.getElementById('email');
+    var passwordInput = document.getElementById('password');
+
+    var isValid = true;
+
+    if (!emailPattern.test(emailInput.value)) {
+        alert('Please enter a valid email address.');
+        isValid = false;
+    }
+    return isValid;
+}
+</script>
 
 </html>
