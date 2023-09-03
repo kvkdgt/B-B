@@ -263,7 +263,6 @@
 
         <a href="#" class="btn btn-black-outline">Request</a>
     </div>
-
     <div class="tab-content clearfix">
         <div class="tab-pane active" id="tab1">
             <section id="listings" class="listings">

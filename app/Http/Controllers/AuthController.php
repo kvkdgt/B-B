@@ -48,8 +48,8 @@ class AuthController extends Controller
         // Check if the user exists, and either log them in or create a new account.
 
         // Example of logging in the user
-        auth()->login($user);
+        // auth()->login($user);
 
-        return redirect()->intended('/home');
+        // return redirect()->intended('/home');
     }
 }

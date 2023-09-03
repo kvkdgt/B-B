@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\BNBListing;
+
 
 class UnauthorisedPagesController extends Controller
 {
     public function homepage(){
-        return view('homepage');
+        $bnbData = BNBListing::get();
+        return view('homepage',['bnbData'=>$bnbData]);
     }
 
     public function about(){

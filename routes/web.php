@@ -65,7 +65,8 @@ Route::get('/admin-profile-setting', [App\Http\Controllers\AdminController::clas
 Route::POST('/auth/loginUser', [App\Http\Controllers\AuthController::class, 'login'])->name('loginUser');
 Route::POST('/auth/signup', [App\Http\Controllers\AuthController::class, 'signup'])->name('signupUser');
 Route::GET('/login/google', [App\Http\Controllers\AuthController::class, 'redirectToGoogle'])->name('redirectToGoogle');
-Route::GET('login/google/callback', [App\Http\Controllers\AuthController::class, 'handleGoogleCallback'])->name('handleGoogleCallback');
+Route::GET('/login/google', [App\Http\Controllers\AuthController::class, 'redirectToGoogle'])->name('redirectToGoogle');
+Route::POST('addCreateListing', [App\Http\Controllers\HostController::class, 'addListing'])->name('addCreateListing');
 
 
 

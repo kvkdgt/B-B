@@ -168,7 +168,87 @@
                 width: 1140px;
             }
         }
+    
+    .rate {
+        width: 36%;
+        float: left;
+        height: 46px;
+        padding: 0 10px;
+    }
 
+    .rate:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rate:not(:checked)>label {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ccc;
+    }
+
+    .rate:not(:checked)>label:before {
+        content: '★ ';
+    }
+
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+
+    .rating-value {
+        clear: both;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .footer-links i {
+        font-size: 50px;
+    }
+
+    fieldset {
+    border: 3px solid #c0c0c0;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+fieldset legend {
+    border: navajowhite;
+    margin: -28px auto 0;
+    background: #fff;
+    width: 100%;
+    max-width: 53%;
+    text-align: center;
+}
+
+
+    @media screen and (max-width:575px) {
         .rate {
             width: 36%;
             float: left;
@@ -466,7 +546,17 @@
                                 <i class="fa-brands fa-stripe"></i></a>
                             <a href="" class="btn  w-40 p-3" style="background-color:#bee500"> Confirm & pay with paypal
                                 <i class="fa-brands fa-cc-paypal"></i></a>
-
+                            <fieldset>
+                                <legend>Secure Payments by</legend>
+                                <div class="d-flex flex-wrap align-items-center justify-content-center" style="transform: translateY(20px);">
+                                    <img src="https://1000logos.net/wp-content/uploads/2017/05/Color-Paypal-Logo.jpg" width="100" />
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968382.png" width="100" />
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center" style="transform: translateY(40px);">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJ6cVdnwyik2A6t9bvjsfwtKB07FWtHddEQ&usqp=CAU" width="100" />
+                                    <img src="https://static-00.iconduck.com/assets.00/mastercard-icon-512x329-xpgofnyv.png" width="100" />
+                                </div>
+                            </fieldset>
                         </form>
                     </div>
 
