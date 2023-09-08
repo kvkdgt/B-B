@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Cms;
+
 
 class AdminController extends Controller
 {
@@ -55,7 +57,8 @@ class AdminController extends Controller
     }
 
     public function cmsListing(){
-        return view('admin/cmsListing');
+        $data = Cms::get();
+        return view('admin/cmsListing',['cms'=>$data]);
     }
 
     public function addNewPage(){

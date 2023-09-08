@@ -67,6 +67,11 @@ Route::POST('/auth/signup', [App\Http\Controllers\AuthController::class, 'signup
 Route::GET('/login/google', [App\Http\Controllers\AuthController::class, 'redirectToGoogle'])->name('redirectToGoogle');
 Route::GET('/login/google', [App\Http\Controllers\AuthController::class, 'redirectToGoogle'])->name('redirectToGoogle');
 Route::POST('addCreateListing', [App\Http\Controllers\HostController::class, 'addListing'])->name('addCreateListing');
+Route::POST('addCMS', [App\Http\Controllers\CmsController::class, 'add'])->name('addCMS');
+Route::get('/cms/edit/{id}', [App\Http\Controllers\CmsController::class, 'edit'])->name('editCMS');
+Route::get('/cms/delete/{id}', [App\Http\Controllers\CmsController::class, 'delete'])->name('delete');
+Route::POST('updateCMS', [App\Http\Controllers\CmsController::class, 'update'])->name('updateCMS');
+Route::get('/p/{name}', [App\Http\Controllers\CmsController::class, 'show']);
 
 
 

@@ -35,6 +35,8 @@
     <!-- Template Main CSS File -->
     <link href="{{env('BASE_URL')}}/assets/css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    
     <style>
         #header {
             padding: 0;
@@ -168,87 +170,7 @@
                 width: 1140px;
             }
         }
-    
-    .rate {
-        width: 36%;
-        float: left;
-        height: 46px;
-        padding: 0 10px;
-    }
 
-    .rate:not(:checked)>input {
-        position: absolute;
-        top: -9999px;
-    }
-
-    .rate:not(:checked)>label {
-        float: right;
-        width: 1em;
-        overflow: hidden;
-        white-space: nowrap;
-        cursor: pointer;
-        font-size: 30px;
-        color: #ccc;
-    }
-
-    .rate:not(:checked)>label:before {
-        content: '★ ';
-    }
-
-    .rate>input:checked~label {
-        color: #ffc700;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .rate:not(:checked)>label:hover,
-    .rate:not(:checked)>label:hover~label {
-        color: #deb217;
-    }
-
-    .rate>input:checked+label:hover,
-    .rate>input:checked+label:hover~label,
-    .rate>input:checked~label:hover,
-    .rate>input:checked~label:hover~label,
-    .rate>label:hover~input:checked~label {
-        color: #c59b08;
-    }
-
-    .rating-value {
-        clear: both;
-        justify-content: space-between;
-        width: 50%;
-    }
-
-    .footer-links i {
-        font-size: 50px;
-    }
-
-    fieldset {
-    border: 3px solid #c0c0c0;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-}
-
-fieldset legend {
-    border: navajowhite;
-    margin: -28px auto 0;
-    background: #fff;
-    width: 100%;
-    max-width: 53%;
-    text-align: center;
-}
-
-
-    @media screen and (max-width:575px) {
         .rate {
             width: 36%;
             float: left;
@@ -306,6 +228,86 @@ fieldset legend {
             font-size: 50px;
         }
 
+        fieldset {
+            border: 3px solid #c0c0c0;
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+
+        fieldset legend {
+            border: navajowhite;
+            margin: -28px auto 0;
+            background: #fff;
+            width: 100%;
+            max-width: 53%;
+            text-align: center;
+        }
+
+
+        @media screen and (max-width:575px) {
+            .rate {
+                width: 36%;
+                float: left;
+                height: 46px;
+                padding: 0 10px;
+            }
+
+            .rate:not(:checked)>input {
+                position: absolute;
+                top: -9999px;
+            }
+
+            .rate:not(:checked)>label {
+                float: right;
+                width: 1em;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 30px;
+                color: #ccc;
+            }
+
+            .rate:not(:checked)>label:before {
+                content: '★ ';
+            }
+
+            .rate>input:checked~label {
+                color: #ffc700;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .rate:not(:checked)>label:hover,
+            .rate:not(:checked)>label:hover~label {
+                color: #deb217;
+            }
+
+            .rate>input:checked+label:hover,
+            .rate>input:checked+label:hover~label,
+            .rate>input:checked~label:hover,
+            .rate>input:checked~label:hover~label,
+            .rate>label:hover~input:checked~label {
+                color: #c59b08;
+            }
+
+            .rating-value {
+                clear: both;
+                justify-content: space-between;
+                width: 50%;
+            }
+
+            .footer-links i {
+                font-size: 50px;
+            }
+        }
 
         @media screen and (max-width:575px) {
             .rate {
@@ -361,7 +363,7 @@ fieldset legend {
                                 <span><img src="assets/img/avatar.png" style="border-radius: 50%;" alt="Profile"></span>
                             </a>
                             <ul>
-                                
+
                                 <li><a href="host-dashboard.html">Profile</a></li>
                                 <li><a href="admin-login.html">Admin</a></li>
                             </ul>
@@ -1614,10 +1616,9 @@ fieldset legend {
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script>
+    <!-- <script src="{{env('BASE_URL')}}/assets/js/jquery.min.js"></script> -->
     <script src="{{env('BASE_URL')}}/assets/js/bootstrap.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
     <!-- Vendor JS Files -->
     <script src="{{env('BASE_URL')}}/assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1627,6 +1628,12 @@ fieldset legend {
     <script src="{{env('BASE_URL')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="{{env('BASE_URL')}}/assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote();
+        });
+    </script>
 
     <!-- Template Main JS File -->
 
@@ -1685,17 +1692,10 @@ fieldset legend {
 
 </body>
 <script src="{{env('BASE_URL')}}/assets/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 <script src="{{env('BASE_URL')}}/assets/js/host-dashboard.js"></script>
 
 <script>
-    $(document).ready(function() {
-        $('#summernote').summernote({
-            height: 200,
-        });
-    });
-
     $(document).ready(function() {
         $('.js-example-basic-multiple').select2();
     });
@@ -1711,7 +1711,7 @@ fieldset legend {
         })
     });
 </script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
@@ -1752,7 +1752,6 @@ fieldset legend {
         });
 
         $("#signupForm").submit(function(event) {
-            alert("hello")
             event.preventDefault(); // Prevent default form submission
 
             var formData = $(this).serialize(); // Serialize form data

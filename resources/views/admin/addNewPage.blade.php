@@ -1,6 +1,7 @@
 @extends('hometheme')
 @section('content')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 <style>
 .profile {
     padding: 25px 0 10px;
@@ -415,24 +416,25 @@ table thead {
         </div>
         <div class="col-lg-10 col-md-9 col-sm-11 col-10">
             <div class="page-content">
-                <form>
+                <form method="POST" action="{{ route('addCMS') }}">
                     <div class="row">
                         <div class="col-sm-6 col-12">
-                            <input type="text" placeholder="Enter Page Name" style="width:100%">
+                            <input type="text" name="name" placeholder="Enter Page Name" style="width:100%">
                         </div>
                         <div class="col-sm-6 col-12">
-                            <input type="text" placeholder="Enter Page Slug" style="width:100%">
+                            <input type="text" name="slug" placeholder="Enter Page Slug" style="width:100%">
                         </div>
 
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <textarea id="summernote" name="editordata" style="width:100%;"></textarea>
+                            <textarea id="summernote" name="content" name="editordata" style="width:100%;"></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <a href="#" class="btn btn-success" style="width:100%;background:#fffff">Submit</a>
+                            <input type="submit" value="Create Page" class="btn btn-success" style="width:100%">
+                            <!-- <a href="#" class="btn btn-success" style="width:100%;background:#fffff">Submit</a> -->
                         </div>
                     </div>
 
@@ -445,5 +447,7 @@ table thead {
                 $('body').toggleClass('open-menu')
             });
         });
+
+       
     </script>
 </main>

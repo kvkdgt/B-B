@@ -301,6 +301,16 @@ table thead {
 }
 
 @media screen and (max-width: 767px) {
+    /*.page-sidebar {
+        display: none;
+    }
+ .mobile-menu>span {
+        font-size: 24px;
+        position: absolute;
+        top: -60px;
+        z-index: 999;
+        display: block;
+    }*/
 
     #header .logo {
         margin-left: auto !important;
@@ -341,14 +351,9 @@ table thead {
 
     <div class="row m-0 page-wrapper-dashboard">
         <div class="col-lg-2 col-md-3 col-sm-1 col-1">
- <div class="mobile-menu">
-<span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg></span>          
+     <div class="mobile-menu">
+<span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"/></svg></span>
                 <div class="page-sidebar">
-                    <div class="user-block">
-                        <img src="{{env('BASE_URL')}}/assets/img/avatar.png" alt="" width="50" height="50">
-                        <h4>Kartik Trivedi</h4>
-                        <a href="#">kartik@mailinator.com</a>
-                    </div>
                     <ul class="menu">
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
@@ -368,7 +373,7 @@ table thead {
                         </li>
                         <li class="dropdown">
                             <div onclick="toggleSubMenu(this)">
-                                <a href="{{route('users')}}"> <span>Users</span> </a>
+                                <a href="{{route('adminbooking')}}"> <span>Users</span> </a>
                             </div>
                         </li>
                         <li class="dropdown">
@@ -388,7 +393,7 @@ table thead {
                             <ul class="sub-menu">
                                 <!-- <li><a href="{{route('revenueadmin')}}"><span>Revenue</span></a></li>
                                 <li><a href="{{route('netincomeadmin')}}"><span>Net Income</span></a></li> -->
-                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
+                                                                <li><a href="{{route('paydetailadmin')}}"><span>Request Payout</span></a></li>
 
                             </ul></i>
                         </li>
@@ -397,79 +402,48 @@ table thead {
                                 <span>Settings</span> <i class="fa-solid fa-caret-right"></i>
                             </div>
                             <ul class="sub-menu">
-                                <li><a href="{{route('adminprofilesetting')}}"><span>Profile Setting</span></a></li>
-                                <li><a href="{{route('adminchangepassword')}}"><span>Change Password</span></a></li>
-                                <li><a href="{{route('cms')}}"><span>Update Pages</span></a></li>
-                                <!-- <li><span>Block IP addresses</span></li> -->
+                                <li><span>Profile Setting</span></li>
+                                <li><a href="{{route('changepassword')}}"><span>Change Password</span></a></li>
+                                <li><span>Update Pages</span></li>
+                                <li><span>Block IP addresses</span></li>
+                                <li><span>General Settings</span></li>
                             </ul>
                         </li>
-                    </ul>
-                    </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-lg-10 col-md-9 col-sm-11 col-10">
             <div class="page-content">
-            @if(Session::has('success'))
-    <br>
-        <div class="alert alert-success">
-            {{ Session::get('success') }}
-            @php
-                Session::forget('success');
-            @endphp
-        </div>
-        @endif
-        @if(Session::has('danger'))
-    <br>
-        <div class="alert alert-danger">
-            {{ Session::get('danger') }}
-            @php
-                Session::forget('danger');
-            @endphp
-        </div>
-        @endif
-                <a href="{{ route('add-new-page') }}"  style="background:#bee500 !important"  class="btn btn-primary">+ Add New Page</a><br><br>
-                <div class="common-table">
-                    <table>
-                        <thead>
-                            <th>S/No</th>
-                            <th>CMS Page Name</th>
-                            <th>Path</th>
-                            <th>Admin Action</th>
-                        </thead>
-                        <tbody>
-                        <?php
-      $sr=1;
-         foreach($cms as $data)
-          { ?>
+                <form method="POST" action="{{ route('updateCMS') }}">
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <input type="hidden" name="id" value="{{$data->id}}">
+                            <input type="text" name="name" value="{{$data->name}}" placeholder="Enter Page Name" style="width:100%">
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <input type="text" value="{{$data->slug}}" name="slug" placeholder="Enter Page Slug" style="width:100%">
+                        </div>
 
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea id="summernote" name="content" name="editordata" style="width:100%;">{{$data->content}}</textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="submit" value="Update Page" class="btn btn-success" style="width:100%">
+                            <!-- <a href="#" class="btn btn-success" style="width:100%;background:#fffff">Submit</a> -->
+                        </div>
+                    </div>
 
-       
-                            <tr>
-                                <td>{{$sr}}</td>
-                                <td>{{$data->name}}</td>
-                                <td>{{$data->slug}}</td>
-                                <td><a href="/cms/edit/{{$data->id}}"  style="background:#bee500 !important"  class="btn btn-primary">Edit</a>
-                               <a href="/cms/delete/{{$data->id}}"    class="btn btn-danger">Delete</a></td>
-                           
-                            </tr>
-                            <?php  
-                        $sr++;    
-                        }
-           
-           ?>
-                           
-
-                        </tbody>
-                    </table>
-
-                </div>
+                </form>
             </div>
         </div>
         <script>
         $(document).ready(function () {
-            $('.mobile-menu span').click(function () {
+            $('.mobile-menu').click(function () {
                 $('body').toggleClass('open-menu')
             });
         });
