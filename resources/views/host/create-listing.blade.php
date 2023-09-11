@@ -584,7 +584,7 @@ table tbody tr:hover {
                         <div class="listing-header d-flex justify-content-between maintitle">
                             <h2 class="m-0">Create a New Listing</h2>
                         </div>
-
+<form method="POST" action="{{ route('addCreateListing') }}">
                         <div class="listing-content">
                             <!--  Title of Listing  -->
                             <div class="titlelisting">
@@ -1757,9 +1757,10 @@ table tbody tr:hover {
 
                             <div class="item-block d-flex justify-content-between">
                                 <button class="btn btn-primary" style="background:#bee500 !important">Preview</button>
-                                <button class="btn btn-primary" style="background:#bee500 !important">Publish</button>
+                                <button type="submit" class="btn btn-primary" style="background:#bee500 !important">Publish</button>
                             </div>
                         </div>
+</form>
                     </div>
                 </div>
             </div>
