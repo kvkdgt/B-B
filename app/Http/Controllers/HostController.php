@@ -77,33 +77,82 @@ class HostController extends Controller
 
     public function addListing(Request $request)
     {
+        dd($request);
+        $listing_photos_videos = array();
+        if(isset($request->image1)){
+            $request->validate([
+                'image1' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+        
+            $imageName = time().'.'.$request->image1->extension();  
+            $request->image1->move(public_path('images'), $imageName);
+            array_push($listing_photos_videos,$imageName);
+        };
+        if(isset($request->image2)){
+            $request->validate([
+                'image2' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+        
+            $imageName = time().'.'.$request->image2->extension();  
+            $request->image2->move(public_path('images'), $imageName);
+            array_push($listing_photos_videos,$imageName);
+        }
+        if(isset($request->image3)){
+            $request->validate([
+                'image3' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+        
+            $imageName = time().'.'.$request->image3->extension();  
+            $request->image3->move(public_path('images'), $imageName);
+            array_push($listing_photos_videos,$imageName);
+        }
+        if(isset($request->image4)){
+            $request->validate([
+                'image4' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+        
+            $imageName = time().'.'.$request->image4->extension();  
+            $request->image4->move(public_path('images'), $imageName);
+            array_push($listing_photos_videos,$imageName);
+        }
+        if(isset($request->image5)){
+            $request->validate([
+                'image5' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+        
+            $imageName = time().'.'.$request->image5->extension();  
+            $request->image5->move(public_path('images'), $imageName);
+            array_push($listing_photos_videos,$imageName);
+        }
+        
+    
         $bnbListing = new BNBListing;
         $bnbListing->title_of_listing = $request->title_of_listing;
         $bnbListing->listing_name = $request->listing_name;
-          $bnbListing->language_of_instruction = $request->language_of_instruction;
-          $bnbListing->what_guest_will_learn = $request->what_guest_will_learn;
+          $bnbListing->language_of_instruction = implode(" ",$request->language_of_instruction);
+          $bnbListing->what_guest_will_learn = implode(" ",$request->what_guest_will_learn);
           $bnbListing->learn_location = $request->learn_location;
           $bnbListing->about_BNB = $request->about_BNB;
-          $bnbListing->listing_photos_videos = $request->listing_photos_videos;
+          $bnbListing->listing_photos_videos = $imageName;
           $bnbListing->country = $request->country;
           $bnbListing->state = $request->state;
           $bnbListing->city = $request->city;
           $bnbListing->property_type = $request->property_type;
           $bnbListing->max_no_of_guest = $request->max_no_of_guest;
           $bnbListing->sleep_location_img_n_title = $request->sleep_location_img_n_title;
-          $bnbListing->ideal_guest = $request->ideal_guest;
-          $bnbListing->included = $request->included;
+          $bnbListing->ideal_guest = implode(" ",$request->ideal_guest);
+          $bnbListing->included = implode(" ",$request->included);
           $bnbListing->previous_videos_n_title = $request->previous_videos_n_title;
           $bnbListing->check_in_check_out_dates = $request->check_in_check_out_dates;
           $bnbListing->cleaning_fee = $request->cleaning_fee;
           $bnbListing->refundable_security = $request->refundable_security;
           $bnbListing->service_fee = $request->service_fee;
-          $bnbListing->rules = $request->rules;
+          $bnbListing->rules = implode(" ",$request->rules);
           $bnbListing->check_in_checkout_time = $request->check_in_checkout_time;
-          $bnbListing->amenities = $request->amenities;
-          $bnbListing->safety = $request->safety;
+          $bnbListing->amenities = implode(" ",$request->amenities);
+          $bnbListing->safety =implode(" ",$request->safety);
         $bnbListing->save();
 
-        return redirect()->route('/create-listing')->with('success', 'Listing Created successfully.');
+        return redirect('/create-listing')->with('success', 'Listing Created successfully.');
     }
 }

@@ -584,7 +584,7 @@ table tbody tr:hover {
                         <div class="listing-header d-flex justify-content-between maintitle">
                             <h2 class="m-0">Create a New Listing</h2>
                         </div>
-<form method="POST" action="{{ route('addCreateListing') }}">
+<form method="POST" action="{{ route('addCreateListing') }}" enctype="multipart/form-data">
                         <div class="listing-content">
                             <!--  Title of Listing  -->
                             <div class="titlelisting">
@@ -594,7 +594,7 @@ table tbody tr:hover {
                                     </div>
                                     <div class="row" text-center" style="margin-top: 10px;">
                                         <label for="stayOption">Select an Option:</label>
-                                        <select id="stayOption" name="stay" onchange="toggleDiv()">
+                                        <select id="stayOption" name="title_of_listing" onchange="toggleDiv()">
                                             <option value="learn" selected>Stay & Learn</option>
                                             <option value="event">Stay For Event</option>
                                         </select>
@@ -614,8 +614,7 @@ table tbody tr:hover {
                                         <h3 class="m-0">Listing Name</h3>
                                     </div>
                                     <div class="row d-flex flex-column gap-3">
-                                        <input type="text" placeholder="Python (Intro)" />
-                                        <input type="text" placeholder="Oktoberfest (Munich)" />
+                                        <input type="text" name="listing_name" placeholder="listing_name" />
 
                                     </div>
                                     <!-- <div class="col-lg-4 col-md-6 col-sm-6">
@@ -631,24 +630,24 @@ table tbody tr:hover {
                                 <h3>Language of Instruction</h3>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Language 1">
+                                        <input type="text" name="language_of_instruction[]" placeholder="Language 1">
                                     </div>
 
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Language 2">
+                                        <input type="text" name="language_of_instruction[]" placeholder="Language 2">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" placeholder="Language 3">
+                                        <input type="text" name="language_of_instruction[]" placeholder="Language 3">
                                     </div>
                                 </div>
                                 <div class="row">
 
                                     <div class="col">
-                                        <input type="text" placeholder="Language 4">
+                                        <input type="text" name="language_of_instruction[]" placeholder="Language 4">
                                     </div>
                                 </div>
                             </div>
@@ -661,24 +660,24 @@ table tbody tr:hover {
                                     <h3>What guest will learn (only for stay & learn)</h3>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" placeholder="Lesson 1">
+                                            <input type="text" name="what_guest_will_learn[]" placeholder="Lesson 1">
                                         </div>
 
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" placeholder="Lesson 2">
+                                            <input type="text" name="what_guest_will_learn[]" placeholder="Lesson 2">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" placeholder="Lesson 3">
+                                            <input type="text" name="what_guest_will_learn[]" placeholder="Lesson 3">
                                         </div>
                                     </div>
                                     <div class="row">
 
                                         <div class="col">
-                                            <input type="text" placeholder="Lesson 4">
+                                            <input type="text" name="what_guest_will_learn[]" placeholder="Lesson 4">
                                         </div>
                                     </div>
                                 </div>
@@ -710,7 +709,7 @@ table tbody tr:hover {
                                     <div class="row">
                                         <div class="col-md-12">
                                             <label for="accommodation">Select Accommodation:</label>
-                                            <select name="accommodation" id="accommodation">
+                                            <select name="learn_location" id="accommodation">
                                                 <option value="only">B&B only</option>
                                                 <option value="office">B&B and office</option>
                                                 <option value="farm">B&B and farm</option>
@@ -729,7 +728,7 @@ table tbody tr:hover {
                                     <div class="col-lg-12 textarea-block">
                                         <h3>About the B&B Listing </h3>
                                         <textarea rows="3" style="width:100%"
-                                            placeholder="Tell guests what this stay & learn / stay for Event"></textarea>
+                                            placeholder="Tell guests what this stay & learn / stay for Event" name="about_BNB"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -755,8 +754,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file" name="image1" id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -764,8 +763,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file" name="image2" id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -773,8 +772,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file" name="image3" id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -782,8 +781,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file" name="image4" id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -791,8 +790,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file" name="image5" id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -820,7 +819,7 @@ table tbody tr:hover {
                                         <h3>Location </h3>
                                         <div class="row location-block ">
                                             <div class="col-4">
-                                                <select>
+                                                <select name="country">
                                                     <option disabled selected hidden> Select Country </option>
                                                     <option> India </option>
                                                     <option> Australia </option>
@@ -828,7 +827,7 @@ table tbody tr:hover {
                                                 </select>
                                             </div>
                                             <div class="col-4">
-                                                <select>
+                                                <select name="state">
                                                     <option disabled selected hidden> Select State </option>
                                                     <option> Gujarat </option>
                                                     <option> Maharastra </option>
@@ -837,7 +836,7 @@ table tbody tr:hover {
                                                 </select>
                                             </div>
                                             <div class="col-4">
-                                                <select>
+                                                <select name="city">
                                                     <option disabled selected hidden> Select City </option>
                                                     <option> Mehsana </option>
                                                     <option> Ahmedabad </option>
@@ -851,7 +850,7 @@ table tbody tr:hover {
                                     </div>
                                     <div class="col-md-12 property-block">
                                         <h3>Property Type</h3>
-                                        <select>
+                                        <select name="property_type">
                                             <option>Apartment</option>
                                             <option>Row House</option>
                                             <option>Bunglow</option>
@@ -861,7 +860,7 @@ table tbody tr:hover {
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h3>Maximum Number of Guests(Adults)</h3>
-                                        <select>
+                                        <select name="max_no_of_guest">
                                             <option>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -878,8 +877,8 @@ table tbody tr:hover {
                                                         <div class="form-group">
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
-                                                                <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                <input type="file"  id="profile" class="form-control"
+                                                                     />
                                                             </div>
                                                         </div>
                                                         <input type="text" name="b-b" id="workshop"
@@ -890,7 +889,7 @@ table tbody tr:hover {
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
                                                                 <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                     />
                                                             </div>
                                                         </div>
                                                         <input type="text" name="b-b" id="workshop"
@@ -901,7 +900,7 @@ table tbody tr:hover {
                                                             <div class="file-wrapper">
                                                                 <button type="button">Upload Photo</button>
                                                                 <input type="file" id="profile" class="form-control"
-                                                                    required />
+                                                                     />
                                                             </div>
                                                         </div>
                                                         <input type="text" name="b-b" id="workshop"
@@ -921,22 +920,22 @@ table tbody tr:hover {
                                     <h3>Ideal Guest</h3>
                                     <div class="row">
                                         <span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="students" name="ideal_guest[]">
                                             <label>Students</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="founders" name="ideal_guest[]">
                                             <label>Founders</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="family" name="ideal_guest[]">
                                             <label>Family</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="digital_workers" name="ideal_guest[]">
                                             <label>Digital Workers</label></span>
                                         <span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="tourists" name="ideal_guest[]">
                                             <label>Tourists</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="employees" name="ideal_guest[]">
                                             <label>Employees</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="gen_z" name="ideal_guest[]">
                                             <label> Gen Z</label></span><span>
-                                            <input type="checkbox">
+                                            <input type="checkbox" value="backbanchers" name="ideal_guest[]">
                                             <label>Backpackers</label></span>
 
 
@@ -969,32 +968,32 @@ table tbody tr:hover {
                                 <h3>What is included? (Select freebies you give guests)</h3>
                                 <div class="row">
                                     <span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="breakfast" name="included[]">
                                         <label>Breakfast</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="dinner" name="included[]">
                                         <label>Dinner</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="snacks" name="included[]">
                                         <label>Snacks</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="city_tour" name="included[]">
                                         <label>City Tour</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="airport_pickup_drop" name="included[]">
                                         <label>Airport pick-up/drop off</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="document_draft" name="included[]">
                                         <label>Document Draft</label></span><span>
-                                        <input type="checkbox">
-                                        <label>Fre event tickets</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="free_event_tickets" name="included[]">
+                                        <label>Free event tickets</label></span><span>
+                                        <input type="checkbox" value="free_parking_tickets" name="included[]">
                                         <label>Free parking tickets</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="cycling" name="included[]">
                                         <label>Cycling</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="co-cook" name="included[]">
                                         <label>co-cook</label></span>
                                     <span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="city_walk" name="included[]">
                                         <label>City Walk</label></span><span>
-                                        <input type="checkbox">
+                                        <input type="checkbox" value="free_toiletries" name="included[]">
                                         <label>Free toiletries</label></span><span>
 
                                 </div>
@@ -1367,7 +1366,7 @@ table tbody tr:hover {
                                         <div class="col-3 d-flex align-items-center ">
                                             <div>
 
-                                                <input type="text" placeholder="&#8364; | Amount" class="form-control">
+                                                <input type="text" placeholder="&#8364; | Amount" class="form-control" name="cleaning_fee">
                                             </div>
                                             <div class="flex align-items-center"
                                                 style="padding-bottom: 10px; margin-left: 10px;">
@@ -1387,7 +1386,7 @@ table tbody tr:hover {
                                         <div class="col-3 d-flex align-items-center ">
                                             <div>
 
-                                                <input type="text" placeholder="&#8364; |  Amount" class="form-control">
+                                                <input type="text" placeholder="&#8364; |  Amount" class="form-control" name="refundable_security">
                                             </div>
                                             <div class="flex align-items-center"
                                                 style="padding-bottom: 10px; margin-left: 10px;">
@@ -1429,7 +1428,7 @@ table tbody tr:hover {
                                             <p>Service Fee</p>
                                         </div>
                                         <div class="col-2">
-                                            <input type="text" class="form-control" placeholder="&#8364; 20" disabled>
+                                            <input type="text" class="form-control" placeholder="&#8364; 20" name="service_fee">
                                         </div>
                                         <div class="col-5">
                                             <p>(Host pays 5% of Booking. Guest pays 15% of Booking. A booking is total
@@ -1472,31 +1471,31 @@ table tbody tr:hover {
                                     <h3>Rules (Make your rules friendly for guests)</h3>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="pets" value="pets" name="no">
+                                            <input type="checkbox" id="pets" value="pets" name="rules[]">
                                             <label for="pets">No Pets</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="smoking" value="smoking" name="no">
+                                            <input type="checkbox" id="smoking" value="smoking" name="rules[]">
                                             <label for="smoking">No Smoking</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="visitors" value="visitors" name="no">
+                                            <input type="checkbox" id="visitors" value="visitors" name="rules[]">
                                             <label for="visitors">No Visitors</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="parcel" value="parcel" name="no">
+                                            <input type="checkbox" id="parcel" value="parcel" name="rules[]">
                                             <label for="parcel">No Parcel</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="parties" value="parties" name="no">
+                                            <input type="checkbox" id="parties" value="parties" name="rules[]">
                                             <label for="parties">No Parties</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="under" value="under" name="no">
+                                            <input type="checkbox" id="under" value="under" name="rules[]">
                                             <label for="under">No under 20 guest</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="unregister" value="unregister" name="no">
+                                            <input type="checkbox" id="unregister" value="unregister" name="rules[]">
                                             <label for="unregister">No unregistered guest</label>
                                         </div>
                                     </div>
@@ -1545,67 +1544,67 @@ table tbody tr:hover {
                                     <h3>Amenities (Select all that are available)</h3>
                                     <div class="row">
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="kitchen" name="amenities" />
+                                            <input type="checkbox" id="kitchen" value="functional_kitchen" name="amenities[]" />
                                             <label for="kitchen">Functional Kitchen</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="parking" name="amenities" />
+                                            <input type="checkbox" id="parking" value="free_parking" name="amenities[]" />
                                             <label for="parking">Free Parking</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="charger" name="amenities" />
+                                            <input type="checkbox" id="charger" value="ev_charger" name="amenities[]" />
                                             <label for="charger">EV Charger</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="pool" name="amenities" />
+                                            <input type="checkbox" id="pool" value="pool" name="amenities[]" />
                                             <label for="pool">Pool</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="wifi" name="amenities" />
+                                            <input type="checkbox" id="wifi" value="wifi" name="amenities[]" />
                                             <label for="wifi">WiFi</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="system" name="amenities" />
+                                            <input type="checkbox" id="system" value="heating_cooling_system" name="amenities[]" />
                                             <label for="system">Heating & Cooling System</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="work" name="amenities" />
+                                            <input type="checkbox" id="work" value="workstation" name="amenities[]" />
                                             <label for="work">Workstation</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="maker" name="amenities" />
+                                            <input type="checkbox" id="maker" value="coffee_maker" name="amenities[]" />
                                             <label for="maker">Coffee maker</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="tv" name="amenities" />
+                                            <input type="checkbox" id="tv" value="TV" name="amenities[]" />
                                             <label for="tv">TV</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="games" name="amenities" />
+                                            <input type="checkbox" id="games" value="games_console" name="amenities[]" />
                                             <label for="games">Games consoles</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="board" name="amenities" />
+                                            <input type="checkbox" id="board" value="board_games" name="amenities[]" />
                                             <label for="board">Board Games</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="gym" name="amenities" />
+                                            <input type="checkbox" id="gym" value="gym" name="amenities[]" />
                                             <label for="gym">Gym ojaizzi</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="hair" name="amenities" />
+                                            <input type="checkbox" id="hair" value="hair_dryer" name="amenities[]" />
                                             <label for="hair">Hair Dryer</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="kit" name="amenities" />
-                                            <label for="kit">Firstaid Kit</label>
+                                            <input type="checkbox" id="kit" value="firstaid_kit" name="amenities[]" />
+                                            <label for="kit">FirstAid Kit</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="mets" name="amenities" />
+                                            <input type="checkbox" id="mets" value="mets" name="amenities[]" />
                                             <label for="mets">Mosqui to mets</label>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="wash" name="amenities" />
+                                            <input type="checkbox" id="wash" value="machine" name="amenities[]" />
                                             <label for="wash">Wash Machine</label>
                                         </div>
                                     </div>
@@ -1619,23 +1618,23 @@ table tbody tr:hover {
                                     <h3>Safety</h3>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="cctv" name="cctv" />
+                                            <input type="checkbox" id="cctv" value="cctv" name="safety[]" />
                                             <label for="cctv">CCTV</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="fire" name="fire" />
+                                            <input type="checkbox" id="fire" value="fire" name="safety[]" />
                                             <label for="fire">Fire Extinguisher</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="smoke" name="smoke" />
+                                            <input type="checkbox" value="smoke" name="safety[]" />
                                             <label for="smoke">Smoke Detector</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="carbon" name="carbon" />
+                                            <input type="checkbox" value="carbon" name="safety[]" />
                                             <label for="carbon">Carbon monoxide Detector</label>
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-6">
-                                            <input type="checkbox" id="sign" name="sign" />
+                                            <input type="checkbox" value="sign" name="safety[]" />
                                             <label for="sign">Caution SIgns</label>
                                         </div>
                                     </div>
